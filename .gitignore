@@ -1,0 +1,8 @@
+node_modules/
+public/
+.quartz-cache/
+.export-next/
+.DS_Store
+output/
+.playwright-cli/
+__pycache__/
