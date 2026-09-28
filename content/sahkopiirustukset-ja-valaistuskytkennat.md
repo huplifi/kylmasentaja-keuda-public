@@ -136,6 +136,74 @@ Periaate:
 
 1-kytkimen kytkinhaarassa on yksi kytketyn vaiheen paluu. 5-kytkimessä niitä on kaksi, koska ohjattavia lähtöjä on kaksi. Oppitunnin yksiviivaisessa kuvassa tämä näkyy suurempana johdinmääränä kytkinhaarassa ja valaisinmerkinnässä **1+2**.
 
+### 6-kytkin eli vaihtokytkin
+
+Vaihtokytkennässä sama valaisin tai valaisinryhmä voidaan sytyttää ja sammuttaa **kahdesta eri paikasta**. Kytkennässä käytetään kahta 6-kytkintä.
+
+![Sähköpiirrosmerkki: kytkin 6](symbolit/kytkin-6.svg)
+
+Oppikirjan esimerkissä:
+
+- **Q1** ja **Q2** = vaihtokytkimet
+- **X1** ja **X2** = jakorasiat
+- **E1** = valaisin
+
+Vaihtokytkin ohjaa vaiheen kahden vaihtoehtoisen reitin välille. Kahden kytkimen välillä kulkevien johtimien avulla virtareitti voidaan muodostaa tai katkaista kummasta tahansa kytkinpaikasta.
+
+Oppikirjan mukaan vaihtokytkin on paljon käytetty kytkintyyppi, ja sitä käytetään yleisesti myös tavallisen 1-kytkimen tapaan.
+
+### 7-kytkin eli ristikytkin
+
+Kun samaa valoa halutaan ohjata **kolmesta tai useammasta paikasta**, kahden 6-kytkimen väliin lisätään yksi tai useampi 7-kytkin eli ristikytkin.
+
+![Sähköpiirrosmerkki: kytkin 7](symbolit/kytkin-7.svg)
+
+Kolmen ohjauspisteen esimerkissä:
+
+- **Q1** = 6-kytkin
+- **Q2** = 7-kytkin
+- **Q3** = 6-kytkin
+- **X1–X3** = jakorasiat
+- **E1** = valaisin
+
+Ristikytkin vaihtaa kahden välijohtimen yhteydet keskenään. Jokainen kytkimen käyttö muuttaa virtareittiä, joten valon tila voidaan vaihtaa mistä tahansa ohjauspisteestä.
+
+**Muistisääntö:** kaksi 6-kytkintä muodostavat päät. Niiden väliin voidaan lisätä 7-kytkimiä niin monta ohjauspaikkaa varten kuin tarvitaan.
+
+### Painikeohjaus useasta paikasta
+
+Oppikirjan mukaan useasta paikasta tehtävässä valaistuksen ohjauksessa vaihto- ja ristikytkimien sijasta voidaan käyttää **askelrelettä ja painikkeita**.
+
+![Sähköpiirrosmerkki: painike](symbolit/painike.svg)
+
+Oppikirjan esimerkissä:
+
+- **K1** = askelrele
+- **S1–S3** = painikkeet
+- **E1–E3** = valaisimet
+- **X1–X4** = jakorasiat
+- **S3** on esitetty merkkivalollisena painikkeena.
+
+Painikkeet antavat ohjausimpulssin askelreleelle. Rele vaihtaa valaistuksen tilaa, jolloin samaa valaistusta voidaan ohjata useasta painikepaikasta ilman pitkää vaihto-/ristikytkinketjua.
+
+### Valonsäädin
+
+Oppikirjan valonsäätimessä on sekä kytkin että säätöyksikkö. Kun säätimeen sisältyy vaihtokytkintoiminto, valot voidaan sytyttää ja sammuttaa myös toisesta paikasta tavallisella 6-kytkimellä.
+
+Kirjastossa ei vielä ole lähdekuvien mukaista valonsäätimen asennussymbolia, joten sitä ei korvata arvauksella. Symboli lisätään kirjastoon vasta, kun grafiikka piirretään lähdekuvan perusteella.
+
+Oppikirja korostaa myös, että valonsäädin on valittava ohjattavan valonlähteen ja liitäntälaitteen mukaan.
+
+### Kytkinten liitinmerkintöjä
+
+Oppikirjan tekstin mukaan:
+
+- vaihejohtimen liitin on merkitty kytkimessä **L**- tai **P**-kirjaimella
+- lampulle tai toiselle kytkimelle lähtevien johtimien liittimet on merkitty **nuolilla**
+- ylimääräisiä kytkentäliittimiä voidaan merkitä **X**- tai **B**-kirjaimella.
+
+Nämä ovat hyödyllisiä merkintöjä erityisesti silloin, kun piirustusta verrataan oikean kytkimen liittimiin.
+
 ### Valaisin
 
 ![Sähköpiirrosmerkki: valaisin](symbolit/valaisin.svg)
@@ -291,8 +359,9 @@ Avoimeen julkaisuun ei vielä lisätä lisenssiä, joka väittäisi standardoitu
 Oppitunti 28.9.2026:
 
 - käsin piirretty 1-kytkentä ja johdinmäärät
-- *6.5 Valaistusasennukset / Valaistuskytkimet ja valaistuskytkennät*: 1-kytkin ja jakorasian johdotus
-- sama aineisto: sarjakytkin (kruunukytkin), 5-kytkin
+- *Sähköasennustekniikan perusteet*, kohta 6.5 **Valaistusasennukset**, s. 311: 1-kytkin, 5-kytkin ja 6-kytkin sekä kytkinten liitinmerkinnät
+- sama aineisto, s. 312: 7-kytkin / ristikytkentä sekä valonsäädin ja valonsäätimen vaihtokytkentä
+- sama aineisto, s. 313: painikeohjaus askelreleellä sekä valaistusasennuksen kaapelointi- ja johdinväriesimerkki
 
 53-sivuinen **IEC 60617 SYMBOLS** -PDF toimii vertailuaineistona. Siinä ovat muun muassa johtimet ja liitokset (s. 1–2), maadoitus (s. 11), kytkinkoskettimet (s. 12–15), sulakkeet (s. 17), N/PE/PEN-johtimet (s. 20), jakorasiat ja pistorasiat (s. 21–22), valaisimet (s. 23), moottorit (s. 31–33), muuntajat (s. 34–41) sekä puhallin ja pumppu (s. 52).
 
