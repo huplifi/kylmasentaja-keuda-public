@@ -390,6 +390,17 @@ Oppitunti 28.9.2026:
 
 53-sivuinen **IEC 60617 SYMBOLS** -PDF toimii vertailuaineistona. Siinä ovat muun muassa johtimet ja liitokset (s. 1–2), maadoitus (s. 11), kytkinkoskettimet (s. 12–15), sulakkeet (s. 17), N/PE/PEN-johtimet (s. 20), jakorasiat ja pistorasiat (s. 21–22), valaisimet (s. 23), moottorit (s. 31–33), muuntajat (s. 34–41) sekä puhallin ja pumppu (s. 52).
 
+Oppitunnin alkuperäiskuvat on säilytetty vain yksityisen vaultin liitteissä. Julkinen vienti ei kopioi niitä.
+
+- oppitunnin lähdeaineisto — 1-kytkentä
+- oppitunnin lähdeaineisto — jakorasian kytkentä
+- oppitunnin lähdeaineisto — symbolien vertailukuva
+- oppitunnin lähdeaineisto — valaistuskytkennät, oppikirjan s. 311
+- oppitunnin lähdeaineisto — ristikytkentä, oppikirjan s. 312
+- oppitunnin lähdeaineisto — painikeohjaus, oppikirjan s. 313
+- oppitunnin lähdeaineisto — keskuskaavio, *Sähkön asentaminen II* s. 134–135
+- oppitunnin lähdeaineisto — asennuspiirustusten merkkiluettelo, harjoitustehtävät s. 69
+
 ### Ajantasaiset verkkolähteet
 
 - SESKO: Piirrosmerkit / IEC 60617

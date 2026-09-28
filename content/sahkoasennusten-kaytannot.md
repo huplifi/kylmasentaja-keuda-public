@@ -5,6 +5,22 @@ publish: true
 
 Käytännön asennusharjoitusten muistiinpanoja. Piirustusten lukeminen ja päivittäminen: [Sähköpiirustukset ja valaistuskytkennät](sahkopiirustukset-ja-valaistuskytkennat.md).
 
+## Pistorasian kytkentä ja rasialiitin (28.9.2026)
+
+**Oppikirjan opetusesimerkki:** *Sähkön asentaminen II*, luku 3.4, s. 128, kuvat 3.21–3.22. Kuvat ovat vain yksityisessä lähteessä.
+
+- **L** on vaihejohdin (kuvassa ruskea), **N** nollajohdin (sininen) ja **PE** suojajohdin (keltavihreä). PE kytketään pistorasian suojakoskettimeen, eikä sitä käytetä käyttövirran paluureittinä.
+- Kirjan vakiintuneessa kytkentätavassa liitinreikien ollessa vaakasuorassa N on vasemmalla ja L oikealla; pystysuorassa N on ylhäällä ja L alhaalla. **Tämä ei ole johdinten tunnistusmenetelmä**: kytkentä varmistetaan liitinmerkinnöistä, piirustuksesta ja asianmukaisilla mittauksilla.
+- Kuvan vivullisessa rasialiittimessä johdin kuoritaan liittimen ilmoittamaan pituuteen, vipu avataan, johdin työnnetään pohjaan ja vipu suljetaan. Tarkista, että liitin soveltuu käytetylle johtimelle (jäykkä, monisäikeinen tai hienosäikeinen) ja liitos pysyy.
+- Jakorasiassa samaan tehtävään kuuluvat johtimet yhdistetään oikein: vaihe vaiheeseen, nolla nollaan ja suojajohdin suojajohtimeen. Johdinväri yksin ei todista johtimen tehtävää.
+
+**Harjoituskysymys:** osaatko seurata L:n, N:n ja PE:n erilliset reitit jakorasiasta pistorasiaan ja selittää, miksi suojajohdin ei kuulu normaaliin käyttövirtapiiriin?
+
+Tämä kuvaa valvotun harjoituksen teoriaa, ei itsenäisen sähköasennustyön lupaa. Ennen työtä jännitteettömyys varmistetaan opettajan ohjeen ja asianmukaisen menettelyn mukaisesti.
+
+- oppitunnin lähdeaineisto — oppikirjan koko sivu 128
+- oppitunnin lähdeaineisto — pistorasian kytkennän lähikuva
+
 ## Kaapelin pintakiinnitys
 
 **Oppitunnin harjoitusohje 28.9.2026:**

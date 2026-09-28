@@ -688,3 +688,6 @@ Piirrosmerkkien vertailu ja turvallisuustäsmennykset tarkistettu 28.9.2026:
 - oppitunnin lähdeaineisto — asennustesteri sekä RISO-, RLO- ja Z-mittaukset
 - oppitunnin lähdeaineisto — RCD-testaus, muut mittaukset, silmukkaimpedanssin merkitys ja käyttöönottotarkastus
 - oppitunnin lähdeaineisto — vastusten sarja- ja rinnankytkentä (7.9.2026)
+- oppitunnin lähdeaineisto — 1-kytkennän vähimmäislukutaidon opetusesimerkki (28.9.2026)
+- oppitunnin lähdeaineisto — 1-kytkimen toimintaperiaate ja jakorasian moniviivainen kytkentä
+- oppitunnin lähdeaineisto — piirrosmerkkien oppituntivertailu
