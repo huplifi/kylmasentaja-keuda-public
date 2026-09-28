@@ -147,7 +147,7 @@ Kaavakooste: [Resistiivisyys ja johtavuus](kaavat-ja-yksikot.md#resistiivisyys-j
 
 Oppitunti 21.9.2026.
 
-**Tehohyötysuhde** kertoo laitteesta hyödyksi saadun tehon eli **antotehon** suhteesta laitteeseen vietyyn tehoon eli **ottoteholla**.
+**Tehohyötysuhde** kertoo laitteesta hyödyksi saadun tehon eli **antotehon** suhteesta laitteeseen vietyyn tehoon eli **ottotehoon**.
 
 `η = P₂ / P₁`
 
@@ -278,11 +278,11 @@ Esimerkki: paristossa on varausta 3 600 As ja virta on 1 A.
 
 ### Sähköalan standardin mukainen luokittelu
 
-| Luokka         | Tunnus | Vaihtojännite    |               Tasajännite |
-| -------------- | -----: | ---------------- | ------------------------: |
-| Suurjännite    |     HV | yli 1 000 V      |               yli 1 500 V |
+| Luokka         | Tunnus |    Vaihtojännite |               Tasajännite |
+| -------------- | -----: | ---------------: | ------------------------: |
+| Suurjännite    |     HV |      yli 1 000 V |               yli 1 500 V |
 | Pienjännite    |     LV | enintään 1 000 V |          enintään 1 500 V |
-| Pienoisjännite |    ELV | enintään 50 V    | enintään 120 V, sykkeetön |
+| Pienoisjännite |    ELV |    enintään 50 V | enintään 120 V, sykkeetön |
 
 Pienoisjännitealueita ovat **SELV**, **PELV** ja **FELV**. Pienoisjännite kuuluu pienjännitealueeseen, vaikka nimitys kuulostaa erilliseltä pääluokalta.
 
@@ -356,13 +356,13 @@ Asennustesteri on sähköasennusten tarkastamiseen käytettävä mittalaite. Sil
 | **Suojajohtimen jatkuvuus (RLO)** | suojamaadoituksen jatkuvuus                 | varmistetaan vikasuojauksen toiminta                                                        |
 | **Silmukkaimpedanssi (Z)**        | vaiheen ja suojamaan välinen vikavirtapiiri | selvitetään mahdollisen oikosulkuvirran suuruus ja suojalaitteiden riittävän nopea toiminta |
 | **Vikavirtasuojakytkin (RCD)**    | laukaisuvirta `IΔn` ja laukaisuaika `ΔT`    | varmistetaan vikavirtasuojan oikea toiminta                                                 |
-| **Jännite**                       | asennuksen jännite voltteina (V)            | varmistetaan oikea jännitetaso                                                              |
+| **Jännite**                       | asennuksen jännite voltteina                | varmistetaan oikea jännitetaso                                                              |
 | **Vaihejärjestys**                | kolmivaiheverkon vaiheiden järjestys        | varmistetaan muun muassa moottorien oikea pyörimissuunta                                    |
 | **Maadoitusvastus**               | maadoituksen resistanssi                    | arvioidaan maadoituksen toimivuutta                                                         |
 
 ### Miksi silmukkaimpedanssi on tärkeä?
 
-Silmukkaimpedanssi määrittää mahdollisen oikosulkuvirran suuruutta. Mitä suurempi impedanssi, sitä pienemmäksi vikavirta jää. Liian suuri impedanssi voi estää sulakkeen tai johdonsuojakatkaisijan riittävän nopean toiminnan ja heikentää sähköturvallisuutta.
+Silmukkaimpedanssi määrittää mahdollisen oikosulkuvirran suuruutta. Mitä suurempi impedanssi, sitä pienemmäksi vikavirta jää. Liian suuri impedanssi voi estää sulakkeen tai johdonsuojakatkaisijan riittävän nopea toiminnan ja heikentää sähköturvallisuutta.
 
 ### Käyttöönottotarkastuksen dokumentointi
 
@@ -460,7 +460,7 @@ Lähteet: oppituntidiat ”Yksivaiheisuus”, kuvat oppitunnin lähdekuva ja opp
 
 Vaihtojännite muuttuu sinikäyrän mukaisesti. Yksi jakso muodostuu positiivisesta ja negatiivisesta puolijaksosta. Yksi täydellinen aalto on yksi jakso.
 
-Pyörivän magneetin kulman ja jännitteen yhteys oppitunnin mallissa:
+Pyörivän magneetin asennon ja syntyvän jännitteen yhteys oppitunnin mallissa:
 
 | Magneetin kulma | Jännite             |
 | --------------: | ------------------- |
