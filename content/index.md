@@ -11,6 +11,7 @@ Opiskelumuistiinpanoja kylmäasentajan opinnoista. Materiaali ei ole Keudan vira
 - [Kylmäaineet](kylmaaineet.md)
 - [Sähköopin perusteet](sahkoopin-perusteet.md)
 - [Kaavat ja yksiköt](kaavat-ja-yksikot.md)
+- [Kylmäkierron piirrosmerkit](kylmakierron-piirrosmerkit.md)
 - [Sähköasennusten käytännöt](sahkoasennusten-kaytannot.md)
 - [Sähköpiirustukset ja valaistuskytkennät](sahkopiirustukset-ja-valaistuskytkennat.md)
 
