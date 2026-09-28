@@ -346,6 +346,31 @@ Kirjaston kuudesta aiemmin epävarmaksi merkitystä kohdasta:
 
 Näin kirjasto erottaa kolme asiaa toisistaan: **lähdevertailtu standardimerkki**, **standardimerkistä sovellettu käyttösymboli** ja **opiskelua varten tehty havainnollistus**. Tätä eroa ei saa häivyttää piirustuksia päivitettäessä.
 
+## Keskuskaavio ja asennuspiirustusten merkit (28.9.2026)
+
+Oppitunnilla korostettiin, että keskuksen ryhmäkaavioita ja asennuspiirustusten piirrosmerkkejä on osattava **lukea käytännössä**. Alla ovat kirjan esimerkeistä poimitut lukuharjoitukset, eivät kopio piirrosmerkkitaulukosta.
+
+### Ryhmäkaavion lukureitti
+
+*Sähkön asentaminen II*, kuva 3.31b (s. 134–135): aloita syötöstä `3L, N, PE`, seuraa pääkytkintä `Q01 63 A`, mahdollista vikavirtasuojaa ja ryhmän johdonsuojaa. Yhdistä vasemmalla näkyvä lähtö oikealla samaan ryhmänumeroon ja lue nimitys, suojan tyyppi/nimellisvirta, teho ja kaapeli. Tyhjä kW-kenttä ei kerro kuorman tehoa.
+
+Esimerkiksi ryhmän `1.1` suojaksi on merkitty `C10` ja kaapeliksi `MMJ 3×1,5S`; ryhmissä `3.1` ja `4.1` näkyvät `C16` ja `MMJ 3×2,5S`. `C` on katkaisijan laukaisukäyrä ja luku nimellisvirta ampeereina. Ryhmät 2.1–2.3, 3.1–3.3 ja 4.1–4.3 jakautuvat vaiheille L1–L3. VSK tarkoittaa vikavirtasuojaa. Valokuvasta ei voi varmistaa kaikkia vikavirtasuojan tarkkoja laitearvoja; ne luetaan alkuperäisestä piirustuksesta.
+
+### Asennuspiirustuksen merkkiryhmät
+
+*Sähkön asentaminen II*, harjoitustehtävä 7.2, s. 69:
+
+| Ryhmä            | Tunnista ainakin                                                                                                                                             |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Tilan olosuhteet | Kostea ja märkä tila (pisaramerkit), palovaarallinen tila `Pa`, kuuma tai kylmä tila `T`.                                                                    |
+| Johdotus         | `L`, `N`, `PE`, `PEN` sekä yhdistelmät `3L`, `2L+N`, `L+N+PE` ja `3L+N+PE`. Poikkiviivat ja piste-/PE-lisämerkit luetaan aina kyseisen kuvan selitteellä.    |
+| Kytkimet         | 1-napainen, 2- ja 3-napainen; 5-kytkin (kruunu), 6-kytkin (vaihto), 7-kytkin (risti); kaksoiskytkimet 1+1, 1+6 ja 6+6 sekä aikakytkin.                       |
+| Ohjaus           | Himmennin, painike ja merkkivalollinen painike, hämäräkytkin, liiketunnistin ja merkkilamppu.                                                                |
+| Pistorasiat      | Suojakoskettimeton/suojakoskettimellinen, kaksi- ja kolmiosainen, kytkimellinen, turva- ja suojajännitepistorasia sekä 5-napainen `3L+N+PE`-voimapistorasia. |
+| Rasiat ja maa    | Jakorasia, liitäntärasia, kojerasia, maadoitus ja suojamaadoitus.                                                                                            |
+
+**Kertaa ensin L/N/PE/PEN, sitten 1/5/6/7-kytkimet sekä jakorasia–liitäntärasia–kojerasia.** Graafiset erot ovat osin pieniä: vertaa merkit alkuperäiseen harjoituskuvaan, älä päättele niitä vain tästä tekstistä. Lähdekuvaa ei kopioida julkiselle sivustolle.
+
 ## Symbolistandardit ja oma SVG-kirjasto
 
 SESKOn mukaan sähkökaavioiden standardoidut piirrosmerkit löytyvät **IEC 60617** -tietokannasta. Sähköpiirustusten esittämistä käsittelee **SFS-EN 61082-1**. IEC 60617 -tietokanta sisältää symbolien lisäksi nimet, tunnukset, soveltamisohjeita ja tiedon symbolien statuksesta.
