@@ -22,6 +22,7 @@ Koottu oppikirjakuvista 31.8.2026 ja täydennetty oppituntien aineistoilla. Täm
 - kolmivaiheverkon 400/230 V jännitteet
 - TN-C- ja TN-S-järjestelmät sekä PEN-, N- ja PE-johtimet
 - asennuspiirustuksissa käytettävät piirrosmerkit ja niiden merkitykset
+- yksiviivaisen johdotuskuvan tulkinta: syöttö, johdinmäärät ja yhden valaisimen ohjaus
 
 ## Sähkön suureet ja yksiköt
 
@@ -587,6 +588,67 @@ oppitunnin lähdeaineisto
 **Tunnistamisvihje:** himmentimien merkeissä perusosa on sama, mutta kytkintoiminto näkyy siihen liitetystä kytkinmerkinnästä. Painikkeen sisällä oleva lamppumerkki erottaa merkkilampullisen painikkeen tavallisesta painikkeesta.
 
 Lähde: oppitunnilla esitetty tehtävä ”Nimeä seuraavat asennuspiirustuksissa käytettävät piirrosmerkit”, oppitunnin lähdeaineisto (21.9.2026).
+
+## Sähköpiirustuksen lukeminen: yhden valaisimen ohjaus
+
+Oppitunti 28.9.2026. Esimerkki havainnollistaa perustasoa: tunnista syöttö, komponentit, johtimien tehtävät ja lukumäärät sekä selitä kytkennän toiminta. Pelkkä piirrosmerkkien nimeäminen ei vielä kerro, miten piiri toimii.
+
+### Millainen piirustus tämä on?
+
+Kuvan ympyröity osa on **yksiviivainen johdotus-/asennusesitys** yhden valaisimen ohjauksesta yhdellä kytkimellä. Yksi pitkä viiva kuvaa johdotusreittiä, ei välttämättä yhtä johdinta. Reitin poikki piirretyillä lyhyillä merkeillä esitetään johtimien lukumäärä ja tehtävät.
+
+Tämä ei ole sama asia kuin moniviivainen kytkentäkuva, jossa jokaisen johtimen reitti ja liitokset näytetään erikseen. Jakorasian sisäiset liitokset on tässä pääteltävä kytkennän toiminnan perusteella.
+
+### Kuvan merkit
+
+| Kuvassa näkyvä merkintä                                      | Tulkinta tässä esimerkissä                                                                                                   |
+| ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------- |
+| `RK`                                                         | Ryhmäkeskus, josta ryhmän syöttö tulee.                                                                                      |
+| Nuoli ja numero ympyrässä                                    | Ryhmän syöttö ja ryhmänumero. Numero näyttää olevan **5**; se ei tarkoita 5 ampeerin sulaketta.                              |
+| `JR` ja tumma ympyrä haarautumiskohdassa                     | Jakorasia. Siellä tehdään eri johtimien väliset tarvittavat liitokset. Rasian mustaus tarkoittaa tavallisesti uppoasennusta. |
+| Ympyrä, jonka sisällä on risti                               | Valaisin.                                                                                                                    |
+| Alhaalla pieni ympyrä ja yksi vino kytkinvarsi               | Yksinapainen **1-kytkin**: yhden valaisimen tai valaisinryhmän päälle/pois-ohjaus yhdestä paikasta.                          |
+| Tavallinen lyhyt poikkiviiva johdotusreitillä                | Vaihejohdin; kytkimen jälkeen kyse on kytketystä vaiheesta.                                                                  |
+| Poikkiviiva, jonka päässä on piste                           | Nollajohdin **N**.                                                                                                           |
+| Poikkiviiva, jonka päässä on lyhyt poikkihattu, T-mäinen pää | Suojajohdin **PE**.                                                                                                          |
+
+**N:n ja PE:n tunnistaminen:** tässä merkintätavassa **piste = N, hattu = PE**. Kyse on johdotuksen piirrosmerkeistä, ei johtimien väreistä. Merkinnät tarkistetaan aina käytettävän piirustuksen selitteestä.
+
+Taulun yläosassa näkyvä **1,5 mm²** tarkoittaa johtimen poikkipinta-alaa, ei halkaisijaa. Kuvan rajauksesta ei yksin varmistu, mille kaikille johdoille merkintä on tarkoitettu. Kaapelityyppiä tai sulakkeen kokoa ei päätellä tästä merkinnästä yksin.
+
+### Mitä johtimia eri väleillä kulkee?
+
+Seuraava on kuvan mukaisen yksinkertaisen 1-kytkennän toimintatulkinta. Merkintä `L′` tarkoittaa tässä **kytkettyä vaihetta**, ei toista syöttävää vaihetta.
+
+| Väli                    | Kuvassa esitetyt johtimet                                    | Määrä |
+| ----------------------- | ------------------------------------------------------------ | ----: |
+| Ryhmäkeskus → jakorasia | Syöttävä vaihe `L`, nolla `N` ja suojajohdin `PE`            |     3 |
+| Jakorasia → kytkin      | Syöttävä vaihe `L` ja kytkimeltä palaava kytketty vaihe `L′` |     2 |
+| Jakorasia → valaisin    | Kytketty vaihe `L′`, nolla `N` ja suojajohdin `PE`           |     3 |
+
+**Kytkimelle menevät kaksi johdinta eivät tässä ole vaihe ja nolla.** Toinen vie vaiheen kytkimelle ja toinen tuo kytketyn vaiheen takaisin jakorasiaan, josta se jatkuu valaisimelle. N ja PE jatkuvat tässä esityksessä jakorasiasta valaisimelle kulkematta kytkimen koskettimen kautta.
+
+Johdinmäärät kuvaavat tätä opetusesimerkkiä. Ne eivät yksin määritä todellisen asennuksen kaapelivalintaa, suojajohtimen tarvetta kytkinpaikalla tai muita asennusvaatimuksia.
+
+### Miten valo syttyy?
+
+Jakorasiassa syötön vaihe jatkuu kytkimelle. Kytkimen sulkeutuessa yhteys jatkuu kytketyssä vaihejohtimessa takaisin jakorasiaan ja edelleen valaisimelle. Valaisimen toinen virtapiirin liitäntä yhdistyy nollajohtimeen: valaisimen käyttövirtapiiri sulkeutuu ja valo syttyy. Kytkimen avautuminen katkaisee vaihereitin ja valo sammuu.
+
+Toiminnallinen reitti voidaan muistaa muodossa **L → kytkin → valaisin → N**. Nuoli kuvaa tässä reitin seuraamista, ei vaihtovirran pysyvää kulkusuuntaa.
+
+PE on erillinen suojajohdin, ei valaisimen käyttövirran paluujohdin. Suojamaadoitettavan valaisimen PE liitetään sille tarkoitettuun suojamaadoitusliittimeen. Valaisimen suojausluokka ja valmistajan ohje ratkaisevat varsinaisen liittämisen; pelkkä valaisimen yleismerkki ei kerro suojausluokkaa.
+
+**Turvallisuusraja:** sammunut valo tai seinäkytkimen avaaminen ei todista työskentelykohdetta jännitteettömäksi. Tämä on piirustuksen lukuharjoitus, ei itsenäisen sähköasennustyön ohje; käytännön harjoittelu tehdään opettajan ohjauksessa asianmukaisesti jännitteettömäksi tehdyllä ja todetulla kohteella.
+
+### Kertaus
+
+Osaat tulkita esimerkin, kun pystyt omin sanoin kertomaan, mistä syöttö tulee, missä liitokset tehdään, mitä kytkin ohjaa, miksi kytkimelle on piirretty kaksi johdinta ja miksi valaisimelle kolme. Lisäksi osaat erottaa nollajohtimen suojajohtimesta sekä ryhmänumeron sulakkeen nimellisvirrasta.
+
+Piirrosmerkkien vertailu ja turvallisuustäsmennykset tarkistettu 28.9.2026:
+
+- [Sähköinsinööritoimisto Kuvio: Piirrosmerkit](https://www.sahkokuvio.fi/palvelut/sahkosuunnittelu/tietoa-sahkosuunnittelusta/piirrosmerkit/) — kytkimet, valaisimet ja suunnitelmakohtaisen selitteen merkitys.
+- [Rakennusten sähköpiirustusten piirrosmerkit, PDF](https://www.sivustot.net/oppaat/PIIRROSMERKIT.pdf) — PDF-sivut 9–10: johdinmerkit, jakorasiat ja ryhmän syöttö. Vanha vertailuaineisto piirrosmerkeille, ei ajantasainen asennus- tai johdinväriohje.
+- [Tukes: Mitä sähkötöitä saan tehdä itse](https://tukes.fi/kodin-sahkoturvallisuus/mita-sahkotoita-saan-tehda-itse) — jännitteettömyys ja valaisimen suojajohtimen oikea käyttötarkoitus.
 
 ## Alkuperäiset kuvat
 
