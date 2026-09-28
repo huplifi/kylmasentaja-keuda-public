@@ -147,7 +147,7 @@ Kaavakooste: [Resistiivisyys ja johtavuus](kaavat-ja-yksikot.md#resistiivisyys-j
 
 Oppitunti 21.9.2026.
 
-**Tehohyötysuhde** kertoo laitteesta hyödyksi saadun tehon eli **antotehon** suhteesta laitteeseen vietyyn tehoon eli **ottotehoon**.
+**Tehohyötysuhde** kertoo laitteesta hyödyksi saadun tehon eli **antotehon** suhteesta laitteeseen vietyyn tehoon eli **ottoteholla**.
 
 `η = P₂ / P₁`
 
@@ -278,11 +278,11 @@ Esimerkki: paristossa on varausta 3 600 As ja virta on 1 A.
 
 ### Sähköalan standardin mukainen luokittelu
 
-| Luokka         | Tunnus |    Vaihtojännite |               Tasajännite |
-| -------------- | -----: | ---------------: | ------------------------: |
-| Suurjännite    |     HV |      yli 1 000 V |               yli 1 500 V |
+| Luokka         | Tunnus | Vaihtojännite    |               Tasajännite |
+| -------------- | -----: | ---------------- | ------------------------: |
+| Suurjännite    |     HV | yli 1 000 V      |               yli 1 500 V |
 | Pienjännite    |     LV | enintään 1 000 V |          enintään 1 500 V |
-| Pienoisjännite |    ELV |    enintään 50 V | enintään 120 V, sykkeetön |
+| Pienoisjännite |    ELV | enintään 50 V    | enintään 120 V, sykkeetön |
 
 Pienoisjännitealueita ovat **SELV**, **PELV** ja **FELV**. Pienoisjännite kuuluu pienjännitealueeseen, vaikka nimitys kuulostaa erilliseltä pääluokalta.
 
@@ -356,7 +356,7 @@ Asennustesteri on sähköasennusten tarkastamiseen käytettävä mittalaite. Sil
 | **Suojajohtimen jatkuvuus (RLO)** | suojamaadoituksen jatkuvuus                 | varmistetaan vikasuojauksen toiminta                                                        |
 | **Silmukkaimpedanssi (Z)**        | vaiheen ja suojamaan välinen vikavirtapiiri | selvitetään mahdollisen oikosulkuvirran suuruus ja suojalaitteiden riittävän nopea toiminta |
 | **Vikavirtasuojakytkin (RCD)**    | laukaisuvirta `IΔn` ja laukaisuaika `ΔT`    | varmistetaan vikavirtasuojan oikea toiminta                                                 |
-| **Jännite**                       | asennuksen jännite voltteina                | varmistetaan oikea jännitetaso                                                              |
+| **Jännite**                       | asennuksen jännite voltteina (V)            | varmistetaan oikea jännitetaso                                                              |
 | **Vaihejärjestys**                | kolmivaiheverkon vaiheiden järjestys        | varmistetaan muun muassa moottorien oikea pyörimissuunta                                    |
 | **Maadoitusvastus**               | maadoituksen resistanssi                    | arvioidaan maadoituksen toimivuutta                                                         |
 
@@ -460,7 +460,7 @@ Lähteet: oppituntidiat ”Yksivaiheisuus”, kuvat oppitunnin lähdekuva ja opp
 
 Vaihtojännite muuttuu sinikäyrän mukaisesti. Yksi jakso muodostuu positiivisesta ja negatiivisesta puolijaksosta. Yksi täydellinen aalto on yksi jakso.
 
-Pyörivän magneetin asennon ja syntyvän jännitteen yhteys oppitunnin mallissa:
+Pyörivän magneetin kulman ja jännitteen yhteys oppitunnin mallissa:
 
 | Magneetin kulma | Jännite             |
 | --------------: | ------------------- |
@@ -629,6 +629,31 @@ Seuraava on kuvan mukaisen yksinkertaisen 1-kytkennän toimintatulkinta. Merkint
 **Kytkimelle menevät kaksi johdinta eivät tässä ole vaihe ja nolla.** Toinen vie vaiheen kytkimelle ja toinen tuo kytketyn vaiheen takaisin jakorasiaan, josta se jatkuu valaisimelle. N ja PE jatkuvat tässä esityksessä jakorasiasta valaisimelle kulkematta kytkimen koskettimen kautta.
 
 Johdinmäärät kuvaavat tätä opetusesimerkkiä. Ne eivät yksin määritä todellisen asennuksen kaapelivalintaa, suojajohtimen tarvetta kytkinpaikalla tai muita asennusvaatimuksia.
+
+### Jakorasian kytkentä moniviivaisessa johdotuskaaviossa
+
+Täydentävä oppituntikuva 28.9.2026 näyttää saman **yksinapaisen kytkimen eli 1-kytkimen** kytkennän kolmella tavalla: vasemmalla on toimintaperiaate, keskellä moniviivainen johdotuskaavio ja oikealla yksiviivainen esitys. Keskimmäisestä kuvasta nähdään myös jakorasian sisäiset liitokset, jotka eivät erottuneet edellisessä taulukuvassa.
+
+Kuvan laitetunnukset ovat **X1 = jakorasia**, **Q1 = kytkin** ja **E1 = valaisin**. Nämä ovat tämän piirustuksen tunnuksia; edellisen kuvan JR tarkoittaa samaa jakorasiaa.
+
+**Jakorasiassa X1 on neljä erillistä liitoskohtaa:**
+
+| Johdin                               | Mihin se yhdistyy jakorasiassa?                     |
+| ------------------------------------ | --------------------------------------------------- |
+| Syötön vaihe `L`                     | Kytkimelle Q1 menevään vaihejohtimeen.              |
+| Kytkimeltä Q1 palaava kytketty vaihe | Valaisimelle E1 menevään kytkettyyn vaihejohtimeen. |
+| Syötön nolla `N`                     | Valaisimelle E1 menevään nollajohtimeen.            |
+| Syötön suojajohdin `PE`              | Valaisimelle E1 menevään suojajohtimeen.            |
+
+Kytketystä vaiheesta käytetään tässä muistiossa selittävää merkintää `L′`; sitä ei ole kirjoitettu tähän lähdekuvaan.
+
+**Rasian sisällä kaikki johtimet eivät yhdisty keskenään.** N ja PE jatkuvat omina erillisinä yhteyksinään valaisimelle. Syöttävän vaiheen ja kytketyn vaiheen liitokset ovat myös erillään toisistaan: niiden välinen ohjattu yhteys muodostuu kytkimessä Q1, ei jakorasiassa.
+
+X1:n katkoviivarajaus osoittaa rasian alueen, ei sähköjohdinta. Sen sisällä olevat **mustat pisteet osoittavat liitoskohtia**. Tässä moniviivaisessa kuvassa piste ei siis tarkoita automaattisesti nollajohdinta, toisin kuin edellisen yksiviivaisen kuvan pistepäinen johdinmerkki. Merkkiä luetaan aina oman esitystapansa yhteydessä.
+
+Kuvan kytkin on piirretty avoimeksi. Kun Q1 sulkeutuu, käyttövirtapiirin reitti on **L → X1 → Q1 → X1 → E1 → N**. Tämä reitti täydentää edellä esitettyä toimintaperiaatetta näyttämällä jakorasian molemmat vaiheliitokset.
+
+Lähde: oppimateriaalin kohta **6.5 Valaistusasennukset / Valaistuskytkimet ja valaistuskytkennät**, taulukon rivi **Yksinapainen kytkin, 1-kytkin**. Selitys perustuu vain kuvassa näkyvään riviin; kuvan alareunan seuraavaa kytkentää ei ole tulkittu.
 
 ### Miten valo syttyy?
 
