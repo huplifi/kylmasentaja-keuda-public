@@ -206,6 +206,78 @@ Kun sähköasennukseen tehdään muutos, piirustukseen merkitään soveltuvin os
 
 Piirustuksessa käytetään samaa symboliikkaa, nimeämislogiikkaa ja esitystapaa johdonmukaisesti. Vanhaa piirustusta ei vain piirretä kauniimmaksi: **lopputuloksen pitää vastata todellista asennusta.**
 
+## Visuaalinen symbolisanasto
+
+Alla olevat symbolit ovat tämän vaultin tarkistettua SVG-kirjastoa. Niitä käytetään tästä eteenpäin muistiinpanojen sähkökaavioissa aina, kun vastaava käsite esiintyy.
+
+### Johtimet ja liitokset
+
+| Symboli                  | Nimi                            | Mitä luetaan piirustuksesta                                                                                                        |
+| ------------------------ | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| oppitunnin lähdeaineisto | Johdin tai kaapeli, yleismerkki | Sähköinen yhteys; yksiviivaisessa esityksessä myös johdotusreitti.                                                                 |
+| oppitunnin lähdeaineisto | Johtimien liitoskohta           | Täytetty piste kertoo sähköisestä liitoksesta.                                                                                     |
+| oppitunnin lähdeaineisto | T-haaroitus                     | Johtimien sähköinen haaroitus.                                                                                                     |
+| oppitunnin lähdeaineisto | Risteys ilman liitosta          | Kirjaston havainnollistus kahdesta sähköisesti erillisestä johtimesta. Esitystapa tarkistetaan aina kohdepiirustuksen selitteestä. |
+| oppitunnin lähdeaineisto | Vaihejohdin L                   | Vaihe tai vaihejohtimen lisämerkintä.                                                                                              |
+| oppitunnin lähdeaineisto | Nollajohdin N                   | Nollajohdin yksiviivaisessa esityksessä.                                                                                           |
+| oppitunnin lähdeaineisto | Suojajohdin PE                  | Suojajohdin yksiviivaisessa esityksessä.                                                                                           |
+| oppitunnin lähdeaineisto | PEN-johdin                      | Yhdistetty suoja- ja nollajohdin.                                                                                                  |
+
+### Rasiat, liitynnät ja asennuskytkimet
+
+| Symboli                  | Nimi                             | Käyttö                                                                                                                                         |
+| ------------------------ | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| oppitunnin lähdeaineisto | Liitin                           | Johtimen liitäntäpiste.                                                                                                                        |
+| oppitunnin lähdeaineisto | Liitinrima                       | Useiden liittimien ryhmä.                                                                                                                      |
+| oppitunnin lähdeaineisto | Jakorasia                        | Liitosten ja haaroitusten rasia.                                                                                                               |
+| oppitunnin lähdeaineisto | Pistorasia, yleismerkki          | Pistorasia ilman erikseen osoitettua suojakosketinta.                                                                                          |
+| oppitunnin lähdeaineisto | Suojakoskettimellinen pistorasia | Maadoitettu pistorasia.                                                                                                                        |
+| oppitunnin lähdeaineisto | 1-kytkin, yksinapainen kytkin    | Yhden valaisinryhmän ohjaus yhdestä paikasta.                                                                                                  |
+| oppitunnin lähdeaineisto | 5-kytkin, sarja-/kruunukytkin    | Kaksi erillistä ohjausta samasta kytkinpaikasta. Grafiikka perustuu oppituntiesimerkkiin; IEC-PDF ei yksin vahvista juuri tätä asennusmerkkiä. |
+| oppitunnin lähdeaineisto | 6-kytkin, vaihtokytkin           | Ohjauksen osa, kun samaa kuormaa ohjataan kahdesta paikasta.                                                                                   |
+| oppitunnin lähdeaineisto | 7-kytkin, ristikytkin            | Kahden vaihtokytkimen väliin sijoitettava lisäohjauspiste.                                                                                     |
+
+### Suojaus ja erotus
+
+| Symboli                  | Nimi                               | Rajaus                                                                                                                           |
+| ------------------------ | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| oppitunnin lähdeaineisto | Sulake                             | Ylivirtasuojauksen sulake.                                                                                                       |
+| oppitunnin lähdeaineisto | Katkaisija                         | IEC-lähdeaineiston katkaisijan yleismerkki.                                                                                      |
+| oppitunnin lähdeaineisto | Johdonsuojakatkaisija, yleisesitys | Käyttää katkaisijan yleisgeometriaa; todellisessa piirustuksessa tarvitaan laitteen tyyppi, napaluku ja nimellisarvot.           |
+| oppitunnin lähdeaineisto | Vikavirtasuoja, toimintolohko      | Kirjaston RCD-hahmotelma, ei varmennettu IEC-symboli. Todellinen RCD esitetään suunnitelman symboliikan ja laitetietojen mukaan. |
+| oppitunnin lähdeaineisto | Kuormanerotuskytkin                | IEC-lähdeaineistoon vertailtu erotus-/kytkintoiminto.                                                                            |
+| oppitunnin lähdeaineisto | Turvakytkin, yleisesitys           | Käyttötarkoitus on paikallinen turvallinen erotus. Grafiikka ei yksin kerro lukittavuutta, napalukua tai laitteen soveltuvuutta. |
+
+### Kylmälaitteissa tavallisia kuormia
+
+| Symboli                  | Nimi                                 | Rajaus                                                                                                                                            |
+| ------------------------ | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| oppitunnin lähdeaineisto | Moottori, yleismerkki                | Sähkömoottori; laitteen tehtävä selviää tunnuksesta ja selitteestä.                                                                               |
+| oppitunnin lähdeaineisto | Yksivaihemoottori                    | Yksivaiheinen moottori.                                                                                                                           |
+| oppitunnin lähdeaineisto | Kolmivaihemoottori                   | Kolmivaiheinen moottori.                                                                                                                          |
+| oppitunnin lähdeaineisto | Kompressori, moottorin yleisesitys   | Kirjastossa moottoripohjainen käyttösymboli. IEC-aineisto ei anna erillistä kompressorisymbolia, joten laitetunnus ja selite ovat välttämättömiä. |
+| oppitunnin lähdeaineisto | Puhallin                             | Puhallin sähköliitäntöineen.                                                                                                                      |
+| oppitunnin lähdeaineisto | Lämmityselementti                    | Esimerkiksi sähkövastus tai sulatuslämmitin.                                                                                                      |
+| oppitunnin lähdeaineisto | Lämpötilakytkin, sulkeutuva kosketin | Lämpötilan vaikutuksesta sulkeutuva kosketin.                                                                                                     |
+| oppitunnin lähdeaineisto | Lämpötilakytkin, avautuva kosketin   | Lämpötilan vaikutuksesta avautuva kosketin.                                                                                                       |
+| oppitunnin lähdeaineisto | Kontaktori                           | Kuorman sähköinen kytkentä ohjauspiirillä.                                                                                                        |
+| oppitunnin lähdeaineisto | Releen kela                          | Releen ohjauskela.                                                                                                                                |
+
+### Kuuden tarkistuskohdan tulos 28.9.2026
+
+SESKO vahvistaa, että Suomessa sähkökaavioiden standardoitu viite on IEC 60617 -tietokanta ja että symbolien datalehdet sisältävät nimen, tunnuksen, soveltamisohjeet ja statuksen. IEC:n nykyinen tietokanta on IEC 60617:2026 DB.
+
+Kirjaston kuudesta aiemmin epävarmaksi merkitystä kohdasta:
+
+- **Risteys ilman liitosta:** käsite on IEC-aineistossa olemassa, mutta kirjaston nykyistä tarkkaa johtimien risteysgeometriaa ei ole vahvistettu käytettävissä olevasta sähköjohtimien lähdeaineistosta. Säilytetään havainnollistavana ja merkitään tarkistettavaksi.
+- **5-kytkin / sarja-/kruunukytkin:** toiminta ja suomalainen opetuskäyttö vahvistuvat oppituntiaineistosta. Toimitettu IEC-kooste ei yksiselitteisesti vahvista nykyistä asennuspiirustusgrafiikkaa, joten grafiikka säilyy opetussymbolina eikä sitä nimetä viralliseksi IEC-symboliksi.
+- **Johdonsuojakatkaisija:** IEC-kooste vahvistaa **Circuit Breaker** -yleismerkin. Johdonsuojakatkaisijan tarkka ominaisuus ei ilmene pelkästä yleismerkistä; laitetiedot täydentävät tulkinnan.
+- **Vikavirtasuoja:** toimitetusta IEC-koosteesta ei löydy erillistä RCD-merkkiä. Nykyinen SVG on siksi nimenomaan toimintolohko, ei standardoiduksi väitetty piirrosmerkki.
+- **Turvakytkin:** IEC-kooste vahvistaa kuormanerotuskytkimen / switch-disconnectorin symboliikan, mutta ei erillistä yleispätevää “turvakytkin”-grafiikkaa. Tukes edellyttää kiinteästi liitetylle ILP:lle turvakytkintä; piirustuksessa laitteen todellinen tyyppi ja ominaisuudet on yksilöitävä.
+- **Kompressori:** IEC-kooste vahvistaa koneen/moottorin yleismerkit, mutta ei erillistä kompressorimerkkiä. Siksi kompressori merkitään kirjastossa moottoripohjaisena käyttösymbolina ja yksilöidään laitetunnuksella.
+
+Näin kirjasto erottaa kolme asiaa toisistaan: **lähdevertailtu standardimerkki**, **standardimerkistä sovellettu käyttösymboli** ja **opiskelua varten tehty havainnollistus**. Tätä eroa ei saa häivyttää piirustuksia päivitettäessä.
+
 ## Symbolistandardit ja oma SVG-kirjasto
 
 SESKOn mukaan sähkökaavioiden standardoidut piirrosmerkit löytyvät **IEC 60617** -tietokannasta. Sähköpiirustusten esittämistä käsittelee **SFS-EN 61082-1**. IEC 60617 -tietokanta sisältää symbolien lisäksi nimet, tunnukset, soveltamisohjeita ja tiedon symbolien statuksesta.
