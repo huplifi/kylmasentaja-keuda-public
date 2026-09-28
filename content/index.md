@@ -9,9 +9,9 @@ Opiskelumuistiinpanoja kylmäasentajan opinnoista. Materiaali ei ole Keudan vira
 
 - [Kylmätekniikan perusteet](kylmatekniikan-perusteet.md)
 - [Kylmäaineet](kylmaaineet.md)
+- [Kylmäkierron piirrosmerkit](kylmakierron-piirrosmerkit.md)
 - [Sähköopin perusteet](sahkoopin-perusteet.md)
 - [Kaavat ja yksiköt](kaavat-ja-yksikot.md)
-- [Kylmäkierron piirrosmerkit](kylmakierron-piirrosmerkit.md)
 - [Sähköasennusten käytännöt](sahkoasennusten-kaytannot.md)
 - [Sähköpiirustukset ja valaistuskytkennät](sahkopiirustukset-ja-valaistuskytkennat.md)
 
