@@ -362,7 +362,7 @@ Asennustesteri on sähköasennusten tarkastamiseen käytettävä mittalaite. Sil
 
 ### Miksi silmukkaimpedanssi on tärkeä?
 
-Silmukkaimpedanssi määrittää mahdollisen oikosulkuvirran suuruutta. Mitä suurempi impedanssi, sitä pienemmäksi vikavirta jää. Liian suuri impedanssi voi estää sulakkeen tai johdonsuojakatkaisijan riittävän nopea toiminnan ja heikentää sähköturvallisuutta.
+Silmukkaimpedanssi määrittää mahdollisen oikosulkuvirran suuruutta. Mitä suurempi impedanssi, sitä pienemmäksi vikavirta jää. Liian suuri impedanssi voi estää sulakkeen tai johdonsuojakatkaisijan riittävän nopean toiminnan ja heikentää sähköturvallisuutta.
 
 ### Käyttöönottotarkastuksen dokumentointi
 
@@ -671,7 +671,7 @@ Osaat tulkita esimerkin, kun pystyt omin sanoin kertomaan, mistä syöttö tulee
 
 Piirrosmerkkien vertailu ja turvallisuustäsmennykset tarkistettu 28.9.2026:
 
-- [Sähköinsinööritoimisto Kuvio: Piirrosmerkit](https://www.sahkokuvio.fi/palvelut/sahkosuunnittelu/tietoa-sahkosuunnittelusta/piirrosmerkit/) — kytkimet, valaisimet ja suunnitelmakohtaisen selitteen merkitys.
+- [Sähköinsinööritoimisto Kuvio: Piirrosmerkit](https://www.sahkokuvio.fi/palvelut/sahkosuunnittelusta/piirrosmerkit/) — kytkimet, valaisimet ja suunnitelmakohtaisen selitteen merkitys.
 - [Rakennusten sähköpiirustusten piirrosmerkit, PDF](https://www.sivustot.net/oppaat/PIIRROSMERKIT.pdf) — PDF-sivut 9–10: johdinmerkit, jakorasiat ja ryhmän syöttö. Vanha vertailuaineisto piirrosmerkeille, ei ajantasainen asennus- tai johdinväriohje.
 - [Tukes: Mitä sähkötöitä saan tehdä itse](https://tukes.fi/kodin-sahkoturvallisuus/mita-sahkotoita-saan-tehda-itse) — jännitteettömyys ja valaisimen suojajohtimen oikea käyttötarkoitus.
 
