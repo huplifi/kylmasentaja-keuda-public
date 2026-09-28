@@ -45,7 +45,8 @@ const config: QuartzConfig = {
     emitters: [
       Plugin.ComponentResources(), Plugin.ContentPage(),
       Plugin.ContentIndex({ enableSiteMap: true, enableRSS: false }),
-      Plugin.Static(), Plugin.Favicon(), Plugin.NotFoundPage(),
+      // content/ contains only export-approved Markdown and sanitized, referenced SVGs.
+      Plugin.Assets(), Plugin.Static(), Plugin.Favicon(), Plugin.NotFoundPage(),
     ],
   },
 }

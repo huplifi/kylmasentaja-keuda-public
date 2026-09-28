@@ -10,6 +10,20 @@ article table { font-size: .92rem; line-height: 1.55; }
 article th { text-align: left; background: var(--highlight); }
 article code { font-size: .88em; white-space: normal; overflow-wrap: anywhere; }
 article pre code { white-space: pre; }
+// External SVG images do not inherit currentColor: use a stable, high-contrast tile in both themes.
+article img[src*="symbolit/"] {
+  width: 64px;
+  height: 64px;
+  min-width: 64px;
+  object-fit: contain;
+  box-sizing: content-box;
+  padding: 8px;
+  margin: .25rem 0;
+  background: #fff;
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  vertical-align: middle;
+}
 .page-title { font-size: 1.35rem; line-height: 1.3; }
 .article-title { line-height: 1.2; letter-spacing: -.025em; margin-bottom: 1.6rem; }
 :focus-visible { outline: 3px solid var(--secondary); outline-offset: 4px; }
