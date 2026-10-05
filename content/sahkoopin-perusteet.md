@@ -513,6 +513,66 @@ Dian ilmaus ”PE johtaa vikavirran maahan” on yksinkertaistus: TN-järjestelm
 
 Lähteet: oppituntidiat oppitunnin lähdeaineisto. Poiskytkentäajan soveltamisalan ja vikavirran reitin täsmennys: [Schneider Electric: TN system – Principle](https://www.electrical-installation.org/enwiki/TN_system_-_Principle), tarkistettu 5.10.2026.
 
+### Oikosulkuvirran taulukko – toimiiko suoja ajoissa?
+
+Oppitunnilla hyödylliseksi nostettu taulukko 5.10.2026. Taulukossa verrataan **suojalaitteen nimellisvirtaa**, **vaaditun toiminta-ajan toimintarajavirtaa** ja **pienintä hyväksyttävää mitattua oikosulkuvirtaa**. Kaikki alla olevat virrat ovat ampeereja.
+
+**Nimellisvirta ei ole nopean laukaisun virta.** Esimerkiksi B16-johdonsuojan nimellisvirta on 16 A, mutta tämän taulukon toimintarajavirta on 80 A ja vaadittu mitattu arvo 100 A.
+
+#### gG-sulakkeet
+
+| Nimellisvirta (A) | Toimintarajavirta, 0,4 s (A) | Vaadittu mitattu arvo, 0,4 s (A) | Toimintarajavirta, 5,0 s (A) | Vaadittu mitattu arvo, 5,0 s (A) |
+| ----------------: | ---------------------------: | -------------------------------: | ---------------------------: | -------------------------------: |
+|                 6 |                         46,5 |                             58,2 |                            – |                                – |
+|                10 |                           82 |                            102,5 |                            – |                                – |
+|            **16** |                      **110** |                        **137,5** |                            – |                                – |
+|                20 |                          145 |                            181,3 |                            – |                                – |
+|                25 |                          180 |                              225 |                          110 |                            137,5 |
+|                32 |                          270 |                            337,5 |                          150 |                            187,5 |
+
+Viiva tarkoittaa, ettei lähdetaulukossa ole annettu arvoa. Se ei yksin tarkoita poikkeusta suojausvaatimuksesta.
+
+#### B- ja C-tyypin johdonsuojakatkaisijat
+
+Lähdetaulukossa nämä arvot on annettu sekä 0,4 s:n että 5,0 s:n toiminta-ajalle.
+
+| Nimellisvirta (A) | B-tyypin toimintarajavirta (A) | B-tyypin vaadittu mitattu arvo (A) | C-tyypin toimintarajavirta (A) | C-tyypin vaadittu mitattu arvo (A) |
+| ----------------: | -----------------------------: | ---------------------------------: | -----------------------------: | ---------------------------------: |
+|                 6 |                             30 |                               37,5 |                             60 |                                 75 |
+|                10 |                             50 |                               62,5 |                            100 |                                125 |
+|            **16** |                         **80** |                            **100** |                        **160** |                            **200** |
+|                20 |                            100 |                                125 |                            200 |                                250 |
+|                25 |                            125 |                              156,3 |                            250 |                              312,5 |
+|                32 |                            160 |                                200 |                            320 |                                400 |
+
+Taulukosta johdetut muistisäännöt:
+
+- B-tyypin toimintarajavirta: **5 × nimellisvirta**.
+- C-tyypin toimintarajavirta: **10 × nimellisvirta**.
+- Taulukon vaadittu mitattu arvo: **1,25 × toimintarajavirta**, taulukon esittämällä pyöristyksellä.
+- gG-sulakkeen arvo otetaan omasta sarakkeestaan: B- tai C-tyypin kerrointa ei käytetä sille.
+
+#### Näin luet mittaustuloksen
+
+1. Tunnista suojalaite: gG-sulake vai B- tai C-tyypin johdonsuojakatkaisija.
+2. Tunnista nimellisvirta ja piirin vaatima poiskytkentäaika.
+3. Valitse oikea rivi ja **vaadittu mitattu arvo** -sarake.
+4. Vertaa mittarin ilmoittamaa oikosulkuvirtaa tähän rajaan.
+
+**Esimerkki:** mitattu oikosulkuvirta on 150 A, ja tarkastelussa vaaditaan 0,4 s:n poiskytkentä.
+
+| Suojalaite     | Vaadittu mitattu arvo | Täyttääkö 150 A taulukon rajan? |
+| -------------- | --------------------: | ------------------------------- |
+| 16 A gG-sulake |               137,5 A | Kyllä                           |
+| B16            |                 100 A | Kyllä                           |
+| C16            |                 200 A | Ei                              |
+
+Tulos osoittaa vain tämän taulukon oikosulkuvirtarajan täyttymisen, ei koko asennuksen hyväksyttävyyttä. B16:n ja C16:n sama nimellisvirta ei tarkoita samaa nopean poiskytkennän virtavaatimusta. Suojalaitteen vaihtamisesta ei päätetä pelkän taulukon perusteella.
+
+**Muista:** 5 s:n saraketta ei saa käyttää, jos piiriltä edellytetään 0,4 s:n poiskytkentää. Myöskään toimintarajavirtaa ja vaadittua mitattua arvoa ei saa vaihtaa keskenään.
+
+Lähde: oppitunnin oppimateriaalin **taulukko 1.1**, oppitunnin lähdeaineisto. Kuvassa viitataan **D1-2022:n taulukoihin 41.4a, 41.4b ja 41.5**; lukuarvot on kirjattu kuvan mukaan. Muistisäännöt ja 150 A:n vertailuesimerkki ovat taulukosta johdettuja oppimista tukevia lisäyksiä.
+
 ## Yleismittarin kerrannaisyksiköt
 
 | Etuliite     | Tunnus | Kymmenpotenssi |   Kerroin |
@@ -918,3 +978,5 @@ Piirrosmerkkien vertailu ja turvallisuustäsmennykset tarkistettu 28.9.2026:
 - oppitunnin lähdeaineisto — oppitunnin aineisto 5.10.2026
 
 - oppitunnin lähdeaineisto — oppitunnin aineisto 5.10.2026
+
+- oppitunnin lähdeaineisto — suojalaitteiden toimintarajavirrat ja vaaditut mitatut oikosulkuvirrat (5.10.2026)
