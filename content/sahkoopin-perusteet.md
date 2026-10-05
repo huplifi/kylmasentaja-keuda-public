@@ -15,6 +15,7 @@ Koottu oppikirjakuvista 31.8.2026 ja täydennetty oppituntien aineistoilla. Täm
 - suljettu ja avoin virtapiiri
 - sähkövaraus sekä virran ja ajan yhteys
 - jännitteiden luokittelu
+- IP-luokitukset: kosketus-, vierasesine- ja vesisuojaus
 - sähkövirran vaikutukset ihmiseen
 - yleismittarin kerrannaisyksiköt, mitta-alueet ja CAT-luokat
 - asennustesterin käyttö ja keskeiset mittaukset
@@ -312,6 +313,94 @@ Sähköiskun vakavuuteen vaikuttavat ainakin virran suuruus, vaikutusaika, virra
 **Kouristusraja** on virta, jonka yläpuolella lihakset voivat lamaantua niin, ettei henkilö pysty irrottautumaan jännitteisestä osasta. Raja on yksilöllinen; oppikirjassa mainitaan suuntaa-antavasti noin 10 mA naisilla ja 15 mA miehillä.
 
 Taulukon arvoja ei pidä käyttää turvallisina rajoina. Sähköiskua on aina käsiteltävä vaaratilanteena ja toimittava koulutuksen ensiapu- ja turvallisuusohjeiden mukaan.
+
+## IP-luokitukset – kotelon suojaus
+
+Aihe aloitettu 5.10.2026. Tämä on lähteistä koottu opiskelupohja; oppitunnin tarkemmat havainnot täydennetään myöhemmin.
+
+**IP-koodi** kertoo kotelon antamasta suojauksesta. Ensimmäinen numero koskee pääsyä vaarallisiin osiin ja kiinteiden vierasesineiden sisäänpääsyä, toinen veden haitallista sisäänpääsyä. Luokitus perustuu IEC 60529 -standardiin.
+
+> **Muistisääntö: ensin kiinteät, sitten vesi.** Lue numerot erikseen, älä yhtenä lukuna.
+
+### Näin luet merkinnän
+
+| Merkinnän osa         | Esimerkki IP54                             |
+| --------------------- | ------------------------------------------ |
+| IP                    | Kotelointiluokituksen tunnus               |
+| Ensimmäinen numero: 5 | Pölysuojattu                               |
+| Toinen numero: 4      | Suojattu vesiroiskeilta kaikista suunnista |
+
+**0 tarkoittaa suojaamatonta kyseisen ominaisuuden osalta. X tarkoittaa, ettei kyseistä suojausastetta ilmoiteta.** Esimerkiksi IPX4 ilmoittaa roiskevesisuojauksen, mutta siitä ei voi päätellä pölysuojausta. X ei tarkoita samaa kuin 0.
+
+### Ensimmäinen numero: kosketus ja kiinteät vierasesineet
+
+| Numero | Vierasesinesuojaus                              | Pääsyn estäminen vaarallisiin osiin |
+| ------ | ----------------------------------------------- | ----------------------------------- |
+| 0      | Ei suojausta                                    | Ei suojausta                        |
+| 1      | Halkaisija vähintään 50 mm                      | Kämmenselkä                         |
+| 2      | Halkaisija vähintään 12,5 mm                    | Sormi                               |
+| 3      | Halkaisija vähintään 2,5 mm                     | Työkalu                             |
+| 4      | Halkaisija vähintään 1,0 mm                     | Lanka                               |
+| 5      | Pölysuojattu: pölyä ei pääse haitallista määrää | Lanka                               |
+| 6      | Pölytiivis: pölyä ei pääse sisään               | Lanka                               |
+
+Kämmenselkä, sormi, työkalu ja lanka kuvaavat standardin koettimia. **Pölysuojattu (5) ja pölytiivis (6) ovat eri asioita.**
+
+### Toinen numero: vesi
+
+| Numero | Suojaus veden haitalliselta vaikutukselta                                    |
+| ------ | ---------------------------------------------------------------------------- |
+| 0      | Ei suojausta                                                                 |
+| 1      | Pystysuorat vesipisarat                                                      |
+| 2      | Pystysuorat pisarat myös kotelon ollessa enintään 15° kallistettuna          |
+| 3      | Vesisuihku enintään 60° kulmassa pystysuorasta                               |
+| 4      | Vesiroiskeet kaikista suunnista                                              |
+| 5      | Vesisuihkut kaikista suunnista                                               |
+| 6      | Voimakkaat vesisuihkut kaikista suunnista                                    |
+| 7      | Tilapäinen upotus standardin testiolosuhteissa                               |
+| 8      | Jatkuva upotus erikseen määritellyissä, luokkaa 7 vaativammissa olosuhteissa |
+| 9      | Korkeapaineiset, kuumat vesisuihkut testiolosuhteissa                        |
+
+IPX8 ei lupaa rajatonta upotussyvyyttä: tarkista valmistajan ilmoittamat ehdot.
+
+### Tavallisia esimerkkejä
+
+| Luokitus | Tulkinta                                                                 |
+| -------- | ------------------------------------------------------------------------ |
+| IP20     | Sormisuojaus ja vähintään 12,5 mm:n vierasesinesuojaus; ei vesisuojausta |
+| IP44     | Vähintään 1 mm:n vierasesinesuojaus ja roiskevesisuojaus                 |
+| IP54     | Pölysuojaus ja roiskevesisuojaus                                         |
+| IP65     | Pölytiiviys ja vesisuihkusuojaus                                         |
+| IP66     | Pölytiiviys ja voimakkaiden vesisuihkujen suojaus                        |
+| IP67     | Pölytiiviys ja tilapäisen upotuksen suojaus                              |
+| IP68     | Pölytiiviys ja jatkuvan upotuksen suojaus määritellyissä olosuhteissa    |
+
+**IP67 ei automaattisesti sisällä IP65- tai IP66-vesisuihkusuojausta.** Upotus ja vesisuihku ovat erilaisia kokeita. Esimerkiksi IP65/IP67 ilmoittaa molemmat suojaukset. Myöskään vesisuihkusuojaus ei yksin todista upotuksen kestävyyttä.
+
+### Soveltaminen kylmäalalla
+
+Kylmälaitteen anturia, liitintä tai sähkökoteloa arvioitaessa selvitetään, altistuuko se pölylle, roiskeille, pesusuihkulle vai upotukselle. Merkintää verrataan juuri tähän rasitukseen ja valmistajan käyttöehtoihin.
+
+IP-luokka ei yksin kerro kemikaalien, korroosion, iskujen tai käyttölämpötilojen kestävyydestä. Esimerkiksi pesuaineen ja kylmänkestävyyden soveltuvuus tarkistetaan erikseen. Myös liittimen vastakappale ja tiivistys kuuluvat suojauksen kokonaisuuteen.
+
+### Tarkista, että osaat
+
+1. Mitä IP54:n kumpikin numero tarkoittaa?
+2. Mikä ero on IP5X:llä ja IP6X:llä?
+3. Miksi IPX4 ei kerro pölysuojauksesta?
+4. Voiko IP67-merkinnästä päätellä, että laite kestää vesisuihkupesun?
+
+**Vastaukset:** 1) Pölysuojaus ja roiskevesisuojaus. 2) Pölysuojattu / pölytiivis. 3) Ensimmäistä suojausastetta ei ilmoiteta. 4) Ei; vesisuihkusuojaus on varmistettava erikseen.
+
+### IP-osion lähteet
+
+Tarkistettu 5.10.2026. Taulukot ovat tiivistetty opiskelukooste, eivät standardin täydelliset testivaatimukset.
+
+- [IEC 60529: standardin kuvaus](https://webstore.iec.ch/en/publication/2452) — luokituksen standardiperusta.
+- [Hammond: Definition of Protection Grades IEC 60529](https://www.hammfg.com/electrical/technical/iec) — kosketus-, vierasesine- ja vesisuojauksen merkitykset.
+- [igus: IP protection classes](https://www.igus.eu/harnessing-and-connectors/connectors/ip-protection-classes) — X-merkintä, numeroiden tulkinta ja liittimen suojauksen osat.
+- [NorComp: IP Ratings and Harsh Environment Connectors](https://www.norcomp.net/applications/ip-ratings-and-harsh-environment-connectors) — IPX9, käyttöolosuhteet ja IP-luokituksen rajaukset.
+- [WIKA: Pressure switches with IP65 and IP67 ingress protection](https://blog.wika.com/en/products/pressure-switches-with-ip65-and-ip67-ingress-protection/) — upotus- ja vesisuihkukokeiden ero.
 
 ## Yleismittarin kerrannaisyksiköt
 
