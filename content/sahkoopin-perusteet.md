@@ -513,6 +513,26 @@ Dian ilmaus ”PE johtaa vikavirran maahan” on yksinkertaistus: TN-järjestelm
 
 Lähteet: oppituntidiat oppitunnin lähdeaineisto. Poiskytkentäajan soveltamisalan ja vikavirran reitin täsmennys: [Schneider Electric: TN system – Principle](https://www.electrical-installation.org/enwiki/TN_system_-_Principle), tarkistettu 5.10.2026.
 
+### Vikavirtasuojan merkinnät – 16 A, 30 mA ja 230 V
+
+Oppitunnin tehtävä 1.22 (5.10.2026). Kuvan vikavirtasuojapistorasian merkinnät tarkoittavat eri suureita:
+
+| Termi                                                             | Tunnus |          Kuvan arvo | Merkitys                                                                                                         |
+| ----------------------------------------------------------------- | ------ | ------------------: | ---------------------------------------------------------------------------------------------------------------- |
+| **Nimellisvirta**                                                 | `I_n`  |            **16 A** | Kuormitusvirta, jota laite on mitoitettu johtamaan ilmoitetuissa käyttöolosuhteissa                              |
+| **Nimellinen toimintavirta**, tarkemmin nimellistoimintavikavirta | `I_Δn` | **30 mA = 0,030 A** | Vikavirtasuojan toiminnan mitoitusarvo: suoja havaitsee virtapiiriin menevän ja sieltä palaavan virran erotuksen |
+| **Nimellisjännite**                                               | `U_n`  |        **230 V AC** | Laitteen nimellinen käyttöjännite; AC tarkoittaa vaihtojännitettä                                                |
+
+> **Muistisääntö: 16 A kulkee kuormaan, 30 mA koskee virtojen erotusta, 230 V on käyttöjännite.**
+
+Yksivaihepiirissä vikavirtasuoja vertaa vaiheen kautta menevää ja nollan kautta palaavaa virtaa. Jos osa virrasta palaa muuta reittiä, esimerkiksi suojajohtimen kautta, syntyy erotusvirta. Kuormitusvirta voi olla useita ampeereja, vaikka erotusvirta olisi nolla.
+
+**30 mA ei tarkoita kuorman suurinta sallittua virtaa, eikä 16 A yksin kerro ylivirtasuojauksesta.** Pelkkä vikavirtasuojakytkin (RCCB) tarvitsee erillisen ylivirtasuojauksen; yhdistelmäsuojassa (RCBO) on sekä vikavirta- että ylivirtasuojaus.
+
+**Nimellinen toimintavirta ja mitattu laukaisuvirta ovat eri käsitteitä.** `I_Δn` on laitteen ilmoitettu mitoitusarvo. Testissä mitattu todellinen laukaisuvirta voi olla sitä pienempi.
+
+Lähde: oppitunnin tehtävä 1.22, oppitunnin lähdeaineisto. Selittävät täsmennykset: [Schneider Electric: Description of RCDs](https://www.electrical-installation.org/enwiki/Description_of_RCDs), [Sensitivity of RCDs to disturbances](https://www.electrical-installation.org/enwiki/Sensitivity_of_RCDs_to_disturbances) ja [RCD-laitekategoriat](https://www.se.com/nz/en/faqs/FAQ000218859/), tarkistettu 5.10.2026.
+
 ### Oikosulkuvirran taulukko – toimiiko suoja ajoissa?
 
 Oppitunnilla hyödylliseksi nostettu taulukko 5.10.2026. Taulukossa verrataan **suojalaitteen nimellisvirtaa**, **vaaditun toiminta-ajan toimintarajavirtaa** ja **pienintä hyväksyttävää mitattua oikosulkuvirtaa**. Kaikki alla olevat virrat ovat ampeereja.
@@ -610,15 +630,15 @@ Sähköasennusten mittaamiseen käytettävässä mittarissa pitää olla käytt�
 
 Asennustesteri on sähköasennusten tarkastamiseen käytettävä mittalaite. Sillä varmistetaan, että asennus toimii oikein ja turvallisesti. Sitä käytetään sekä käyttöönottotarkastuksissa että määräaikaistarkastuksissa.
 
-| Mittaus                           | Mitä tarkistetaan                           | Miksi se tehdään                                                                            |
-| --------------------------------- | ------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| **Eristysresistanssi (RISO)**     | eristeiden kunto                            | varmistetaan, ettei virtaa vuoda eristeiden läpi                                            |
-| **Suojajohtimen jatkuvuus (RLO)** | suojamaadoituksen jatkuvuus                 | varmistetaan vikasuojauksen toiminta                                                        |
-| **Silmukkaimpedanssi (Z)**        | vaiheen ja suojamaan välinen vikavirtapiiri | selvitetään mahdollisen oikosulkuvirran suuruus ja suojalaitteiden riittävän nopea toiminta |
-| **Vikavirtasuojakytkin (RCD)**    | laukaisuvirta `IΔn` ja laukaisuaika `ΔT`    | varmistetaan vikavirtasuojan oikea toiminta                                                 |
-| **Jännite**                       | asennuksen jännite voltteina                | varmistetaan oikea jännitetaso                                                              |
-| **Vaihejärjestys**                | kolmivaiheverkon vaiheiden järjestys        | varmistetaan muun muassa moottorien oikea pyörimissuunta                                    |
-| **Maadoitusvastus**               | maadoituksen resistanssi                    | arvioidaan maadoituksen toimivuutta                                                         |
+| Mittaus                           | Mitä tarkistetaan                                                             | Miksi se tehdään                                                                            |
+| --------------------------------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| **Eristysresistanssi (RISO)**     | eristeiden kunto                                                              | varmistetaan, ettei virtaa vuoda eristeiden läpi                                            |
+| **Suojajohtimen jatkuvuus (RLO)** | suojamaadoituksen jatkuvuus                                                   | varmistetaan vikasuojauksen toiminta                                                        |
+| **Silmukkaimpedanssi (Z)**        | vaiheen ja suojamaan välinen vikavirtapiiri                                   | selvitetään mahdollisen oikosulkuvirran suuruus ja suojalaitteiden riittävän nopea toiminta |
+| **Vikavirtasuojakytkin (RCD)**    | mitattu laukaisuvirta ja laukaisuaika `ΔT`; `IΔn` on nimellinen toimintavirta | varmistetaan vikavirtasuojan oikea toiminta                                                 |
+| **Jännite**                       | asennuksen jännite voltteina                                                  | varmistetaan oikea jännitetaso                                                              |
+| **Vaihejärjestys**                | kolmivaiheverkon vaiheiden järjestys                                          | varmistetaan muun muassa moottorien oikea pyörimissuunta                                    |
+| **Maadoitusvastus**               | maadoituksen resistanssi                                                      | arvioidaan maadoituksen toimivuutta                                                         |
 
 ### Miksi silmukkaimpedanssi on tärkeä?
 
@@ -980,3 +1000,5 @@ Piirrosmerkkien vertailu ja turvallisuustäsmennykset tarkistettu 28.9.2026:
 - oppitunnin lähdeaineisto — oppitunnin aineisto 5.10.2026
 
 - oppitunnin lähdeaineisto — suojalaitteiden toimintarajavirrat ja vaaditut mitatut oikosulkuvirrat (5.10.2026)
+
+- oppitunnin lähdeaineisto — vikavirtasuojan nimellisvirta, nimellinen toimintavirta ja nimellisjännite (5.10.2026)
