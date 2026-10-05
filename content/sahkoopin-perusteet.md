@@ -16,6 +16,8 @@ Koottu oppikirjakuvista 31.8.2026 ja täydennetty oppituntien aineistoilla. Täm
 - sähkövaraus sekä virran ja ajan yhteys
 - jännitteiden luokittelu
 - IP-luokitukset: kosketus-, vierasesine- ja vesisuojaus
+- asennustilojen luokittelu: kostea, märkä, ulkotila, pesutila ja sauna
+- vikasuojaus ja syötön automaattinen poiskytkentä; TN-loppupiirin 0,4 s
 - sähkövirran vaikutukset ihmiseen
 - yleismittarin kerrannaisyksiköt, mitta-alueet ja CAT-luokat
 - asennustesterin käyttö ja keskeiset mittaukset
@@ -316,7 +318,7 @@ Taulukon arvoja ei pidä käyttää turvallisina rajoina. Sähköiskua on aina k
 
 ## IP-luokitukset – kotelon suojaus
 
-Aihe aloitettu 5.10.2026. Tämä on lähteistä koottu opiskelupohja; oppitunnin tarkemmat havainnot täydennetään myöhemmin.
+Aihe aloitettu 5.10.2026 ja täydennetty oppikirjan taulukolla sekä oppitunnin aineistolla.
 
 **IP-koodi** kertoo kotelon antamasta suojauksesta. Ensimmäinen numero koskee pääsyä vaarallisiin osiin ja kiinteiden vierasesineiden sisäänpääsyä, toinen veden haitallista sisäänpääsyä. Luokitus perustuu IEC 60529 -standardiin.
 
@@ -401,6 +403,115 @@ Tarkistettu 5.10.2026. Taulukot ovat tiivistetty opiskelukooste, eivät standard
 - [igus: IP protection classes](https://www.igus.eu/harnessing-and-connectors/connectors/ip-protection-classes) — X-merkintä, numeroiden tulkinta ja liittimen suojauksen osat.
 - [NorComp: IP Ratings and Harsh Environment Connectors](https://www.norcomp.net/applications/ip-ratings-and-harsh-environment-connectors) — IPX9, käyttöolosuhteet ja IP-luokituksen rajaukset.
 - [WIKA: Pressure switches with IP65 and IP67 ingress protection](https://blog.wika.com/en/products/pressure-switches-with-ip65-and-ip67-ingress-protection/) — upotus- ja vesisuihkukokeiden ero.
+
+### IP-koodin lisäkirjaimet A–D
+
+Oppikirjan taulukon lisäkirjain täsmentää suojausta pääsyltä vaarallisiin osiin. Esimerkiksi IPXXB kertoo sormisuojauksesta, vaikka numeroarvoja ei ilmoiteta.
+
+| Kirjain | Suojaus pääsyltä vaarallisiin osiin |
+| ------- | ----------------------------------- |
+| A       | Kämmenselällä                       |
+| B       | Sormella                            |
+| C       | Työkalulla                          |
+| D       | Langalla                            |
+
+Lähde: oppikirjan luku 5.1, s. 80, oppitunnin lähdeaineisto.
+
+## Tilaluokittelu ja kotelointiluokan valinta
+
+Oppitunti 5.10.2026. **Kotelointiluokka valitaan laitteen todellisen asennuspaikan rasitusten mukaan.** Kosteus, roiskeet, pesuvesi ja lämpötila vaikuttavat eri tavoin. Alla erotetaan oppikirjan opetusesimerkit tarkistetuista lisähuomioista.
+
+### Kostea, märkä ja ulkotila
+
+Oppikirjan s. 82:n kooste:
+
+| Tila tai olosuhde                                                                   | Tunnusomainen rasitus                                                | Kirjan esittämä vähimmäisvesisuojaus |
+| ----------------------------------------------------------------------------------- | -------------------------------------------------------------------- | ------------------------------------ |
+| Kostea tila                                                                         | Pinnoille tiivistyy kosteutta; vesipisaroita vain poikkeuksellisesti | IPX1                                 |
+| Märkä tila                                                                          | Pinnoille tiivistyy pisaroita tai laite altistuu vedelle             | IPX4                                 |
+| Ulkotila, sateelta suojattu laite                                                   | Sateelta suojattu, esimerkiksi katoksen alla                         | IPX1                                 |
+| Ulkotila, sateelle altis laite                                                      | Sade, ei erityistä roiskevesialtistusta                              | IPX3                                 |
+| Ulkotila, sateelle altis laite enintään 0,5 m vaakasuorasta tai kaltevasta pinnasta | Myös pinnasta roiskuva vesi                                          | IPX4                                 |
+
+Kosteita tiloja ovat kirjan esimerkeissä kylmäkellarit, lämmittämättömät varastot ja pyykinkuivaushuoneet. Märkiä tiloja ovat esimerkiksi pesuhallit ja vesisuihkulla pestävät alueet.
+
+**Taulukko on kurssin oppikirjakooste, ei kaikkien asennuspaikkojen täydellinen vaatimuslista.** Vesisuihkupesu voi edellyttää roiskevesisuojausta vahvempaa suojausta. X ei ilmoita vierasesinesuojausta; valinnassa huomioidaan myös IP-koodin ensimmäinen numero ja laitteen käyttöehdot.
+
+Lähde: oppitunnin lähdeaineisto, s. 82.
+
+### Kylpy- ja suihkutilojen alueet
+
+Märkä iho pienentää kehon sähkövastusta. Siksi pesutiloissa sähkölaitteiden sallittu sijoitus ja suojaus arvioidaan alueittain.
+
+Oppikirjan s. 84:n aluemalli:
+
+| Alue                 | Suihku ilman allasta                                                                      | Kylpyamme tai suihkuallas                                |
+| -------------------- | ----------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| 0                    | Alueen 1 alapuolinen tila 10 cm:n korkeuteen lattiasta                                    | Ammeen tai altaan sisäpuoli                              |
+| 1                    | Sivusuunnassa 120 cm kiinteästä suihkusuuttimesta tai vesipisteestä; kuvan korkeus 225 cm | Ammeen tai altaan yläpuolinen alue; kuvan korkeus 225 cm |
+| 2                    | Kuvan mallissa ei erillistä aluetta 2                                                     | Sivusuunnassa 60 cm ammeen tai altaan ulkoreunasta       |
+| Luokittelematon alue | Edellisten ulkopuolinen tila                                                              | Edellisten ulkopuolinen tila                             |
+
+Kiinteä väliseinä voi rajata alueita. **Etäisyyttä ei arvioida pelkästään seinän läpi suorana mittana:** Tukesin ohjeessa liian matalan tai kapean suojaseinän vaikutus arvioidaan mittaamalla sen reunojen ympäri.
+
+Pelkkä riittävä IP-luokka ei salli mitä tahansa laitetta mille tahansa alueelle. Verkkojännitteisiä pistorasioita ei saa asentaa alueille 0, 1 tai 2. Kirjan mukaan WC:tä, jossa on vain alapesusuihku ja lattiakaivo, ei tämän perusteella luokitella suihkutilaksi.
+
+Lähdekuva: oppitunnin lähdeaineisto, s. 84. Täsmennysten lähde: [Tukes: Kylpy- ja suihkutilojen sähköasennukset](https://tukes.fi/sahko/sahkotyot-ja-urakointi/sahkoasennusten-tekniset-vaatimukset/kylpy-ja-suihkutilojen-sahkoasennukset), tarkistettu 5.10.2026. Varsinainen sijoitus ratkaistaan sovellettavan SFS 6000-7-701:n ja laiteohjeiden mukaan.
+
+### Sauna: IP-luokan lisäksi lämmönkesto
+
+| Alue | Sijainti kuvan mallissa                             | Keskeinen huomio                                                         |
+| ---- | --------------------------------------------------- | ------------------------------------------------------------------------ |
+| 1    | Kiuas ja sen ympärillä 0,5 m:n alue, kattoon saakka | Vain kiuas ja sen käyttöön liittyvät laitteet                            |
+| 2    | Alueen 1 ulkopuolella lattiasta 1 m:n korkeuteen    | Ei erityistä lämpötilaluokitusta, mutta todellinen lämpötila huomioidaan |
+| 3    | Alueen 1 ulkopuolella yli 1 m:n korkeudella         | Laitteiden lämmönkesto vähintään 125 °C ja johtojen vähintään 170 °C     |
+
+Saunan sähkölaitteiden kotelointiluokka on vähintään **IP24**. Riittävä IP-luokka ei yksin tarkoita, että esimerkiksi valaisin kestää saunan lämpötilan.
+
+- Tavanomaiset kaapelit sijoitetaan lämpöeristeen kylmälle puolelle.
+- Löylyhuoneeseen ei asenneta pistorasioita eikä erillisiä käyttökytkimiä. Kiukaan omat rakenteelliset säätimet ovat eri asia.
+- Saunan sähköasennukset lisäsuojataan 30 mA:n vikavirtasuojalla; Tukesin ohjeen poikkeus koskee kiuasta ja siihen liittyviä laitteita.
+- Kiukaan suojaetäisyydet ja liitäntä tehdään valmistajan ohjeen mukaan.
+- Jos saunassa on suihku, myös suihkun aluerajaukset otetaan huomioon.
+
+Kirjassa mainitaan lisäksi kiukaan liitäntärasian sijoitus: alueella 1 rasian yläreuna enintään 0,5 m lattiasta. Tämä on lähteen opetustieto; laitteen oma asennusohje ja sovellettavat vaatimukset tarkistetaan asennuksessa.
+
+Lähdekuva: oppitunnin lähdeaineisto, s. 86. Tarkistettu vertailulähde: [Tukes: Saunojen sähköasennukset](https://tukes.fi/sahko/sahkotyot-ja-urakointi/sahkoasennusten-tekniset-vaatimukset/saunojen-sahkoasennukset), 5.10.2026.
+
+## Vikasuojaus
+
+Oppitunti 5.10.2026. **Vikasuojaus suojaa sähköiskulta, kun laitteessa tai asennuksessa syntyy vika**, esimerkiksi eristysvaurio tekee kosketeltavan metallikotelon jännitteiseksi. Perussuojaus puolestaan estää koskettamasta normaalisti jännitteisiä osia.
+
+### Oppitunnin neljä suojausmenetelmää
+
+| Menetelmä                              | Perusidea                                                       |
+| -------------------------------------- | --------------------------------------------------------------- |
+| Kaksoiseristys tai vahvistettu eristys | Suojaus ei jää yhden peruseristyskerroksen varaan               |
+| Syötön automaattinen poiskytkentä      | Suojalaite katkaisee viallisen piirin syötön riittävän nopeasti |
+| Sähköinen erotus                       | Suojattava piiri erotetaan sähköisesti muista piireistä         |
+| SELV tai PELV                          | Pienoisjännite ja suojausjärjestelmän muut vaatimukset yhdessä  |
+
+Tavallinen pienjännite tai pieni jännitelukema ei yksin tarkoita SELV- tai PELV-suojausta. Oppitunnin luettelo on menetelmien yleiskuva; käytännön toteutuksella on omat ehtonsa.
+
+### Kaksoiseristys ja suojausluokka II
+
+Kaksoiseristetty tai vahvistetusti eristetty laite kuuluu **suojausluokkaan II**. Tunnus on **neliö neliön sisällä**. Kaksoiseristyksessä peruseristyksen lisäksi on lisäeristys; vahvistettu eristys antaa vastaavan suojauksen yhtenä eristysrakenteena.
+
+Tällaisia laitteita ovat monet käsityökalut ja kodinkoneet. Suojausluokka II ja IP-luokka kuvaavat eri ominaisuuksia: sähköiskusuojausta ja kotelon suojausta ulkoisilta rasituksilta.
+
+### Syötön automaattinen poiskytkentä – muista 0,4 s
+
+> **Kurssin keskeinen muistettava arvo: tavallisen 230 V:n pistorasialoppupiirin enimmäispoiskytkentäaika TN-järjestelmässä on 0,4 s eli 400 ms.**
+
+Sulake, johdonsuojakatkaisija tai vikavirtasuoja voi toteuttaa poiskytkennän, kun suojauksen toimintaehdot täyttyvät. Pelkkä suojalaitteen olemassaolo ei vielä osoita riittävän nopeaa toimintaa.
+
+**0,4 s ei ole kaikkien sähköpiirien yleinen poiskytkentäaika.** Tarkistetun IEC-pohjaisen TN-ohjeen mukaan 230 V:n vaihe–maa-jännitteellä tämä raja koskee enintään 63 A:n pistorasioita sisältäviä loppupiirejä ja enintään 32 A:n vain kiinteitä laitteita syöttäviä loppupiirejä. Muissa järjestelmissä, jännitteillä tai piirityypeissä vaatimukset voivat olla erilaiset. Asennuksessa sovelletaan SFS 6000:n kyseistä vaatimusta.
+
+**Miksi PE ja silmukkaimpedanssi ovat tärkeitä?** TN-järjestelmässä vikavirta kulkee viallisen kotelon kautta PE/PEN-reittiä takaisin virtalähteeseen. Suuren silmukkaimpedanssin vuoksi vikavirta voi jäädä liian pieneksi laukaisemaan ylivirtasuojan ajoissa. Tämä yhdistää poiskytkentäajan [Miksi silmukkaimpedanssi on tärkeä?](sahkoopin-perusteet.md#miksi-silmukkaimpedanssi-on-tärkeä) -kohtaan.
+
+Dian ilmaus ”PE johtaa vikavirran maahan” on yksinkertaistus: TN-järjestelmässä keskeinen paluureitti on suojajohdinreitti, ei maaperä. **0,4 s on enimmäisaika, ei odotusaika tai turvallinen kosketusaika.**
+
+Lähteet: oppituntidiat oppitunnin lähdeaineisto. Poiskytkentäajan soveltamisalan ja vikavirran reitin täsmennys: [Schneider Electric: TN system – Principle](https://www.electrical-installation.org/enwiki/TN_system_-_Principle), tarkistettu 5.10.2026.
 
 ## Yleismittarin kerrannaisyksiköt
 
@@ -767,16 +878,43 @@ Piirrosmerkkien vertailu ja turvallisuustäsmennykset tarkistettu 28.9.2026:
 ## Alkuperäiset kuvat
 
 - oppitunnin lähdeaineisto — sähköiset suureet, yksiköt ja CAT-luokat
+
 - oppitunnin lähdeaineisto — yleismittarin kerrannaisyksiköt ja mitta-alueet
+
 - oppitunnin lähdeaineisto — kiinteistön 400/230 V sähkönsyöttö ja TN-C-S
+
 - oppitunnin lähdeaineisto — sähköntuotanto, kantaverkko ja jakeluverkko
+
 - oppitunnin lähdeaineisto — jänniteluokat ja sähkötöiden tekemisen oikeus
+
 - oppitunnin lähdeaineisto — sähkövirran fysiologiset vaikutukset
+
 - oppitunnin lähdeaineisto — sähkövirran ja elektronien suunnat sekä sähkövaraus
+
 - oppitunnin lähdeaineisto — Ohmin lain sarjakytkentäesimerkki sekä kylmätekniikan mittausmuistiinpanoja
+
 - oppitunnin lähdeaineisto — asennustesteri sekä RISO-, RLO- ja Z-mittaukset
+
 - oppitunnin lähdeaineisto — RCD-testaus, muut mittaukset, silmukkaimpedanssin merkitys ja käyttöönottotarkastus
+
 - oppitunnin lähdeaineisto — vastusten sarja- ja rinnankytkentä (7.9.2026)
+
 - oppitunnin lähdeaineisto — 1-kytkennän vähimmäislukutaidon opetusesimerkki (28.9.2026)
+
 - oppitunnin lähdeaineisto — 1-kytkimen toimintaperiaate ja jakorasian moniviivainen kytkentä
+
 - oppitunnin lähdeaineisto — piirrosmerkkien oppituntivertailu
+
+- oppitunnin lähdeaineisto — oppitunnin aineisto 5.10.2026
+
+- oppitunnin lähdeaineisto — oppitunnin aineisto 5.10.2026
+
+- oppitunnin lähdeaineisto — oppitunnin aineisto 5.10.2026
+
+- oppitunnin lähdeaineisto — oppitunnin aineisto 5.10.2026
+
+- oppitunnin lähdeaineisto — oppitunnin aineisto 5.10.2026
+
+- oppitunnin lähdeaineisto — oppitunnin aineisto 5.10.2026
+
+- oppitunnin lähdeaineisto — oppitunnin aineisto 5.10.2026
