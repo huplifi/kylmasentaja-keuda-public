@@ -258,6 +258,8 @@ Kun tarkoitus on arvioida, **miten laite voidaan sähköisesti liittää olemass
 
 Tukesin mukaan ILP:n kiinteä sähköliitäntä edellyttää vähintään S3-ryhmän oikeutta sähkötöihin. Sama koskee esimerkiksi uuden pistorasian tai turvakytkimen asentamista, vikavirtasuojan lisäämistä ja olemassa olevan pistorasian siirtämistä.
 
+Tämä on toiminnanharjoittajan ja sähkötöiden johtajan oikeuden rajaus. Oppitunnin 6.11.2026 esimerkki, jossa ilmalämpöpumppu mainitaan laitetöiden kohteena, kuvaa sähköturvallisuuslain 73 §:n 4 momentin kapeaa ammattitaitoa. Se ei anna automaattisesti kelpoisuutta uuteen syöttöpiiriin tai keskukseen lisättävään vikavirtasuojaan. S3-johtaja voi asentaa yhden syöttöjohdon rasialta tai jakokeskukselta vain, kun keskuksen rakennetta ei muuteta. Vikavirtasuojan lisäys edellyttää vähintään S3-ryhmän oikeutta sähkötöihin. Jos lisäys muuttaa keskuksen rakennetta tai työ on laajempi asennuskokonaisuus, Tukes edellyttää johtajalta vähintään S2-pätevyyttä. Raja on avattu muistiossa [Sähkötöiden tekemisen oikeus](sahkoopin-perusteet.md#sähkötöiden-tekemisen-oikeus).
+
 ## Piirustuksen päivittäminen muutoksen jälkeen
 
 Tavoite ei ole vain lukea vanhaa kuvaa vaan jättää jälkeemme **as-built**, toteutusta vastaava dokumentti.

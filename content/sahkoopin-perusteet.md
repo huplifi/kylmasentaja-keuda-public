@@ -24,6 +24,7 @@ Koottu oppikirjakuvista 31.8.2026 ja täydennetty oppituntien aineistoilla. Täm
 - sähkön tuotanto, siirto ja jakelu
 - kolmivaiheverkon 400/230 V jännitteet
 - TN-C- ja TN-S-järjestelmät sekä PEN-, N- ja PE-johtimet
+- sähköalan ammattihenkilön, toiminnanharjoittajan ja sähkötöiden johtajan ero sekä S2- ja S3-todistuksen raja
 - asennuspiirustuksissa käytettävät piirrosmerkit ja niiden merkitykset
 - yksiviivaisen johdotuskuvan tulkinta: syöttö, johdinmäärät ja yhden valaisimen ohjaus
 
@@ -831,7 +832,102 @@ Erotuksen jälkeen kiinteistön sisäinen verkko on viisijohtiminen **TN-S-järj
 
 ## Sähkötöiden tekemisen oikeus
 
-Oppikirjan mukaan sähköasentaja, jolla ei ole urakointioikeuksia eli oikeutta tehdä sähkötöitä itsenäisesti, työskentelee sähkötöiden johtajan alaisuudessa yrityksessä, jolla on asianmukainen pätevyys. Ennen käytännön töitä vaatimusten ajantasaisuus tarkistetaan Tukesin ohjeista ja kouluttajalta.
+Oppitunti 6.11.2026. SETI Oy:n koulutusaineisto *Sähkötyöturvallisuus / Sähkötöitä tekevät henkilöt* (2025), diat 9, 10 ja 17, kuvasi sähköalan ammattihenkilön reittejä, laitetöiden kapeampaa ammattitaitoa ja sähkötöiden johtajan käytännön toimia. Diat ovat koulutusta, eivät säädöstä. Niitä ei ole kopioitu tähän muistioon, eikä alkuperäiskuvia ole tallennettu liitteiksi. Teksti on tarkistettu Finlexin ajantasaisesta laista ja Tukesin julkisesta ohjeesta 6.11.2026. Muistiinpano ei arvioi kenenkään henkilökohtaista kelpoisuutta eikä anna lupaa tehdä sähkötyötä.
+
+Oppikirjan mukaan asentaja, jolla ei ole itsenäistä urakointioikeutta, työskentelee sähkötöiden johtajan alaisuudessa toiminnanharjoittajalla, jolla on asianmukainen pätevyys. Käytännön työ tehdään koulutuksessa ja nimetyn johtajan vastuulla.
+
+### Kolme eri tasoa
+
+Sähkötyön oikeus rakentuu kolmesta eri asiasta. Ne voivat täyttyä eri henkilöillä.
+
+| Taso                     | Säädös            | Mitä se antaa                                                                                                                                                                                                                                                |
+| ------------------------ | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Sähköalan ammattihenkilö | STL 73 §          | Henkilön ammattitaito valvoa ja tehdä itsenäisesti koulutustaan ja työkokemustaan vastaavaa sähkö- ja käyttötyötä, kun hänet on opastettu siihen työhön.                                                                                                     |
+| Toiminnanharjoittaja     | STL 55 §          | Oikeus tehdä sähkötyötä, kun töille on nimetty kelpoinen sähkötöiden johtaja, itsenäinen tekijä on kelpoinen tai muuten riittävän ammattitaitoinen, tarvittavat välineet ja säännökset ovat käytössä ja toiminnasta on ilmoitettu Tukesille ennen aloitusta. |
+| Sähkötöiden johtaja      | STL 57–59 ja 65 § | Vastuuhenkilö, jolla on työhön oikeuttava pätevyystodistus. Hän vastaa lain noudattamisesta, laitteiden ja laitteistojen kunnosta ennen käyttöönottoa tai luovutusta sekä siitä, että tekijät ovat ammattitaitoisia ja opastettuja.                          |
+
+Pätevyystodistuksen antaa pätevyydenarviointilaitos. S2 ja S3 ovat johtajan todistuksia, eivät työntekijän 73 §:n ammattitaitoa.
+
+| Todistus     | Johtamisoikeuden alue                                                                                               | Keskeinen lisävaatimus                                                                                                                                                                                                                                                                                                                                                                           |
+| ------------ | ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| S2, STL 68 § | Enintään 1 000 V vaihtojännitteisten ja 1 500 V tasajännitteisten laitteiden ja laitteistojen sähkö- ja käyttötyöt. | Sähköturvallisuustutkinto sekä soveltuva koulutus ja sen jälkeen riittävän laaja-alainen, laitteistojen rakentamiseen perehdyttävä työkokemus: korkeakoulututkinnon, sähkövoima-alan insinöörin tai teknikon tutkinnon jälkeen vähintään kaksi vuotta tai soveltuvan perustutkinnon, ammattitutkinnon, erikoisammattitutkinnon tai vastaavan aiemman koulutuksen jälkeen vähintään kolme vuotta. |
+| S3, STL 69 § | Enintään 1 000 V vaihtojännitteiseen tai 1 500 V tasajännitteiseen verkkoon liitettävien laitteiden korjaustyöt.    | Sähköturvallisuustutkinto ja 73 §:ssä tarkoitettu riittävä ammattitaito.                                                                                                                                                                                                                                                                                                                         |
+
+S3-todistukseen rinnastetaan yksittäisen komponentin vaihto sekä yhden syöttöjohdon asentaminen korjattavalle tai uutena verkkoon liitettävälle laitteelle tai laitekokonaisuudelle asennusrasialta tai kiinteistön jakokeskukselta, kun keskuksen rakennetta ei muuteta. Muulta osin S3 ei oikeuta rakentamaan kiinteistön sähkölaitteistoa. Rajoitettu S3-todistus (STL 70 §) voidaan myöntää hakemuksesta vielä kapeammalle tehtäväalueelle. Samat vuosiluvut eivät siis tee laitekokemuksesta S3-todistusta.
+
+### Yleiset ammattitaitoreitit, 73 § 1–3 mom.
+
+Riittävän ammattitaitoiseksi valvoa ja tehdä itsenäisesti omaa koulutustaan ja kokemustaan vastaavaa sähkö- ja käyttötyötä katsotaan henkilö, joka on opastettu näihin töihin ja jolla on jokin seuraavista:
+
+| Reitti | Koulutus                                                                                    | Työkokemus sähkötöistä                 |
+| ------ | ------------------------------------------------------------------------------------------- | -------------------------------------- |
+| 1      | Soveltuva tekniikan alan korkeakoulututkinto                                                | 6 kuukautta                            |
+| 2      | Soveltuva sähköalan insinöörin tai teknikon tutkinto                                        | 6 kuukautta                            |
+| 3      | Soveltuva ammattitutkinto, erikoisammattitutkinto tai vastaava aiempi koulutus tai tutkinto | 6 kuukautta                            |
+| 4      | Soveltuva ammatillinen perustutkinto tai vastaava aiempi koulutus tai tutkinto              | 1 vuosi                                |
+| 5      | Ei tätä koulutusvaatimusta                                                                  | 6 vuotta ja riittävät alan perustiedot |
+
+Kokemuksen on oltava kyseisiin sähkö- ja käyttötöihin perehdyttävää. Opastuksen antajan on itse täytettävä 1 ja 2 momentin vaatimukset. Ilmaus ”riittävän laaja-alainen” kuuluu S1- ja S2-todistuksen kokemusvaatimukseen, ei näihin viiteen reittiin.
+
+### Laitetyöt, 73 § 4 mom.
+
+Samankaltaisiin sähkölaitteisiin tai sähkölaitteeseen rinnastettaviin sähkölaitteistoihin kohdistuvassa sähkö- ja käyttötyössä riittää 1 momentista poiketen myös toinen näistä:
+
+- kahden vuoden työkokemus kyseisestä sähkötyöstä ja riittävät alan perustiedot
+- soveltuva sähköalan koulutus ja vuoden työkokemus kyseisestä sähkötyöstä
+
+Valtioneuvoston asetus sähkötyöstä ja käyttötyöstä (1435/2016) 4 §:n 3 momentti laskee tämän koulutuksen sähköalan opintojen minimin 25 opintopisteeseen tai 20 opintoviikkoon. Yleisempi minimi 3 §:ssä on 45 opintopistettä tai 40 opintoviikkoa. Koulutus on siis sähköalan koulutusta, ei mitä tahansa tekniikan alan tutkintoa. Oppitunnin diassa koulutus oli muotoiltu laajemmin ”soveltuvaksi tekniikan alan ammatilliseksi tutkinnoksi tai korkeakoulututkinnoksi”. Muistiossa noudatetaan lain ja asetuksen rajausta.
+
+Oppitunnin esimerkit laitetöistä olivat akustojen, ilmalämpöpumppujen ja UPS-laitteiden asennukset. Tukes käyttää saman lievennyksen esimerkkinä elektroniikkalaitteiden huolto- ja korjaustöitä. Kumpikaan lista ei ole 73 §:n laiteluettelo. Raja on työn kohde: lievennys koskee tätä samankaltaista laite- tai laitekokonaisuustyötä. Se ei tee henkilöstä 1 momentin mukaista ammattihenkilöä muihin sähkötöihin. Oppitunnin muistutus oli, että muiden sähkötöiden osalta henkilö on maallikko.
+
+4 momentti ei toista 1 momentin opastuskaavaa. Tekijän on silti oltava tehtävään ja sen sähköturvallisuusvaatimuksiin perehtynyt tai opastettu (STL 54 §), ja sähkötöiden johtaja vastaa tekijöiden ammattitaidosta ja opastuksesta (STL 59 §).
+
+73 §:n ammattitaito ei ole 56 §:n 1 momentin 5 kohdan kelpoisuustodistus, jolla sähköalan ammattihenkilö voi tietyin ehdoin tehdä sähkötyötä omassa tai lähisukulaisen asunnossa.
+
+### Ilmalämpöpumppu, syöttöjohto ja keskuksen vikavirtasuoja
+
+Ilmalämpöpumppu oli oppitunnilla esimerkki laitteesta, johon 73 §:n 4 momentin kapea ammattitaito voi kohdistua. Esimerkki ei anna automaattisesti kelpoisuutta uuteen syöttöpiiriin eikä keskukseen lisättävään vikavirtasuojaan.
+
+Uusi syöttöpiiri ja keskukseen lisättävä vikavirtasuoja ovat kiinteistön sähköasennuksen töitä. Laitetöiden lievennys päättyy samankaltaiseen laitteeseen tai siihen rinnastettavaan laitteistoon. Muu sähkötyö jää sen ulkopuolelle.
+
+Työ kuuluu lisäksi toiminnanharjoittajalle, joka on tehnyt ilmoituksen Tukesille ja nimennyt sähkötöiden johtajan. Johtajan todistuksen alue ratkaisee, mitä asennusta toiminta saa tehdä:
+
+- STL 69 §:n 2 momentti ja Tukesin ohje sallivat S3-johtajalle yhden syöttöjohdon asentamisen asennusrasialta tai kiinteistön jakokeskukselta laitetta, esimerkiksi ilmalämpöpumppua, varten, kun keskuksen rakennetta ei muuteta. Tämä on johtajan pätevyystodistuksen alaa, ei 73 §:n 4 momentin työntekijän ammattitaitoa.
+- Tukesin mukaan kiinteä ilmalämpöpumpun liitäntä sekä uuden pistorasian tai turvakytkimen asentaminen, vikavirtasuojan lisääminen ja olemassa olevan pistorasian siirtäminen edellyttävät vähintään S3-ryhmän oikeutta sähkötöihin.
+- Keskukseen lisättävä vikavirtasuoja ei kuulu laitetöiden ammattitaitoon. Yhden syöttöjohdon rinnastus edellyttää, että keskuksen rakennetta ei muuteta. Tukes edellyttää vikavirtasuojan lisäykseen vähintään S3-ryhmän oikeutta sähkötöihin. Jos lisäys muuttaa keskuksen rakennetta tai työ on laajempi asennuskokonaisuus, johtajalta edellytetään vähintään S2-pätevyyttä.
+- Valmistaja voi edellyttää vikavirtasuojaa, vaikka kiinteä liitäntä ei sähköasennusstandardin mukaan sitä aina vaadi. Ohjetta noudatetaan, ja suojan lisääminen on sähkötyö, johon tarvitaan toiminnan oikeus.
+- Pistotulppaliitäntä olemassa olevasta sopivasta maadoitetusta pistorasiasta on Tukesin ohjeessa eri tilanne. Sitä ei käsitellä tässä uutena syöttöpiirinä.
+
+### Sähkötöiden johtajan käytännön toimet
+
+Dia 17, otsikko *STJ:n käytännön toimet*, on koulutuksen muistilista sähkötöiden johtajalle. Osa kohdista toistaa lain ja asetuksen velvoitteita. Osa on käytännön tapaa hoitaa ne. Muistilista ei itsessään tee kenestäkään sähkötöiden johtajaa.
+
+| Dian kohta                                           | Mistä vaatimus tulee                                                                                                                                                                                                                                                                | Lukutapa                                                                                                                                                                                            |
+| ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Henkilöstön ammattitaito ja sen ylläpito             | STL 59 §: johtaja vastaa, että tekijät ovat ammattitaitoisia ja riittävästi opastettuja. Asetuksen 1435/2016 liitteen 3 §: työntekijälle annetaan koulutusta ja opastusta niin, että tiedot vastaavat työn vaatimuksia. STL 58 §: johtaja ylläpitää omaa ammattitaitoaan.           | Lain ja asetuksen velvoite.                                                                                                                                                                         |
+| Työnaikaisen sähköturvallisuuden valvojan nimeäminen | Asetuksen liitteen 2 §: johtaja huolehtii, että jokaiseen sähkötyön tekokohteeseen nimetään 73 §:n mukainen sähköalan ammattihenkilö valvojaksi. Valvoja voi osallistua työhön tai tehdä sen itse. STL 82 § edellyttää työkohteen turvallisuudesta huolehtivan henkilön nimeämistä. | Asetuksen velvoite, ei pelkkä koulutuksen vinkki.                                                                                                                                                   |
+| Sähköturvallisuusohjeet                              | STL 82 § sekä asetuksen liitteen 3 §: sähkötyötä varten laaditaan tarvittaessa kirjalliset työmenetelmä- tai työkohtaiset ohjeet.                                                                                                                                                   | Velvoite silloin, kun työ sitä tarvitsee.                                                                                                                                                           |
+| Käyttöönottotarkastus                                | STL 43 §: rakentaja huolehtii käyttöönottotarkastuksesta ennen käyttöönottoa, myös muutos- ja laajennustöissä. Pöytäkirja laaditaan vähäisiä töitä lukuun ottamatta. STL 59 §: johtaja vastaa laitteiden ja laitteistojen kunnosta ennen käyttöönottoa tai luovutusta.              | Velvoite. Varmennustarkastus on eri, valtuutetun tarkastajan tai laitoksen tarkastus. Dian ”varmennusjärjestelmä” on koulutuksen nimi sille, miten toiminta järjestää tarkastukset ja todentamisen. |
+| Säännökset, ohjeet ja standardit saatavilla          | STL 55 §: toiminnanharjoittajalla on oltava töihin tarvittavat välineet ja sähköturvallisuutta koskevat säännökset. STL 84 §: Tukes julkaisee luettelon standardeista, joita noudattaen sähkötyöturvallisuuden olennaiset vaatimukset täyttyvät.                                    | Säännösten saatavuus on velvoite. Dian laajennus ohjeiden ja standardien antamisesta tekijöiden käyttöön on käytännön tapa täyttää se.                                                              |
+| Tavoitettavuus, esimerkiksi puhelin                  | STL 58 §: johtajalla on oltava tosiasiallinen mahdollisuus johtaa ja valvoa työtä.                                                                                                                                                                                                  | Puhelin on dian esimerkki yhteydenpidosta, ei lain määräämä väline.                                                                                                                                 |
+| Viestintä sähkötyöntekijöiden kesken                 | Dia 17.                                                                                                                                                                                                                                                                             | Koulutuksen käytännön suositus. Laki ei nimeä erillistä viestintävelvoitetta. Ohjeet ja opastus edellyttävät, että tieto kulkee työkohteeseen.                                                      |
+| Asennustyön valvonta ja puuttuminen                  | STL 58–59 §: johtaminen, valvonta ja vastuu lain noudattamisesta.                                                                                                                                                                                                                   | Dian ”puuttuu työhön” kuvaa tätä valvontavelvoitetta.                                                                                                                                               |
+| Sähkötapaturman ilmoitus Tukesin SL4-lomakkeella     | Dia 17.                                                                                                                                                                                                                                                                             | Koulutuksen kohta on vanhentunut. Tukesin nykyinen kanava on sähköinen sähkö- ja hissitapaturmailmoitus, joka on avattu lokakuussa 2023. SL4 ei ole nykyinen ilmoitustapa.                          |
+
+Ilmoitusvelvollisuus on laissa rajattu. STL 114 § velvoittaa poliisin, pelastusviranomaisen, työsuojeluviranomaisen ja jakelualueen jakeluverkonhaltijan ilmoittamaan Tukesille vakavasta vaaratilanteesta ja vakavia henkilö-, omaisuus- tai ympäristövahinkoja aiheuttaneesta tapahtumasta, jossa sähkölaite tai -laitteisto on ollut osallisena. Sähkötöiden johtajaa ei ole nimetty tässä pykälässä ilmoittajaksi. Kuka tahansa voi silti ilmoittaa sähkötapaturman tai vaaratilanteen Tukesin sähköisellä lomakkeella, myös silloin kun lakivelvollisuutta ei ole.
+
+Vakava työtapaturma ilmoitetaan erikseen poliisille ja työsuojeluviranomaiselle. Tukesin sähköinen lomake ei korvaa tätä työnantajan ilmoitusta.
+
+### Lähteet, tarkistettu 6.11.2026
+
+- [Sähköturvallisuuslaki 1135/2016, ajantasainen](https://www.finlex.fi/fi/lainsaadanto/2016/1135), erityisesti 43, 54, 55, 56, 58, 59, 65, 68, 69, 70, 73, 82 ja 114 §. Finlexin koosteen konsolidointipäivä on 20.3.2026. Lain myöhemmät muutokset 678/2018, 250/2022 ja 190/2026 kohdistuvat muihin pykäliin, joten 73 ja 114 § ovat koosteessa alkuperäisessä muodossaan.
+- [Valtioneuvoston asetus sähkötyöstä ja käyttötyöstä 1435/2016, ajantasainen](https://www.finlex.fi/fi/lainsaadanto/2016/1435), 3 ja 4 § sekä liitteen 2 ja 3 §.
+- [Tukes: Sähköpätevyydet ja työalueet](https://tukes.fi/sahko/sahkotyot-ja-urakointi/sahkopatevyydet-ja-tyoalueet), sähköalan ammattihenkilö, S3:n työalue ja ilmalämpöpumpun sähköasennukset.
+- [Tukes: Sähkötöiden johtaja](https://tukes.fi/sahko/sahkotoiden-johtaja).
+- [Tukes: Lämpöpumppujen sähköasennuksissa asennusvirheitä ja oikeudettomia sähkötöitä](https://tukes.fi/-/lampopumppujen-sahkoasennuksissa-asennusvirheita-ja-oikeudettomia-sahkotoita), yhden syöttökaapelin ja keskusmuutoksen ero.
+- [Tukes: Sähkötyöt, lomakkeet](https://tukes.fi/asiointi/lomakkeet/sahko-ja-hissityot), sähköinen sähkö- ja hissitapaturmailmoitus, avattu lokakuussa 2023.
+- [Suomi.fi: Sähkötapaturmailmoittaminen](https://www.suomi.fi/palvelut/sahkotapaturmailmoittaminen-turvallisuus-ja-kemikaalivirasto-tukes/d8f79266-36e1-4f98-aebe-14b7ac9176b6), päivitetty 2.7.2025.
+- [Työsuojeluhallinto: työtapaturmailmoitus](https://tyosuojelu.fi/tyotapaturmailmoitus), vakavan työtapaturman ilmoitus poliisille ja työsuojeluviranomaiselle.
 
 ## Asennuspiirustusten piirrosmerkkejä
 
