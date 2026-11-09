@@ -446,6 +446,70 @@ Oppitunnin tiivis kertausapu:
 
 Muistisääntö tiivistää yllä olevan käyttöluokkataulukon. AC-4:n suunnanvaihto/jarrutus on tässä lyhyt muistivihje: tarkempi ero AC-3:een on kuvattu edellä. AC-15 ja DC-13 viittaavat tässä sähkömagneettisten kuormien ohjaukseen. Dian koepainotus on oppitunnin vinkki, ei yleinen lupaus kokeiden sisällöstä.
 
+## Palautuvat ja asentoon jäävät kytkimet
+
+Kytkimestä luetaan erikseen **mitä vivulle tapahtuu, kun siitä päästää irti**, ja **mitkä liittimet ovat sähköisesti yhteydessä** kussakin asennossa.
+
+Alla olevien kytkinkuvien **katkoviiva** näyttää mekaanisen yhteyden vivulta koskettimelle. Virtareittiä seurataan yhtenäisiä johdin- ja kosketinviivoja pitkin. Yhteinen vipu voi ohjata koskettimia, jotka toimivat eri hetkellä. Esimerkkejä ovat aikaisemmin sulkeutuva ja myöhemmin avautuva kosketin.
+
+### A jää asentoon, B palautuu
+
+![A-kytkimen asentoon jäämisen merkki ja yksi vaihtokosketin](symbolit/opetuskaavio-kytkin-a.svg)
+![B-kytkimen ylöspäin osoittava palautuskolmio ja yksi vaihtokosketin](symbolit/opetuskaavio-kytkin-b.svg)
+
+- **A on asentoon jäävä** (*maintained*). Vipu jää valittuun asentoon vapauttamisen jälkeen. Kulmikas merkki ohjainviivalla kuvaa asennossa pysymistä.
+- **B on palautuva** (*momentary*). Kun vivusta päästää irti, se palaa lepoasentoonsa. Kolmion kärki osoittaa palautumissuunnan. Tässä kuvassa kärki osoittaa ylöspäin.
+
+Molemmat ovat **SPDT-kytkimiä**, eli niissä on yksi vaihtokosketin. Yhteinen liitin **2** voidaan yhdistää liittimeen **1** tai **3**. Kuvan asennossa **2–1** sytyttää H1:n. Toisessa asennossa **2–3** sytyttää H2:n. A jää valitulle reitille, kun taas B palaa vapautettaessa H1-reitille. Tehtävän taulukko 4.4 ei näy aineistossa, joten näitä kahta A:n ja B:n reittiä ei voi yhdistää varmuudella vivun asentonumeroihin 1 ja 2.
+
+**NO ja NC** kuvaavat koskettimen sähköistä tilaa ennen ohjaavaa toimintaa. Palautuvuus kertoo vivun käyttäytymisestä vapautettaessa. Palautuvassa kytkimessä voi olla sulku- tai avauskosketin.
+
+### E palautuu keskelle ja ohjaa kahta napaa
+
+![E-kytkimen kaksi avoinna olevaa vaihtokosketinta, mekaaninen katkoviiva ja kohti keskustaa osoittavat palautuskolmiot](symbolit/opetuskaavio-kytkin-e.svg)
+
+**DPDT** tarkoittaa kahta sähköisesti erillistä vaihtokosketinta, joita sama vipu ohjaa. E:n kuvassa katkoviiva ulottuu molemmille navoille.
+
+E:ssä vastakkaiset kolmiot osoittavat kohti keskiasentoa. Vipu palautuu kummastakin ääriasennosta asentoon **0**.
+
+| Vivun asento | Tehtävässä johtava reitti                            | Lamput                                   |
+| ------------ | ---------------------------------------------------- | ---------------------------------------- |
+| 0            | Ylempi yhteinen liitin 2 on irti liittimistä 1 ja 3. | Molemmat sammuksissa.                    |
+| 1            | `+ → 2 → 1 → H1 → −`                                 | H1 palaa, kun vipu pidetään asennossa 1. |
+| 2            | `+ → 2 → 3 → H2 → −`                                 | H2 palaa, kun vipu pidetään asennossa 2. |
+
+Kuvassa ylempi napa on kytketty lamppuihin. Alemman navan liittimet **4, 5 ja 6** ovat tässä tehtävässä käyttämättä. **Asentonumero** 0, 1 tai 2 kertoo vivun valinnan. **Liitinnumero** kertoo sähköisen kytkentäpisteen.
+
+### Tehtävä 4.6 — lue ensin kosketinparit
+
+Tämän vipukytkimen keskimmäinen asento **2** kytkee molemmat navat. E:n keskiasento **0** on auki. Ratkaise siis jokainen harjoitus sen omasta kosketintaulukosta.
+
+Kuvasarjassa vasemman navan yhteinen liitin **2** on alhaalla. Sen yläliittimet ovat **1** vasemmalla ja **3** oikealla. Oikean navan yhteinen liitin **5** on alhaalla. Sen yläliittimet ovat **4** vasemmalla ja **6** oikealla.
+
+- ![Molemmat vaihtokoskettimet oikealla](symbolit/opetuskaavio-vipukytkin-asento-1.svg) **Asento 1** — kiinni ovat **2–3** ja **5–6**.
+- ![Vasen kosketin oikealla ja oikea kosketin vasemmalla](symbolit/opetuskaavio-vipukytkin-asento-2.svg) **Asento 2** — kiinni ovat **2–3** ja **5–4**.
+- ![Molemmat vaihtokoskettimet vasemmalla](symbolit/opetuskaavio-vipukytkin-asento-3.svg) **Asento 3** — kiinni ovat **2–1** ja **5–4**.
+
+Seuraa jokaisessa asennossa **plus → kiinni oleva kosketin → mahdollinen hyppyjohdin → lamppu → miinus**. Lamppu palaa, kun koko reitti on suljettu. Kaikissa näissä harjoituksissa lampun toinen pää on kytketty miinukseen.
+
+### S1–S4 — harjoitusratkaisut
+
+| Kytkin | Asento 1            | Asento 2 | Asento 3 |
+| ------ | ------------------- | -------- | -------- |
+| S1     | H1                  | H2       | H3       |
+| S2     | Ei palavia lamppuja | H4       | H4 ja H5 |
+| S3     | Ei palavia lamppuja | H6       | H7       |
+| S4     | H1                  | H2       | H3       |
+
+- **S1** — plus liittimeen **2**, hyppyjohdin **3–5**, H3 liittimeen **1**, H2 liittimeen **4** ja H1 liittimeen **6**. Asennossa 2 reitti on `+ → 2 → 3 → 5 → 4 → H2 → −`.
+- **S2** — plus liittimiin **1 ja 4**, H5 liittimeen **2** ja H4 liittimeen **5**. Asennossa 3 plus syöttää kahta erillistä reittiä `1 → 2 → H5` ja `4 → 5 → H4`. Molemmat palaavat miinukseen.
+- **S3** — plus liittimeen **2**, hyppyjohdin **3–5**, H6 liittimeen **4** ja H7 liittimeen **1**. Liitin **6** jätetään vapaaksi. Asennossa 1 syöttö päätyy liittimeen 6, joten lampuille ei synny suljettua reittiä.
+- **S4** — plus liittimeen **5**, hyppyjohdin **4–2**, H1 liittimeen **6**, H2 liittimeen **3** ja H3 liittimeen **1**. Asennossa 2 reitti on `+ → 5 → 4 → 2 → 3 → H2 → −`.
+
+**Kertaa ilman vastausta.** Mitä S1:n asennoissa 1 ja 2 tapahtuu, jos hyppyjohdin **3–5** puuttuu? Ratkaise ensin, mihin asti plus pääsee.
+
+**Vastaus.** Yhteys 2–3 johtaa plussan liittimeen 3, mutta ilman hyppyjohdinta syöttö ei jatku toiselle navalle. Asennoissa 1 ja 2 yksikään lamppu ei pala. Asennon 3 reitti H3:lle säilyy.
+
 ## Lähteet ja ylläpitotiedot
 
 ### Piirrosmerkit ja valaistuskytkennät
@@ -478,3 +542,8 @@ Ajantasaiset lähdesivut: [SESKO: Piirrosmerkit / IEC 60617](https://sesko.fi/st
 - Oppitunnin käyttöluokkataulukko 4.3; alkuperäinen oppikirjakuva oppitunnin lähdeaineisto. Kirjan nimi ja sivunumero eivät näy rajauksessa.
 - Schneider Electric: [AC-1 ja AC-3: kuormatyypin ja kytkentätilanteen merkitys](https://www.se.com/nl/en/faqs/FA23926/) ja [TeSys Giga: käyttöluokkien määritelmät](https://productinfo.se.com/tesysgigainstallationguide/tesys-giga-series-giga-contactors-and-giga-thermal-overload-relays-installation-guide/English/TeSys%E2%84%A2%20Giga%20Series%20Giga%20Contactors%20and%20Giga%20Thermal%20Overload%20Relays%20Installation%20Guide_0000447511.xml/\$/PanGu_LoadsCPT_0000507717), tarkistettu 9.11.2026.
 - Oppituntidia ”Helppo muistisääntö”, 9.11.2026, oppitunnin lähdeaineisto. Dian koepainotus on oppitunnin vinkki, ei yleinen lupaus kokeiden sisällöstä.
+
+### Palautuvat kytkimet ja vipukytkintehtävät
+
+- Oppimateriaalin tehtäväkuvat oppitunnin lähdeaineisto (A, B ja E), oppitunnin lähdeaineisto (tehtävä 4.6, S1 ja S2) ja oppitunnin lähdeaineisto (S3 ja S4).
+- IEC 60617 -tietokannan kooste 5.3.2019. S00150 kuvaa automaattista palautusta, S00151 asennossa pysymistä ja soveltamisohje A00048 palautuskolmion suuntaa. Tässä käytetty merkintätapa tarkistettu 9.11.2026. [IEC 60617 -kooste](https://library.iec.ch/grasymb/grasymb.nsf/5FDC3327D03AD13DC125846A00501C93/%24FILE/IEC60617_Snapshot_2019-03-05.pdf)

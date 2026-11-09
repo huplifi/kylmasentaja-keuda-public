@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" color="#000000" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 64 64">
+  <path d="M7 12V24M24 12V24L15 43V53M40 12V24L48 43V53M57 12V24" />
+  <path d="M19 35H45" stroke-dasharray="3 3" stroke-width="1.25" />
+</svg>
