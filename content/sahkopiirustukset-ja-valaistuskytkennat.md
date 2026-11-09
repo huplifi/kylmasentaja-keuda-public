@@ -318,6 +318,18 @@ Alla olevat symbolit ovat tämän vaultin tarkistettua SVG-kirjastoa. Niitä kä
 | ![Sähköpiirrosmerkki: erotuskytkin](symbolit/erotuskytkin.svg)                   | Kuormanerotuskytkin                | IEC-lähdeaineistoon vertailtu erotus-/kytkintoiminto.                                                                            |
 | ![Sähköpiirrosmerkki: turvakytkin](symbolit/turvakytkin.svg)                     | Turvakytkin, yleisesitys           | Käyttötarkoitus on paikallinen turvallinen erotus. Grafiikka ei yksin kerro lukittavuutta, napalukua tai laitteen soveltuvuutta. |
 
+### Muuntajien ja suojausluokan laitemerkinnät
+
+| Merkki                                                                                          | Nimi                                        | Mitä se kertoo                                                                                                                                                    |
+| ----------------------------------------------------------------------------------------------- | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![Kaksi päällekkäistä ympyrää ja poikkiviiva kilven sisällä](symbolit/suojajannitemuuntaja.svg) | **Suojajännitemuuntaja** (IEC 60417-5222)   | Ensiön ja toision välillä on suojaerotus, ja toisio antaa pienoisjännitteen. Tällaista muuntajaa käytetään esimerkiksi SELV- tai PELV-piirin syöttöön.            |
+| ![Kaksi päällekkäistä ympyrää ja poikkiviiva](symbolit/suojaerotusmuuntaja.svg)                 | **Suojaerotusmuuntaja** (IEC 60417-5221)    | Ensiö ja toisio on erotettu sähköisesti. Toisiojännite luetaan laitekilvestä.                                                                                     |
+| ![Neliö neliön sisällä](symbolit/suojausluokka-ii.svg)                                          | **Suojausluokan II laite** (IEC 60417-5172) | Sähköiskusuojaus perustuu kaksois- tai vahvistettuun eristykseen. [Kaksoiseristys ja suojausluokka II](sahkoopin-perusteet.md#kaksoiseristys-ja-suojausluokka-ii) |
+
+Suojajännitemuuntaja voi esimerkiksi muuntaa 230 V:n jännitteen 24 V:iin. Suojaerotusmuuntaja voi olla myös 230 V → 230 V. Tällöin piirit erotetaan ja jännite pysyy samana.
+
+Nämä IEC 60417 -merkit tunnistetaan laitteesta tai laitekilvestä. Kytkentäkaaviossa muuntajan liitännät esitetään erikseen. Poikkiviiva kuuluu molempiin muuntajien yleismerkkeihin.
+
 ### Kylmälaitteissa tavallisia kuormia
 
 | Symboli                                                              | Nimi                                 | Rajaus                                                                                                                                            |
@@ -547,3 +559,10 @@ Ajantasaiset lähdesivut: [SESKO: Piirrosmerkit / IEC 60617](https://sesko.fi/st
 
 - Oppimateriaalin tehtäväkuvat oppitunnin lähdeaineisto (A, B ja E), oppitunnin lähdeaineisto (tehtävä 4.6, S1 ja S2) ja oppitunnin lähdeaineisto (S3 ja S4).
 - IEC 60617 -tietokannan kooste 5.3.2019. S00150 kuvaa automaattista palautusta, S00151 asennossa pysymistä ja soveltamisohje A00048 palautuskolmion suuntaa. Tässä käytetty merkintätapa tarkistettu 9.11.2026. [IEC 60617 -kooste](https://library.iec.ch/grasymb/grasymb.nsf/5FDC3327D03AD13DC125846A00501C93/%24FILE/IEC60617_Snapshot_2019-03-05.pdf)
+
+### Muuntaja- ja suojausluokkamerkintöjen lähteet
+
+- Oppimateriaalin tehtävä 3, oppitunnin lähdeaineisto.
+- IEC/ISO:n laitemerkkien esikatselu, tunnukset 5221, 5222 ja 5172. Muotojen vertailu 9.11.2026. [IEC/ISO-esikatselu](https://webstore.iec.ch/en/iec_catalog/product/preview/?id=L3B1Yi9wZGYvcHJldmlldy9pbmZvX2llYzYwNDE3e2VkMS4wfWIucGRm)
+- Muuntajien käyttötarkoitus ja suomalaiset nimet. [Intertrafo — suojaerotusmuuntaja](https://intertrafo.fi/tietoa-muuntajista/kaksikaamirakenne/suojaerotusmuuntaja/) · [Intertrafo — suojajännitemuuntaja](https://intertrafo.fi/tietoa-muuntajista/kaksikaamirakenne/suojajannitemuuntaja/)
+- Suojausluokan II merkitys. [Schneider Electric — laitemerkinnät](https://productinfo.se.com/dm6220h_em1220h_em1250h/dm6200h_em1220h_em1250h/DM6220H_EM1220H_EM1250H/English/BM_DM6220H_EM1220H_EM1250H%20User%20Manual_0000336862.ditamap.xml/%24/C_MeteringEquipmentSymbols_0001113660)

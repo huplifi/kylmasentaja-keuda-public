@@ -474,7 +474,9 @@ Tavallinen pienjännite tai pieni jännitelukema ei yksin tarkoita SELV- tai PEL
 
 ### Kaksoiseristys ja suojausluokka II
 
-Kaksoiseristetty tai vahvistetusti eristetty laite kuuluu **suojausluokkaan II**. Tunnus on **neliö neliön sisällä**. Kaksoiseristyksessä peruseristyksen lisäksi on lisäeristys; vahvistettu eristys antaa vastaavan suojauksen yhtenä eristysrakenteena.
+![Suojausluokan II laitemerkki, neliö neliön sisällä](symbolit/suojausluokka-ii.svg)
+
+**Suojausluokan II** laitteen sähköiskusuojaus perustuu kaksoiseristykseen tai vahvistettuun eristykseen. Tunnus on **neliö neliön sisällä**. Kaksoiseristyksessä peruseristyksen lisäksi on lisäeristys; vahvistettu eristys antaa vastaavan suojauksen yhtenä eristysrakenteena.
 
 Tällaisia laitteita ovat monet käsityökalut ja kodinkoneet. Suojausluokka II ja IP-luokka kuvaavat eri ominaisuuksia: sähköiskusuojausta ja kotelon suojausta ulkoisilta rasituksilta.
 
@@ -1027,6 +1029,8 @@ Lähdekuva: oppitunnin lähdeaineisto, s. 86. Tarkistettu vertailulähde: [Tukes
 ### Vikasuojaus
 
 Oppitunti 5.10.2026.
+
+- Suojausluokan II laitemerkintä IEC 60417-5172, tarkistettu 9.11.2026. [Schneider Electric — laitemerkinnät](https://productinfo.se.com/dm6220h_em1220h_em1250h/dm6200h_em1220h_em1250h/DM6220H_EM1220H_EM1250H/English/BM_DM6220H_EM1220H_EM1250H%20User%20Manual_0000336862.ditamap.xml/%24/C_MeteringEquipmentSymbols_0001113660)
 
 Lähteet: oppituntidiat oppitunnin lähdeaineisto. Poiskytkentäajan soveltamisalan ja vikavirran reitin täsmennys: [Schneider Electric: TN system – Principle](https://www.electrical-installation.org/enwiki/TN_system_-_Principle), tarkistettu 5.10.2026.
 
