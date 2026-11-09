@@ -526,11 +526,11 @@ Seuraa jokaisessa asennossa **plus → kiinni oleva kosketin → mahdollinen hyp
 
 Lue ensin toimintataulukko ja seuraa sitten johtimia. **X merkitsee kiinni olevaa kosketinta. X-merkit yhdistävä pystyviiva kertoo, että kosketin pysyy kiinni koko välin.** Tässä taulukossa liitinparit 1–2 ja 5–6 pysyvät kiinni asennosta 1 asentoon 3, myös asennossa 2.
 
-Alkuperäisen harjoituskuvan harmaa katkoviiva näyttää johdotuksen. Tässä tehtävässä se tarkoittaa eri asiaa kuin aiempien vipukytkinkuvien mekaaninen katkoviiva. Alla johdot näkyvät yhtenäisinä, avoimet koskettimet rakoina ja suljetut kuormareitit korostettuina.
+Alkuperäisen harjoituskuvan harmaa katkoviiva näyttää johdotuksen. Alla johdot näkyvät yhtenäisinä, avoimet koskettimet rakoina ja suljetut kuormareitit vihreinä. S1:n sisäinen katkoviiva kuvaa koskettimien mekaanista yhteiskäyttöä. Kaareva ylitys näyttää liitoksettoman risteyksen. Täytetty piste merkitsee liitosta.
 
 Kiinteät siltaukset ovat **2–4 (L1)**, **6–8 (L2)** ja **10–12 (L3)**. Kuorma U on liittimissä 1 ja 5, V liittimissä 3 ja 9 sekä W liittimissä 7 ja 11.
 
-Omat kaaviot on järjestetty kolmeksi kuormahaaraksi, jotta reitit erottuvat. Yhteydet ja liitinnumerot ovat samat kuin lähtötehtävässä. Saman vaiheen tunnukset eri haaroissa tarkoittavat samaa syöttöpistettä.
+Kuvat seuraavat lähtötehtävän liitinjärjestystä ja johdotusta. Jokaisessa asennossa näkyvät koko S1-kytkin, sen kuusi kosketinta ja 12 liitintä sekä vaihejohdot siltauksineen ja kaikki kolme kuormaa.
 
 | Asento | Kiinni olevat koskettimet         | Jännitteen saavat kuormat |
 | ------ | --------------------------------- | ------------------------- |
