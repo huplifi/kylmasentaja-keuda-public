@@ -460,3 +460,21 @@ Lähde: oppitunnin käyttöluokkataulukko 4.3. AC-1:n, AC-3:n ja AC-4:n edellä 
 
 - [AC-1 ja AC-3: kuormatyypin ja kytkentätilanteen merkitys](https://www.se.com/nl/en/faqs/FA23926/)
 - [TeSys Giga: käyttöluokkien määritelmät](https://productinfo.se.com/tesysgigainstallationguide/tesys-giga-series-giga-contactors-and-giga-thermal-overload-relays-installation-guide/English/TeSys%E2%84%A2%20Giga%20Series%20Giga%20Contactors%20and%20Giga%20Thermal%20Overload%20Relays%20Installation%20Guide_0000447511.xml/\$/PanGu_LoadsCPT_0000507717)
+
+### Käyttöluokkien muistisääntö
+
+Oppitunnin tiivis kertausapu:
+
+| Käyttöluokka | Muistisääntö                      |
+| ------------ | --------------------------------- |
+| AC-1         | Lämmitys                          |
+| AC-3         | Moottori                          |
+| AC-4         | Moottori + suunnanvaihto/jarrutus |
+| AC-15        | Ohjauspiiri AC                    |
+| DC-13        | Ohjauspiiri DC                    |
+| AC-21        | Lämmityskuorman kytkentä          |
+| AC-23        | Moottorikuorman kytkentä          |
+
+**Dian kertauspainotus:** AC-1 = lämmityskuorma, AC-3 = moottorikuorma, AC-15 = ohjauspiiri ja AC-23 = moottorien kuormankytkin.
+
+Muistisääntö tiivistää yllä olevan käyttöluokkataulukon. AC-4:n suunnanvaihto/jarrutus on tässä lyhyt muistivihje: tarkempi ero AC-3:een on kuvattu edellä. AC-15 ja DC-13 viittaavat tässä sähkömagneettisten kuormien ohjaukseen. Dian koepainotus on oppitunnin vinkki, ei yleinen lupaus kokeiden sisällöstä.
