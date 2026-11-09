@@ -522,6 +522,49 @@ Seuraa jokaisessa asennossa **plus → kiinni oleva kosketin → mahdollinen hyp
 
 **Vastaus.** Yhteys 2–3 johtaa plussan liittimeen 3, mutta ilman hyppyjohdinta syöttö ei jatku toiselle navalle. Asennoissa 1 ja 2 yksikään lamppu ei pala. Asennon 3 reitti H3:lle säilyy.
 
+## Neliasentoinen kytkin kolmivaiheverkossa
+
+Lue ensin toimintataulukko ja seuraa sitten johtimia. **X merkitsee kiinni olevaa kosketinta. X-merkit yhdistävä pystyviiva kertoo, että kosketin pysyy kiinni koko välin.** Tässä taulukossa liitinparit 1–2 ja 5–6 pysyvät kiinni asennosta 1 asentoon 3, myös asennossa 2.
+
+Alkuperäisen harjoituskuvan harmaa katkoviiva näyttää johdotuksen. Tässä tehtävässä se tarkoittaa eri asiaa kuin aiempien vipukytkinkuvien mekaaninen katkoviiva. Alla johdot näkyvät yhtenäisinä, avoimet koskettimet rakoina ja suljetut kuormareitit korostettuina.
+
+Kiinteät siltaukset ovat **2–4 (L1)**, **6–8 (L2)** ja **10–12 (L3)**. Kuorma U on liittimissä 1 ja 5, V liittimissä 3 ja 9 sekä W liittimissä 7 ja 11.
+
+Omat kaaviot on järjestetty kolmeksi kuormahaaraksi, jotta reitit erottuvat. Yhteydet ja liitinnumerot ovat samat kuin lähtötehtävässä. Saman vaiheen tunnukset eri haaroissa tarkoittavat samaa syöttöpistettä.
+
+| Asento | Kiinni olevat koskettimet         | Jännitteen saavat kuormat |
+| ------ | --------------------------------- | ------------------------- |
+| 0      | Kaikki auki                       | Ei yhtään                 |
+| 1      | 1–2 ja 5–6                        | U                         |
+| 2      | 1–2, 3–4, 5–6 ja 9–10             | U ja V                    |
+| 3      | 1–2, 3–4, 5–6, 7–8, 9–10 ja 11–12 | U, V ja W                 |
+
+### Asento 0 — kaikki kuormareitit auki
+
+![Asento 0. Kaikki kuusi kosketinta ovat auki. Kuormille U, V ja W ei muodostu suljettua reittiä.](kaaviot/neliasentoinen-kytkin-asento-0.svg)
+
+Kuormien reitit ovat auki. Syöttöpuolen liittimet voivat silti olla jännitteisiä.
+
+### Asento 1 — U
+
+![Asento 1. Koskettimet 1–2 ja 5–6 sulkeutuvat, jolloin U on vaiheiden L1 ja L2 välissä.](kaaviot/neliasentoinen-kytkin-asento-1.svg)
+
+U:n reitti on `L1 → 2 → 1 → U → 5 → 6 → L2`.
+
+### Asento 2 — U ja V
+
+![Asento 2. U:n reitti L1–L2 pysyy suljettuna ja V:n reitti L1–L3 sulkeutuu. W:n reitti jää auki.](kaaviot/neliasentoinen-kytkin-asento-2.svg)
+
+U:n reitti pysyy samana. Lisäksi V:n reitti sulkeutuu `L1 → 4 → 3 → V → 9 → 10 → L3`.
+
+### Asento 3 — U, V ja W
+
+![Asento 3. U on vaiheiden L1 ja L2, V vaiheiden L1 ja L3 sekä W vaiheiden L2 ja L3 välissä. Kaikki kuusi kosketinta ovat kiinni.](kaaviot/neliasentoinen-kytkin-asento-3.svg)
+
+U:n ja V:n reitit pysyvät suljettuina. W:n reitti sulkeutuu `L2 → 8 → 7 → W → 11 → 12 → L3`. Kolme kuormahaaraa muodostavat **kolmion**, koska jokainen on eri vaiheparin välissä. Kaaviossa on vaiheet L1, L2 ja L3 ilman nollajohdinta N.
+
+Nuoli näyttää, missä järjestyksessä reitti luetaan. Kuormien tehon laskemiseen tarvitaan kuormien sähköiset arvot.
+
 ## Lähteet ja ylläpitotiedot
 
 ### Piirrosmerkit ja valaistuskytkennät
@@ -566,3 +609,9 @@ Ajantasaiset lähdesivut: [SESKO: Piirrosmerkit / IEC 60617](https://sesko.fi/st
 - IEC/ISO:n laitemerkkien esikatselu, tunnukset 5221, 5222 ja 5172. Muotojen vertailu 9.11.2026. [IEC/ISO-esikatselu](https://webstore.iec.ch/en/iec_catalog/product/preview/?id=L3B1Yi9wZGYvcHJldmlldy9pbmZvX2llYzYwNDE3e2VkMS4wfWIucGRm)
 - Muuntajien käyttötarkoitus ja suomalaiset nimet. [Intertrafo — suojaerotusmuuntaja](https://intertrafo.fi/tietoa-muuntajista/kaksikaamirakenne/suojaerotusmuuntaja/) · [Intertrafo — suojajännitemuuntaja](https://intertrafo.fi/tietoa-muuntajista/kaksikaamirakenne/suojajannitemuuntaja/)
 - Suojausluokan II merkitys. [Schneider Electric — laitemerkinnät](https://productinfo.se.com/dm6220h_em1220h_em1250h/dm6200h_em1220h_em1250h/DM6220H_EM1220H_EM1250H/English/BM_DM6220H_EM1220H_EM1250H%20User%20Manual_0000336862.ditamap.xml/%24/C_MeteringEquipmentSymbols_0001113660)
+
+### Neliasentoisen kytkimen harjoituksen lähteet
+
+- Oppitunnin toimintataulukko ja kytkentäkaavio, oppitunnin lähdeaineisto. Neljä ratkaisukuvaa on piirretty harjoituksen johdotuksesta.
+- Telergonin merkintäesimerkki katkeamatta kiinni pysyvästä koskettimesta, painettu s. 32 (PDF:n s. 3). [Telergon — Cam switches](https://www.telergon.gorlan.com/wp-content/uploads/2022/01/Cam-switches.pdf)
+- Rastien ja pystyviivan lukutapa, s. 13. [Kraus & Naimer — Switch Wiring Diagrams Pocketbook](https://www.krausnaimer.com/fileadmin/user_upload/Kraus_u_Naimer/Pdfcat/Switch_wiring_diagrams_pocketbook/Switch_wiring_diagrams_pocketbook.pdf)
