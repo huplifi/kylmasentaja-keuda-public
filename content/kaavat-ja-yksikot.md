@@ -66,15 +66,13 @@ Paineita vastaavat kyllästymislämpötilat katsotaan kyseisen kylmäaineen pain
 - Täydentävä esimerkki oppitunnin R410A-arvolla: `1 kg × 2088 / 1000 = 2,088 t CO₂-ekv.`
 - Oppitunnin R744-esimerkki: `100 kg × 1 / 1000 = 0,1 t CO₂-ekv.` eli 100 kg CO₂-ekv. R744:n GWP on 1.
 
-Käsitteet, esimerkin rajaus ja lähteet: [Kylmäaineet](kylmaaineet.md). Alkuperäiset kuvat: oppitunnin lähdeaineisto.
+Kylmäaineiden käsitteet ja esimerkin rajaus: [Kylmäaineet](kylmaaineet.md).
 
 ## Paineen yksikkömuunnokset
 
 - `1 bar = 1 000 mbar`
 - `1 mbar = 0,001 bar`
 - Kuvan ILP-vakuumointiesimerkki: **2,7 mbar = 0,0027 bar**.
-
-Lähde: oppitunnin lähdeaineisto. Esimerkin asiayhteys ja ohjearvojen rajaus: [ILP-asennus – oppitunnin muistiinpanot 8.9.2026](kylmatekniikan-perusteet.md#ilp-asennus--oppitunnin-muistiinpanot-892026).
 
 ## Sähköoppi
 
@@ -116,8 +114,6 @@ Johdinlaskuissa myös: `A` yksikössä `mm²` ja `ρ` yksikössä `Ω·mm²/m`. 
 
 Johtimen lämpöhäviöteho: `P_häviö = I² × R`. Pienempi resistanssi pienentää lämpöhäviötehoa **samalla virralla**.
 
-Lähde ja selitys: [Resistiivisyys ja johtavuus](sahkoopin-perusteet.md#resistiivisyys-ja-johtavuus) — oppitunti 21.9.2026 sekä erikseen merkityt selittävät täydennykset.
-
 ### Sähkövaraus, virta ja aika
 
 - `Q = I × t`
@@ -153,8 +149,6 @@ Selitys ja esimerkit: [Vastusten sarjakytkentä](sahkoopin-perusteet.md#vastuste
 
 Tehohäviöiden vuoksi laitteen hyötysuhde on alle yksi.
 
-Lähde: oppitunti 21.9.2026, [Hyötysuhde](sahkoopin-perusteet.md#hyötysuhde).
-
 ### Sähköteho
 
 - `P = U × I`
@@ -173,8 +167,6 @@ Kun `U` annetaan voltteina ja `I` ampeereina, tulos saadaan watteina: `V × A = 
 - Hetkellisarvo: `u = û × sin α`, missä `û` on jännitteen huippuarvo ja `α` vaihekulma
 
 Esimerkki 230 V / 50 Hz: `Û ≈ 325 V`, `U_pp ≈ 650 V` ja `T = 20 ms`.
-
-Lähde: oppitunti 21.9.2026, [Hetkellis-, huippu- ja tehollisarvo](sahkoopin-perusteet.md#hetkellis--huippu--ja-tehollisarvo).
 
 ### Sähköenergia
 
@@ -204,7 +196,7 @@ Esimerkkejä:
 - `1 kWh = 1 000 Wh`
 - `1 h = 3 600 s`
 
-## Lähdekuvat
+## Lähteet ja alkuperäismateriaali
 
 - oppitunnin lähdeaineisto — lämpöopin kaavat ja yksiköt
 - oppitunnin lähdeaineisto — sähköopin suureet ja yksiköt
@@ -213,3 +205,11 @@ Esimerkkejä:
 - oppitunnin lähdeaineisto — tulistuksen ja alijäähdytyksen kaavat
 - oppitunnin lähdeaineisto — tulistuksen ja alijäähdytyksen mittausesimerkki
 - oppitunnin lähdeaineisto — vastusten sarja- ja rinnankytkennän kaavat (7.9.2026)
+
+Muut lähde- ja selitysviitteet:
+
+- **Kylmäaineet ja CO₂-ekvivalentti:** [Kylmäaineet](kylmaaineet.md), alkuperäiskuvat oppitunnin lähdeaineisto.
+- **Paineen yksikkömuunnokset:** oppitunnin lähdeaineisto; ohjearvon rajaus ja asiayhteys: [ILP-asennus – oppitunnin muistiinpanot 8.9.2026](kylmatekniikan-perusteet.md#ilp-asennus--oppitunnin-muistiinpanot-892026).
+- **Resistiivisyys ja johtavuus:** oppitunti 21.9.2026 sekä selittävät täydennykset, [Resistiivisyys ja johtavuus](sahkoopin-perusteet.md#resistiivisyys-ja-johtavuus).
+- **Hyötysuhde:** oppitunti 21.9.2026, [Hyötysuhde](sahkoopin-perusteet.md#hyötysuhde).
+- **Sinimuotoisen vaihtosähkön arvot ja taajuus:** oppitunti 21.9.2026, [Hetkellis-, huippu- ja tehollisarvo](sahkoopin-perusteet.md#hetkellis--huippu--ja-tehollisarvo).

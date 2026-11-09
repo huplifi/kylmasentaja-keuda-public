@@ -3,7 +3,7 @@ title: "Sähköopin perusteet"
 publish: true
 ---
 
-Koottu oppikirjakuvista 31.8.2026 ja täydennetty oppituntien aineistoilla. Tämä muistio kokoaa sähköopin peruskäsitteet, mittaamisen, sähköturvallisuuden sekä sähköverkon ja kiinteistön sähkönsyötön rakenteen.
+Tämä muistio kokoaa sähköopin peruskäsitteet, mittaamisen, sähköturvallisuuden sekä sähköverkon ja kiinteistön sähkönsyötön rakenteen.
 
 ## Opittavat kokonaisuudet
 
@@ -64,8 +64,6 @@ Suureet ja yksiköt:
 
 ## Resistiivisyys ja johtavuus
 
-Oppitunti 21.9.2026.
-
 **Resistiivisyys `ρ` (rho)** kertoo, kuinka voimakkaasti materiaali vastustaa sähkövirran kulkua. Mitä pienempi resistiivisyys, sitä paremmin aine johtaa sähköä.
 
 **Resistanssi `R`** puolestaan kuvaa tietyn johtimen vastusta. Siihen vaikuttavat materiaalin lisäksi johtimen pituus ja poikkipinta-ala. Resistiivisyys on materiaalin ominaisuus, ei johtimen pituudesta tai paksuudesta määräytyvä suure. Se riippuu kuitenkin esimerkiksi lämpötilasta.
@@ -125,8 +123,6 @@ Oppitunnin taulukossa resistiivisyys annetaan johdinlaskuihin kätevässä yksik
 
 Taulukko havainnollistaa hyvin eron johtimien ja eristeiden välillä: hopea ja kupari ovat erittäin hyviä johteita, kun taas ilman ja PTFE:n resistiivisyys on valtavan suuri.
 
-Lähde: oppituntidia, kuva oppitunnin lähdekuva (21.9.2026). Arvot on kirjattu dian mukaisina.
-
 ### Sähkönjohtavuus
 
 Materiaalin sähkönjohtavuus on resistiivisyyden käänteisluku:
@@ -135,7 +131,7 @@ Materiaalin sähkönjohtavuus on resistiivisyyden käänteisluku:
 
 `σ` (sigma) on sähkönjohtavuus yksikössä `S/m`, kun `ρ` on yksikössä `Ω·m`. Pieni resistiivisyys tarkoittaa suurta sähkönjohtavuutta.
 
-### Täsmennys dian lämpöhäviöihin
+### Täsmennys lämpöhäviöihin
 
 Diassa todetaan, että pienempi resistiivisyys pienentää johtimen resistanssia ja lämpöhäviöitä. Vertailussa on pidettävä johtimien mitat samoina ja lämpöhäviöitä tarkasteltaessa myös virta samana:
 
@@ -143,13 +139,11 @@ Diassa todetaan, että pienempi resistiivisyys pienentää johtimen resistanssia
 
 **Samalla virralla** pienempi resistanssi tuottaa vähemmän lämpöä. Jos sen sijaan jännite juuri tarkasteltavan vastuksen yli pidetään vakiona, `P = U² / R`: pienempi resistanssi kasvattaa virtaa ja tehoa. Siksi ilmaus ”pienempi resistanssi = vähemmän lämpöä” ei päde ilman vertailuehtoa.
 
-Lähde: oppituntidia ”Resistiivisyys ja johtavuus”, keskusteluun lähetetty kuva oppitunnin lähdekuva (21.9.2026). Materiaalin ja johtimen erottelu, kaavan käyttöehdot, yksikkömuunnokset, johtavuuden käänteisluku ja lämpöhäviöiden vertailuehto ovat oppimista tukevia täsmennyksiä.
+Materiaalin ja johtimen erottelu, kaavan käyttöehdot, yksikkömuunnokset, johtavuuden käänteisluku ja lämpöhäviöiden vertailuehto ovat oppimista tukevia täsmennyksiä.
 
 Kaavakooste: [Resistiivisyys ja johtavuus](kaavat-ja-yksikot.md#resistiivisyys-ja-johtavuus).
 
 ## Hyötysuhde
-
-Oppitunti 21.9.2026.
 
 **Tehohyötysuhde** kertoo laitteesta hyödyksi saadun tehon eli **antotehon** suhteesta laitteeseen vietyyn tehoon eli **ottotehoon**.
 
@@ -160,8 +154,6 @@ Oppitunti 21.9.2026.
 - `P₁` = laitteen tai koneen ottoteho
 
 Laitteessa syntyvien häviöiden vuoksi hyötysuhde on alle yksi. Hyötysuhde voidaan ilmoittaa myös prosentteina kertomalla suhdeluku sadalla.
-
-Lähde: oppituntidia ”Hyötysuhde”, kuva oppitunnin lähdekuva (21.9.2026).
 
 ## Sähköteho
 
@@ -236,7 +228,7 @@ Kun `U = 12 V`, `R1 = 5 Ω` ja `R2 = 10 Ω`:
 | Jännite              | Jakautuu vastusten kesken  | Sama kaikissa haaroissa                                             |
 | Vastuksen lisääminen | Kokonaisresistanssi kasvaa | Uuden rinnakkaisen haaran lisääminen pienentää kokonaisresistanssia |
 
-Lähde: käsinkirjoitetut muistiinpanot 7.9.2026, oppitunnin lähdeaineisto. Haaravirrat, vertailu ja laskuesimerkki ovat selittäviä täydennyksiä.
+Haaravirrat, vertailu ja laskuesimerkki ovat selittäviä täydennyksiä.
 
 ## Ohmin lain kaavapyörä
 
@@ -395,15 +387,7 @@ IP-luokka ei yksin kerro kemikaalien, korroosion, iskujen tai käyttölämpötil
 
 **Vastaukset:** 1) Pölysuojaus ja roiskevesisuojaus. 2) Pölysuojattu / pölytiivis. 3) Ensimmäistä suojausastetta ei ilmoiteta. 4) Ei; vesisuihkusuojaus on varmistettava erikseen.
 
-### IP-osion lähteet
-
-Tarkistettu 5.10.2026. Taulukot ovat tiivistetty opiskelukooste, eivät standardin täydelliset testivaatimukset.
-
-- [IEC 60529: standardin kuvaus](https://webstore.iec.ch/en/publication/2452) — luokituksen standardiperusta.
-- [Hammond: Definition of Protection Grades IEC 60529](https://www.hammfg.com/electrical/technical/iec) — kosketus-, vierasesine- ja vesisuojauksen merkitykset.
-- [igus: IP protection classes](https://www.igus.eu/harnessing-and-connectors/connectors/ip-protection-classes) — X-merkintä, numeroiden tulkinta ja liittimen suojauksen osat.
-- [NorComp: IP Ratings and Harsh Environment Connectors](https://www.norcomp.net/applications/ip-ratings-and-harsh-environment-connectors) — IPX9, käyttöolosuhteet ja IP-luokituksen rajaukset.
-- [WIKA: Pressure switches with IP65 and IP67 ingress protection](https://blog.wika.com/en/products/pressure-switches-with-ip65-and-ip67-ingress-protection/) — upotus- ja vesisuihkukokeiden ero.
+Taulukot ovat tiivistetty opiskelukooste, eivät standardin täydelliset testivaatimukset.
 
 ### IP-koodin lisäkirjaimet A–D
 
@@ -416,11 +400,9 @@ Oppikirjan taulukon lisäkirjain täsmentää suojausta pääsyltä vaarallisiin
 | C       | Työkalulla                          |
 | D       | Langalla                            |
 
-Lähde: oppikirjan luku 5.1, s. 80, oppitunnin lähdeaineisto.
-
 ## Tilaluokittelu ja kotelointiluokan valinta
 
-Oppitunti 5.10.2026. **Kotelointiluokka valitaan laitteen todellisen asennuspaikan rasitusten mukaan.** Kosteus, roiskeet, pesuvesi ja lämpötila vaikuttavat eri tavoin. Alla erotetaan oppikirjan opetusesimerkit tarkistetuista lisähuomioista.
+**Kotelointiluokka valitaan laitteen todellisen asennuspaikan rasitusten mukaan.** Kosteus, roiskeet, pesuvesi ja lämpötila vaikuttavat eri tavoin. Alla erotetaan oppikirjan opetusesimerkit tarkistetuista lisähuomioista.
 
 ### Kostea, märkä ja ulkotila
 
@@ -437,8 +419,6 @@ Oppikirjan s. 82:n kooste:
 Kosteita tiloja ovat kirjan esimerkeissä kylmäkellarit, lämmittämättömät varastot ja pyykinkuivaushuoneet. Märkiä tiloja ovat esimerkiksi pesuhallit ja vesisuihkulla pestävät alueet.
 
 **Taulukko on kurssin oppikirjakooste, ei kaikkien asennuspaikkojen täydellinen vaatimuslista.** Vesisuihkupesu voi edellyttää roiskevesisuojausta vahvempaa suojausta. X ei ilmoita vierasesinesuojausta; valinnassa huomioidaan myös IP-koodin ensimmäinen numero ja laitteen käyttöehdot.
-
-Lähde: oppitunnin lähdeaineisto, s. 82.
 
 ### Kylpy- ja suihkutilojen alueet
 
@@ -457,7 +437,7 @@ Kiinteä väliseinä voi rajata alueita. **Etäisyyttä ei arvioida pelkästää
 
 Pelkkä riittävä IP-luokka ei salli mitä tahansa laitetta mille tahansa alueelle. Verkkojännitteisiä pistorasioita ei saa asentaa alueille 0, 1 tai 2. Kirjan mukaan WC:tä, jossa on vain alapesusuihku ja lattiakaivo, ei tämän perusteella luokitella suihkutilaksi.
 
-Lähdekuva: oppitunnin lähdeaineisto, s. 84. Täsmennysten lähde: [Tukes: Kylpy- ja suihkutilojen sähköasennukset](https://tukes.fi/sahko/sahkotyot-ja-urakointi/sahkoasennusten-tekniset-vaatimukset/kylpy-ja-suihkutilojen-sahkoasennukset), tarkistettu 5.10.2026. Varsinainen sijoitus ratkaistaan sovellettavan SFS 6000-7-701:n ja laiteohjeiden mukaan.
+Varsinainen sijoitus ratkaistaan sovellettavan SFS 6000-7-701:n ja laiteohjeiden mukaan.
 
 ### Sauna: IP-luokan lisäksi lämmönkesto
 
@@ -477,11 +457,9 @@ Saunan sähkölaitteiden kotelointiluokka on vähintään **IP24**. Riittävä I
 
 Kirjassa mainitaan lisäksi kiukaan liitäntärasian sijoitus: alueella 1 rasian yläreuna enintään 0,5 m lattiasta. Tämä on lähteen opetustieto; laitteen oma asennusohje ja sovellettavat vaatimukset tarkistetaan asennuksessa.
 
-Lähdekuva: oppitunnin lähdeaineisto, s. 86. Tarkistettu vertailulähde: [Tukes: Saunojen sähköasennukset](https://tukes.fi/sahko/sahkotyot-ja-urakointi/sahkoasennusten-tekniset-vaatimukset/saunojen-sahkoasennukset), 5.10.2026.
-
 ## Vikasuojaus
 
-Oppitunti 5.10.2026. **Vikasuojaus suojaa sähköiskulta, kun laitteessa tai asennuksessa syntyy vika**, esimerkiksi eristysvaurio tekee kosketeltavan metallikotelon jännitteiseksi. Perussuojaus puolestaan estää koskettamasta normaalisti jännitteisiä osia.
+**Vikasuojaus suojaa sähköiskulta, kun laitteessa tai asennuksessa syntyy vika**, esimerkiksi eristysvaurio tekee kosketeltavan metallikotelon jännitteiseksi. Perussuojaus puolestaan estää koskettamasta normaalisti jännitteisiä osia.
 
 ### Oppitunnin neljä suojausmenetelmää
 
@@ -512,11 +490,9 @@ Sulake, johdonsuojakatkaisija tai vikavirtasuoja voi toteuttaa poiskytkennän, k
 
 Dian ilmaus ”PE johtaa vikavirran maahan” on yksinkertaistus: TN-järjestelmässä keskeinen paluureitti on suojajohdinreitti, ei maaperä. **0,4 s on enimmäisaika, ei odotusaika tai turvallinen kosketusaika.**
 
-Lähteet: oppituntidiat oppitunnin lähdeaineisto. Poiskytkentäajan soveltamisalan ja vikavirran reitin täsmennys: [Schneider Electric: TN system – Principle](https://www.electrical-installation.org/enwiki/TN_system_-_Principle), tarkistettu 5.10.2026.
-
 ### Vikavirtasuojan merkinnät – 16 A, 30 mA ja 230 V
 
-Oppitunnin tehtävä 1.22 (5.10.2026). Kuvan vikavirtasuojapistorasian merkinnät tarkoittavat eri suureita:
+Vikavirtasuojapistorasian merkinnät tarkoittavat eri suureita:
 
 | Termi                                                             | Tunnus |          Kuvan arvo | Merkitys                                                                                                         |
 | ----------------------------------------------------------------- | ------ | ------------------: | ---------------------------------------------------------------------------------------------------------------- |
@@ -531,8 +507,6 @@ Yksivaihepiirissä vikavirtasuoja vertaa vaiheen kautta menevää ja nollan kaut
 **30 mA ei tarkoita kuorman suurinta sallittua virtaa, eikä 16 A yksin kerro ylivirtasuojauksesta.** Pelkkä vikavirtasuojakytkin (RCCB) tarvitsee erillisen ylivirtasuojauksen; yhdistelmäsuojassa (RCBO) on sekä vikavirta- että ylivirtasuojaus.
 
 **Nimellinen toimintavirta ja mitattu laukaisuvirta ovat eri käsitteitä.** `I_Δn` on laitteen ilmoitettu mitoitusarvo. Testissä mitattu todellinen laukaisuvirta voi olla sitä pienempi.
-
-Lähde: oppitunnin tehtävä 1.22, oppitunnin lähdeaineisto. Selittävät täsmennykset: [Schneider Electric: Description of RCDs](https://www.electrical-installation.org/enwiki/Description_of_RCDs), [Sensitivity of RCDs to disturbances](https://www.electrical-installation.org/enwiki/Sensitivity_of_RCDs_to_disturbances) ja [RCD-laitekategoriat](https://www.se.com/nz/en/faqs/FAQ000218859/), tarkistettu 5.10.2026.
 
 ### Oikosulkuvirran taulukko – toimiiko suoja ajoissa?
 
@@ -592,7 +566,7 @@ Tulos osoittaa vain tämän taulukon oikosulkuvirtarajan täyttymisen, ei koko a
 
 **Muista:** 5 s:n saraketta ei saa käyttää, jos piiriltä edellytetään 0,4 s:n poiskytkentää. Myöskään toimintarajavirtaa ja vaadittua mitattua arvoa ei saa vaihtaa keskenään.
 
-Lähde: oppitunnin oppimateriaalin **taulukko 1.1**, oppitunnin lähdeaineisto. Kuvassa viitataan **D1-2022:n taulukoihin 41.4a, 41.4b ja 41.5**; lukuarvot on kirjattu kuvan mukaan. Muistisäännöt ja 150 A:n vertailuesimerkki ovat taulukosta johdettuja oppimista tukevia lisäyksiä.
+Lukuarvot on kirjattu oppimateriaalin mukaan. Muistisäännöt ja 150 A:n vertailuesimerkki ovat oppimista tukevia lisäyksiä.
 
 ## Yleismittarin kerrannaisyksiköt
 
@@ -649,13 +623,7 @@ Silmukkaimpedanssi määrittää mahdollisen oikosulkuvirran suuruutta. Mitä su
 
 Mittaustulokset kirjataan käyttöönottotarkastuksen pöytäkirjaan. Suomessa käytetään SFS 6000 -standardisarjan mukaisia mittauksia.
 
-### Opastevideo
-
-- [Teemu Tuomela – Jännitteettömät käyttöönottomittaukset](https://www.youtube.com/watch?v=Sm4hDTJXL98) — pienen sähkökeskuksen jännitteettömänä tehtävät käyttöönottomittaukset (Rasekon ammattiopiston harjoitustyö).
-
 ## Vaihtosähkö
-
-Oppitunti 21.9.2026.
 
 ### Vaihtosähkön peruskäsitteitä
 
@@ -666,7 +634,7 @@ Vaihtosähkössä jännitteen ja virran suunta sekä hetkellinen arvo muuttuvat 
 - 270° = 3π/2
 - 360° = 2π
 
-Kolmivaiheverkossa oppitunnilla käytetyt nimelliset jännitteet:
+Kolmivaiheverkon nimelliset jännitteet:
 
 - vaihe–nolla: **230 V**
 - vaihe–suojamaa: **230 V**
@@ -684,8 +652,6 @@ Muistiinpanojen mittausryhmät:
 
 Näillä mittauksilla voidaan todeta vaiheiden ja jännitetasojen olevan odotetun kaltaisia. Käytännön mittaukset tehdään vain koulutuksen ja sähköturvallisuusohjeiden mukaisesti.
 
-Lähde: käsinkirjoitetut muistiinpanot, kuva oppitunnin lähdekuva (21.9.2026).
-
 ### Vaihtovirran mittaus
 
 Virran mittauksella voidaan selvittää esimerkiksi:
@@ -695,8 +661,6 @@ Virran mittauksella voidaan selvittää esimerkiksi:
 - onko kuorma oikean kokoinen
 - onko piirissä vikaa
 - ottaako laite nimellisvirran
-
-Lähde: oppituntidia ”Vaihtovirran mittaus”, kuva oppitunnin lähdekuva (21.9.2026).
 
 ### Pihtiampeerimittari
 
@@ -710,8 +674,6 @@ Toimintaperiaate oppitunnin mukaan:
 
 Pihtimittarin pihdit asetetaan mitattavan **yhden virtajohtimen** ympärille. Jos saman pihdin sisällä kulkevat meno- ja paluuvirta, niiden magneettikentät voivat kumota toisensa eikä tavallista kuormavirtaa saada mitattua oikein.
 
-Lähde: oppituntidia ”Pihtiampeerimittari”, kuva oppitunnin lähdekuva (21.9.2026). Viimeinen kappale on mittaustavan ymmärtämistä tukeva täsmennys.
-
 ### Pihtiampeerimittarin käyttökohteita
 
 Oppitunnilla mainittuja käyttökohteita:
@@ -721,8 +683,6 @@ Oppitunnilla mainittuja käyttökohteita:
 - moottoreiden mittaukset
 - lämpökaapeleiden mittaukset
 - vikojen etsintä
-
-Lähde: oppituntidia, kuva oppitunnin lähdekuva (21.9.2026).
 
 ### Yksivaiheisen vaihtojännitteen synty
 
@@ -734,8 +694,6 @@ Yksivaiheisen vaihtosähkön tuottamisen perusidea esitettiin pyörivän magneet
 - magneetin yksi täysi kierros synnyttää yhden täydellisen jännitejakson
 
 Käämi eli kela on johdinta, joka on kierretty kierroksiksi.
-
-Lähteet: oppituntidiat ”Yksivaiheisuus”, kuvat oppitunnin lähdekuva ja oppitunnin lähdekuva (21.9.2026).
 
 ### Sinimuotoinen jännite
 
@@ -752,8 +710,6 @@ Pyörivän magneetin asennon ja syntyvän jännitteen yhteys oppitunnin mallissa
 |            360° | 0 V                 |
 
 Yksi magneetin täysi pyörähdys vastaa yhtä jännitejaksoa.
-
-Lähteet: oppituntidiat ”Sinimuotoinen jännite”, kuvat oppitunnin lähdekuva ja oppitunnin lähdekuva (21.9.2026).
 
 ### Hetkellis-, huippu- ja tehollisarvo
 
@@ -785,10 +741,6 @@ Jännitteen **hetkellisarvo** `u` on tietyllä hetkellä havaittu jännite. Sini
 - `α` = vaihekulma
 
 Oppimateriaalin mukaan tehollisarvo `U` tarkoittaa vaihtojännitettä, joka tuottaa resistiivisessä kuormassa saman tehon kuin samansuuruinen tasajännite. Kun jännitteestä puhutaan ilman muuta täsmennystä, ilmoitettu arvo on yleensä tehollisarvo; esimerkiksi verkon 230 V ja 400 V ovat tehollisarvoja.
-
-Lähde: oppituntidia ”Sinimuotoisen vaihtosähkön hetkellis- ja huippuarvot”, kuva oppitunnin lähdekuva (21.9.2026).
-
-Lähde hetkellisarvon kaavalle ja tehollisarvon määritelmälle: oppimateriaali, kuva oppitunnin lähdekuva (21.9.2026).
 
 ## Sähkön tuotanto, siirto ja jakelu
 
@@ -832,7 +784,7 @@ Erotuksen jälkeen kiinteistön sisäinen verkko on viisijohtiminen **TN-S-järj
 
 ## Sähkötöiden tekemisen oikeus
 
-Oppitunti 6.11.2026. SETI Oy:n koulutusaineisto *Sähkötyöturvallisuus / Sähkötöitä tekevät henkilöt* (2025), diat 9, 10 ja 17, kuvasi sähköalan ammattihenkilön reittejä, laitetöiden kapeampaa ammattitaitoa ja sähkötöiden johtajan käytännön toimia. Diat ovat koulutusta, eivät säädöstä. Niitä ei ole kopioitu tähän muistioon, eikä alkuperäiskuvia ole tallennettu liitteiksi. Teksti on tarkistettu Finlexin ajantasaisesta laista ja Tukesin julkisesta ohjeesta 6.11.2026. Muistiinpano ei arvioi kenenkään henkilökohtaista kelpoisuutta eikä anna lupaa tehdä sähkötyötä.
+Tämä muistio kuvaa vaatimuksia yleisellä tasolla. Se ei arvioi kenenkään henkilökohtaista kelpoisuutta eikä anna lupaa tehdä sähkötyötä.
 
 Oppikirjan mukaan asentaja, jolla ei ole itsenäistä urakointioikeutta, työskentelee sähkötöiden johtajan alaisuudessa toiminnanharjoittajalla, jolla on asianmukainen pätevyys. Käytännön työ tehdään koulutuksessa ja nimetyn johtajan vastuulla.
 
@@ -918,20 +870,7 @@ Ilmoitusvelvollisuus on laissa rajattu. STL 114 § velvoittaa poliisin, pelastus
 
 Vakava työtapaturma ilmoitetaan erikseen poliisille ja työsuojeluviranomaiselle. Tukesin sähköinen lomake ei korvaa tätä työnantajan ilmoitusta.
 
-### Lähteet, tarkistettu 6.11.2026
-
-- [Sähköturvallisuuslaki 1135/2016, ajantasainen](https://www.finlex.fi/fi/lainsaadanto/2016/1135), erityisesti 43, 54, 55, 56, 58, 59, 65, 68, 69, 70, 73, 82 ja 114 §. Finlexin koosteen konsolidointipäivä on 20.3.2026. Lain myöhemmät muutokset 678/2018, 250/2022 ja 190/2026 kohdistuvat muihin pykäliin, joten 73 ja 114 § ovat koosteessa alkuperäisessä muodossaan.
-- [Valtioneuvoston asetus sähkötyöstä ja käyttötyöstä 1435/2016, ajantasainen](https://www.finlex.fi/fi/lainsaadanto/2016/1435), 3 ja 4 § sekä liitteen 2 ja 3 §.
-- [Tukes: Sähköpätevyydet ja työalueet](https://tukes.fi/sahko/sahkotyot-ja-urakointi/sahkopatevyydet-ja-tyoalueet), sähköalan ammattihenkilö, S3:n työalue ja ilmalämpöpumpun sähköasennukset.
-- [Tukes: Sähkötöiden johtaja](https://tukes.fi/sahko/sahkotoiden-johtaja).
-- [Tukes: Lämpöpumppujen sähköasennuksissa asennusvirheitä ja oikeudettomia sähkötöitä](https://tukes.fi/-/lampopumppujen-sahkoasennuksissa-asennusvirheita-ja-oikeudettomia-sahkotoita), yhden syöttökaapelin ja keskusmuutoksen ero.
-- [Tukes: Sähkötyöt, lomakkeet](https://tukes.fi/asiointi/lomakkeet/sahko-ja-hissityot), sähköinen sähkö- ja hissitapaturmailmoitus, avattu lokakuussa 2023.
-- [Suomi.fi: Sähkötapaturmailmoittaminen](https://www.suomi.fi/palvelut/sahkotapaturmailmoittaminen-turvallisuus-ja-kemikaalivirasto-tukes/d8f79266-36e1-4f98-aebe-14b7ac9176b6), päivitetty 2.7.2025.
-- [Työsuojeluhallinto: työtapaturmailmoitus](https://tyosuojelu.fi/tyotapaturmailmoitus), vakavan työtapaturman ilmoitus poliisille ja työsuojeluviranomaiselle.
-
 ## Asennuspiirustusten piirrosmerkkejä
-
-Oppitunti 21.9.2026.
 
 **Asennuspiirustuksen piirrosmerkit** välittävät tiiviisti tietoa tilasta, johdotuksesta ja sähkölaitteista. Merkin ulkomuoto pitää tunnistaa kuvasta; alla oleva kooste kertoo sen merkityksen.
 
@@ -963,11 +902,9 @@ oppitunnin lähdeaineisto
 
 **Tunnistamisvihje:** himmentimien merkeissä perusosa on sama, mutta kytkintoiminto näkyy siihen liitetystä kytkinmerkinnästä. Painikkeen sisällä oleva lamppumerkki erottaa merkkilampullisen painikkeen tavallisesta painikkeesta.
 
-Lähde: oppitunnilla esitetty tehtävä ”Nimeä seuraavat asennuspiirustuksissa käytettävät piirrosmerkit”, oppitunnin lähdeaineisto (21.9.2026).
-
 ## Sähköpiirustuksen lukeminen: yhden valaisimen ohjaus
 
-Oppitunti 28.9.2026. Esimerkki havainnollistaa perustasoa: tunnista syöttö, komponentit, johtimien tehtävät ja lukumäärät sekä selitä kytkennän toiminta. Pelkkä piirrosmerkkien nimeäminen ei vielä kerro, miten piiri toimii.
+Esimerkki havainnollistaa perustasoa: tunnista syöttö, komponentit, johtimien tehtävät ja lukumäärät sekä selitä kytkennän toiminta. Pelkkä piirrosmerkkien nimeäminen ei vielä kerro, miten piiri toimii.
 
 ### Millainen piirustus tämä on?
 
@@ -1029,8 +966,6 @@ X1:n katkoviivarajaus osoittaa rasian alueen, ei sähköjohdinta. Sen sisällä 
 
 Kuvan kytkin on piirretty avoimeksi. Kun Q1 sulkeutuu, käyttövirtapiirin reitti on **L → X1 → Q1 → X1 → E1 → N**. Tämä reitti täydentää edellä esitettyä toimintaperiaatetta näyttämällä jakorasian molemmat vaiheliitokset.
 
-Lähde: oppimateriaalin kohta **6.5 Valaistusasennukset / Valaistuskytkimet ja valaistuskytkennät**, taulukon rivi **Yksinapainen kytkin, 1-kytkin**. Selitys perustuu vain kuvassa näkyvään riviin; kuvan alareunan seuraavaa kytkentää ei ole tulkittu.
-
 ### Miten valo syttyy?
 
 Jakorasiassa syötön vaihe jatkuu kytkimelle. Kytkimen sulkeutuessa yhteys jatkuu kytketyssä vaihejohtimessa takaisin jakorasiaan ja edelleen valaisimelle. Valaisimen toinen virtapiirin liitäntä yhdistyy nollajohtimeen: valaisimen käyttövirtapiiri sulkeutuu ja valo syttyy. Kytkimen avautuminen katkaisee vaihereitin ja valo sammuu.
@@ -1045,13 +980,120 @@ PE on erillinen suojajohdin, ei valaisimen käyttövirran paluujohdin. Suojamaad
 
 Osaat tulkita esimerkin, kun pystyt omin sanoin kertomaan, mistä syöttö tulee, missä liitokset tehdään, mitä kytkin ohjaa, miksi kytkimelle on piirretty kaksi johdinta ja miksi valaisimelle kolme. Lisäksi osaat erottaa nollajohtimen suojajohtimesta sekä ryhmänumeron sulakkeen nimellisvirrasta.
 
+## Lähteet ja alkuperäismateriaali
+
+Koottu oppikirjakuvista 31.8.2026 ja täydennetty oppituntien aineistoilla.
+
+### Resistiivisyys ja johtavuus
+
+Oppitunti 21.9.2026.
+
+Lähde: oppituntidia, kuva oppitunnin lähdekuva (21.9.2026). Arvot on kirjattu dian mukaisina.
+
+Lähde: oppituntidia ”Resistiivisyys ja johtavuus”, keskusteluun lähetetty kuva oppitunnin lähdekuva (21.9.2026). Materiaalin ja johtimen erottelu, kaavan käyttöehdot, yksikkömuunnokset, johtavuuden käänteisluku ja lämpöhäviöiden vertailuehto ovat oppimista tukevia täsmennyksiä.
+
+### Hyötysuhde
+
+Oppitunti 21.9.2026.
+
+Lähde: oppituntidia ”Hyötysuhde”, kuva oppitunnin lähdekuva (21.9.2026).
+
+### Vastusten rinnankytkentä
+
+Lähde: käsinkirjoitetut muistiinpanot 7.9.2026, oppitunnin lähdeaineisto. Haaravirrat, vertailu ja laskuesimerkki ovat selittäviä täydennyksiä.
+
+### IP-osion lähteet
+
+Tarkistettu 5.10.2026. Taulukot ovat tiivistetty opiskelukooste, eivät standardin täydelliset testivaatimukset.
+
+- [IEC 60529: standardin kuvaus](https://webstore.iec.ch/en/publication/2452) — luokituksen standardiperusta.
+- [Hammond: Definition of Protection Grades IEC 60529](https://www.hammfg.com/electrical/technical/iec) — kosketus-, vierasesine- ja vesisuojauksen merkitykset.
+- [igus: IP protection classes](https://www.igus.eu/harnessing-and-connectors/connectors/ip-protection-classes) — X-merkintä, numeroiden tulkinta ja liittimen suojauksen osat.
+- [NorComp: IP Ratings and Harsh Environment Connectors](https://www.norcomp.net/applications/ip-ratings-and-harsh-environment-connectors) — IPX9, käyttöolosuhteet ja IP-luokituksen rajaukset.
+- [WIKA: Pressure switches with IP65 and IP67 ingress protection](https://blog.wika.com/en/products/pressure-switches-with-ip65-and-ip67-ingress-protection/) — upotus- ja vesisuihkukokeiden ero.
+
+Lähde: oppikirjan luku 5.1, s. 80, oppitunnin lähdeaineisto.
+
+### Tilaluokittelu ja kotelointiluokan valinta
+
+Oppitunti 5.10.2026.
+
+Lähde: oppitunnin lähdeaineisto, s. 82.
+
+Lähdekuva: oppitunnin lähdeaineisto, s. 84. Täsmennysten lähde: [Tukes: Kylpy- ja suihkutilojen sähköasennukset](https://tukes.fi/sahko/sahkotyot-ja-urakointi/sahkoasennusten-tekniset-vaatimukset/kylpy-ja-suihkutilojen-sahkoasennukset), tarkistettu 5.10.2026. Varsinainen sijoitus ratkaistaan sovellettavan SFS 6000-7-701:n ja laiteohjeiden mukaan.
+
+Lähdekuva: oppitunnin lähdeaineisto, s. 86. Tarkistettu vertailulähde: [Tukes: Saunojen sähköasennukset](https://tukes.fi/sahko/sahkotyot-ja-urakointi/sahkoasennusten-tekniset-vaatimukset/saunojen-sahkoasennukset), 5.10.2026.
+
+### Vikasuojaus
+
+Oppitunti 5.10.2026.
+
+Lähteet: oppituntidiat oppitunnin lähdeaineisto. Poiskytkentäajan soveltamisalan ja vikavirran reitin täsmennys: [Schneider Electric: TN system – Principle](https://www.electrical-installation.org/enwiki/TN_system_-_Principle), tarkistettu 5.10.2026.
+
+Oppitunnin tehtävä 1.22 (5.10.2026).
+
+Lähde: oppitunnin tehtävä 1.22, oppitunnin lähdeaineisto. Selittävät täsmennykset: [Schneider Electric: Description of RCDs](https://www.electrical-installation.org/enwiki/Description_of_RCDs), [Sensitivity of RCDs to disturbances](https://www.electrical-installation.org/enwiki/Sensitivity_of_RCDs_to_disturbances) ja [RCD-laitekategoriat](https://www.se.com/nz/en/faqs/FAQ000218859/), tarkistettu 5.10.2026.
+
+Lähde: oppitunnin oppimateriaalin **taulukko 1.1**, oppitunnin lähdeaineisto. Kuvassa viitataan **D1-2022:n taulukoihin 41.4a, 41.4b ja 41.5**; lukuarvot on kirjattu kuvan mukaan. Muistisäännöt ja 150 A:n vertailuesimerkki ovat taulukosta johdettuja oppimista tukevia lisäyksiä.
+
+### Asennustesterin opastevideo
+
+- [Teemu Tuomela – Jännitteettömät käyttöönottomittaukset](https://www.youtube.com/watch?v=Sm4hDTJXL98) — pienen sähkökeskuksen jännitteettömänä tehtävät käyttöönottomittaukset (Rasekon ammattiopiston harjoitustyö).
+
+### Vaihtosähkö
+
+Oppitunti 21.9.2026.
+
+Lähde: käsinkirjoitetut muistiinpanot, kuva oppitunnin lähdekuva (21.9.2026).
+
+Lähde: oppituntidia ”Vaihtovirran mittaus”, kuva oppitunnin lähdekuva (21.9.2026).
+
+Lähde: oppituntidia ”Pihtiampeerimittari”, kuva oppitunnin lähdekuva (21.9.2026). Viimeinen kappale on mittaustavan ymmärtämistä tukeva täsmennys.
+
+Lähde: oppituntidia, kuva oppitunnin lähdekuva (21.9.2026).
+
+Lähteet: oppituntidiat ”Yksivaiheisuus”, kuvat oppitunnin lähdekuva ja oppitunnin lähdekuva (21.9.2026).
+
+Lähteet: oppituntidiat ”Sinimuotoinen jännite”, kuvat oppitunnin lähdekuva ja oppitunnin lähdekuva (21.9.2026).
+
+Lähde: oppituntidia ”Sinimuotoisen vaihtosähkön hetkellis- ja huippuarvot”, kuva oppitunnin lähdekuva (21.9.2026).
+
+Lähde hetkellisarvon kaavalle ja tehollisarvon määritelmälle: oppimateriaali, kuva oppitunnin lähdekuva (21.9.2026).
+
+### Sähkötöiden tekemisen oikeus
+
+Oppitunti 6.11.2026. SETI Oy:n koulutusaineisto *Sähkötyöturvallisuus / Sähkötöitä tekevät henkilöt* (2025), diat 9, 10 ja 17, kuvasi sähköalan ammattihenkilön reittejä, laitetöiden kapeampaa ammattitaitoa ja sähkötöiden johtajan käytännön toimia. Diat ovat koulutusta, eivät säädöstä. Niitä ei ole kopioitu tähän muistioon, eikä alkuperäiskuvia ole tallennettu liitteiksi. Teksti on tarkistettu Finlexin ajantasaisesta laista ja Tukesin julkisesta ohjeesta 6.11.2026. Muistiinpano ei arvioi kenenkään henkilökohtaista kelpoisuutta eikä anna lupaa tehdä sähkötyötä.
+
+#### Lähteet, tarkistettu 6.11.2026
+
+- [Sähköturvallisuuslaki 1135/2016, ajantasainen](https://www.finlex.fi/fi/lainsaadanto/2016/1135), erityisesti 43, 54, 55, 56, 58, 59, 65, 68, 69, 70, 73, 82 ja 114 §. Finlexin koosteen konsolidointipäivä on 20.3.2026. Lain myöhemmät muutokset 678/2018, 250/2022 ja 190/2026 kohdistuvat muihin pykäliin, joten 73 ja 114 § ovat koosteessa alkuperäisessä muodossaan.
+- [Valtioneuvoston asetus sähkötyöstä ja käyttötyöstä 1435/2016, ajantasainen](https://www.finlex.fi/fi/lainsaadanto/2016/1435), 3 ja 4 § sekä liitteen 2 ja 3 §.
+- [Tukes: Sähköpätevyydet ja työalueet](https://tukes.fi/sahko/sahkotyot-ja-urakointi/sahkopatevyydet-ja-tyoalueet), sähköalan ammattihenkilö, S3:n työalue ja ilmalämpöpumpun sähköasennukset.
+- [Tukes: Sähkötöiden johtaja](https://tukes.fi/sahko/sahkotoiden-johtaja).
+- [Tukes: Lämpöpumppujen sähköasennuksissa asennusvirheitä ja oikeudettomia sähkötöitä](https://tukes.fi/-/lampopumppujen-sahkoasennuksissa-asennusvirheita-ja-oikeudettomia-sahkotoita), yhden syöttökaapelin ja keskusmuutoksen ero.
+- [Tukes: Sähkötyöt, lomakkeet](https://tukes.fi/asiointi/lomakkeet/sahko-ja-hissityot), sähköinen sähkö- ja hissitapaturmailmoitus, avattu lokakuussa 2023.
+- [Suomi.fi: Sähkötapaturmailmoittaminen](https://www.suomi.fi/palvelut/sahkotapaturmailmoittaminen-turvallisuus-ja-kemikaalivirasto-tukes/d8f79266-36e1-4f98-aebe-14b7ac9176b6), päivitetty 2.7.2025.
+- [Työsuojeluhallinto: työtapaturmailmoitus](https://tyosuojelu.fi/tyotapaturmailmoitus), vakavan työtapaturman ilmoitus poliisille ja työsuojeluviranomaiselle.
+
+### Asennuspiirustusten piirrosmerkit
+
+Oppitunti 21.9.2026.
+
+Lähde: oppitunnilla esitetty tehtävä ”Nimeä seuraavat asennuspiirustuksissa käytettävät piirrosmerkit”, oppitunnin lähdeaineisto (21.9.2026).
+
+### Sähköpiirustuksen lukeminen
+
+Oppitunti 28.9.2026.
+
+Lähde: oppimateriaalin kohta **6.5 Valaistusasennukset / Valaistuskytkimet ja valaistuskytkennät**, taulukon rivi **Yksinapainen kytkin, 1-kytkin**. Selitys perustuu vain kuvassa näkyvään riviin; kuvan alareunan seuraavaa kytkentää ei ole tulkittu.
+
 Piirrosmerkkien vertailu ja turvallisuustäsmennykset tarkistettu 28.9.2026:
 
 - [Sähköinsinööritoimisto Kuvio: Piirrosmerkit](https://www.sahkokuvio.fi/palvelut/sahkosuunnittelusta/piirrosmerkit/) — kytkimet, valaisimet ja suunnitelmakohtaisen selitteen merkitys.
 - [Rakennusten sähköpiirustusten piirrosmerkit, PDF](https://www.sivustot.net/oppaat/PIIRROSMERKIT.pdf) — PDF-sivut 9–10: johdinmerkit, jakorasiat ja ryhmän syöttö. Vanha vertailuaineisto piirrosmerkeille, ei ajantasainen asennus- tai johdinväriohje.
 - [Tukes: Mitä sähkötöitä saan tehdä itse](https://tukes.fi/kodin-sahkoturvallisuus/mita-sahkotoita-saan-tehda-itse) — jännitteettömyys ja valaisimen suojajohtimen oikea käyttötarkoitus.
 
-## Alkuperäiset kuvat
+### Alkuperäiset kuvat
 
 - oppitunnin lähdeaineisto — sähköiset suureet, yksiköt ja CAT-luokat
 

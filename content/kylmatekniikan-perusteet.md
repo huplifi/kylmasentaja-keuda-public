@@ -141,8 +141,6 @@ Kirjaston 18 kylmäkierron merkistä **12 on lähdevertailtuja ja 6 sovellettuja
 
 Sovellettujen symbolien tarkoitus on tehdä opiskelukaavioista johdonmukaisia. Niitä ei pidä tulkita väitteeksi siitä, että juuri kyseinen geometria olisi yleispätevä standardimerkki kaikissa kylmäkaavioissa. Laitetunnus, kaavion selite ja valmistajan dokumentaatio ratkaisevat tulkinnan.
 
-Lähteet ja tarkemmat rajaukset on kirjattu symbolikirjaston `manifest.json`-tiedostoon. Pääasiallisina lähteinä sarjassa on käytetty GUNTin kylmätekniikan kaavioaineistoa sekä imuvaraajan osalta Danfossin ACC-aineistoa.
-
 ## Apu-, ohjaus- ja suojalaitteita
 
 - **Nestesäiliö** lauhduttimen jälkeen varastoi nestemäistä kylmäainetta ja tasaa järjestelmän kylmäainemäärää.
@@ -179,8 +177,6 @@ Kuvan merkinnät:
 - Irrota mittarisarja (**”huom. kylmäaine”**, kuten kuvassa).
 - Tiivistä läpivienti.
 
-Lähde: oppitunnin lähdeaineisto — käsinkirjoitetut ILP-asennuksen muistiinpanot.
-
 ## ILP:n yleisimmät viat – oppitunnin dia 8.9.2026
 
 Dian ”Yleisimmät viat” luettelo kuvaa havaittavia oireita. Diassa ei anneta niiden syitä tai korjausohjeita.
@@ -195,16 +191,6 @@ Dian ”Yleisimmät viat” luettelo kuvaa havaittavia oireita. Diassa ei anneta
 - Sisäyksikkö on jäässä.
 
 **Sanamuodon täsmennys:** dian ”polttaa sulakkeen / vikavirtasuojan” on kirjattu yllä muotoon ”sulake palaa tai vikavirtasuoja laukeaa”.
-
-Lähde: oppitunnin lähdeaineisto — oppitunnin dia ”Yleisimmät viat”.
-
-## Lähdekuva
-
-- oppitunnin lähdeaineisto
-- oppitunnin lähdeaineisto — tulistus ja alijäähdytys
-- oppitunnin lähdeaineisto — korkea- ja matalapainepuoli
-- oppitunnin lähdeaineisto — putket ja lämpötilojen mittauspisteet
-- oppitunnin lähdeaineisto — tulistus-, alijäähdytys- ja mittausesimerkki
 
 ## Työsaliharjoitus 15.9.2026 — tyhjiöinti, täyttö ja talteenotto
 
@@ -233,4 +219,15 @@ Paperissa ei nimetä käytettävää kylmäainetta eikä täsmennetä paineiden 
 | Typen loppupaine ja paineen viitetaso    |           |
 | Opettajan täsmennykset ja omat havainnot |           |
 
-Lähde: oppitunnin lähdeaineisto, työsaliharjoituksen ohjepaperi, toimitettu 15.9.2026.
+## Lähteet ja alkuperäismateriaali
+
+- oppitunnin lähdeaineisto — kylmäkierron perusteet
+- oppitunnin lähdeaineisto — tulistus ja alijäähdytys
+- oppitunnin lähdeaineisto — korkea- ja matalapainepuoli
+- oppitunnin lähdeaineisto — putket ja lämpötilojen mittauspisteet
+- oppitunnin lähdeaineisto — tulistus-, alijäähdytys- ja mittausesimerkki
+- oppitunnin lähdeaineisto — käsinkirjoitetut ILP-asennuksen muistiinpanot, 8.9.2026
+- oppitunnin lähdeaineisto — oppitunnin dia ”Yleisimmät viat”, 8.9.2026
+- oppitunnin lähdeaineisto — työsaliharjoituksen ohjepaperi, toimitettu 15.9.2026
+
+Kylmäkierron symbolien lähteet ja yksittäisten merkkien rajaukset on kirjattu symbolikirjaston `manifest.json`-tiedostoon. Pääasiallisina lähteinä ovat GUNTin kylmätekniikan kaavioaineisto ja imuvaraajan osalta Danfossin ACC-aineisto.

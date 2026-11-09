@@ -5,8 +5,6 @@ publish: true
 
 Oppitunnin muistiinpanot 15.9.2026. Tätä dokumenttia täydennetään myöhemmillä kylmäaineita koskevilla muistiinpanoilla.
 
-Lähdekuvat: oppitunnin lähdeaineisto. Kuvista jäsennelty sisältö ja täydentävät selitykset on erotettu alla.
-
 ## ASHRAE ja R-tunnukset
 
 ASHRAE:n R-tunnuksia käytetään kylmäaineiden nimeämiseen kansainvälisesti.
@@ -86,8 +84,6 @@ Kuvan muistivihje on **myrkyllisyys A tai B, syttyvyys 1–3**. Täydennys: sytt
 
 Esimerkiksi **A1** yhdistää pienemmän myrkyllisyyden ja luokan 1; **A2L** pienemmän myrkyllisyyden ja hitaasti palavan luokan 2L. A ei tarkoita täysin vaaratonta.
 
-Lähdekuva: oppitunnin lähdeaineisto. Luokitusten selitykset: [ASHRAE/UNEP, huhtikuu 2026](https://www.ashrae.org/file%20library/professional%20development/ashrae-unep/unep---ashrae-factsheet--english.pdf).
-
 ## Kylmäaineiden kemialliset ryhmät
 
 Alla oppitunnin sisältö jäsenneltynä. Ryhmän nimi kuvaa kemiaa; R-tunnus yksilöi aineen tai seoksen.
@@ -112,8 +108,6 @@ Kuvan ”luokitellaan palaviksi” ei koske kaikkia HFO-aineita. Esimerkiksi R12
 
 Kuvan merkintä 1.1.2016 on korjattu päivämääräksi **1.1.2017**. Varmistettu säädöstieto: EU:n MAC-direktiivin soveltamisalaan kuuluvien uusien ajoneuvotyyppien ilmastoinnissa yli 150:n GWP:n fluoratut kaasut kiellettiin **1.1.2011**, ja kaikkien uusien ajoneuvojen osalta **1.1.2017**. Soveltamisala on M1-henkilöautot ja N1-luokan 1 kevyet hyötyajoneuvot. Direktiivi ei määrää tiettyä HFO-ainetta käytettäväksi. [Euroopan komissio: MAC](https://single-market-economy.ec.europa.eu/sectors/automotive-industry/environmental-protection/mobile-air-conditioning-systems-macs_en).
 
-Lähdekuva: oppitunnin lähdeaineisto.
-
 ## Luonnolliset kylmäaineet
 
 Kuvan esimerkit ovat **R717 (ammoniakki)** ja **R744 (hiilidioksidi)**. Myös hiilivedyt, kuten R290 ja R600a, kuuluvat luonnollisiin kylmäaineisiin; HC ja luonnolliset kylmäaineet eivät siis ole toisensa poissulkevat ryhmät. [EU:n F-kaasuasetus, johdanto-osa 3](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R0573).
@@ -126,8 +120,6 @@ Kuvan havainto: ”CO₂ kuluttaa paljon sähköä korkean paine-eron takia.”
 
 **Korjaus:** korkeasta käyttöpaineesta ei yksin voi päätellä suurta sähkönkulutusta. CO₂:n painesuhde voi olla verrattain pieni, ja energiatehokkuus riippuu prosessista, lämpötiloista ja järjestelmäratkaisusta. Korkea lauhtumislämpötila voi heikentää tehokkuutta, mutta CO₂-järjestelmä voi myös olla hyvin energiatehokas. [Danfoss](https://www.danfoss.com/en/about-danfoss/our-businesses/cooling/refrigerants-and-energy-efficiency/refrigerants-for-lowering-the-gwp/carbon-dioxide-co2/).
 
-Lähdekuva: oppitunnin lähdeaineisto.
-
 ### Oppitunnin CO₂-ekvivalenttiesimerkki
 
 Kuvan arvot: **R744, 100 kg, GWP 1**.
@@ -136,7 +128,7 @@ Kuvan arvot: **R744, 100 kg, GWP 1**.
 
 Lasku on oikein. Aineen pieni GWP ei tarkoita, että suuri täytös olisi automaattisesti vaaraton.
 
-Lähdekuva: oppitunnin lähdeaineisto. Katso myös [Kylmäaineet ja CO₂-ekvivalentti](kaavat-ja-yksikot.md#kylmäaineet-ja-co-ekvivalentti).
+Katso myös [Kylmäaineet ja CO₂-ekvivalentti](kaavat-ja-yksikot.md#kylmäaineet-ja-co-ekvivalentti).
 
 ## Lakisääteiset vuototarkastukset
 
@@ -160,8 +152,6 @@ Seoksissa huomioidaan molemmat aineosuudet. Suurimmassa luokassa vuodonilmaisuj�
 
 **Poikkeukset:** merkityt hermeettiset laitteet alle 10 t CO₂-ekv. / alle 2 kg; asuinrakennuksissa merkityt hermeettiset laitteet alle 3 kg. Seoksissa molemmat rajaehdot huomioidaan.
 
-Lähde: [Syken vuototarkastusohje](https://www.ymparisto.fi/fi/luvat-ja-velvoitteet/f-kaasut-ja-otsonikerrosta-heikentavat-aineet), tarkistettu 15.9.2026. Lähdekuva: oppitunnin lähdeaineisto.
-
 ### Mihin luonnolliset kylmäaineet ja seokset kuuluvat?
 
 **Täsmennys 20.9.2026:** selvitä ensin, kuuluuko kylmäaine kyseisen tarkastusvelvoitteen piiriin. Laske vasta sitten soveltuvat rajamäärät. CO₂-ekvivalentti kuvaa ilmastovaikutusta, ei yksin ratkaise lain soveltamisalaa.
@@ -169,8 +159,6 @@ Lähde: [Syken vuototarkastusohje](https://www.ymparisto.fi/fi/luvat-ja-velvoitt
 - **R717 ja R744 eivät ole HFC- eivätkä HFO-aineita.** Ne eivät kuulu F-kaasuasetuksen 5 artiklan määräaikaisiin vuototarkastuksiin millään täytösmäärällä. Niitä ei sijoiteta yllä olevan taulukon HFC-sarakkeeseen. Tästä ei seuraa, että laite olisi huoltovapaa tai vapautettu muista mahdollisista tarkastusvelvoitteista.
 - **HFC-aineissa** verrataan liitteen I kaasumäärää CO₂-ekvivalenttitonneina: esimerkiksi alle 5 t CO₂-ekv. sisältävälle R134a- tai R32-laitteelle ei synny tämän artiklan määräaikaista vuototarkastusvelvoitetta.
 - **HFC/HFO-seoksissa** tarkastellaan HFC-osuutta CO₂-ekvivalenttitonneina ja HFO-osuutta kilogrammoina. Seoksen koko massaa ei pidä laskea sekä puhtaaksi HFC:ksi että puhtaaksi HFO:ksi. Sovelletaan lyhyempää aineosuuksien edellyttämää tarkastusväliä.
-
-Lähteet: [F-kaasuasetus (EU) 2024/573, 5 artikla ja liitteet I–II](https://eur-lex.europa.eu/legal-content/FI/TXT/HTML/?uri=CELEX:32024R0573), [Syken ohje: seosaineiden aineosuudet ja tarkastusvälit](https://www.ymparisto.fi/fi/luvat-ja-velvoitteet/f-kaasut-ja-otsonikerrosta-heikentavat-aineet). Tarkistettu 20.9.2026.
 
 ## Kertaa omin sanoin
 
@@ -185,13 +173,6 @@ Lähteet: [F-kaasuasetus (EU) 2024/573, 5 artikla ja liitteet I–II](https://eu
 9. Miksi korkea käyttöpaine ei yksin tarkoita suurta sähkönkulutusta?
 10. Miksi 5 000 kg R744:ää ei käynnistä F-kaasuasetuksen määräaikaista vuototarkastusvelvoitetta?
 11. Miksi 50 kg R513A:ta ilman vuodonilmaisujärjestelmää tarkastetaan 6 kk eikä 12 kk välein?
-
-## Lähteet ja täsmennykset
-
-- Alkuperäiset oppituntimuistiinpanot: oppitunnin lähdeaineisto, 15.9.2026.
-- Oppitunnin vuototarkastusdia ja käsin korjattu 100 kg:n raja: oppitunnin lähdeaineisto, 15.9.2026. Dian virheellinen tarkastustiheys on korjattu tekstissä.
-- Lähdemerkintöjen täsmennykset 15.9.2026: lyhenne ekvt; HFC-esimerkki R134a; kuvan päivämäärä 1.1.2016 vahvistettu ja korjattu lähteen perusteella 1.1.2017:ksi. Vuototarkastusvälin korjaus hyväksytty.
-- Ulkoiset lähteet on linkitetty täydentävien selitysten yhteyteen; alkuperäiset täsmennykset tarkistettu 15.9.2026. Vuototarkastusten soveltamisala, R513A:n aineosuudet ja alla olevat kotitehtävän ratkaisut tarkistettu 20.9.2026.
 
 ## Kotitehtävä 15.9.2026 — CO₂-ekvivalentti ja turvaluokitus
 
@@ -222,8 +203,6 @@ R513A sisältää massasta **44 % R134a:ta (HFC)** ja **56 % R1234yf:ää (HFO)*
 2. **HFO-osuus:** `50 kg × 0,56 = 28 kg R1234yf:ää`. Se kuuluu luokkaan `10 ≤ määrä < 100 kg` → **6 kk** ilman vuodonilmaisujärjestelmää.
 3. **Lyhyempi väli ratkaisee: 6 kk.** HFO-määrää ei verrata tässä CO₂-ekvivalenttirajoihin, vaan kilogrammarajoihin.
 
-Lähteet: [Syken ohje](https://www.ymparisto.fi/fi/luvat-ja-velvoitteet/f-kaasut-ja-otsonikerrosta-heikentavat-aineet) ja [F-kaasuasetus, 5 artiklan 6 kohta](https://eur-lex.europa.eu/legal-content/FI/TXT/HTML/?uri=CELEX:32024R0573).
-
 **GWP-perustan täsmennys:** kuvan GWP-arvolla 631 saatu 31,55 t CO₂-ekv. on laskettu oikein. Nykyisen asetuksen komponenttiarvoista laskettuna seoksen GWP on kuitenkin `0,44 × 1430 + 0,56 × 0,501 = 629,48056`, eli noin 629,48, jolloin 50 kg vastaa noin **31,47 t CO₂-ekv.** Tätä koko seoksen arvoa ei pidä sekoittaa yllä laskettuun HFC-osuuden arvoon 31,46. Ero ei muuta 6 kk:n tarkastusväliä. GWP-arvot: asetuksen liitteet I ja II; seoksen laskentamenetelmä: liite VI. Kotitehtävässä käytettävä taulukko kannattaa merkitä näkyviin.
 
 ### R744:n jatkokysymys
@@ -232,7 +211,7 @@ Tehtäväpaperin kysymys: **Kuinka monta kiloa R744-täytöstä koneessa pitää
 
 **Vastaus tämän tehtävän F-kaasuvuototarkastusten näkökulmasta: ei millään täytösmäärällä.** R744 ei ole F-kaasu, joten F-kaasuasetuksen 5 artiklan määräaikaiset vuototarkastusrajat eivät koske sitä.
 
-`5000 kg × 1 / 1000 = 5 t CO₂-ekv.` on aritmeettisesti oikein, mutta **5 000 kg ei ole R744:n lakisääteisen F-kaasuvuototarkastuksen raja**. CO₂-ekvivalenttiraja ei laajenna asetuksen soveltamisalaa. Tämä vastaus ei tarkoita, ettei R744-laitteelle voisi olla muuta huolto- tai tarkastusvelvoitetta. Lähde: [F-kaasuasetus, 5 artikla](https://eur-lex.europa.eu/legal-content/FI/TXT/HTML/?uri=CELEX:32024R0573).
+`5000 kg × 1 / 1000 = 5 t CO₂-ekv.` on aritmeettisesti oikein, mutta **5 000 kg ei ole R744:n lakisääteisen F-kaasuvuototarkastuksen raja**. CO₂-ekvivalenttiraja ei laajenna asetuksen soveltamisalaa. Tämä vastaus ei tarkoita, ettei R744-laitteelle voisi olla muuta huolto- tai tarkastusvelvoitetta.
 
 ### Mitä kylmäaineen turvaluokitus tarkoittaa?
 
@@ -244,4 +223,14 @@ Tehtäväpaperin kysymys: **Kuinka monta kiloa R744-täytöstä koneessa pitää
 
 Kertaus: [Turvaluokitus: myrkyllisyys ja syttyvyys](kylmaaineet.md#turvaluokitus-myrkyllisyys-ja-syttyvyys). Laskukaava: [Kylmäaineet ja CO₂-ekvivalentti](kaavat-ja-yksikot.md#kylmäaineet-ja-co-ekvivalentti).
 
-Lähde: oppitunnin lähdeaineisto, tehtäväpaperi, toimitettu 15.9.2026. Laskuvastausten ja soveltamisalan täsmennysten lähtökohtana käsin täytetty tehtäväkuva ja sen käsittely 20.9.2026.
+## Lähteet ja täsmennykset
+
+- Alkuperäiset oppituntimuistiinpanot: oppitunnin lähdeaineisto, 15.9.2026.
+- Oppitunnin vuototarkastusdia ja käsin korjattu 100 kg:n raja: oppitunnin lähdeaineisto, 15.9.2026. Dian virheellinen tarkastustiheys on korjattu tekstissä.
+- Turvaluokituksen lähdekuva: oppitunnin lähdeaineisto. Luokitusten selitykset: [ASHRAE/UNEP, huhtikuu 2026](https://www.ashrae.org/file%20library/professional%20development/ashrae-unep/unep---ashrae-factsheet--english.pdf).
+- Autojen ilmastoinnin korjattu päivämäärä: oppituntikuva oppitunnin lähdeaineisto ja [Euroopan komission MAC-direktiivin yhteenveto](https://single-market-economy.ec.europa.eu/sectors/automotive-industry/environmental-protection/mobile-air-conditioning-systems-macs_en).
+- CO₂:n paine-esimerkki: oppitunnin lähdeaineisto.
+- Vuototarkastukset ja HFC/HFO-seokset: [Syken vuototarkastusohje](https://www.ymparisto.fi/fi/luvat-ja-velvoitteet/f-kaasut-ja-otsonikerrosta-heikentavat-aineet), tarkistettu 15.9.2026 ja 20.9.2026; [F-kaasuasetus (EU) 2024/573, 5 artikla ja liitteet I–II](https://eur-lex.europa.eu/legal-content/FI/TXT/HTML/?uri=CELEX:32024R0573).
+- R513A:n tehtäväesimerkki: [Syken ohje](https://www.ymparisto.fi/fi/luvat-ja-velvoitteet/f-kaasut-ja-otsonikerrosta-heikentavat-aineet), [F-kaasuasetus, 5 artiklan 6 kohta](https://eur-lex.europa.eu/legal-content/FI/TXT/HTML/?uri=CELEX:32024R0573) sekä [ASHRAE:n kylmäainetaulukko](https://www.ashrae.org/technical-resources/standards-and-guidelines/ashrae-refrigerant-designations).
+- Oppitunnin tehtäväpaperi, oppitunnin lähdeaineisto, toimitettu 15.9.2026. Laskuvastausten ja soveltamisalan täsmennysten lähtökohtana käsin täytetty tehtäväkuva ja sen käsittely 20.9.2026.
+- Lähdemerkintöjen täsmennykset 15.9.2026: lyhenne ekvt; HFC-esimerkki R134a; kuvan päivämäärä 1.1.2016 korjattu lähteen perusteella 1.1.2017:ksi. Vuototarkastusvälin korjaus hyväksytty. Vuototarkastusten soveltamisala ja R513A:n aineosuudet tarkistettu 20.9.2026.

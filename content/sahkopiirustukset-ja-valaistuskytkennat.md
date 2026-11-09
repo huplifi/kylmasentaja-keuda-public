@@ -381,36 +381,6 @@ Tämän vaultin `symbolit/`-hakemiston SVG:t ovat **itsenäisesti piirrettyjä o
 
 Avoimeen julkaisuun ei vielä lisätä lisenssiä, joka väittäisi standardoitujen piirrosmerkkien virallisen grafiikan olevan vapaasti uudelleenlisensoitavissa. Ennen erillisen avoimen symbolipaketin julkaisua tarkistetaan symboli kerrallaan nimi, geometria, IEC 60617 -status ja käyttöoikeus.
 
-## Lähdeaineisto
-
-Oppitunti 28.9.2026:
-
-- käsin piirretty 1-kytkentä ja johdinmäärät
-- *Sähköasennustekniikan perusteet*, kohta 6.5 **Valaistusasennukset**, s. 311: 1-kytkin, 5-kytkin ja 6-kytkin sekä kytkinten liitinmerkinnät
-- sama aineisto, s. 312: 7-kytkin / ristikytkentä sekä valonsäädin ja valonsäätimen vaihtokytkentä
-- sama aineisto, s. 313: painikeohjaus askelreleellä sekä valaistusasennuksen kaapelointi- ja johdinväriesimerkki
-
-53-sivuinen **IEC 60617 SYMBOLS** -PDF toimii vertailuaineistona. Siinä ovat muun muassa johtimet ja liitokset (s. 1–2), maadoitus (s. 11), kytkinkoskettimet (s. 12–15), sulakkeet (s. 17), N/PE/PEN-johtimet (s. 20), jakorasiat ja pistorasiat (s. 21–22), valaisimet (s. 23), moottorit (s. 31–33), muuntajat (s. 34–41) sekä puhallin ja pumppu (s. 52).
-
-Oppitunnin alkuperäiskuvat on säilytetty vain yksityisen vaultin liitteissä. Julkinen vienti ei kopioi niitä.
-
-- oppitunnin lähdeaineisto — 1-kytkentä
-- oppitunnin lähdeaineisto — jakorasian kytkentä
-- oppitunnin lähdeaineisto — symbolien vertailukuva
-- oppitunnin lähdeaineisto — valaistuskytkennät, oppikirjan s. 311
-- oppitunnin lähdeaineisto — ristikytkentä, oppikirjan s. 312
-- oppitunnin lähdeaineisto — painikeohjaus, oppikirjan s. 313
-- oppitunnin lähdeaineisto — keskuskaavio, *Sähkön asentaminen II* s. 134–135
-- oppitunnin lähdeaineisto — asennuspiirustusten merkkiluettelo, harjoitustehtävät s. 69
-
-### Ajantasaiset verkkolähteet
-
-- SESKO: Piirrosmerkit / IEC 60617
-- SESKO: teknisen dokumentoinnin standardit
-- SFS: SFS 6000 -pienjännitesähköasennukset
-- Tukes: Sähköpätevyydet ja työalueet, ILP:n sähköasennukset
-- Tukes: Ilmalämpöpumput
-
 ## Koskettimet ja käyttöluokat (9.11.2026)
 
 ### Koskettimen perusasento ja toiminta
@@ -430,11 +400,13 @@ Viimeisten kahden merkin ajoitus on suhteessa **saman kosketinyksikön muihin ko
 
 Nykyisen kirjaston perusmerkit:
 
-| NO                                                           | NC                                                           | Vaihtokosketin                                                     |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------------ |
-| ![Sähköpiirrosmerkki: kosketin no](symbolit/kosketin-no.svg) | ![Sähköpiirrosmerkki: kosketin nc](symbolit/kosketin-nc.svg) | ![Sähköpiirrosmerkki: vaihtokosketin](symbolit/vaihtokosketin.svg) |
+| Sulkukosketin NO                                                                           | Avauskosketin NC                                                                                           | Kaksiasentoinen vaihtokosketin                                                                   |
+| ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| ![Sähköpiirrosmerkki: kosketin no](symbolit/kosketin-no.svg)                               | ![Sähköpiirrosmerkki: kosketin nc](symbolit/kosketin-nc.svg)                                               | ![Sähköpiirrosmerkki: vaihtokosketin](symbolit/vaihtokosketin.svg)                               |
+| Väliasentoinen vaihtokosketin                                                              | Aikaisemmin sulkeutuva NO                                                                                  | Myöhemmin avautuva NC                                                                            |
+| ![Sähköpiirrosmerkki: vaihtokosketin keskiasento](symbolit/vaihtokosketin-keskiasento.svg) | ![Sähköpiirrosmerkki: kosketin no aikaisemmin sulkeutuva](symbolit/kosketin-no-aikaisemmin-sulkeutuva.svg) | ![Sähköpiirrosmerkki: kosketin nc myohassa avautuva](symbolit/kosketin-nc-myohassa-avautuva.svg) |
 
-Kolmen erikoismerkin grafiikkaa ei vielä ole tässä kokoelmassa. Niiden toimintakuvaukset on kirjattu yllä alkuperäiskuvan perusteella.
+Kaikkien kuuden merkin perusasento ja toiminta näkyvät yllä. Erikoismerkkien kuva perustuu oppitunnin rinnakkaisiin graafisiin esitystapoihin; ne on piirretty kirjaston 64 × 64 -ruudukkoon.
 
 ### Kontaktorien ja kuormankytkimien käyttöluokat
 
@@ -456,11 +428,6 @@ Käyttöluokka kertoo kuormatyypistä ja kytkentätilanteesta. AC tarkoittaa vai
 
 Samalla kontaktorilla voi olla eri sallittu käyttövirta AC-1- ja AC-3-käytössä. Käyttöluokkaa luetaan yhdessä valmistajan ilmoittaman jännitteen ja virran kanssa.
 
-Lähde: oppitunnin käyttöluokkataulukko 4.3. AC-1:n, AC-3:n ja AC-4:n edellä olevat täsmennykset tarkistettu Schneider Electricin valmistaja-aineistosta 9.11.2026:
-
-- [AC-1 ja AC-3: kuormatyypin ja kytkentätilanteen merkitys](https://www.se.com/nl/en/faqs/FA23926/)
-- [TeSys Giga: käyttöluokkien määritelmät](https://productinfo.se.com/tesysgigainstallationguide/tesys-giga-series-giga-contactors-and-giga-thermal-overload-relays-installation-guide/English/TeSys%E2%84%A2%20Giga%20Series%20Giga%20Contactors%20and%20Giga%20Thermal%20Overload%20Relays%20Installation%20Guide_0000447511.xml/\$/PanGu_LoadsCPT_0000507717)
-
 ### Käyttöluokkien muistisääntö
 
 Oppitunnin tiivis kertausapu:
@@ -478,3 +445,36 @@ Oppitunnin tiivis kertausapu:
 **Dian kertauspainotus:** AC-1 = lämmityskuorma, AC-3 = moottorikuorma, AC-15 = ohjauspiiri ja AC-23 = moottorien kuormankytkin.
 
 Muistisääntö tiivistää yllä olevan käyttöluokkataulukon. AC-4:n suunnanvaihto/jarrutus on tässä lyhyt muistivihje: tarkempi ero AC-3:een on kuvattu edellä. AC-15 ja DC-13 viittaavat tässä sähkömagneettisten kuormien ohjaukseen. Dian koepainotus on oppitunnin vinkki, ei yleinen lupaus kokeiden sisällöstä.
+
+## Lähteet ja ylläpitotiedot
+
+### Piirrosmerkit ja valaistuskytkennät
+
+Oppitunti 28.9.2026:
+
+- käsin piirretty 1-kytkentä ja johdinmäärät
+- *Sähköasennustekniikan perusteet*, kohta 6.5 **Valaistusasennukset**, s. 311: 1-kytkin, 5-kytkin ja 6-kytkin sekä kytkinten liitinmerkinnät
+- sama aineisto, s. 312: 7-kytkin / ristikytkentä sekä valonsäädin ja valonsäätimen vaihtokytkentä
+- sama aineisto, s. 313: painikeohjaus askelreleellä sekä valaistusasennuksen kaapelointi- ja johdinväriesimerkki
+
+53-sivuinen **IEC 60617 SYMBOLS** -PDF toimii vertailuaineistona. Siinä ovat muun muassa johtimet ja liitokset (s. 1–2), maadoitus (s. 11), kytkinkoskettimet (s. 12–15), sulakkeet (s. 17), N/PE/PEN-johtimet (s. 20), jakorasiat ja pistorasiat (s. 21–22), valaisimet (s. 23), moottorit (s. 31–33), muuntajat (s. 34–41) sekä puhallin ja pumppu (s. 52). PDF:n julkaisijaa, päiväystä tai symbolien ajantasaista IEC-statusta ei ole vahvistettu.
+
+Oppitunnin alkuperäiskuvat ovat yksityisen vaultin liitteissä. Julkinen vienti ei kopioi niitä.
+
+- oppitunnin lähdeaineisto — 1-kytkentä
+- oppitunnin lähdeaineisto — jakorasian kytkentä
+- oppitunnin lähdeaineisto — symbolien vertailukuva
+- oppitunnin lähdeaineisto — valaistuskytkennät, oppikirjan s. 311
+- oppitunnin lähdeaineisto — ristikytkentä, oppikirjan s. 312
+- oppitunnin lähdeaineisto — painikeohjaus, oppikirjan s. 313
+- oppitunnin lähdeaineisto — keskuskaavio, *Sähkön asentaminen II* s. 134–135
+- oppitunnin lähdeaineisto — asennuspiirustusten merkkiluettelo, harjoitustehtävät s. 69
+
+Ajantasaiset lähdesivut: [SESKO: Piirrosmerkit / IEC 60617](https://sesko.fi/standardointi/dokumentointi/piirrosmerkit/), SESKOn teknisen dokumentoinnin standardit, SFS 6000 -pienjännitesähköasennukset sekä Tukesin sähköpätevyys- ja ILP-asennusohjeet.
+
+### Koskettimet ja käyttöluokat
+
+- Oppituntidia 9.11.2026, oppitunnin lähdeaineisto — kuusi kosketintoimintoa ja niiden rinnakkaiset graafiset esitystavat. Oppituntikuva ei vahvista IEC-tunnusta tai standardistatusta.
+- Oppitunnin käyttöluokkataulukko 4.3; alkuperäinen oppikirjakuva oppitunnin lähdeaineisto. Kirjan nimi ja sivunumero eivät näy rajauksessa.
+- Schneider Electric: [AC-1 ja AC-3: kuormatyypin ja kytkentätilanteen merkitys](https://www.se.com/nl/en/faqs/FA23926/) ja [TeSys Giga: käyttöluokkien määritelmät](https://productinfo.se.com/tesysgigainstallationguide/tesys-giga-series-giga-contactors-and-giga-thermal-overload-relays-installation-guide/English/TeSys%E2%84%A2%20Giga%20Series%20Giga%20Contactors%20and%20Giga%20Thermal%20Overload%20Relays%20Installation%20Guide_0000447511.xml/\$/PanGu_LoadsCPT_0000507717), tarkistettu 9.11.2026.
+- Oppituntidia ”Helppo muistisääntö”, 9.11.2026, oppitunnin lähdeaineisto. Dian koepainotus on oppitunnin vinkki, ei yleinen lupaus kokeiden sisällöstä.
