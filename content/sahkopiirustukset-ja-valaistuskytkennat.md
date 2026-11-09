@@ -410,3 +410,53 @@ Oppitunnin alkuperäiskuvat on säilytetty vain yksityisen vaultin liitteissä. 
 - SFS: SFS 6000 -pienjännitesähköasennukset
 - Tukes: Sähköpätevyydet ja työalueet, ILP:n sähköasennukset
 - Tukes: Ilmalämpöpumput
+
+## Koskettimet ja käyttöluokat (9.11.2026)
+
+### Koskettimen perusasento ja toiminta
+
+NO ja NC kuvaavat koskettimen tilaa ennen ohjaavaa toimintaa. Muistisääntö: **NO on aluksi auki, NC on aluksi kiinni.**
+
+| Kosketin                              | Perusasento ja toiminta                                                                                            |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Sulkukosketin, NO (*normally open*)   | Perusasennossa auki; toimittaessa sulkeutuu.                                                                       |
+| Avauskosketin, NC (*normally closed*) | Perusasennossa kiinni; toimittaessa avautuu.                                                                       |
+| Kaksiasentoinen vaihtokosketin        | Yhteinen kosketin vaihtaa kahden yhteyden välillä. Kuvan versiossa vanha yhteys avautuu ennen uuden sulkeutumista. |
+| Väliasentoinen vaihtokosketin         | Keskellä on aukiasento: yhteinen kosketin ei ole yhteydessä kumpaankaan vastakoskettimeen.                         |
+| Aikaisemmin sulkeutuva sulkukosketin  | Sulkeutuu ennen saman kosketinyksikön muita koskettimia.                                                           |
+| Myöhemmin avautuva avauskosketin      | Avautuu saman kosketinyksikön muita koskettimia myöhemmin.                                                         |
+
+Viimeisten kahden merkin ajoitus on suhteessa **saman kosketinyksikön muihin koskettimiin**. Lähde ei ilmoita viivettä sekunteina. Oppituntikuvan oikealle kääntyminen kuvaa siinä käytetyn piirrosmerkin toimintaa.
+
+Nykyisen kirjaston perusmerkit:
+
+| NO                                                           | NC                                                           | Vaihtokosketin                                                     |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------------ |
+| ![Sähköpiirrosmerkki: kosketin no](symbolit/kosketin-no.svg) | ![Sähköpiirrosmerkki: kosketin nc](symbolit/kosketin-nc.svg) | ![Sähköpiirrosmerkki: vaihtokosketin](symbolit/vaihtokosketin.svg) |
+
+Kolmen erikoismerkin grafiikkaa ei vielä ole tässä kokoelmassa. Niiden toimintakuvaukset on kirjattu yllä alkuperäiskuvan perusteella.
+
+### Kontaktorien ja kuormankytkimien käyttöluokat
+
+Käyttöluokka kertoo kuormatyypistä ja kytkentätilanteesta. AC tarkoittaa vaihtosähköä ja DC tasasähköä. Koskettimen NO/NC-toiminta ja sen käyttöluokka ovat eri tietoja.
+
+| Luokka | Laiteryhmä                 | Käyttö oppitunnin taulukossa                                                                                              |
+| ------ | -------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| AC-1   | Kontaktorin pääkoskettimet | Resistiivinen tai lievästi induktiivinen vaihtosähkökuorma, esimerkiksi lämmitysvastus.                                   |
+| DC-1   | Kontaktorin pääkoskettimet | Resistiivinen tai lievästi induktiivinen tasasähkökuorma.                                                                 |
+| AC-3   | Kontaktorin pääkoskettimet | Oikosulkumoottorin käynnistäminen ja virran katkaiseminen normaalin käynnin aikana.                                       |
+| AC-4   | Kontaktorin pääkoskettimet | Oikosulkumoottorin käynnistys, vastavirtajarrutus ja nykäyskäyttö; oppituntitaulukossa tiivistetty suunnanvaihtokäytöksi. |
+| AC-15  | Ohjauspiirin koskettimet   | Vaihtosähköllä toimivien sähkömagneettisten kuormien, esimerkiksi releiden ja kontaktorien kelojen, ohjaus.               |
+| DC-13  | Ohjauspiirin koskettimet   | Sähkömagneettisten tasasähkökuormien ohjaus.                                                                              |
+| AC-20  | Kytkin / erotin            | Kytkentä ja avaus ilman kuormaa.                                                                                          |
+| AC-21  | Kuormankytkin              | Resistiivisen vaihtosähkökuorman kytkentä.                                                                                |
+| AC-23  | Kuormankytkin              | Moottori- tai muun induktiivisen vaihtosähkökuorman kytkentä.                                                             |
+
+**Täsmennys oppituntitaulukkoon:** AC-3:n ja AC-4:n ero ei ole pelkkä suunnanvaihtokytkennän olemassaolo. Ratkaisevaa on, millaisessa moottorin toimintatilassa virta kytketään ja katkaistaan. AC-4 kattaa vastavirtajarrutuksen ja nykäyskäytön. AC-1:n kuvan `cos = 0,95` -merkintää vastaava tehokerroin kirjoitetaan `cos φ`; valmistajan selityksessä AC-1:n ehto on `cos φ ≥ 0,95`.
+
+Samalla kontaktorilla voi olla eri sallittu käyttövirta AC-1- ja AC-3-käytössä. Käyttöluokkaa luetaan yhdessä valmistajan ilmoittaman jännitteen ja virran kanssa.
+
+Lähde: oppitunnin käyttöluokkataulukko 4.3. AC-1:n, AC-3:n ja AC-4:n edellä olevat täsmennykset tarkistettu Schneider Electricin valmistaja-aineistosta 9.11.2026:
+
+- [AC-1 ja AC-3: kuormatyypin ja kytkentätilanteen merkitys](https://www.se.com/nl/en/faqs/FA23926/)
+- [TeSys Giga: käyttöluokkien määritelmät](https://productinfo.se.com/tesysgigainstallationguide/tesys-giga-series-giga-contactors-and-giga-thermal-overload-relays-installation-guide/English/TeSys%E2%84%A2%20Giga%20Series%20Giga%20Contactors%20and%20Giga%20Thermal%20Overload%20Relays%20Installation%20Guide_0000447511.xml/\$/PanGu_LoadsCPT_0000507717)

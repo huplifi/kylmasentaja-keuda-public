@@ -6,7 +6,7 @@
   "kylmatekniikan-perusteet.md": "ee2b1021a2cefbd87ea98260ba84283c9f9186a0a4aa6cad68cfe0dc68199aa4",
   "sahkoasennusten-kaytannot.md": "bb74dad5f2e65cd71d1ed3602a9c8c5893de6ddb74b5343989a3293efd4b91bd",
   "sahkoopin-perusteet.md": "f237e83e425e9b4d627afb59c226d808d1c0d6f310f9464aee9fc4cfdf82e37e",
-  "sahkopiirustukset-ja-valaistuskytkennat.md": "cd6522ba938a9e97aeffc81c77d21057f5954cad5fa48d88a6e928b2c718cd31",
+  "sahkopiirustukset-ja-valaistuskytkennat.md": "b3dedf0b60dff05777a8a0f1ae2687b4c94e5833297980a017318c061f7f1a33",
   "symbolit/erotuskytkin.svg": "0679b175bb61696a585c067fe142ca4cb359af5386bf8975640ef2c32d4c11bd",
   "symbolit/haaroitus.svg": "f80df5b8c320c30b429acd63cddbde6443b8faf0cab82eee52d0b349a937050e",
   "symbolit/jakorasia.svg": "8dbf2afe07fe92d117d35ce75ba7b8b48ffa827a5af0cbfc68c0541c32e17794",
@@ -15,6 +15,8 @@
   "symbolit/katkaisija.svg": "7c44d3998c94ffd2f00b5a974f3f45d6374432789b153ed744063e69e643f279",
   "symbolit/kompressori.svg": "bf5b2abd6872cf0c3ce1938e7bd154979886dbbc8a19a8b1d2acd3e0d2cd8150",
   "symbolit/kontaktori.svg": "75968f9d053c68b57646b94444cf1257d8adbe744de468979076bfb3d90d3d50",
+  "symbolit/kosketin-nc.svg": "d3f6444830945cb3424e2b66e3384e308597837f86cc60fd2bcee0206d0d7891",
+  "symbolit/kosketin-no.svg": "6e6a8751826969397d2c4ddf62371a0dc5c8b9da005335e0c6bb640f407a8d74",
   "symbolit/kylma-hoyrystin.svg": "798915b24998bdae6d40d27a324cba0c545ec41b481f68fade0df07c3979d5d7",
   "symbolit/kylma-imuvaraaja.svg": "36409372d16a78d049c7326a86a89965af735e00368f980de7d18f369940d151",
   "symbolit/kylma-kompressori.svg": "3aafdbdeb5d0942bf7aea0ac906ede4121b8b542c7dd2d8836d1728f4c438989",
@@ -58,6 +60,7 @@
   "symbolit/termostaatti-no.svg": "a153de5c1d1f27b656eeee7d4f41816da3c56c07368ce5dcf51f9579f0c7b5da",
   "symbolit/turvakytkin.svg": "0679b175bb61696a585c067fe142ca4cb359af5386bf8975640ef2c32d4c11bd",
   "symbolit/vaihejohdin.svg": "76ab658de33d145590dfb1156994adb1bd6d9a9effe42c1c26fb252f499b2a12",
+  "symbolit/vaihtokosketin.svg": "f0199f90458be3ab5e4f89dcffa54568e740e63a9350a7867917b11c853b03e4",
   "symbolit/valaisin.svg": "a42c8aa1b93060fbd7042ab9198af59a77bd6467ed29ab9f2ea8f16a1caad27c",
   "symbolit/vikavirtasuoja.svg": "75a01d9f0d55a294a9bcfaecb5f4722deb40027f6422b301a335afc58bb949c4"
 }
