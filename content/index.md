@@ -12,6 +12,10 @@ Opiskelumuistiinpanoja kylmäasentajan opinnoista. Materiaali ei ole Keudan vira
 - [Kylmäkierron piirrosmerkit](kylmakierron-piirrosmerkit.md)
 - [Sähköopin perusteet](sahkoopin-perusteet.md)
 - [Kaavat ja yksiköt](kaavat-ja-yksikot.md)
+- [Kylmäkoneikon ohjaus](kylmakoneikon-ohjaus.md)
+- [Moottorin mittaus- ja testauspöytäkirja](moottorin-mittaus-ja-testauspoytakirja.md)
+- [Oikosulkumoottorit](oikosulkumoottorit.md)
+- [Releet ja kontaktorit](releet-ja-kontaktorit.md)
 - [Sähköasennusten käytännöt](sahkoasennusten-kaytannot.md)
 - [Sähköpiirustukset ja valaistuskytkennät](sahkopiirustukset-ja-valaistuskytkennat.md)
 
