@@ -3,7 +3,7 @@ title: "Sähköpiirustukset ja valaistuskytkennät"
 publish: true
 ---
 
-Tavoite on osata **lukea olemassa olevaa sähköpiirustusta ja päivittää piirustus tehdyn muutoksen jälkeen** niin, että ILP:n tai muun kylmälaitteen sähköliitännästä voidaan selvittää olennaiset asiat: mistä syöttö tulee, mikä ryhmä on kyseessä, mitä suojalaitteita ja erotuslaitteita piirissä on, missä liitos- ja kytkentäpisteet sijaitsevat ja miten laite liittyy olemassa olevaan asennukseen.
+Tavoite on osata **lukea olemassa olevaa sähköpiirustusta ja päivittää piirustus tehdyn muutoksen jälkeen** niin, että ilmalämpöpumpun (ILP) tai muun kylmälaitteen sähköliitännästä voidaan selvittää olennaiset asiat: mistä syöttö tulee, mikä ryhmä on kyseessä, mitä suojalaitteita ja erotuslaitteita piirissä on, missä liitos- ja kytkentäpisteet sijaitsevat ja miten laite liittyy olemassa olevaan asennukseen.
 
 Tämä muistio käsittelee piirustusten lukemista. Se ei itsessään anna oikeutta tehdä sähköasennuksia.
 
@@ -21,7 +21,7 @@ Kun saat sähköpiirustuksen eteesi, etene tässä järjestyksessä:
 8. **Erotus:** miten laite voidaan erottaa sähköverkosta huoltoa varten?
 9. **Muutokset:** jos asennusta muutetaan, mikä osa piirustuksesta on päivitettävä vastaamaan toteutusta?
 
-Piirustusta ei lueta vain symboli kerrallaan. Tavoite on seurata **toiminnallista reittiä syötöstä kuormalle ja takaisin** sekä erottaa käyttövirtapiiri, suojaus ja ohjaus toisistaan.
+Piirustusta ei lueta vain symboli kerrallaan. Tavoite on seurata **toiminnallista reittiä syötöstä kuormalle ja takaisin** sekä erottaa käyttövirtapiiri, suojaus ja ohjaus toisistaan. Tässä tekstissä L tarkoittaa vaihetta, N nollajohdinta, PE suojajohdinta ja PEN yhdistettyä suoja- ja nollajohdinta. Kolmivaihesyötön L1, L2 ja L3 ovat kolme vaihetta. Lyhenteiden merkitys tarkistetaan aina myös piirustuksen selitteestä.
 
 ## Kolme tavallista esitystapaa
 
@@ -60,25 +60,25 @@ Laitetunnukset eivät ole sama asia kuin piirrosmerkit. Esimerkiksi oppitunnin v
 
 Yhtenäinen viiva kuvaa sähköistä yhteyttä tai johdotusreittiä esitystavasta riippuen.
 
-![Sähköpiirrosmerkki: johdin](symbolit/johdin.svg)
+![Piirrosmerkki: johdin](symbolit/johdin.svg)
 
 ### Liitoskohta
 
 Risteävien tai haarautuvien johtimien musta piste osoittaa sähköisen liitoksen.
 
-![Sähköpiirrosmerkki: liitoskohta](symbolit/liitoskohta.svg)
+![Piirrosmerkki: liitoskohta](symbolit/liitoskohta.svg)
 
 ### Haaroitus
 
-![Sähköpiirrosmerkki: haaroitus](symbolit/haaroitus.svg)
+![Piirrosmerkki: haaroitus](symbolit/haaroitus.svg)
 
 ### Nolla- ja suojajohdin
 
-Oppitunnilla käytetyssä yksiviivaisessa merkintätavassa pistepäinen poikkimerkki osoittaa N-johtimen ja T-mäinen poikkimerkki PE-johtimen. IEC 60617 -vertailuaineistossa N-, PE- ja PEN-johtimille on omat johdinmerkintänsä (PDF s. 20).
+Oppitunnilla käytetyssä yksiviivaisessa merkintätavassa pistepäinen poikkimerkki osoittaa N-johtimen ja T-mäinen poikkimerkki PE-johtimen. IEC (International Electrotechnical Commission) 60617 -vertailuaineistossa N-, PE- ja PEN-johtimille on omat johdinmerkintänsä (PDF s. 20).
 
-![Sähköpiirrosmerkki: nollajohdin](symbolit/nollajohdin.svg)
+![Piirrosmerkki: nollajohdin](symbolit/nollajohdin.svg)
 
-![Sähköpiirrosmerkki: suojajohdin](symbolit/suojajohdin.svg)
+![Piirrosmerkki: suojajohdin](symbolit/suojajohdin.svg)
 
 Piirustuksen oma selite ratkaisee aina tulkinnan.
 
@@ -88,11 +88,11 @@ Piirustuksen oma selite ratkaisee aina tulkinnan.
 
 Jakorasia on kohta, jossa johtimia voidaan liittää ja haaroittaa. Oppitunnin 1- ja 5-kytkinesimerkeissä jakorasia on merkitty tunnuksella X1.
 
-![Sähköpiirrosmerkki: jakorasia](symbolit/jakorasia.svg)
+![Piirrosmerkki: jakorasia](symbolit/jakorasia.svg)
 
 ### Suojakoskettimellinen pistorasia
 
-![Sähköpiirrosmerkki: pistorasia suojakosketin](symbolit/pistorasia-suojakosketin.svg)
+![Piirrosmerkki: pistorasia suojakosketin](symbolit/pistorasia-suojakosketin.svg)
 
 ILP:n kohdalla pistorasian olemassaolo ei yksin ratkaise liitännän sopivuutta. Tukesin mukaan pistotulppaliitäntäisen ILP:n pistorasian pitää olla maadoitettu ja sijaita sen yksikön vieressä, johon valmistaja on suunnitellut sähköliitännän. Kiinteä liitäntä, uuden pistorasian tai turvakytkimen asentaminen, vikavirtasuojan lisääminen tai pistorasian siirtäminen edellyttää sähkötyöoikeutta.
 
@@ -102,13 +102,15 @@ ILP:n kohdalla pistorasian olemassaolo ei yksin ratkaise liitännän sopivuutta.
 
 Yksi kytkin ohjaa yhtä valaisinta tai valaisinryhmää yhdestä paikasta.
 
-![Sähköpiirrosmerkki: kytkin 1](symbolit/kytkin-1.svg)
+![Piirrosmerkki: kytkin 1](symbolit/kytkin-1.svg)
 
 Oppitunnin esimerkissä:
 
 - X1 = jakorasia
 - Q1 = 1-kytkin
 - E1 = valaisin
+
+**Mikä muuttuu, kun Q1 avataan?** Vaihejohtimen reitti valaisimelle katkeaa ja valo sammuu. N ja PE kulkevat jakorasialta suoraan valaisimelle.
 
 Jakorasiassa N ja PE jatkuvat valaisimelle. L viedään kytkimelle ja kytkimeltä palaava **kytketty vaihe** jatkuu valaisimelle.
 
@@ -126,7 +128,7 @@ Toimintareitti kytkimen ollessa suljettuna:
 
 5-kytkimessä on kaksi erikseen käytettävää kytkintoimintoa samassa kytkimessä. Oppitunnin esimerkissä Q1.1 ja Q1.2 ohjaavat kahta valaisinryhmää toisistaan riippumatta.
 
-![Sähköpiirrosmerkki: kytkin 5 kruunu](symbolit/kytkin-5-kruunu.svg)
+![Piirrosmerkki: kytkin 5 kruunu](symbolit/kytkin-5-kruunu.svg)
 
 Periaate:
 
@@ -134,13 +136,15 @@ Periaate:
 
 **L → Q1.2 → valaisinryhmä 2 → N**
 
-1-kytkimen kytkinhaarassa on yksi kytketyn vaiheen paluu. 5-kytkimessä niitä on kaksi, koska ohjattavia lähtöjä on kaksi. Oppitunnin yksiviivaisessa kuvassa tämä näkyy suurempana johdinmääränä kytkinhaarassa ja valaisinmerkinnässä **1+2**.
+**Kumpi ryhmä syttyy, jos vain Q1.2 suljetaan?** Ryhmä 2 syttyy. Ryhmän 1 virtareitti jää auki. Jos myös Q1.1 suljetaan, molemmat ryhmät palavat.
+
+1-kytkimeltä palaa yksi kytketty vaihejohdin. 5-kytkimeltä palaa kaksi, yksi kummallekin valaisinryhmälle.
 
 ### 6-kytkin eli vaihtokytkin
 
 Vaihtokytkennässä sama valaisin tai valaisinryhmä voidaan sytyttää ja sammuttaa **kahdesta eri paikasta**. Kytkennässä käytetään kahta 6-kytkintä.
 
-![Sähköpiirrosmerkki: kytkin 6](symbolit/kytkin-6.svg)
+![Piirrosmerkki: kytkin 6](symbolit/kytkin-6.svg)
 
 Oppikirjan esimerkissä:
 
@@ -148,7 +152,7 @@ Oppikirjan esimerkissä:
 - **X1** ja **X2** = jakorasiat
 - **E1** = valaisin
 
-Vaihtokytkin ohjaa vaiheen kahden vaihtoehtoisen reitin välille. Kahden kytkimen välillä kulkevien johtimien avulla virtareitti voidaan muodostaa tai katkaista kummasta tahansa kytkinpaikasta.
+Kummassakin vaihtokytkimessä yhteinen kosketin valitsee toisen kahdesta välijohtimesta. Kun molemmat kytkimet valitsevat saman välijohtimen, reitti vaiheelta valaisimen kautta nollaan on ehjä ja valo palaa. Kumman tahansa kytkimen asennon vaihto katkaisee reitin. Seuraava vaihto sytyttää valon uudelleen.
 
 Oppikirjan mukaan vaihtokytkin on paljon käytetty kytkintyyppi, ja sitä käytetään yleisesti myös tavallisen 1-kytkimen tapaan.
 
@@ -156,7 +160,7 @@ Oppikirjan mukaan vaihtokytkin on paljon käytetty kytkintyyppi, ja sitä käyte
 
 Kun samaa valoa halutaan ohjata **kolmesta tai useammasta paikasta**, kahden 6-kytkimen väliin lisätään yksi tai useampi 7-kytkin eli ristikytkin.
 
-![Sähköpiirrosmerkki: kytkin 7](symbolit/kytkin-7.svg)
+![Piirrosmerkki: kytkin 7](symbolit/kytkin-7.svg)
 
 Kolmen ohjauspisteen esimerkissä:
 
@@ -174,7 +178,7 @@ Ristikytkin vaihtaa kahden välijohtimen yhteydet keskenään. Jokainen kytkimen
 
 Oppikirjan mukaan useasta paikasta tehtävässä valaistuksen ohjauksessa vaihto- ja ristikytkimien sijasta voidaan käyttää **askelrelettä ja painikkeita**.
 
-![Sähköpiirrosmerkki: painike](symbolit/painike.svg)
+![Piirrosmerkki: painike](symbolit/painike.svg)
 
 Oppikirjan esimerkissä:
 
@@ -204,21 +208,21 @@ Nämä ovat hyödyllisiä merkintöjä erityisesti silloin, kun piirustusta verr
 
 ### Valaisin
 
-![Sähköpiirrosmerkki: valaisin](symbolit/valaisin.svg)
+![Piirrosmerkki: valaisin](symbolit/valaisin.svg)
 
 ## Suojaus ja erotus
 
 ### Sulake
 
-![Sähköpiirrosmerkki: sulake](symbolit/sulake.svg)
+![Piirrosmerkki: sulake](symbolit/sulake.svg)
 
 ### Johdonsuojakatkaisija
 
-![Sähköpiirrosmerkki: johdonsuojakatkaisija](symbolit/johdonsuojakatkaisija.svg)
+![Piirrosmerkki: johdonsuojakatkaisija](symbolit/johdonsuojakatkaisija.svg)
 
 ### Turvakytkin / paikallinen erotus
 
-![Sähköpiirrosmerkki: turvakytkin](symbolit/turvakytkin.svg)
+![Piirrosmerkki: turvakytkin](symbolit/turvakytkin.svg)
 
 ILP:n kannalta erotus on erityisen tärkeä. Tukesin mukaan **kiinteästi liitetyn ilmalämpöpumpun erotuslaitteeksi on asennettava turvakytkin**. Pistotulppaliitäntäisessä laitteessa pistotulppa voi toimia hyväksyttävänä erotustapana, kun liitäntä on toteutettu vaatimusten mukaisesti.
 
@@ -226,13 +230,13 @@ ILP:n kannalta erotus on erityisen tärkeä. Tukesin mukaan **kiinteästi liitet
 
 ### Moottori
 
-![Sähköpiirrosmerkki: moottori](symbolit/moottori.svg)
+![Piirrosmerkki: moottori](symbolit/moottori.svg)
 
 Moottorisymboli voi liittyä esimerkiksi kompressoriin tai puhaltimen moottoriin. Pelkkä M-symboli ei kerro laitteen koko toimintoa, vaan se päätellään laitetunnuksesta, kaaviosta ja selitteestä.
 
 ### Puhallin
 
-![Sähköpiirrosmerkki: puhallin](symbolit/puhallin.svg)
+![Piirrosmerkki: puhallin](symbolit/puhallin.svg)
 
 IEC 60617 -vertailuaineiston sivulla 52 on puhaltimen ja pumpun symboliesimerkkejä.
 
@@ -280,41 +284,41 @@ Taulukossa näet piirrosmerkin, sen nimen ja käyttötarkoituksen.
 
 ### Johtimet ja liitokset
 
-| Symboli                                                                      | Nimi                            | Mitä luetaan piirustuksesta                                                                                                        |
-| ---------------------------------------------------------------------------- | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| ![Sähköpiirrosmerkki: johdin](symbolit/johdin.svg)                           | Johdin tai kaapeli, yleismerkki | Sähköinen yhteys; yksiviivaisessa esityksessä myös johdotusreitti.                                                                 |
-| ![Sähköpiirrosmerkki: liitoskohta](symbolit/liitoskohta.svg)                 | Johtimien liitoskohta           | Täytetty piste kertoo sähköisestä liitoksesta.                                                                                     |
-| ![Sähköpiirrosmerkki: haaroitus](symbolit/haaroitus.svg)                     | T-haaroitus                     | Johtimien sähköinen haaroitus.                                                                                                     |
-| ![Sähköpiirrosmerkki: risteys ei liitosta](symbolit/risteys-ei-liitosta.svg) | Risteys ilman liitosta          | Kirjaston havainnollistus kahdesta sähköisesti erillisestä johtimesta. Esitystapa tarkistetaan aina kohdepiirustuksen selitteestä. |
-| ![Sähköpiirrosmerkki: vaihejohdin](symbolit/vaihejohdin.svg)                 | Vaihejohdin L                   | Vaihe tai vaihejohtimen lisämerkintä.                                                                                              |
-| ![Sähköpiirrosmerkki: nollajohdin](symbolit/nollajohdin.svg)                 | Nollajohdin N                   | Nollajohdin yksiviivaisessa esityksessä.                                                                                           |
-| ![Sähköpiirrosmerkki: suojajohdin](symbolit/suojajohdin.svg)                 | Suojajohdin PE                  | Suojajohdin yksiviivaisessa esityksessä.                                                                                           |
-| ![Sähköpiirrosmerkki: pen johdin](symbolit/pen-johdin.svg)                   | PEN-johdin                      | Yhdistetty suoja- ja nollajohdin.                                                                                                  |
+| Symboli                                                                 | Nimi                            | Mitä luetaan piirustuksesta                                                                                                        |
+| ----------------------------------------------------------------------- | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| ![Piirrosmerkki: johdin](symbolit/johdin.svg)                           | Johdin tai kaapeli, yleismerkki | Sähköinen yhteys; yksiviivaisessa esityksessä myös johdotusreitti.                                                                 |
+| ![Piirrosmerkki: liitoskohta](symbolit/liitoskohta.svg)                 | Johtimien liitoskohta           | Täytetty piste kertoo sähköisestä liitoksesta.                                                                                     |
+| ![Piirrosmerkki: haaroitus](symbolit/haaroitus.svg)                     | T-haaroitus                     | Johtimien sähköinen haaroitus.                                                                                                     |
+| ![Piirrosmerkki: risteys ei liitosta](symbolit/risteys-ei-liitosta.svg) | Risteys ilman liitosta          | Kirjaston havainnollistus kahdesta sähköisesti erillisestä johtimesta. Esitystapa tarkistetaan aina kohdepiirustuksen selitteestä. |
+| ![Piirrosmerkki: vaihejohdin](symbolit/vaihejohdin.svg)                 | Vaihejohdin L                   | Vaihe tai vaihejohtimen lisämerkintä.                                                                                              |
+| ![Piirrosmerkki: nollajohdin](symbolit/nollajohdin.svg)                 | Nollajohdin N                   | Nollajohdin yksiviivaisessa esityksessä.                                                                                           |
+| ![Piirrosmerkki: suojajohdin](symbolit/suojajohdin.svg)                 | Suojajohdin PE                  | Suojajohdin yksiviivaisessa esityksessä.                                                                                           |
+| ![Piirrosmerkki: pen johdin](symbolit/pen-johdin.svg)                   | PEN-johdin                      | Yhdistetty suoja- ja nollajohdin.                                                                                                  |
 
 ### Rasiat, liitynnät ja asennuskytkimet
 
-| Symboli                                                                                | Nimi                             | Käyttö                                                                                                                                         |
-| -------------------------------------------------------------------------------------- | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Sähköpiirrosmerkki: liitin](symbolit/liitin.svg)                                     | Liitin                           | Johtimen liitäntäpiste.                                                                                                                        |
-| ![Sähköpiirrosmerkki: liitinrima](symbolit/liitinrima.svg)                             | Liitinrima                       | Useiden liittimien ryhmä.                                                                                                                      |
-| ![Sähköpiirrosmerkki: jakorasia](symbolit/jakorasia.svg)                               | Jakorasia                        | Liitosten ja haaroitusten rasia.                                                                                                               |
-| ![Sähköpiirrosmerkki: pistorasia](symbolit/pistorasia.svg)                             | Pistorasia, yleismerkki          | Pistorasia ilman erikseen osoitettua suojakosketinta.                                                                                          |
-| ![Sähköpiirrosmerkki: pistorasia suojakosketin](symbolit/pistorasia-suojakosketin.svg) | Suojakoskettimellinen pistorasia | Maadoitettu pistorasia.                                                                                                                        |
-| ![Sähköpiirrosmerkki: kytkin 1](symbolit/kytkin-1.svg)                                 | 1-kytkin, yksinapainen kytkin    | Yhden valaisinryhmän ohjaus yhdestä paikasta.                                                                                                  |
-| ![Sähköpiirrosmerkki: kytkin 5 kruunu](symbolit/kytkin-5-kruunu.svg)                   | 5-kytkin, sarja-/kruunukytkin    | Kaksi erillistä ohjausta samasta kytkinpaikasta. Grafiikka perustuu oppituntiesimerkkiin; IEC-PDF ei yksin vahvista juuri tätä asennusmerkkiä. |
-| ![Sähköpiirrosmerkki: kytkin 6](symbolit/kytkin-6.svg)                                 | 6-kytkin, vaihtokytkin           | Ohjauksen osa, kun samaa kuormaa ohjataan kahdesta paikasta.                                                                                   |
-| ![Sähköpiirrosmerkki: kytkin 7](symbolit/kytkin-7.svg)                                 | 7-kytkin, ristikytkin            | Kahden vaihtokytkimen väliin sijoitettava lisäohjauspiste.                                                                                     |
+| Symboli                                                                           | Nimi                             | Käyttö                                                                                                                                         |
+| --------------------------------------------------------------------------------- | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![Piirrosmerkki: liitin](symbolit/liitin.svg)                                     | Liitin                           | Johtimen liitäntäpiste.                                                                                                                        |
+| ![Piirrosmerkki: liitinrima](symbolit/liitinrima.svg)                             | Liitinrima                       | Useiden liittimien ryhmä.                                                                                                                      |
+| ![Piirrosmerkki: jakorasia](symbolit/jakorasia.svg)                               | Jakorasia                        | Liitosten ja haaroitusten rasia.                                                                                                               |
+| ![Piirrosmerkki: pistorasia](symbolit/pistorasia.svg)                             | Pistorasia, yleismerkki          | Pistorasia ilman erikseen osoitettua suojakosketinta.                                                                                          |
+| ![Piirrosmerkki: pistorasia suojakosketin](symbolit/pistorasia-suojakosketin.svg) | Suojakoskettimellinen pistorasia | Maadoitettu pistorasia.                                                                                                                        |
+| ![Piirrosmerkki: kytkin 1](symbolit/kytkin-1.svg)                                 | 1-kytkin, yksinapainen kytkin    | Yhden valaisinryhmän ohjaus yhdestä paikasta.                                                                                                  |
+| ![Piirrosmerkki: kytkin 5 kruunu](symbolit/kytkin-5-kruunu.svg)                   | 5-kytkin, sarja-/kruunukytkin    | Kaksi erillistä ohjausta samasta kytkinpaikasta. Grafiikka perustuu oppituntiesimerkkiin; IEC-PDF ei yksin vahvista juuri tätä asennusmerkkiä. |
+| ![Piirrosmerkki: kytkin 6](symbolit/kytkin-6.svg)                                 | 6-kytkin, vaihtokytkin           | Ohjauksen osa, kun samaa kuormaa ohjataan kahdesta paikasta.                                                                                   |
+| ![Piirrosmerkki: kytkin 7](symbolit/kytkin-7.svg)                                 | 7-kytkin, ristikytkin            | Kahden vaihtokytkimen väliin sijoitettava lisäohjauspiste.                                                                                     |
 
 ### Suojaus ja erotus
 
-| Symboli                                                                          | Nimi                               | Rajaus                                                                                                                           |
-| -------------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| ![Sähköpiirrosmerkki: sulake](symbolit/sulake.svg)                               | Sulake                             | Ylivirtasuojauksen sulake.                                                                                                       |
-| ![Sähköpiirrosmerkki: katkaisija](symbolit/katkaisija.svg)                       | Katkaisija                         | IEC-lähdeaineiston katkaisijan yleismerkki.                                                                                      |
-| ![Sähköpiirrosmerkki: johdonsuojakatkaisija](symbolit/johdonsuojakatkaisija.svg) | Johdonsuojakatkaisija, yleisesitys | Käyttää katkaisijan yleisgeometriaa; todellisessa piirustuksessa tarvitaan laitteen tyyppi, napaluku ja nimellisarvot.           |
-| ![Sähköpiirrosmerkki: vikavirtasuoja](symbolit/vikavirtasuoja.svg)               | Vikavirtasuoja, toimintolohko      | Kirjaston RCD-hahmotelma, ei varmennettu IEC-symboli. Todellinen RCD esitetään suunnitelman symboliikan ja laitetietojen mukaan. |
-| ![Sähköpiirrosmerkki: erotuskytkin](symbolit/erotuskytkin.svg)                   | Kuormanerotuskytkin                | IEC-lähdeaineistoon vertailtu erotus-/kytkintoiminto.                                                                            |
-| ![Sähköpiirrosmerkki: turvakytkin](symbolit/turvakytkin.svg)                     | Turvakytkin, yleisesitys           | Käyttötarkoitus on paikallinen turvallinen erotus. Grafiikka ei yksin kerro lukittavuutta, napalukua tai laitteen soveltuvuutta. |
+| Symboli                                                                     | Nimi                               | Rajaus                                                                                                                           |
+| --------------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| ![Piirrosmerkki: sulake](symbolit/sulake.svg)                               | Sulake                             | Ylivirtasuojauksen sulake.                                                                                                       |
+| ![Piirrosmerkki: katkaisija](symbolit/katkaisija.svg)                       | Katkaisija                         | IEC-lähdeaineiston katkaisijan yleismerkki.                                                                                      |
+| ![Piirrosmerkki: johdonsuojakatkaisija](symbolit/johdonsuojakatkaisija.svg) | Johdonsuojakatkaisija, yleisesitys | Käyttää katkaisijan yleisgeometriaa; todellisessa piirustuksessa tarvitaan laitteen tyyppi, napaluku ja nimellisarvot.           |
+| ![Piirrosmerkki: vikavirtasuoja](symbolit/vikavirtasuoja.svg)               | Vikavirtasuoja, toimintolohko      | Kirjaston RCD-hahmotelma, ei varmennettu IEC-symboli. Todellinen RCD esitetään suunnitelman symboliikan ja laitetietojen mukaan. |
+| ![Piirrosmerkki: erotuskytkin](symbolit/erotuskytkin.svg)                   | Kuormanerotuskytkin                | IEC-lähdeaineistoon vertailtu erotus-/kytkintoiminto.                                                                            |
+| ![Piirrosmerkki: turvakytkin](symbolit/turvakytkin.svg)                     | Turvakytkin, yleisesitys           | Käyttötarkoitus on paikallinen turvallinen erotus. Grafiikka ei yksin kerro lukittavuutta, napalukua tai laitteen soveltuvuutta. |
 
 ### Muuntajien ja suojausluokan laitemerkinnät
 
@@ -330,47 +334,52 @@ Nämä IEC 60417 -merkit tunnistetaan laitteesta tai laitekilvestä. Kytkentäka
 
 ### Kylmälaitteissa tavallisia kuormia
 
-| Symboli                                                              | Nimi                                 | Rajaus                                                                                                                                            |
-| -------------------------------------------------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Sähköpiirrosmerkki: moottori](symbolit/moottori.svg)               | Moottori, yleismerkki                | Sähkömoottori; laitteen tehtävä selviää tunnuksesta ja selitteestä.                                                                               |
-| ![Sähköpiirrosmerkki: moottori 1v](symbolit/moottori-1v.svg)         | Yksivaihemoottori                    | Yksivaiheinen moottori.                                                                                                                           |
-| ![Sähköpiirrosmerkki: moottori 3v](symbolit/moottori-3v.svg)         | Kolmivaihemoottori                   | Kolmivaiheinen moottori.                                                                                                                          |
-| ![Sähköpiirrosmerkki: kompressori](symbolit/kompressori.svg)         | Kompressori, moottorin yleisesitys   | Kirjastossa moottoripohjainen käyttösymboli. IEC-aineisto ei anna erillistä kompressorisymbolia, joten laitetunnus ja selite ovat välttämättömiä. |
-| ![Sähköpiirrosmerkki: puhallin](symbolit/puhallin.svg)               | Puhallin                             | Puhallin sähköliitäntöineen.                                                                                                                      |
-| ![Sähköpiirrosmerkki: lammitin](symbolit/lammitin.svg)               | Lämmityselementti                    | Esimerkiksi sähkövastus tai sulatuslämmitin.                                                                                                      |
-| ![Sähköpiirrosmerkki: termostaatti no](symbolit/termostaatti-no.svg) | Lämpötilakytkin, sulkeutuva kosketin | Lämpötilan vaikutuksesta sulkeutuva kosketin.                                                                                                     |
-| ![Sähköpiirrosmerkki: termostaatti nc](symbolit/termostaatti-nc.svg) | Lämpötilakytkin, avautuva kosketin   | Lämpötilan vaikutuksesta avautuva kosketin.                                                                                                       |
-| ![Sähköpiirrosmerkki: kontaktori](symbolit/kontaktori.svg)           | Kontaktori                           | Kuorman sähköinen kytkentä ohjauspiirillä.                                                                                                        |
-| ![Sähköpiirrosmerkki: rele kela](symbolit/rele-kela.svg)             | Releen kela                          | Releen ohjauskela.                                                                                                                                |
+| Symboli                                                         | Nimi                                 | Rajaus                                                                                                                                            |
+| --------------------------------------------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![Piirrosmerkki: moottori](symbolit/moottori.svg)               | Moottori, yleismerkki                | Sähkömoottori; laitteen tehtävä selviää tunnuksesta ja selitteestä.                                                                               |
+| ![Piirrosmerkki: moottori 1v](symbolit/moottori-1v.svg)         | Yksivaihemoottori                    | Yksivaiheinen moottori.                                                                                                                           |
+| ![Piirrosmerkki: moottori 3v](symbolit/moottori-3v.svg)         | Kolmivaihemoottori                   | Kolmivaiheinen moottori.                                                                                                                          |
+| ![Piirrosmerkki: kompressori](symbolit/kompressori.svg)         | Kompressori, moottorin yleisesitys   | Kirjastossa moottoripohjainen käyttösymboli. IEC-aineisto ei anna erillistä kompressorisymbolia, joten laitetunnus ja selite ovat välttämättömiä. |
+| ![Piirrosmerkki: puhallin](symbolit/puhallin.svg)               | Puhallin                             | Puhallin sähköliitäntöineen.                                                                                                                      |
+| ![Piirrosmerkki: lammitin](symbolit/lammitin.svg)               | Lämmityselementti                    | Esimerkiksi sähkövastus tai sulatuslämmitin.                                                                                                      |
+| ![Piirrosmerkki: termostaatti no](symbolit/termostaatti-no.svg) | Lämpötilakytkin, sulkeutuva kosketin | Lämpötilan vaikutuksesta sulkeutuva kosketin.                                                                                                     |
+| ![Piirrosmerkki: termostaatti nc](symbolit/termostaatti-nc.svg) | Lämpötilakytkin, avautuva kosketin   | Lämpötilan vaikutuksesta avautuva kosketin.                                                                                                       |
+| ![Piirrosmerkki: kontaktori](symbolit/kontaktori.svg)           | Kontaktori                           | Kuorman sähköinen kytkentä ohjauspiirillä.                                                                                                        |
+| ![Piirrosmerkki: rele kela](symbolit/rele-kela.svg)             | Releen kela                          | Releen ohjauskela.                                                                                                                                |
 
 ### Kuuden tarkistuskohdan tulos 28.9.2026
 
 SESKO vahvistaa, että Suomessa sähkökaavioiden standardoitu viite on IEC 60617 -tietokanta ja että symbolien datalehdet sisältävät nimen, tunnuksen, soveltamisohjeet ja statuksen. IEC:n nykyinen tietokanta on IEC 60617:2026 DB.
 
-Kirjaston kuudesta aiemmin epävarmaksi merkitystä kohdasta:
+**Mitä piirrosmerkistä voi päätellä?**
 
-- **Risteys ilman liitosta:** käsite on IEC-aineistossa olemassa, mutta kirjaston nykyistä tarkkaa johtimien risteysgeometriaa ei ole vahvistettu käytettävissä olevasta sähköjohtimien lähdeaineistosta. Merkki havainnollistaa johtimien risteystä.
-- **5-kytkin / sarja-/kruunukytkin:** toiminta ja suomalainen opetuskäyttö vahvistuvat oppituntiaineistosta. Toimitettu IEC-kooste ei yksiselitteisesti vahvista nykyistä asennuspiirustusgrafiikkaa, joten grafiikka säilyy opetussymbolina eikä sitä nimetä viralliseksi IEC-symboliksi.
-- **Johdonsuojakatkaisija:** IEC-kooste vahvistaa **Circuit Breaker** -yleismerkin. Johdonsuojakatkaisijan tarkka ominaisuus ei ilmene pelkästä yleismerkistä; laitetiedot täydentävät tulkinnan.
-- **Vikavirtasuoja:** toimitetusta IEC-koosteesta ei löydy erillistä RCD-merkkiä. Nykyinen SVG on siksi nimenomaan toimintolohko, ei standardoiduksi väitetty piirrosmerkki.
-- **Turvakytkin:** IEC-kooste vahvistaa kuormanerotuskytkimen / switch-disconnectorin symboliikan, mutta ei erillistä yleispätevää “turvakytkin”-grafiikkaa. Tukes edellyttää kiinteästi liitetylle ILP:lle turvakytkintä; piirustuksessa laitteen todellinen tyyppi ja ominaisuudet on yksilöitävä.
-- **Kompressori:** IEC-kooste vahvistaa koneen/moottorin yleismerkit, mutta ei erillistä kompressorimerkkiä. Siksi kompressori merkitään kirjastossa moottoripohjaisena käyttösymbolina ja yksilöidään laitetunnuksella.
-
-Näin kirjasto erottaa kolme asiaa toisistaan: **lähdevertailtu standardimerkki**, **standardimerkistä sovellettu käyttösymboli** ja **opiskelua varten tehty havainnollistus**. Tätä eroa ei saa häivyttää piirustuksia päivitettäessä.
+- Risteävät viivat voivat kuvata kahta erillistä johdinta. Tarkista kaavion selitteestä, miten liitos ja liitokseton risteys erotetaan.
+- Kruunukytkimen opetussymboli esittää kahta erikseen ohjattavaa lähtöä. Asennuspiirustuksen selite kertoo, millä merkillä niitä kuvataan kyseisessä kohteessa.
+- Katkaisijan yleismerkki kertoo kytkentätoiminnosta. Johdonsuojan ominaisuudet, kuten nimellisvirta, luetaan laitetiedoista.
+- Vikavirtasuojan kuva tässä sanastossa havainnollistaa laitteen toimintoa. Etsi kohteen kaaviosta laitteen tunnus ja ominaisuudet.
+- Turvakytkimen tehtävä on paikallinen erotus. Pelkkä yleismerkki ei ilmaise laitteen napalukua tai lukittavuutta.
+- Moottorin yleismerkki voi tarkoittaa kompressoria tai puhallinta. Laitetunnus ja selite kertovat, kumpaa moottori käyttää.
 
 ## Keskuskaavio ja asennuspiirustusten merkit (28.9.2026)
 
-Oppitunnilla korostettiin, että keskuksen ryhmäkaavioita ja asennuspiirustusten piirrosmerkkejä on osattava **lukea käytännössä**. Alla ovat kirjan esimerkeistä poimitut lukuharjoitukset, eivät kopio piirrosmerkkitaulukosta.
+Keskuskaavio näyttää syötön ja siitä lähtevät ryhmät. Ryhmä on keskuksesta lähtevä suojattu virtapiiri. Asennuspiirustuksesta voit puolestaan lukea, missä laitteet sijaitsevat ja mitä reittiä johdot kulkevat.
 
 ### Ryhmäkaavion lukureitti
 
-*Sähkön asentaminen II*, kuva 3.31b (s. 134–135): aloita syötöstä `3L, N, PE`, seuraa pääkytkintä `Q01 63 A`, mahdollista vikavirtasuojaa ja ryhmän johdonsuojaa. Ryhmäkohtaiset tiedot luetaan saman ryhmänumeron kohdalta: lähdön nimi, suojan tyyppi ja nimellisvirta, teho sekä kaapeli. Tyhjä kW-kenttä ei kerro kuorman tehoa.
+Esimerkkikeskuksen syöttö on merkitty `3L, N, PE`. Siihen kuuluvat kolme vaihetta, nolla ja suojajohdin. Pääkytkimen merkintä on `Q01 63 A`, jossa Q01 on laitetunnus ja 63 A nimellisvirta. Lähdön tiedot luetaan saman ryhmänumeron riviltä.
 
-Esimerkiksi ryhmän `1.1` suojaksi on merkitty `C10` ja kaapeliksi `MMJ 3×1,5S`; ryhmissä `3.1` ja `4.1` näkyvät `C16` ja `MMJ 3×2,5S`. `C` on katkaisijan laukaisukäyrä ja luku nimellisvirta ampeereina. Ryhmät 2.1–2.3, 3.1–3.3 ja 4.1–4.3 jakautuvat vaiheille L1–L3. VSK tarkoittaa vikavirtasuojaa. Vikavirtasuojan arvoja ei voi päätellä johdonsuojan tunnuksesta.
+| Ryhmä      | Johdonsuoja | Kaapeli    |
+| ---------- | ----------- | ---------- |
+| 1.1        | C10         | MMJ 3×1,5S |
+| 3.1 ja 4.1 | C16         | MMJ 3×2,5S |
+
+C tarkoittaa johdonsuojakatkaisijan laukaisukäyrää. Sitä seuraava numero kertoo nimellisvirran ampeereina. Kaapelimerkinnässä 3×1,5 tarkoittaa kolmea johdinta, joista kunkin poikkipinta-ala on 1,5 mm². Esimerkkikeskuksessa ryhmät 2.1–2.3, 3.1–3.3 ja 4.1–4.3 jakautuvat vaiheille L1–L3. Vikavirtasuojan tunnus on tässä VSK. Sen arvot luetaan erikseen.
+
+**Miten ryhmät 1.1 ja 3.1 eroavat toisistaan?** Ryhmässä 1.1 johdonsuojan nimellisvirta on 10 A ja johtimen poikkipinta-ala 1,5 mm². Ryhmässä 3.1 vastaavat arvot ovat 16 A ja 2,5 mm². Kummankaan kuorman tehoa ei ole annettu. Tyhjä kW-kenttä tarkoittaa puuttuvaa tietoa.
 
 ### Asennuspiirustuksen merkkiryhmät
 
-*Sähkön asentaminen II*, harjoitustehtävä 7.2, s. 69:
+Asennuspiirustusta voi lukea kysymällä, mitä merkki kertoo tilasta, johdotuksesta tai laitteesta. Esimerkiksi merkintä `3L+N+PE` kertoo kolmesta vaihejohtimesta, nollasta ja suojajohtimesta. Taulukko kokoaa muita esimerkkejä.
 
 | Ryhmä            | Tunnista ainakin                                                                                                                                             |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -381,7 +390,7 @@ Esimerkiksi ryhmän `1.1` suojaksi on merkitty `C10` ja kaapeliksi `MMJ 3×1,5S`
 | Pistorasiat      | Suojakoskettimeton/suojakoskettimellinen, kaksi- ja kolmiosainen, kytkimellinen, turva- ja suojajännitepistorasia sekä 5-napainen `3L+N+PE`-voimapistorasia. |
 | Rasiat ja maa    | Jakorasia, liitäntärasia, kojerasia, maadoitus ja suojamaadoitus.                                                                                            |
 
-**Kertaa taulukoista** L-, N-, PE- ja PEN-johtimet, 1-, 5-, 6- ja 7-kytkimet sekä jakorasian, liitäntärasian ja kojerasian erot.
+**Mihin rasiaa käytetään?** Jakorasiassa johtimia liitetään ja haaroitetaan. Liitäntärasia on laitteen liitäntäpiste. Kojerasia taas antaa asennuspaikan esimerkiksi kytkimelle tai pistorasialle. Käytä näitä tehtäviä apuna, kun tulkitset piirustuksen omaa selitettä.
 
 ## Symbolistandardit ja opiskelugrafiikka
 
@@ -395,24 +404,24 @@ Tämän sivun piirrosmerkit ovat itsenäisesti piirrettyjä opiskelugrafiikoita.
 
 NO ja NC kuvaavat koskettimen tilaa ennen ohjaavaa toimintaa. Muistisääntö: **NO on aluksi auki, NC on aluksi kiinni.**
 
-| Kosketin                              | Perusasento ja toiminta                                                                                            |
-| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Sulkukosketin, NO (*normally open*)   | Perusasennossa auki; toimittaessa sulkeutuu.                                                                       |
-| Avauskosketin, NC (*normally closed*) | Perusasennossa kiinni; toimittaessa avautuu.                                                                       |
-| Kaksiasentoinen vaihtokosketin        | Yhteinen kosketin vaihtaa kahden yhteyden välillä. Kuvan versiossa vanha yhteys avautuu ennen uuden sulkeutumista. |
-| Väliasentoinen vaihtokosketin         | Keskellä on aukiasento: yhteinen kosketin ei ole yhteydessä kumpaankaan vastakoskettimeen.                         |
-| Aikaisemmin sulkeutuva sulkukosketin  | Sulkeutuu ennen saman kosketinyksikön muita koskettimia.                                                           |
-| Myöhemmin avautuva avauskosketin      | Avautuu saman kosketinyksikön muita koskettimia myöhemmin.                                                         |
+| Kosketin                              | Perusasento ja toiminta                                                                                              |
+| ------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| Sulkukosketin, NO (*normally open*)   | Perusasennossa auki; toimittaessa sulkeutuu.                                                                         |
+| Avauskosketin, NC (*normally closed*) | Perusasennossa kiinni; toimittaessa avautuu.                                                                         |
+| Kaksiasentoinen vaihtokosketin        | Yhteinen kosketin vaihtaa kahden yhteyden välillä. Tässä esimerkissä vanha yhteys avautuu ennen uuden sulkeutumista. |
+| Väliasentoinen vaihtokosketin         | Keskellä on aukiasento: yhteinen kosketin ei ole yhteydessä kumpaankaan vastakoskettimeen.                           |
+| Aikaisemmin sulkeutuva sulkukosketin  | Sulkeutuu ennen saman kosketinyksikön muita koskettimia.                                                             |
+| Myöhemmin avautuva avauskosketin      | Avautuu saman kosketinyksikön muita koskettimia myöhemmin.                                                           |
 
-Viimeisten kahden merkin ajoitus on suhteessa **saman kosketinyksikön muihin koskettimiin**. Lähde ei ilmoita viivettä sekunteina. Oppituntikuvan oikealle kääntyminen kuvaa siinä käytetyn piirrosmerkin toimintaa.
+Viimeisten kahden merkin ajoitus on suhteessa **saman kosketinyksikön muihin koskettimiin**. Merkki kertoo toimintajärjestyksen. Siitä ei voi lukea viivettä sekunteina.
 
 Nykyisen kirjaston perusmerkit:
 
-| Sulkukosketin NO                                                                           | Avauskosketin NC                                                                                           | Kaksiasentoinen vaihtokosketin                                                                   |
-| ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| ![Sähköpiirrosmerkki: kosketin no](symbolit/kosketin-no.svg)                               | ![Sähköpiirrosmerkki: kosketin nc](symbolit/kosketin-nc.svg)                                               | ![Sähköpiirrosmerkki: vaihtokosketin](symbolit/vaihtokosketin.svg)                               |
-| Väliasentoinen vaihtokosketin                                                              | Aikaisemmin sulkeutuva NO                                                                                  | Myöhemmin avautuva NC                                                                            |
-| ![Sähköpiirrosmerkki: vaihtokosketin keskiasento](symbolit/vaihtokosketin-keskiasento.svg) | ![Sähköpiirrosmerkki: kosketin no aikaisemmin sulkeutuva](symbolit/kosketin-no-aikaisemmin-sulkeutuva.svg) | ![Sähköpiirrosmerkki: kosketin nc myohassa avautuva](symbolit/kosketin-nc-myohassa-avautuva.svg) |
+| Sulkukosketin NO                                                                      | Avauskosketin NC                                                                                      | Kaksiasentoinen vaihtokosketin                                                              |
+| ------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| ![Piirrosmerkki: kosketin no](symbolit/kosketin-no.svg)                               | ![Piirrosmerkki: kosketin nc](symbolit/kosketin-nc.svg)                                               | ![Piirrosmerkki: vaihtokosketin](symbolit/vaihtokosketin.svg)                               |
+| Väliasentoinen vaihtokosketin                                                         | Aikaisemmin sulkeutuva NO                                                                             | Myöhemmin avautuva NC                                                                       |
+| ![Piirrosmerkki: vaihtokosketin keskiasento](symbolit/vaihtokosketin-keskiasento.svg) | ![Piirrosmerkki: kosketin no aikaisemmin sulkeutuva](symbolit/kosketin-no-aikaisemmin-sulkeutuva.svg) | ![Piirrosmerkki: kosketin nc myohassa avautuva](symbolit/kosketin-nc-myohassa-avautuva.svg) |
 
 Kaikkien kuuden merkin perusasento ja toiminta näkyvät yllä. Erikoismerkkien kuva perustuu oppitunnin rinnakkaisiin graafisiin esitystapoihin; ne on piirretty kirjaston 64 × 64 -ruudukkoon.
 
@@ -432,7 +441,7 @@ Käyttöluokka kertoo kuormatyypistä ja kytkentätilanteesta. AC tarkoittaa vai
 | AC-21  | Kuormankytkin              | Resistiivisen vaihtosähkökuorman kytkentä.                                                                                |
 | AC-23  | Kuormankytkin              | Moottori- tai muun induktiivisen vaihtosähkökuorman kytkentä.                                                             |
 
-**Täsmennys oppituntitaulukkoon:** AC-3:n ja AC-4:n ero ei ole pelkkä suunnanvaihtokytkennän olemassaolo. Ratkaisevaa on, millaisessa moottorin toimintatilassa virta kytketään ja katkaistaan. AC-4 kattaa vastavirtajarrutuksen ja nykäyskäytön. AC-1:n kuvan `cos = 0,95` -merkintää vastaava tehokerroin kirjoitetaan `cos φ`; valmistajan selityksessä AC-1:n ehto on `cos φ ≥ 0,95`.
+**Täsmennys oppituntitaulukkoon:** AC-3:n ja AC-4:n ero ei ole pelkkä suunnanvaihtokytkennän olemassaolo. Ratkaisevaa on, millaisessa moottorin toimintatilassa virta kytketään ja katkaistaan. AC-4 kattaa vastavirtajarrutuksen ja nykäyskäytön. Tehokerroin merkitään `cos φ`. Valmistajan selityksessä AC-1:n ehto on `cos φ ≥ 0,95`.
 
 Samalla kontaktorilla voi olla eri sallittu käyttövirta AC-1- ja AC-3-käytössä. Käyttöluokkaa luetaan yhdessä valmistajan ilmoittaman jännitteen ja virran kanssa.
 
@@ -450,9 +459,7 @@ Oppitunnin tiivis kertausapu:
 | AC-21        | Lämmityskuorman kytkentä          |
 | AC-23        | Moottorikuorman kytkentä          |
 
-**Dian kertauspainotus:** AC-1 = lämmityskuorma, AC-3 = moottorikuorma, AC-15 = ohjauspiiri ja AC-23 = moottorien kuormankytkin.
-
-Muistisääntö tiivistää yllä olevan käyttöluokkataulukon. AC-4:n suunnanvaihto/jarrutus on tässä lyhyt muistivihje: tarkempi ero AC-3:een on kuvattu edellä. AC-15 ja DC-13 viittaavat tässä sähkömagneettisten kuormien ohjaukseen. Dian koepainotus on oppitunnin vinkki, ei yleinen lupaus kokeiden sisällöstä.
+Muistisääntö tiivistää yllä olevan käyttöluokkataulukon. AC-4:n suunnanvaihto/jarrutus on tässä lyhyt muistivihje: tarkempi ero AC-3:een on kuvattu edellä. AC-15 ja DC-13 viittaavat tässä sähkömagneettisten kuormien ohjaukseen.
 
 ## Palautuvat ja asentoon jäävät kytkimet
 
@@ -468,7 +475,7 @@ Alla olevien kytkinkuvien **katkoviiva** näyttää mekaanisen yhteyden vivulta 
 - **A on asentoon jäävä** (*maintained*). Vipu jää valittuun asentoon vapauttamisen jälkeen. Kulmikas merkki ohjainviivalla kuvaa asennossa pysymistä.
 - **B on palautuva** (*momentary*). Kun vivusta päästää irti, se palaa lepoasentoonsa. Kolmion kärki osoittaa palautumissuunnan. Tässä kuvassa kärki osoittaa ylöspäin.
 
-Molemmat ovat **SPDT-kytkimiä**, eli niissä on yksi vaihtokosketin. Yhteinen liitin **2** voidaan yhdistää liittimeen **1** tai **3**. Kuvan asennossa **2–1** sytyttää H1:n. Toisessa asennossa **2–3** sytyttää H2:n. A jää valitulle reitille, kun taas B palaa vapautettaessa H1-reitille. Tehtävän taulukko 4.4 ei näy aineistossa, joten näitä kahta A:n ja B:n reittiä ei voi yhdistää varmuudella vivun asentonumeroihin 1 ja 2.
+Molemmat ovat **SPDT-kytkimiä** (*single pole, double throw*), eli niissä on yksi yhteinen vaihtokosketin, joka valitsee kahdesta yhteydestä. Yhteinen liitin **2** voidaan yhdistää liittimeen **1** tai **3**. Kuvan asennossa **2–1** sytyttää H1:n. Toisessa asennossa **2–3** sytyttää H2:n. A jää valitulle reitille, kun taas B palaa vapautettaessa H1-reitille. Tässä vertailussa asennot erottaa liitinpareista 2–1 ja 2–3.
 
 **NO ja NC** kuvaavat koskettimen sähköistä tilaa ennen ohjaavaa toimintaa. Palautuvuus kertoo vivun käyttäytymisestä vapautettaessa. Palautuvassa kytkimessä voi olla sulku- tai avauskosketin.
 
@@ -476,7 +483,7 @@ Molemmat ovat **SPDT-kytkimiä**, eli niissä on yksi vaihtokosketin. Yhteinen l
 
 ![E-kytkimen kaksi avoinna olevaa vaihtokosketinta, mekaaninen katkoviiva ja kohti keskustaa osoittavat palautuskolmiot](symbolit/opetuskaavio-kytkin-e.svg)
 
-**DPDT** tarkoittaa kahta sähköisesti erillistä vaihtokosketinta, joita sama vipu ohjaa. E:n kuvassa katkoviiva ulottuu molemmille navoille.
+**DPDT** (*double pole, double throw*) tarkoittaa kahta sähköisesti erillistä vaihtokosketinta, joista kumpikin valitsee kahdesta yhteydestä; sama vipu ohjaa molempia. E:n kuvassa katkoviiva ulottuu molemmille navoille.
 
 E:ssä vastakkaiset kolmiot osoittavat kohti keskiasentoa. Vipu palautuu kummastakin ääriasennosta asentoon **0**.
 
@@ -522,7 +529,7 @@ Seuraa jokaisessa asennossa **plus → kiinni oleva kosketin → mahdollinen hyp
 
 Lue ensin toimintataulukko ja seuraa sitten johtimia. **X merkitsee kiinni olevaa kosketinta. X-merkit yhdistävä pystyviiva kertoo, että kosketin pysyy kiinni koko välin.** Tässä taulukossa liitinparit 1–2 ja 5–6 pysyvät kiinni asennosta 1 asentoon 3, myös asennossa 2.
 
-Alkuperäisen harjoituskuvan harmaa katkoviiva näyttää johdotuksen. Alla johdot näkyvät yhtenäisinä, avoimet koskettimet rakoina ja suljetut kuormareitit vihreinä. S1:n sisäinen katkoviiva kuvaa koskettimien mekaanista yhteiskäyttöä. Kaareva ylitys näyttää liitoksettoman risteyksen. Täytetty piste merkitsee liitosta.
+Alla johdot näkyvät yhtenäisinä, avoimet koskettimet rakoina ja suljetut kuormareitit vihreinä. S1:n sisäinen katkoviiva kuvaa koskettimien mekaanista yhteiskäyttöä. Kaareva ylitys näyttää liitoksettoman risteyksen. Täytetty piste merkitsee liitosta.
 
 Kiinteät siltaukset ovat **2–4 (L1)**, **6–8 (L2)** ja **10–12 (L3)**. Kuorma U on liittimissä 1 ja 5, V liittimissä 3 ja 9 sekä W liittimissä 7 ja 11.
 

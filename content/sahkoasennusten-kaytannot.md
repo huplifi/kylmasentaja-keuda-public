@@ -9,12 +9,14 @@ Käytännön asennusharjoitusten muistiinpanoja. Piirustusten lukeminen ja päiv
 
 **Oppikirjan opetusesimerkki:** *Sähkön asentaminen II*, luku 3.4, s. 128, kuvat 3.21–3.22.
 
+Kuvittele jakorasia, josta kolme johdinta jatkuu suojakoskettimelliseen pistorasiaan. Mitkä niistä muodostavat virtareitin, kun pistorasiaan kytketään laite?
+
 - **L** on vaihejohdin (esimerkissä ruskea), **N** nollajohdin (sininen) ja **PE** suojajohdin (keltavihreä). PE kytketään pistorasian suojakoskettimeen, eikä sitä käytetä käyttövirran paluureittinä.
 - Kirjan vakiintuneessa kytkentätavassa liitinreikien ollessa vaakasuorassa N on vasemmalla ja L oikealla; pystysuorassa N on ylhäällä ja L alhaalla. **Tämä ei ole johdinten tunnistusmenetelmä**: kytkentä varmistetaan liitinmerkinnöistä, piirustuksesta ja asianmukaisilla mittauksilla.
 - Esimerkin vivullisessa rasialiittimessä johdin kuoritaan liittimen ilmoittamaan pituuteen, vipu avataan, johdin työnnetään pohjaan ja vipu suljetaan. Tarkista, että liitin soveltuu käytetylle johtimelle (jäykkä, monisäikeinen tai hienosäikeinen) ja liitos pysyy.
 - Jakorasiassa samaan tehtävään kuuluvat johtimet yhdistetään oikein: vaihe vaiheeseen, nolla nollaan ja suojajohdin suojajohtimeen. Johdinväri yksin ei todista johtimen tehtävää.
 
-**Harjoituskysymys:** osaatko seurata L:n, N:n ja PE:n erilliset reitit jakorasiasta pistorasiaan ja selittää, miksi suojajohdin ei kuulu normaaliin käyttövirtapiiriin?
+**Tarkista vastaus.** Tavallisen yksivaiheisen laitteen käyttövirta kulkee vaihejohtimen (L) ja nollajohtimen (N) kautta. Suojajohdin (PE) yhdistää pistorasian suojakoskettimen suojamaahan. Sen tehtävä on suojaus vikatilanteessa.
 
 Tämä kuvaa valvotun harjoituksen teoriaa, ei itsenäisen sähköasennustyön lupaa. Ennen työtä jännitteettömyys varmistetaan opettajan ohjeen ja asianmukaisen menettelyn mukaisesti.
 
@@ -27,7 +29,7 @@ Tämä kuvaa valvotun harjoituksen teoriaa, ei itsenäisen sähköasennustyön l
 | Kytkimen, jakorasian tai kulman lähellä | Lähin kiinnike enintään **5 cm:n** päähän. |
 | Muualla kaapelireitillä                 | Kiinnikkeet **5–20 cm:n** välein.          |
 
-Kiinnikkeen nimeksi on kirjattu alustavasti **naulakiinnike**. Tarkka nimitys ja tuotetyyppi ovat vielä varmistettavia.
+Esimerkiksi kulman kohdalla luetaan ensimmäistä riviä. Suoralla osuudella peräkkäisten kiinnikkeiden väli luetaan toiselta riviltä.
 
 Tässä muistiinpanossa puhekielen **johto** tarkoittaa kiinnitettävää **kaapelia**, ei kaapelin yksittäistä johdinta.
 

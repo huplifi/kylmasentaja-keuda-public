@@ -40,9 +40,9 @@ publish: true
 - Tulistus: `SH = imuputken lämpötila − imupainetta vastaava kyllästymislämpötila`
 - Alijäähdytys: `SC = korkeapainetta vastaava kyllästymislämpötila − nesteputken lämpötila`
 
-**Kurssin muistisääntö:** imupainetta vastaavan kyllästymis- eli höyrystymislämpötilan tulisi olla **5–15 K kylmälaitteen tavoitelämpötilaa alempi**.
+**Suuntaa-antava muistisääntö:** imupainetta vastaava kyllästymis- eli höyrystymislämpötila voi olla **5–15 K kylmälaitteen tavoitelämpötilaa alempi**. Tämä ei ole laitteen asetusarvo; oikea tavoite riippuu laitteesta, kylmäaineesta ja valmistajan ohjeista.
 
-Paineita vastaavat kyllästymislämpötilat katsotaan kyseisen kylmäaineen paine–lämpötila-taulukosta tai mittarista. Jos kylmäaineella on lämpötilaliukuma, tulistuksessa käytetään kastepistelämpötilaa ja alijäähdytyksessä kuplapistelämpötilaa.
+Paineita vastaavat kyllästymislämpötilat katsotaan kyseisen kylmäaineen paine–lämpötila-taulukosta tai mittarista. Tarkista, ilmoitetaanko paine yli- vai absoluuttisena paineena. Jos kylmäaineella on lämpötilaliukuma, tulistuksessa käytetään kastepistelämpötilaa ja alijäähdytyksessä kuplapistelämpötilaa.
 
 ### Muistettavat arvot
 
@@ -60,11 +60,13 @@ Paineita vastaavat kyllästymislämpötilat katsotaan kyseisen kylmäaineen pain
 
 ## Kylmäaineet ja CO₂-ekvivalentti
 
-- **GWP** ja **ODP** ovat yksiköttömiä suhdelukuja.
-- **ekvt** = muistiinpanoissa ekvivalenttitonni; tässä **t CO₂-ekv.**
+- **GWP** vertaa kylmäainepäästön lämmitysvaikutusta samanmassaisen hiilidioksidipäästön vaikutukseen. **ODP** kuvaa aineen kykyä heikentää otsonikerrosta. Molemmat ovat yksiköttömiä suhdelukuja.
+- **t CO₂-ekv.** tarkoittaa CO₂-ekvivalenttitonnia. Vanhemmissa harjoitusmuistiinpanoissa samasta yksiköstä käytetään lyhennettä **ekvt**.
 - `CO₂-ekvivalentti [t CO₂-ekv.] = kylmäaineen massa [kg] × GWP / 1000`
-- Täydentävä esimerkki oppitunnin R410A-arvolla: `1 kg × 2088 / 1000 = 2,088 t CO₂-ekv.`
-- Oppitunnin R744-esimerkki: `100 kg × 1 / 1000 = 0,1 t CO₂-ekv.` eli 100 kg CO₂-ekv. R744:n GWP on 1.
+- Esimerkki: 1 kg R410A:ta ja tässä harjoituksessa käytetty GWP 2088 antavat `1 kg × 2088 / 1000 = 2,088 t CO₂-ekv.`
+- Esimerkki: 100 kg R744:ää ja sen GWP 1 antavat `100 kg × 1 / 1000 = 0,1 t CO₂-ekv.` eli 100 kg CO₂-ekv.
+
+CO₂-ekvivalentti kuvaa valitun kylmäainemassan laskennallista ilmastovaikutusta, jos se pääsee ilmakehään. Laitteen täytös ei tarkoita päästöä. F-kaasuasetuksen vuototarkastusvelvoite riippuu myös aineesta ja laitetyypistä; pelkkä laskettu CO₂-ekvivalentti ei ratkaise sitä.
 
 Kylmäaineiden käsitteet ja esimerkin rajaus: [Kylmäaineet](kylmaaineet.md).
 
@@ -72,7 +74,7 @@ Kylmäaineiden käsitteet ja esimerkin rajaus: [Kylmäaineet](kylmaaineet.md).
 
 - `1 bar = 1 000 mbar`
 - `1 mbar = 0,001 bar`
-- ILP-vakuumointiesimerkki: **2,7 mbar = 0,0027 bar**.
+- Ilmalämpöpumpun harjoituksessa käytetty vakuumoinnin tavoitelukema: **2,7 mbar = 0,0027 bar**. Tämä on yksikkömuunnosesimerkki, ei yleinen hyväksymisraja.
 
 ## Sähköoppi
 
@@ -166,7 +168,7 @@ Kun `U` annetaan voltteina ja `I` ampeereina, tulos saadaan watteina: `V × A = 
 - Jaksonaika: `T = 1 / f`
 - Hetkellisarvo: `u = û × sin α`, missä `û` on jännitteen huippuarvo ja `α` vaihekulma
 
-Esimerkki 230 V / 50 Hz: `Û ≈ 325 V`, `U_pp ≈ 650 V` ja `T = 20 ms`.
+Esimerkki sinimuotoisesta 230 V:n tehollisjännitteestä, jonka taajuus on 50 Hz: `Û ≈ 325 V`, `U_pp ≈ 650 V` ja `T = 20 ms`. Tässä käytetään siniaallon laskennallisia arvoja.
 
 ### Sähköenergia
 

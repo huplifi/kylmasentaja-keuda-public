@@ -3,13 +3,13 @@ title: "Kylmäkoneikon ohjaus"
 publish: true
 ---
 
-Seuraa ensin yhden kylmiön pysäytystä. Kahden kompressorin esimerkissä voit sitten seurata, miten imupaineen muutos johtaa toisen kompressorin käynnistymiseen. [Releen, kontaktorin ja aikareleiden perusteet](releet-ja-kontaktorit.md)
+Imupaine tarkoittaa kylmäainehöyryn painetta kompressorin tulopuolella. Nestelinja tuo nestemäistä kylmäainetta kohti paisuntaventtiiliä ja höyrystintä. Seuraa ensin, miten nestelinjan sulkeminen vaikuttaa imupaineeseen ja pysäyttää yhden kylmiön kompressorin. Kahden kompressorin esimerkissä voit sitten seurata, miten imupaineen muutos johtaa toisen kompressorin käynnistymiseen. [Releen, kontaktorin ja aikareleiden perusteet](releet-ja-kontaktorit.md)
 
 ## Kylmiön pump-down-ohjaus
 
-Harjoituksessa on yksi kylmiö, nestelinjan jännitteettömänä sulkeutuva magneettiventtiili Y1 ja suorakäynnisteinen kompressori M1. Kylmiön lämmetessä termostaatti avaa venttiilin. Kompressori käynnistyy imupaineen noustessa. Kun lämpötila on saavutettu, venttiili sulkeutuu ensin ja kompressori käy vielä hetken. Tätä kutsutaan pump-down-ohjaukseksi. Tunnukset ja 24 V DC ovat tämän harjoituksen valintoja.
+Harjoituksessa on yksi kylmiö, nestelinjan jännitteettömänä sulkeutuva magneettiventtiili Y1 ja suorakäynnisteinen kompressori M1. Kylmiön lämmetessä termostaatti avaa venttiilin. Kompressori käynnistyy imupaineen noustessa. Kun lämpötila on saavutettu, venttiili sulkeutuu ensin ja kompressori käy vielä hetken. Tätä kutsutaan pump-down-ohjaukseksi. Tässä esimerkissä termostaatti ohjaa venttiiliä ja matalapainekytkin LP kompressorin käyntiä. Ohjausjännite on 24 voltin tasajännite (24 V DC).
 
-Piirrä ensin M1 ja Y1, sitten niiden virtalähteet. Moottorilähtö ja ohjausvirtalähde saavat sähkön pääkytkimen Q0 jälkeisestä jakelusta. Moottorin kontaktori KM1 on vain moottorihaarassa, jotta termostaatti voi avata venttiilin myös moottorin seistessä.
+Taulukkoa voi lukea kuin kaaviota: nuolet näyttävät, mitkä osat ovat peräkkäin. Aloita pääkytkimestä Q0. Sen jälkeen syöttö jakautuu moottorin pääpiiriin ja ohjausjännitteen lähteelle. L1, L2 ja L3 ovat syötön kolme vaihetta, PE on suojajohdin. Moottorin kontaktori KM1 on vain moottorihaarassa, jotta termostaatti voi avata venttiilin myös moottorin seistessä.
 
 | Seurattava reitti         | Osat lukujärjestyksessä                                                                                                                                                                                                                                                                          |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -27,7 +27,7 @@ Haarat kuvaavat kompressorin ja nesteventtiilin ohjausta. Oikean koneen puhaltim
 
 ## Kahden kompressorin koneikko
 
-Kuvittele, että usean kylmäkalusteen höyrystimet palauttavat kylmäainehöyryn yhteiseen imuputkeen. Ensimmäinen kompressori on nopeussäädetty ja toinen käy vakionopeudella. Kun höyryä tulee imuputkeen enemmän kuin käynnissä oleva kompressori ehtii imeä, imupaine (LP) nousee.
+Kuvittele, että usean kylmäkalusteen höyrystimet palauttavat kylmäainehöyryn yhteiseen imuputkeen. Ensimmäinen kompressori on nopeussäädetty ja toinen käy vakionopeudella. Kun höyryä tulee imuputkeen enemmän kuin käynnissä oleva kompressori ehtii imeä, imupaine nousee. Tässä koneikossa paineanturi välittää säätimelle mitatun painearvon. Edellisen esimerkin LP-kytkin puolestaan välitti vain koskettimen tilan.
 
 1. **Mittaus ja säätö.** Paineanturi ilmoittaa imupaineen koneikkosäätimelle. Säädin pyytää ensimmäisen kompressorin taajuusmuuttajaa lisäämään moottorin nopeutta. Kompressori imee enemmän höyryä.
 2. **Toinen kompressori avuksi.** Jos ensimmäisen teho ei riitä ja imupaine pysyy tavoitealueen yläpuolella, säädin pyytää toisen kompressorin käyntiin. Käynnistys edellyttää, että suojaukset sallivat sen ja vähimmäisseisonta-aika on kulunut.
@@ -48,7 +48,9 @@ Ohjauspiirin reittiä luetaan virtalähteen plussasta kelan kautta takaisin 0 V:
 
 ### Etsi kontaktori valmistajan kaaviosta
 
-Daikinin LREQ8–12BY1-ulkoyksikön kokonaiskaaviossa A1P-ohjauskortin rele K1R ohjaa kontaktoria K2M, jonka pääkoskettimien kautta vakiokierroskompressori M2C saa tehonsa. Kompressorin M1C syöttö kulkee invertterin kautta. Imupaineanturi S1NPL tuottaa mittaustiedon, kun taas S1PH ja S2PH ovat korkeapainesuojia. Etsi kaaviosta ensin M2C, seuraa sen kolmea johdinta K2M:lle ja etsi sitten saman tunnuksen kela.
+**Mikä kontaktori syöttää vakiokierroskompressoria M2C?** Etsi valmistajan kaaviosta M2C ja seuraa sen kolmea johdinta takaisin pääkoskettimille. Etsi sen jälkeen kaaviosta kela, jolla on sama laitetunnus kuin pääkoskettimilla. [Daikin LREQ8–12BY1, sähkökaavio (PDF, yksi sivu)](https://www.daikin.es/content/dam/MDM/TechnicalDrawings/Refrigeration/EN/LREQ8-12BY1_wir3_3D070677J_EN.pdf)
+
+**Tarkista päättelysi.** M2C saa syöttönsä kontaktorin K2M pääkoskettimien kautta. K2M:n kelaa ohjaa ohjauskortin A1P rele K1R. Toisen kompressorin M1C syöttö kulkee nopeutta säätävän invertterin kautta. S1NPL mittaa imupainetta, ja S1PH sekä S2PH ovat korkeapainesuojia.
 
 ## Lähteet ja ylläpitotiedot
 

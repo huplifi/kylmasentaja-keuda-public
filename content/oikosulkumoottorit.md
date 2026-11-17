@@ -5,15 +5,15 @@ publish: true
 
 ## Mistä nimi tulee?
 
-Staattori on moottorin paikallaan pysyvä osa ja roottori pyörivä osa. Kolmivaihevirta synnyttää staattoriin pyörivän magneettikentän. Kenttä indusoi virran roottorin sauvoihin, joiden päät on yhdistetty renkailla suljetuksi virtapiiriksi. Tästä rakenteesta tulee nimi *oikosulkumoottori*. Roottorivirran ja magneettikentän yhteisvaikutus tuottaa akselia pyörittävän vääntömomentin.
+Staattori on moottorin paikallaan pysyvä osa ja roottori pyörivä osa. Kolmivaihevirta synnyttää staattoriin pyörivän magneettikentän. Pyörivä kenttä synnyttää jännitteen roottorin sauvoihin. Tätä kutsutaan induktioksi. Sauvojen päät on yhdistetty renkailla suljetuksi virtapiiriksi, joten niissä pääsee kulkemaan virta. Tästä rakenteesta tulee nimi *oikosulkumoottori*. Roottorivirran ja magneettikentän yhteisvaikutus tuottaa akselia pyörittävän vääntömomentin.
 
-**Miksi roottori jää jälkeen?** Kolme vaihevirtaa saavuttavat huippunsa vuorotellen. Kun ne kulkevat staattorin eri kohtiin sijoitetuissa käämeissä, yhteinen magneettikenttä kiertää roottorin ympäri. Jos roottori saavuttaisi kentän nopeuden, kenttä pysyisi roottorin suhteen paikallaan. Silloin roottorin sauvoihin ei indusoituisi jännitettä eikä moottori tuottaisi kuorman vaatimaa momenttia. Kun esimerkiksi puhaltimen akselin kuormitus kasvaa, roottori hidastuu hieman. Normaalilla käyntialueella tämä kasvattaa jättämää, roottorivirtaa ja momenttia, kunnes momentti taas vastaa kuormaa.
+**Miksi roottori jää jälkeen?** Kolme vaihevirtaa saavuttavat huippunsa vuorotellen. Kun ne kulkevat staattorin eri kohtiin sijoitetuissa johdinkäämeissä, yhteinen magneettikenttä kiertää roottorin ympäri. Jos roottori saavuttaisi kentän nopeuden, kenttä pysyisi roottorin suhteen paikallaan. Silloin roottorin sauvoihin ei indusoituisi jännitettä eikä moottori tuottaisi kuorman vaatimaa momenttia. Kun esimerkiksi puhaltimen akselin kuormitus kasvaa, roottori hidastuu hieman. Kentän ja roottorin nopeuseroa kutsutaan jättämäksi. Normaalilla käyntialueella jättämän kasvu lisää roottorivirtaa ja vääntömomenttia, kunnes momentti taas vastaa kuormaa.
 
 ## Miksi toinen moottori käy tähdessä ja toinen kolmiossa?
 
 **Δ (delta) tarkoittaa kolmiokytkentää ja Y tähtikytkentää.** Symbolit kuvaavat kolmen käämin yhteyttä. Tähdessä käämien päät kohtaavat yhdessä pisteessä. Kolmiossa kunkin käämin loppu yhdistyy seuraavan alkuun, jolloin muodostuu suljettu kolmio.
 
-Esimerkin verkossa kahden vaiheen välillä on 400 V. Moottorin arvokilvestä katsotaan, kumpi symboli kuuluu tämän jännitteen kohdalle. Kytkentäliuskat yhdistävät staattorin kolmen käämin päät joko tähdeksi tai kolmioksi.
+Esimerkin verkossa kahden vaiheen välillä on 400 V. Moottorin arvokilpi on valmistajan tietokilpi, joka ilmoittaa muun muassa nimellisjännitteen, kytkennän ja nimellisvirran. Taulukon ensimmäinen sarake näyttää kahden eri moottorin kilpimerkinnät. Valitse kummastakin se kytkentä, jonka kohdalla lukee 400 V. Kytkentäliuskat yhdistävät staattorin kolmen käämin päät joko tähdeksi tai kolmioksi.
 
 | Arvokilven merkinnät | Käyntikytkentä 400 V:n verkossa | Jännite yhden käämin yli |
 | -------------------- | ------------------------------- | ------------------------ |
@@ -39,7 +39,7 @@ Esimerkkimoottorin arvokilven merkinnöissä **230/400 V Δ/Y** ja **2,87/1,65 A
 
 **Mihin teho menee?** Kilven 0,75 kW on akselilta saatava mekaaninen teho. Hyötysuhde η = 81 % kertoo, kuinka suuri osa sähköisestä ottotehosta päätyy akselille. Nimelliskuormalla ottoteho on siis noin 0,75 kW / 0,81 = 0,93 kW. Myös tehokerroin cos φ on tällä moottorilla 0,81. Se kertoo pätötehon osuuden näennäistehosta. IE2 on hyötysuhdeluokka.
 
-**Miksi kilvessä lukee 1 430 r/min?** Nelinapaisen moottorin magneettikenttä pyörii 50 Hz:n taajuudella 1 500 r/min. Nimelliskuormalla roottori jää kentästä 70 r/min. Tätä nopeuseroa kutsutaan jättämäksi, ja suhteessa kentän nopeuteen se on noin 4,7 %.
+**Miksi kilvessä lukee 1 430 r/min eli kierrosta minuutissa?** Nelinapaisen moottorin magneettikenttä pyörii 50 Hz:n taajuudella 1 500 r/min. Nimelliskuormalla roottori jää kentästä 70 r/min. Tätä nopeuseroa kutsutaan jättämäksi, ja suhteessa kentän nopeuteen se on noin 4,7 %.
 
 **Tarkista laskemalla.** Kentän nopeus saadaan kaavasta nₛ = 120f / N, jossa f on taajuus hertseinä ja N napojen lukumäärä. Tässä 120 × 50 / 4 = 1 500 r/min. Akselin nimellismomentti saadaan akselitehosta ja akselin nopeudesta: M ≈ 9 550 × 0,75 kW / (1 430 r/min) ≈ 5,0 N·m. Tämä on akselin vääntömomentti nimelliskuormalla.
 
@@ -59,11 +59,13 @@ Yhden vaiheen virtareitti on seuraava: F01 (gG-sulake) → Q01 (kontaktori) → 
 
 **Voiko gG-sulakkeen valita kertomalla nimellisvirran 2,5:llä?** Pelkkä kerroin ei riitä mitoitukseen. Tässä 2,5 × 1,75 A ≈ 4,38 A. Kirjan 6 A:n alaraja perustuu siihen, että sulake kestää käynnistyksen, ja 10 A:n yläraja lämpöreleelle sallittuun etusulakkeeseen. Valmistajan valintataulukosta tai sulakkeen aika–virtakäyrästä tarkistetaan käynnistysvirran suuruus ja kesto. Lisäksi tarkistetaan moottorilähdön laitteiden ja kaapelin suojaus.
 
-**Mitä tapahtuu, jos puhallin jumittuu?** Pysähtyneen moottorin virta voi pysyä suurena ja käämitys kuumenee. Tunnin pitopiiriesimerkissä lämpöreleen laukeaminen avaa ohjauspiirin koskettimen 95–96. Kontaktorin kela menettää jännitteensä, pääkoskettimet avautuvat ja moottorin syöttö katkeaa. Näin päävirtapiirissä havaittu ylikuormitus pysäyttää moottorin ohjauspiirin kautta. Sulakkeiden tehtävä tässä esimerkissä on katkaista suuri oikosulkuvirta.
+**Mitä tapahtuu, jos puhallin jumittuu?** Pysähtyneen moottorin virta voi pysyä suurena ja käämitys kuumenee. Tässä suojausesimerkissä lämpöreleen kosketin 95–96 on sarjassa kontaktorin kelan kanssa. Kun lämpörele laukeaa, kosketin avautuu. Kontaktorin kela menettää jännitteensä, pääkoskettimet avautuvat ja moottorin syöttö katkeaa. Näin päävirtapiirissä havaittu ylikuormitus pysäyttää moottorin ohjauspiirin kautta. Sulakkeiden tehtävä tässä esimerkissä on katkaista suuri oikosulkuvirta.
 
 ![Moottorin pitopiiri: käynnistys, pito ja pysäytys](kaaviot/moottorin-pitopiiri.svg)
 
-Tämän moottorilähdön esimerkkikaapeli on MMJ 4 × 1,5 S (kolme vaihetta ja PE). Kaapeliin liittyvä ≤ 25 A on tässä esimerkissä kaapelille ilmoitettu yläraja. Moottorilähdön sulakevalintaa rajoittaa tässä lämpöreleen 10 A:n enimmäisarvo.
+Kaavio näyttää käynnistys- ja pysäytyspainikkeet sekä kontaktorin oman pitokoskettimen. Edellä kuvattu lämpöreleen kosketin 95–96 puuttuu tästä yksinkertaistetusta kuvasta. Sen avautuminen katkaisee kelavirran samalla tavoin kuin pysäytyspainikkeen painaminen.
+
+Tämän moottorilähdön esimerkkikaapelissa MMJ 4 × 1,5 S on kolme vaihejohdinta ja suojajohdin PE. Kunkin johtimen poikkipinta-ala on 1,5 mm². Kaapeliin liittyvä ≤ 25 A on tässä esimerkissä kaapelille ilmoitettu yläraja. Moottorilähdön sulakevalintaa rajoittaa tässä lämpöreleen 10 A:n enimmäisarvo.
 
 ### Moottorikaapelin mekaaninen suojaus
 
@@ -79,7 +81,7 @@ Oppikirjan esimerkissä JAPP 16- ja JAPP 20 -putket voi taivuttaa myös putken k
 
 ## Mittaus- ja testauspöytäkirja
 
-Moottorilähdön mittaus- ja testauspöytäkirja  yhdistää kilpiarvot, suojauksen asetukset, mitatut vaihevirrat ja tarkastustuloksen.
+Moottorilähdön mittaus- ja testauspöytäkirja  yhdistää kilpiarvot, suojauksen asetukset, mitatut vaihevirrat ja tarkastustuloksen. Esimerkiksi ensimmäisen moottorin 1,65 A on valmistajan ilmoittama nimellisvirta. Jokaisen vaiheen todellinen mittaustulos merkitään erikseen.
 
 ## Lähteet ja ylläpitotiedot
 

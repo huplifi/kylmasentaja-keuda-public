@@ -5,20 +5,20 @@ publish: true
 
 ## Rele ja kontaktori
 
-**Sähkömagneettinen rele** on kelalla ohjattu kytkin. Kun kelassa kulkee virta, rautasydän magnetoituu ja vetää liikkuvaa ankkuria puoleensa. Ankkuri siirtää koskettimia. Silloin rele *vetää*. Kun kelavirta katkeaa, tavallisen releen jousi palauttaa koskettimet lepoasentoon. Silloin rele *päästää*.
+**Sähkömagneettinen rele** on sähköllä ohjattu kytkin. Sen kela on johdinkäämi. Kun kelassa kulkee virta, rautasydän magnetoituu ja vetää puoleensa liikkuvaa rautaosaa eli ankkuria. Ankkuri siirtää koskettimia. Suljettu kosketin yhdistää kaksi liitintä, avoin kosketin katkaisee niiden välisen virtareitin. Silloin rele *vetää*. Kun kelavirta katkeaa, tavallisen releen jousi palauttaa koskettimet lepoasentoon. Silloin rele *päästää*.
 
-**Kontaktori** on sähkökäyttöinen kytkin, jonka pääkoskettimet kytkevät esimerkiksi moottorin syötön. Kylmiön suorassa termostaattiohjauksessa voit seurata kahta virtapiiriä.
+**Kontaktori** on sähkökäyttöinen kytkin, jonka pääkoskettimet kytkevät esimerkiksi moottorin syötön. Kylmiössä termostaatti tunnistaa lämpötilan ja pyytää tarvittaessa jäähdytystä. Ohjauspiirissä tämä pyyntö kytkee virran kontaktorin kelaan. Päävirtapiiri syöttää tehon kompressorin moottorille.
 
 | Ohjauspiiri                                                                                                           | Päävirtapiiri                                                                             |
 | --------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
 | Kun termostaatti pyytää jäähdytystä, sen kosketin sulkeutuu. Virta kulkee kontaktorin kelan läpi ja kontaktori vetää. | Kontaktorin kolme pääkosketinta sulkeutuvat. Moottori saa kolmivaihesyötön ja käynnistyy. |
 | Kun termostaatin kosketin avautuu, kelavirta katkeaa ja kontaktori päästää.                                           | Pääkoskettimet avautuvat ja moottorin sähkönsyöttö katkeaa.                               |
 
-**Kontaktorin piirrosmerkki.** A1 ja A2 ovat kelan liittimet. Kun kontaktori vetää, kolme pääkosketinta (1–2, 3–4 ja 5–6) sulkeutuvat. Jokainen kytkee yhden vaiheen moottorille. Samalla sulkeutuu levossa avoin apukosketin 13–14, jolla voidaan ohjata esimerkiksi merkkivaloa. Katkoviiva osoittaa, että sama mekanismi liikuttaa kaikkia neljää kosketinta.
+**Miten kontaktorin liittimiä luetaan?** A1 ja A2 ovat kelan liittimet. Kun kontaktori vetää, kolme pääkosketinta (1–2, 3–4 ja 5–6) sulkeutuvat. Jokainen kytkee yhden vaiheen moottorille. Samalla sulkeutuu levossa avoin apukosketin 13–14, jolla voidaan ohjata esimerkiksi merkkivaloa. Sama mekanismi liikuttaa kaikkia neljää kosketinta. Piirrosmerkissä tätä yhteyttä voidaan kuvata katkoviivalla.
 
 **Lisäosat.** Apukosketinlohko lisää ohjauspiiriin käytettävissä olevia koskettimia. Moottoria suojaava lämpörele seuraa moottorivirtaa. Pitkittyneen ylikuormituksen seurauksena lämpörele laukeaa ja avaa kontaktorin kelapiiriin kytketyn avauskoskettimensa. Kontaktori päästää ja moottorin syöttö katkeaa.
 
-**Painikeohjaus ja pitopiiri.** K1:n apukosketin on käynnistyspainikkeen rinnalla. Se pitää kelan virrallisena painikkeen vapauttamisen jälkeen. Pysäytyspainike katkaisee molemmat reitit.
+**Painikeohjaus ja pitopiiri.** Kun käynnistyspainiketta painetaan, kontaktorin K1 kela saa virtaa ja sen apukosketin sulkeutuu. Apukosketin muodostaa toisen virtareitin käynnistyspainikkeen rinnalle. Se pitää kelan virrallisena painikkeen vapauttamisen jälkeen. Pysäytyspainike katkaisee molemmat reitit.
 
 ![Moottorin pitopiiri: käynnistys, pito ja pysäytys](kaaviot/moottorin-pitopiiri.svg)
 
@@ -32,7 +32,7 @@ Kuvassa S1 on pysäytys, S2 käynnistys ja K1 kontaktori. Vihreä korostus näyt
 
 ## K1-releen vaihtokoskettimet
 
-Tässä esimerkissä K1 on releen laitetunnus. A1 ja A2 ovat kelan liittimet. Sama ankkuri liikuttaa kahta sähköisesti erillistä vaihtokosketinta. Taulukko näyttää yhteydet kelan kummassakin tilassa.
+Tässä esimerkissä K1 on releen laitetunnus. A1 ja A2 ovat kelan liittimet. Sama ankkuri liikuttaa kahta sähköisesti erillistä vaihtokosketinta. Taulukon merkintä 11–12 tarkoittaa, että liittimien 11 ja 12 välillä on johtava yhteys. Kun rele vetää, liitin 11 irtoaa liittimestä 12 ja yhdistyy liittimeen 14.
 
 | Vaihtokosketin | Yhteinen liitin | Yhteys kelan ollessa virraton | Yhteys releen vetäessä |
 | -------------- | --------------- | ----------------------------- | ---------------------- |
@@ -43,7 +43,7 @@ NC tarkoittaa levossa suljettua kosketinta ja NO levossa avointa kosketinta.
 
 ### Kelan ja koskettimien merkinnät
 
-Piirilevyreleen merkinnöissä **COIL 24 VDC** tarkoittaa 24 voltin tasajännitekelaa. Merkinnät **5 A / 240 V AC** ja **5 A / 24 V DC** koskevat koskettimia. Pienoisrele voidaan asentaa pistokantaan tai juottaa piirilevylle.
+Piirilevyreleen merkinnöissä **COIL 24 VDC** tarkoittaa 24 voltin tasajännitekelaa. AC tarkoittaa vaihtojännitettä ja DC tasajännitettä. Merkinnät **5 A / 240 V AC** ja **5 A / 24 V DC** koskevat koskettimia. Pienoisrele voidaan asentaa pistokantaan tai juottaa piirilevylle.
 
 **Varaosa tukussa.** Tarkista itse laitteen merkinnästä kelajännite ja jännitelaji. Samannäköisessä kontaktorissa voi olla 24 V:n tai 230 V:n kela. Valitse pääkoskettimet kuorman mukaan. Kontaktorin kela voi esimerkiksi saada 24 V:n tasajännitteen, vaikka saman kontaktorin pääkoskettimet kytkevät moottorille 400 V:n kolmivaihesyötön.
 
@@ -80,9 +80,9 @@ Yllä olevan päästöhidasteisen kelan musta pääty ilmaisee päästöviivett�
 
 ### Harjoitus · viiden sekunnin vetohidastus
 
-Kun S1 suljetaan, sen kosketin 13–14 sulkee K1:n ohjauspiirin. Liittimien A1 ja A2 välille tulee heti 24 V vaihtojännite. K1 aloittaa ajanoton. Sen koskettimet vaihtavat asentoa, kun ohjaus on kestänyt viisi sekuntia. Kun S1 avataan, koskettimet palaavat heti perusasentoon.
+Esimerkissä S1 on ohjauskytkin, K1 aikarele ja H1 sekä H2 merkkilamppuja. Kun S1 suljetaan, sen kosketin 13–14 sulkee K1:n ohjauspiirin. Liittimien A1 ja A2 välille tulee heti 24 V vaihtojännite. K1 aloittaa ajanoton. Sen koskettimet vaihtavat asentoa, kun ohjaus on kestänyt viisi sekuntia. Kun S1 avataan, koskettimet palaavat heti perusasentoon.
 
-Lamppupiirissä lamput saavat syöttönsä L:n ja N:n väliltä. Siksi H2 voi palaa, vaikka K1:n ohjaus olisi pois. Perusasennossa virran reitti on L → 26–25 → H2 → N. Viiveen täytyttyä reitti on L → 18–17 → H1 → N.
+Lampuilla on oma virtareittinsä vaihejohtimelta (L) nollajohtimelle (N). Siksi H2 voi palaa, vaikka K1:n ohjaus olisi pois. Perusasennossa virran reitti on L → 26–25 → H2 → N. Viiveen täytyttyä reitti on L → 18–17 → H1 → N.
 
 | Ohjauksen vaihe            | S1     | K1 17–18 | K1 25–26 | H1          | H2          |
 | -------------------------- | ------ | -------- | -------- | ----------- | ----------- |
@@ -95,7 +95,7 @@ Lamppupiirissä lamput saavat syöttönsä L:n ja N:n väliltä. Siksi H2 voi pa
 
 ## Monitoimiaikarele
 
-Esimerkin ELKO EP CRM-161/UNI yhdistää kuusi ajoitustoimintoa ja yhden vaihtokoskettimen. Alimmalla FUNC-valitsimella valitaan toiminto, ylimmällä TIME-valitsimella aika-alue ja keskimmäisellä säätimellä aika alueen sisältä. Esimerkiksi viiden sekunnin viive kuuluu alueelle 1–10 s.
+Esimerkin ELKO EP CRM-161/UNI yhdistää kuusi ajoitustoimintoa ja yhden vaihtokoskettimen. FUNC-valitsin määrää toiminnon, TIME-valitsin aika-alueen ja hienosäätö täsmällisen viiveen alueen sisällä. Esimerkiksi viiden sekunnin viive kuuluu alueelle 1–10 s.
 
 | Merkintä     | Tehtävä                                                                                                              |
 | ------------ | -------------------------------------------------------------------------------------------------------------------- |
@@ -103,7 +103,7 @@ Esimerkin ELKO EP CRM-161/UNI yhdistää kuusi ajoitustoimintoa ja yhden vaihtok
 | S            | Erillinen ohjaustulo. Valittu toiminto määrää, alkaako ajoitus syötön kytkemisestä vai ohjaustulon tilanmuutoksesta. |
 | 15, 16 ja 18 | 15 on vaihtokoskettimen yhteinen liitin. Lähdön lepoasennossa 15–16 johtaa. Kun lähtörele vetää, 15–18 johtaa.       |
 
-**Lue laitteen kyljessä oleva aikakuvaaja.** Etsi ensin valitun toiminnon kirjain. Katso sitten, minkä tapahtuman kohdalla aikaväli t alkaa ja missä kohdassa lähtökosketin vaihtaa asentoa.
+**Aikakuvaajaa luetaan vasemmalta oikealle.** Vertaa kahta hetkeä: milloin syöttö tai ohjaus muuttuu ja milloin lähtö 15–18 vaihtaa tilaa? Niiden välinen aika on viive, jos lähtö vaihtaa tilaansa vasta myöhemmin. Alla on kaksi tapausta samalle releelle. Löydät niitä vastaavat kuvaajat valmistajan ohjeesta kirjaimilla a ja e. [ELKO EP:n käyttöohje ja aikakuvaajat (PDF)](https://www.elkoep.com/media/import/Elko/CRM-161/EN/Manual_CRM-161.pdf)
 
 - **a, vetohidastus syötöstä.** Kun A1–A2 saa jännitteen, ajanotto alkaa. Jos asetusaika on 5 s ja syöttö pysyy päällä, yhteys 15–16 avautuu ja yhteys 15–18 sulkeutuu viiden sekunnin kuluttua.
 - **e, päästöhidastus ohjaustulosta.** Käyttöjännite pysyy päällä. Kun S aktivoituu, lähtö vetää heti. Kun S:n ohjaus poistuu, lähtö pysyy vetäneenä asetetun ajan ja palaa sitten lepoasentoon. Näin voidaan toteuttaa esimerkiksi puhaltimen jälkikäynti ohjaamalla sen kontaktoria.

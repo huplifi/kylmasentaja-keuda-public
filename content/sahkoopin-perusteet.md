@@ -70,7 +70,7 @@ Suureet ja yksiköt:
 
 ### Kaava ja suureet
 
-Dian kaava:
+Materiaalin resistiivisyyden ja johtimen resistanssin yhteys:
 
 `ρ = R × A / l`
 
@@ -100,7 +100,7 @@ Kun `A` annetaan neliömetreinä ja `l` metreinä, resistiivisyyden yksikkö on 
 
 ### Aineiden resistiivisyysarvoja +20 °C:ssa
 
-Oppitunnin taulukossa resistiivisyys annetaan johdinlaskuihin kätevässä yksikössä `Ω·mm²/m` ja johtavuus sen käänteisyksikössä `m/(Ω·mm²)`.
+Seuraavassa lähdeaineiston taulukossa resistiivisyys annetaan johdinlaskuihin kätevässä yksikössä `Ω·mm²/m` ja johtavuus sen käänteisyksikössä `m/(Ω·mm²)`. Vertaa saman lämpötilan aineita samalla sarakkeella: pieni resistiivisyys ja suuri johtavuus kuvaavat hyvää johdetta. Sarakkeiden luvut on pyöristetty lähdeaineistossa.
 
 | Aine              | Resistiivisyys ρ (Ω·mm²/m) | Johtavuus (m/(Ω·mm²)) |
 | ----------------- | -------------------------: | --------------------: |
@@ -133,7 +133,7 @@ Materiaalin sähkönjohtavuus on resistiivisyyden käänteisluku:
 
 ### Täsmennys lämpöhäviöihin
 
-Diassa todetaan, että pienempi resistiivisyys pienentää johtimen resistanssia ja lämpöhäviöitä. Vertailussa on pidettävä johtimien mitat samoina ja lämpöhäviöitä tarkasteltaessa myös virta samana:
+Pienempi resistiivisyys pienentää johtimen resistanssia, kun johtimien mitat ja lämpötila ovat samat. Lämpöhäviöitä verrattaessa myös virta pidetään samana:
 
 `P_häviö = I² × R`
 
@@ -211,7 +211,7 @@ Huomaa viimeisessä muodossa: vasemmalla on kokonaisresistanssin **käänteisluk
 
 Kun rinnakkaisia vastushaaroja lisätään, kokonaisresistanssi pienenee. Positiivisilla, äärellisillä vastuksilla se on pienempi kuin pienin yksittäinen vastus.
 
-### Harjoitusesimerkki: samat vastukset rinnakkain
+### Harjoitusesimerkki: samoilla arvoilla rinnankytkentä
 
 Kun `U = 12 V`, `R1 = 5 Ω` ja `R2 = 10 Ω`:
 
@@ -264,7 +264,7 @@ Yksiköt:
 - `t` = aika, sekunti (s)
 - `1 C = 1 As`
 
-Esimerkki: paristossa on varausta 3 600 As ja virta on 1 A.
+Laskuesimerkissä varauksen määräksi annetaan 3 600 As ja virraksi 1 A. Laske aika kaavalla `t = Q / I`:
 
 `t = 3 600 As / 1 A = 3 600 s = 1 h`
 
@@ -308,8 +308,6 @@ Sähköiskun vakavuuteen vaikuttavat ainakin virran suuruus, vaikutusaika, virra
 Taulukon arvoja ei pidä käyttää turvallisina rajoina. Sähköiskua on aina käsiteltävä vaaratilanteena ja toimittava koulutuksen ensiapu- ja turvallisuusohjeiden mukaan.
 
 ## IP-luokitukset – kotelon suojaus
-
-Aihe aloitettu 5.10.2026 ja täydennetty oppikirjan taulukolla sekä oppitunnin aineistolla.
 
 **IP-koodi** kertoo kotelon antamasta suojauksesta. Ensimmäinen numero koskee pääsyä vaarallisiin osiin ja kiinteiden vierasesineiden sisäänpääsyä, toinen veden haitallista sisäänpääsyä. Luokitus perustuu IEC 60529 -standardiin.
 
@@ -389,7 +387,7 @@ Taulukot ovat tiivistetty opiskelukooste, eivät standardin täydelliset testiva
 
 ### IP-koodin lisäkirjaimet A–D
 
-Oppikirjan taulukon lisäkirjain täsmentää suojausta pääsyltä vaarallisiin osiin. Esimerkiksi IPXXB kertoo sormisuojauksesta, vaikka numeroarvoja ei ilmoiteta.
+IP-koodin numeroiden jälkeen tuleva lisäkirjain voi täsmentää suojausta pääsyltä vaarallisiin osiin. Esimerkiksi IPXXB kertoo sormisuojauksesta, vaikka numeroarvoja ei ilmoiteta.
 
 | Kirjain | Suojaus pääsyltä vaarallisiin osiin |
 | ------- | ----------------------------------- |
@@ -404,7 +402,7 @@ Oppikirjan taulukon lisäkirjain täsmentää suojausta pääsyltä vaarallisiin
 
 ### Kostea, märkä ja ulkotila
 
-Oppikirjan s. 82:n kooste:
+Seuraava oppikirjan s. 82:n kooste näyttää, miten rasitus vaikuttaa vähimmäisvesisuojauksen valintaan. Lue ensin olosuhde ja sen jälkeen saman rivin IPX-merkintä. X:n kohdalla kiinteiden vierasesineiden suojausta ei ilmoiteta.
 
 | Tila tai olosuhde                                                                   | Tunnusomainen rasitus                                                | Kirjan esittämä vähimmäisvesisuojaus |
 | ----------------------------------------------------------------------------------- | -------------------------------------------------------------------- | ------------------------------------ |
@@ -416,20 +414,20 @@ Oppikirjan s. 82:n kooste:
 
 Kosteita tiloja ovat kirjan esimerkeissä kylmäkellarit, lämmittämättömät varastot ja pyykinkuivaushuoneet. Märkiä tiloja ovat esimerkiksi pesuhallit ja vesisuihkulla pestävät alueet.
 
-**Taulukko on kurssin oppikirjakooste, ei kaikkien asennuspaikkojen täydellinen vaatimuslista.** Vesisuihkupesu voi edellyttää roiskevesisuojausta vahvempaa suojausta. X ei ilmoita vierasesinesuojausta; valinnassa huomioidaan myös IP-koodin ensimmäinen numero ja laitteen käyttöehdot.
+**Taulukko on oppikirjakooste, ei kaikkien asennuspaikkojen täydellinen vaatimuslista.** Vesisuihkupesu voi edellyttää roiskevesisuojausta vahvempaa suojausta. X ei ilmoita vierasesinesuojausta; valinnassa huomioidaan myös IP-koodin ensimmäinen numero ja laitteen käyttöehdot.
 
 ### Kylpy- ja suihkutilojen alueet
 
 Märkä iho pienentää kehon sähkövastusta. Siksi pesutiloissa sähkölaitteiden sallittu sijoitus ja suojaus arvioidaan alueittain.
 
-Oppikirjan s. 84:n aluemalli:
+Oppikirjan s. 84:n aluemallissa numero ilmaisee laitteen sijaintialueen. Alla mitat on kirjoitettu tekstiksi, jotta mallia voi lukea ilman kuvaa. Mitat eivät yksin ratkaise laitteen sallittavuutta.
 
-| Alue                 | Suihku ilman allasta                                                                      | Kylpyamme tai suihkuallas                                |
-| -------------------- | ----------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| 0                    | Alueen 1 alapuolinen tila 10 cm:n korkeuteen lattiasta                                    | Ammeen tai altaan sisäpuoli                              |
-| 1                    | Sivusuunnassa 120 cm kiinteästä suihkusuuttimesta tai vesipisteestä; kuvan korkeus 225 cm | Ammeen tai altaan yläpuolinen alue; kuvan korkeus 225 cm |
-| 2                    | Kuvan mallissa ei erillistä aluetta 2                                                     | Sivusuunnassa 60 cm ammeen tai altaan ulkoreunasta       |
-| Luokittelematon alue | Edellisten ulkopuolinen tila                                                              | Edellisten ulkopuolinen tila                             |
+| Alue                 | Suihku ilman allasta                                                                                           | Kylpyamme tai suihkuallas                                                     |
+| -------------------- | -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| 0                    | Alueen 1 alapuolinen tila 10 cm:n korkeuteen lattiasta                                                         | Ammeen tai altaan sisäpuoli                                                   |
+| 1                    | Sivusuunnassa 120 cm kiinteästä suihkusuuttimesta tai vesipisteestä; mallissa alue ulottuu 225 cm:n korkeuteen | Ammeen tai altaan yläpuolinen alue; mallissa alue ulottuu 225 cm:n korkeuteen |
+| 2                    | Tässä mallissa ei erillistä aluetta 2                                                                          | Sivusuunnassa 60 cm ammeen tai altaan ulkoreunasta                            |
+| Luokittelematon alue | Edellisten ulkopuolinen tila                                                                                   | Edellisten ulkopuolinen tila                                                  |
 
 Kiinteä väliseinä voi rajata alueita. **Etäisyyttä ei arvioida pelkästään seinän läpi suorana mittana:** Tukesin ohjeessa liian matalan tai kapean suojaseinän vaikutus arvioidaan mittaamalla sen reunojen ympäri.
 
@@ -439,7 +437,7 @@ Varsinainen sijoitus ratkaistaan sovellettavan SFS 6000-7-701:n ja laiteohjeiden
 
 ### Sauna: IP-luokan lisäksi lämmönkesto
 
-| Alue | Sijainti kuvan mallissa                             | Keskeinen huomio                                                         |
+| Alue | Sijainti oppikirjan aluemallissa                    | Keskeinen huomio                                                         |
 | ---- | --------------------------------------------------- | ------------------------------------------------------------------------ |
 | 1    | Kiuas ja sen ympärillä 0,5 m:n alue, kattoon saakka | Vain kiuas ja sen käyttöön liittyvät laitteet                            |
 | 2    | Alueen 1 ulkopuolella lattiasta 1 m:n korkeuteen    | Ei erityistä lämpötilaluokitusta, mutta todellinen lämpötila huomioidaan |
@@ -459,7 +457,7 @@ Kirjassa mainitaan lisäksi kiukaan liitäntärasian sijoitus: alueella 1 rasian
 
 **Vikasuojaus suojaa sähköiskulta, kun laitteessa tai asennuksessa syntyy vika**, esimerkiksi eristysvaurio tekee kosketeltavan metallikotelon jännitteiseksi. Perussuojaus puolestaan estää koskettamasta normaalisti jännitteisiä osia.
 
-### Oppitunnin neljä suojausmenetelmää
+### Neljä vikasuojauksen menetelmää
 
 | Menetelmä                              | Perusidea                                                       |
 | -------------------------------------- | --------------------------------------------------------------- |
@@ -468,7 +466,7 @@ Kirjassa mainitaan lisäksi kiukaan liitäntärasian sijoitus: alueella 1 rasian
 | Sähköinen erotus                       | Suojattava piiri erotetaan sähköisesti muista piireistä         |
 | SELV tai PELV                          | Pienoisjännite ja suojausjärjestelmän muut vaatimukset yhdessä  |
 
-Tavallinen pienjännite tai pieni jännitelukema ei yksin tarkoita SELV- tai PELV-suojausta. Oppitunnin luettelo on menetelmien yleiskuva; käytännön toteutuksella on omat ehtonsa.
+Tavallinen pienjännite tai pieni jännitelukema ei yksin tarkoita SELV- tai PELV-suojausta. Taulukko on menetelmien yleiskuva; käytännön toteutuksella on omat ehtonsa.
 
 ### Kaksoiseristys ja suojausluokka II
 
@@ -488,17 +486,17 @@ Sulake, johdonsuojakatkaisija tai vikavirtasuoja voi toteuttaa poiskytkennän, k
 
 **Miksi PE ja silmukkaimpedanssi ovat tärkeitä?** TN-järjestelmässä vikavirta kulkee viallisen kotelon kautta PE/PEN-reittiä takaisin virtalähteeseen. Suuren silmukkaimpedanssin vuoksi vikavirta voi jäädä liian pieneksi laukaisemaan ylivirtasuojan ajoissa. Tämä yhdistää poiskytkentäajan [Miksi silmukkaimpedanssi on tärkeä?](sahkoopin-perusteet.md#miksi-silmukkaimpedanssi-on-tärkeä) -kohtaan.
 
-Dian ilmaus ”PE johtaa vikavirran maahan” on yksinkertaistus: TN-järjestelmässä keskeinen paluureitti on suojajohdinreitti, ei maaperä. **0,4 s on enimmäisaika, ei odotusaika tai turvallinen kosketusaika.**
+TN-järjestelmässä PE:n kautta kulkevan vikavirran keskeinen paluureitti on suojajohdinreitti, ei maaperä. **0,4 s on enimmäisaika, ei odotusaika tai turvallinen kosketusaika.**
 
 ### Vikavirtasuojan merkinnät – 16 A, 30 mA ja 230 V
 
-Vikavirtasuojapistorasian merkinnät tarkoittavat eri suureita:
+Tarkastellaan vikavirtasuojapistorasiaa, jossa lukee **16 A, 30 mA ja 230 V AC**. Merkinnät tarkoittavat eri suureita; taulukon arvot kuuluvat juuri tähän esimerkkilaitteeseen:
 
-| Termi                                                             | Tunnus |          Kuvan arvo | Merkitys                                                                                                         |
-| ----------------------------------------------------------------- | ------ | ------------------: | ---------------------------------------------------------------------------------------------------------------- |
-| **Nimellisvirta**                                                 | `I_n`  |            **16 A** | Kuormitusvirta, jota laite on mitoitettu johtamaan ilmoitetuissa käyttöolosuhteissa                              |
-| **Nimellinen toimintavirta**, tarkemmin nimellistoimintavikavirta | `I_Δn` | **30 mA = 0,030 A** | Vikavirtasuojan toiminnan mitoitusarvo: suoja havaitsee virtapiiriin menevän ja sieltä palaavan virran erotuksen |
-| **Nimellisjännite**                                               | `U_n`  |        **230 V AC** | Laitteen nimellinen käyttöjännite; AC tarkoittaa vaihtojännitettä                                                |
+| Termi                                                             | Tunnus | Esimerkkilaitteen arvo | Merkitys                                                                                                         |
+| ----------------------------------------------------------------- | ------ | ---------------------: | ---------------------------------------------------------------------------------------------------------------- |
+| **Nimellisvirta**                                                 | `I_n`  |               **16 A** | Kuormitusvirta, jota laite on mitoitettu johtamaan ilmoitetuissa käyttöolosuhteissa                              |
+| **Nimellinen toimintavirta**, tarkemmin nimellistoimintavikavirta | `I_Δn` |    **30 mA = 0,030 A** | Vikavirtasuojan toiminnan mitoitusarvo: suoja havaitsee virtapiiriin menevän ja sieltä palaavan virran erotuksen |
+| **Nimellisjännite**                                               | `U_n`  |           **230 V AC** | Laitteen nimellinen käyttöjännite; AC tarkoittaa vaihtojännitettä                                                |
 
 > **Muistisääntö: 16 A kulkee kuormaan, 30 mA koskee virtojen erotusta, 230 V on käyttöjännite.**
 
@@ -510,7 +508,7 @@ Yksivaihepiirissä vikavirtasuoja vertaa vaiheen kautta menevää ja nollan kaut
 
 ### Oikosulkuvirran taulukko – toimiiko suoja ajoissa?
 
-Oppitunnilla hyödylliseksi nostettu taulukko 5.10.2026. Taulukossa verrataan **suojalaitteen nimellisvirtaa**, **vaaditun toiminta-ajan toimintarajavirtaa** ja **pienintä hyväksyttävää mitattua oikosulkuvirtaa**. Kaikki alla olevat virrat ovat ampeereja.
+Seuraavat lähdeaineiston taulukot auttavat arvioimaan, täyttyykö suojalaitteen poiskytkennälle asetettu oikosulkuvirtaraja. Niissä verrataan **suojalaitteen nimellisvirtaa**, **vaaditun toiminta-ajan toimintarajavirtaa** ja **pienintä hyväksyttävää mitattua oikosulkuvirtaa**. Toimintarajavirta on suojalaitteen toimintaan tarvittava virta valitussa ajassa; vaadittu mitattu arvo on sitä suurempi vertailuraja mittaustulokselle. Kaikki alla olevat virrat ovat ampeereja.
 
 **Nimellisvirta ei ole nopean laukaisun virta.** Esimerkiksi B16-johdonsuojan nimellisvirta on 16 A, mutta tämän taulukon toimintarajavirta on 80 A ja vaadittu mitattu arvo 100 A.
 
@@ -601,7 +599,7 @@ CAT-luokka kertoo, millaisessa sähköympäristössä mittalaitetta voidaan käy
 
 Sähköasennusten mittaamiseen käytettävässä mittarissa pitää olla käyttökohteeseen riittävä CAT-luokitus.
 
-## Asennustesteri – kurssin tärkein mittari
+## Asennustesteri – sähköasennusten tarkastusmittari
 
 Asennustesteri on sähköasennusten tarkastamiseen käytettävä mittalaite. Sillä varmistetaan, että asennus toimii oikein ja turvallisesti. Sitä käytetään sekä käyttöönottotarkastuksissa että määräaikaistarkastuksissa.
 
@@ -627,7 +625,7 @@ Mittaustulokset kirjataan käyttöönottotarkastuksen pöytäkirjaan. Suomessa k
 
 ### Vaihtosähkön peruskäsitteitä
 
-Vaihtosähkössä jännitteen ja virran suunta sekä hetkellinen arvo muuttuvat ajan funktiona. Sinimuotoisen vaihtosähkön yhtä täydellistä jaksoa voidaan kuvata myös kulmana:
+Vaihtosähkössä jännitteen ja virran suunta sekä hetkellinen arvo muuttuvat ajan funktiona. **Jakso** on yksi kokonainen muutos takaisin samaan vaiheeseen. Sinimuotoisen vaihtosähkön yhtä jaksoa voidaan kuvata myös kulmana; kulma kertoo, missä kohdassa jaksoa ollaan:
 
 - 90° = π/2
 - 180° = π
@@ -641,16 +639,16 @@ Kolmivaiheverkon nimelliset jännitteet:
 - vaihe–vaihe: **400 V**
 - nolla–suojamaa: **0 V** ideaalitilanteessa / normaalisti hyvin lähellä nollaa
 
-### Jännitteen mittaaminen kolmivaiheverkossa
+### Jännitteiden vertailu kolmivaiheverkossa
 
-Muistiinpanojen mittausryhmät:
+Tunnukset `L1`, `L2` ja `L3` ovat vaihejohtimet, `N` nollajohdin ja `PE` suojajohdin. Alla on nimellisten jännitteiden vertailu eri johdinparien välillä, ei lukijalle annettu mittaustehtävä:
 
 1. PE–L1, PE–L2, PE–L3 → noin 230 V
 2. N–L1, N–L2, N–L3 → noin 230 V
 3. L1–L2, L1–L3, L2–L3 → noin 400 V
 4. N–PE → ideaalitilanteessa 0 V
 
-Näillä mittauksilla voidaan todeta vaiheiden ja jännitetasojen olevan odotetun kaltaisia. Käytännön mittaukset tehdään vain koulutuksen ja sähköturvallisuusohjeiden mukaisesti.
+Tällaisilla mittauksilla voidaan verrata havaittuja jännitetasoja odotettuihin arvoihin. Pelkät jännitelukemat eivät osoita koko asennuksen turvallisuutta. Käytännön mittaukset tehdään vain koulutuksen ja sähköturvallisuusohjeiden mukaisesti.
 
 ### Vaihtovirran mittaus
 
@@ -666,7 +664,7 @@ Virran mittauksella voidaan selvittää esimerkiksi:
 
 Pihtiampeerimittarilla virta voidaan mitata **ilman johtimen katkaisua**. Tämä tekee mittauksesta nopean ja mahdollistaa myös suurten virtojen mittaamisen.
 
-Toimintaperiaate oppitunnin mukaan:
+Toimintaperiaate yksinkertaistettuna:
 
 1. Johtimessa kulkeva virta synnyttää magneettikentän.
 2. Pihtimittari mittaa tämän magneettikentän.
@@ -676,7 +674,7 @@ Pihtimittarin pihdit asetetaan mitattavan **yhden virtajohtimen** ympärille. Jo
 
 ### Pihtiampeerimittarin käyttökohteita
 
-Oppitunnilla mainittuja käyttökohteita:
+Esimerkkejä käyttökohteista:
 
 - ryhmäkeskukset
 - sähkökeskukset
@@ -686,7 +684,7 @@ Oppitunnilla mainittuja käyttökohteita:
 
 ### Yksivaiheisen vaihtojännitteen synty
 
-Yksivaiheisen vaihtosähkön tuottamisen perusidea esitettiin pyörivän magneetin ja kelan avulla:
+Yksivaiheisen vaihtosähkön tuottamista voi havainnollistaa mallilla, jossa magneetti pyörii kelan lähellä:
 
 - magneetti pyörii kelan läheisyydessä
 - magneetin asennon muuttuessa kelan läpi kulkeva magneettivuo muuttuu
@@ -699,7 +697,7 @@ Käämi eli kela on johdinta, joka on kierretty kierroksiksi.
 
 Vaihtojännite muuttuu sinikäyrän mukaisesti. Yksi jakso muodostuu positiivisesta ja negatiivisesta puolijaksosta. Yksi täydellinen aalto on yksi jakso.
 
-Pyörivän magneetin asennon ja syntyvän jännitteen yhteys oppitunnin mallissa:
+Pyörivän magneetin asennon ja syntyvän jännitteen yhteys tässä yksinkertaistetussa mallissa. Kulma 0° on mallin aloituskohta; negatiivinen arvo kertoo, että jännitteen suunta on vaihtunut:
 
 | Magneetin kulma | Jännite             |
 | --------------: | ------------------- |
@@ -713,7 +711,7 @@ Yksi magneetin täysi pyörähdys vastaa yhtä jännitejaksoa.
 
 ### Hetkellis-, huippu- ja tehollisarvo
 
-Sinimuotoisen vaihtojännitteen arvo muuttuu jatkuvasti ajan mukana. Oppitunnin kuvassa 230 V verkkojännitteen:
+Sinimuotoisen vaihtojännitteen arvo muuttuu jatkuvasti ajan mukana. Kun verkkojännitteen **tehollisarvo on 230 V** ja taajuus **50 Hz**, saadaan seuraavat mallin arvot:
 
 - **huippuarvo** on noin 325 V
 - negatiivinen huippu on noin −325 V
@@ -740,7 +738,7 @@ Jännitteen **hetkellisarvo** `u` on tietyllä hetkellä havaittu jännite. Sini
 - `û` = jännitteen huippuarvo (V)
 - `α` = vaihekulma
 
-Oppimateriaalin mukaan tehollisarvo `U` tarkoittaa vaihtojännitettä, joka tuottaa resistiivisessä kuormassa saman tehon kuin samansuuruinen tasajännite. Kun jännitteestä puhutaan ilman muuta täsmennystä, ilmoitettu arvo on yleensä tehollisarvo; esimerkiksi verkon 230 V ja 400 V ovat tehollisarvoja.
+Tehollisarvo `U` tarkoittaa vaihtojännitettä, joka tuottaa resistiivisessä kuormassa saman tehon kuin samansuuruinen tasajännite. Kun jännitteestä puhutaan ilman muuta täsmennystä, ilmoitettu arvo on yleensä tehollisarvo; esimerkiksi verkon 230 V ja 400 V ovat tehollisarvoja.
 
 ## Sähkön tuotanto, siirto ja jakelu
 
@@ -786,7 +784,7 @@ Erotuksen jälkeen kiinteistön sisäinen verkko on viisijohtiminen **TN-S-järj
 
 Tämä muistio kuvaa vaatimuksia yleisellä tasolla. Se ei arvioi kenenkään henkilökohtaista kelpoisuutta eikä anna lupaa tehdä sähkötyötä.
 
-Oppikirjan mukaan asentaja, jolla ei ole itsenäistä urakointioikeutta, työskentelee sähkötöiden johtajan alaisuudessa toiminnanharjoittajalla, jolla on asianmukainen pätevyys. Käytännön työ tehdään koulutuksessa ja nimetyn johtajan vastuulla.
+Työntekijän ammattitaito, sähkötyötä tekevän toiminnanharjoittajan edellytykset ja sähkötöiden johtajan pätevyys ovat eri asioita. Esimerkiksi työntekijän ammattitaito ei sellaisenaan anna itsenäistä urakointioikeutta. Alla olevat tasot näyttävät, minkä edellytyksen kukin täyttää.
 
 ### Kolme eri tasoa
 
@@ -828,7 +826,7 @@ Samankaltaisiin sähkölaitteisiin tai sähkölaitteeseen rinnastettaviin sähk�
 - kahden vuoden työkokemus kyseisestä sähkötyöstä ja riittävät alan perustiedot
 - soveltuva sähköalan koulutus ja vuoden työkokemus kyseisestä sähkötyöstä
 
-Valtioneuvoston asetus sähkötyöstä ja käyttötyöstä (1435/2016) 4 §:n 3 momentti laskee tämän koulutuksen sähköalan opintojen minimin 25 opintopisteeseen tai 20 opintoviikkoon. Yleisempi minimi 3 §:ssä on 45 opintopistettä tai 40 opintoviikkoa. Koulutus on siis sähköalan koulutusta, ei mitä tahansa tekniikan alan tutkintoa. Oppitunnin diassa koulutus oli muotoiltu laajemmin ”soveltuvaksi tekniikan alan ammatilliseksi tutkinnoksi tai korkeakoulututkinnoksi”. Muistiossa noudatetaan lain ja asetuksen rajausta.
+Valtioneuvoston asetus sähkötyöstä ja käyttötyöstä (1435/2016) 4 §:n 3 momentti laskee tämän koulutuksen sähköalan opintojen minimin 25 opintopisteeseen tai 20 opintoviikkoon. Yleisempi minimi 3 §:ssä on 45 opintopistettä tai 40 opintoviikkoa. Koulutus on siis sähköalan koulutusta, ei mitä tahansa tekniikan alan tutkintoa.
 
 Oppitunnin esimerkit laitetöistä olivat akustojen, ilmalämpöpumppujen ja UPS-laitteiden asennukset. Tukes käyttää saman lievennyksen esimerkkinä elektroniikkalaitteiden huolto- ja korjaustöitä. Kumpikaan lista ei ole 73 §:n laiteluettelo. Raja on työn kohde: lievennys koskee tätä samankaltaista laite- tai laitekokonaisuustyötä. Se ei tee henkilöstä 1 momentin mukaista ammattihenkilöä muihin sähkötöihin. Oppitunnin muistutus oli, että muiden sähkötöiden osalta henkilö on maallikko.
 
@@ -852,19 +850,19 @@ Työ kuuluu lisäksi toiminnanharjoittajalle, joka on tehnyt ilmoituksen Tukesil
 
 ### Sähkötöiden johtajan käytännön toimet
 
-Dia 17, otsikko *STJ:n käytännön toimet*, on koulutuksen muistilista sähkötöiden johtajalle. Osa kohdista toistaa lain ja asetuksen velvoitteita. Osa on käytännön tapaa hoitaa ne. Muistilista ei itsessään tee kenestäkään sähkötöiden johtajaa.
+Seuraava koulutusaineistosta koottu muistilista kuvaa sähkötöiden johtajan (STJ) käytännön toimia. **Lue joka riviltä ensin tehtävä, sitten sen säädösperusta ja lopuksi tulkinta:** osa kohdista on lain tai asetuksen velvoitteita, osa käytännön tapoja hoitaa niitä. Muistilista ei itsessään tee kenestäkään sähkötöiden johtajaa.
 
-| Dian kohta                                           | Mistä vaatimus tulee                                                                                                                                                                                                                                                                | Lukutapa                                                                                                                                                                                            |
-| ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Henkilöstön ammattitaito ja sen ylläpito             | STL 59 §: johtaja vastaa, että tekijät ovat ammattitaitoisia ja riittävästi opastettuja. Asetuksen 1435/2016 liitteen 3 §: työntekijälle annetaan koulutusta ja opastusta niin, että tiedot vastaavat työn vaatimuksia. STL 58 §: johtaja ylläpitää omaa ammattitaitoaan.           | Lain ja asetuksen velvoite.                                                                                                                                                                         |
-| Työnaikaisen sähköturvallisuuden valvojan nimeäminen | Asetuksen liitteen 2 §: johtaja huolehtii, että jokaiseen sähkötyön tekokohteeseen nimetään 73 §:n mukainen sähköalan ammattihenkilö valvojaksi. Valvoja voi osallistua työhön tai tehdä sen itse. STL 82 § edellyttää työkohteen turvallisuudesta huolehtivan henkilön nimeämistä. | Asetuksen velvoite, ei pelkkä koulutuksen vinkki.                                                                                                                                                   |
-| Sähköturvallisuusohjeet                              | STL 82 § sekä asetuksen liitteen 3 §: sähkötyötä varten laaditaan tarvittaessa kirjalliset työmenetelmä- tai työkohtaiset ohjeet.                                                                                                                                                   | Velvoite silloin, kun työ sitä tarvitsee.                                                                                                                                                           |
-| Käyttöönottotarkastus                                | STL 43 §: rakentaja huolehtii käyttöönottotarkastuksesta ennen käyttöönottoa, myös muutos- ja laajennustöissä. Pöytäkirja laaditaan vähäisiä töitä lukuun ottamatta. STL 59 §: johtaja vastaa laitteiden ja laitteistojen kunnosta ennen käyttöönottoa tai luovutusta.              | Velvoite. Varmennustarkastus on eri, valtuutetun tarkastajan tai laitoksen tarkastus. Dian ”varmennusjärjestelmä” on koulutuksen nimi sille, miten toiminta järjestää tarkastukset ja todentamisen. |
-| Säännökset, ohjeet ja standardit saatavilla          | STL 55 §: toiminnanharjoittajalla on oltava töihin tarvittavat välineet ja sähköturvallisuutta koskevat säännökset. STL 84 §: Tukes julkaisee luettelon standardeista, joita noudattaen sähkötyöturvallisuuden olennaiset vaatimukset täyttyvät.                                    | Säännösten saatavuus on velvoite. Dian laajennus ohjeiden ja standardien antamisesta tekijöiden käyttöön on käytännön tapa täyttää se.                                                              |
-| Tavoitettavuus, esimerkiksi puhelin                  | STL 58 §: johtajalla on oltava tosiasiallinen mahdollisuus johtaa ja valvoa työtä.                                                                                                                                                                                                  | Puhelin on dian esimerkki yhteydenpidosta, ei lain määräämä väline.                                                                                                                                 |
-| Viestintä sähkötyöntekijöiden kesken                 | Dia 17.                                                                                                                                                                                                                                                                             | Koulutuksen käytännön suositus. Laki ei nimeä erillistä viestintävelvoitetta. Ohjeet ja opastus edellyttävät, että tieto kulkee työkohteeseen.                                                      |
-| Asennustyön valvonta ja puuttuminen                  | STL 58–59 §: johtaminen, valvonta ja vastuu lain noudattamisesta.                                                                                                                                                                                                                   | Dian ”puuttuu työhön” kuvaa tätä valvontavelvoitetta.                                                                                                                                               |
-| Sähkötapaturman ilmoitus Tukesin SL4-lomakkeella     | Dia 17.                                                                                                                                                                                                                                                                             | Koulutuksen kohta on vanhentunut. Tukesin nykyinen kanava on sähköinen sähkö- ja hissitapaturmailmoitus, joka on avattu lokakuussa 2023. SL4 ei ole nykyinen ilmoitustapa.                          |
+| Tehtävä muistilistassa                               | Mistä vaatimus tulee                                                                                                                                                                                                                                                                | Lukutapa                                                                                                                                                                                               |
+| ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Henkilöstön ammattitaito ja sen ylläpito             | STL 59 §: johtaja vastaa, että tekijät ovat ammattitaitoisia ja riittävästi opastettuja. Asetuksen 1435/2016 liitteen 3 §: työntekijälle annetaan koulutusta ja opastusta niin, että tiedot vastaavat työn vaatimuksia. STL 58 §: johtaja ylläpitää omaa ammattitaitoaan.           | Lain ja asetuksen velvoite.                                                                                                                                                                            |
+| Työnaikaisen sähköturvallisuuden valvojan nimeäminen | Asetuksen liitteen 2 §: johtaja huolehtii, että jokaiseen sähkötyön tekokohteeseen nimetään 73 §:n mukainen sähköalan ammattihenkilö valvojaksi. Valvoja voi osallistua työhön tai tehdä sen itse. STL 82 § edellyttää työkohteen turvallisuudesta huolehtivan henkilön nimeämistä. | Asetuksen velvoite, ei pelkkä koulutuksen vinkki.                                                                                                                                                      |
+| Sähköturvallisuusohjeet                              | STL 82 § sekä asetuksen liitteen 3 §: sähkötyötä varten laaditaan tarvittaessa kirjalliset työmenetelmä- tai työkohtaiset ohjeet.                                                                                                                                                   | Velvoite silloin, kun työ sitä tarvitsee.                                                                                                                                                              |
+| Käyttöönottotarkastus                                | STL 43 §: rakentaja huolehtii käyttöönottotarkastuksesta ennen käyttöönottoa, myös muutos- ja laajennustöissä. Pöytäkirja laaditaan vähäisiä töitä lukuun ottamatta. STL 59 §: johtaja vastaa laitteiden ja laitteistojen kunnosta ennen käyttöönottoa tai luovutusta.              | Velvoite. Varmennustarkastus on eri, valtuutetun tarkastajan tai laitoksen tarkastus. Koulutusaineiston ”varmennusjärjestelmä” tarkoittaa sitä, miten toiminta järjestää tarkastukset ja todentamisen. |
+| Säännökset, ohjeet ja standardit saatavilla          | STL 55 §: toiminnanharjoittajalla on oltava töihin tarvittavat välineet ja sähköturvallisuutta koskevat säännökset. STL 84 §: Tukes julkaisee luettelon standardeista, joita noudattaen sähkötyöturvallisuuden olennaiset vaatimukset täyttyvät.                                    | Säännösten saatavuus on velvoite. Ohjeiden ja standardien antaminen tekijöiden käyttöön on koulutusaineiston kuvaama käytännön tapa täyttää se.                                                        |
+| Tavoitettavuus, esimerkiksi puhelin                  | STL 58 §: johtajalla on oltava tosiasiallinen mahdollisuus johtaa ja valvoa työtä.                                                                                                                                                                                                  | Puhelin on esimerkki yhteydenpidosta, ei lain määräämä väline.                                                                                                                                         |
+| Viestintä sähkötyöntekijöiden kesken                 | Koulutusaineiston muistilista.                                                                                                                                                                                                                                                      | Käytännön suositus. Laki ei nimeä erillistä viestintävelvoitetta. Ohjeet ja opastus edellyttävät, että tieto kulkee työkohteeseen.                                                                     |
+| Asennustyön valvonta ja puuttuminen                  | STL 58–59 §: johtaminen, valvonta ja vastuu lain noudattamisesta.                                                                                                                                                                                                                   | Työhön puuttuminen tarvittaessa kuvaa tätä valvontavelvoitetta.                                                                                                                                        |
+| Sähkötapaturman ilmoitus Tukesin SL4-lomakkeella     | Koulutusaineiston muistilista.                                                                                                                                                                                                                                                      | Tämä kohta on vanhentunut. Tukesin nykyinen kanava on sähköinen sähkö- ja hissitapaturmailmoitus, joka on avattu lokakuussa 2023. SL4 ei ole nykyinen ilmoitustapa.                                    |
 
 Ilmoitusvelvollisuus on laissa rajattu. STL 114 § velvoittaa poliisin, pelastusviranomaisen, työsuojeluviranomaisen ja jakelualueen jakeluverkonhaltijan ilmoittamaan Tukesille vakavasta vaaratilanteesta ja vakavia henkilö-, omaisuus- tai ympäristövahinkoja aiheuttaneesta tapahtumasta, jossa sähkölaite tai -laitteisto on ollut osallisena. Sähkötöiden johtajaa ei ole nimetty tässä pykälässä ilmoittajaksi. Kuka tahansa voi silti ilmoittaa sähkötapaturman tai vaaratilanteen Tukesin sähköisellä lomakkeella, myös silloin kun lakivelvollisuutta ei ole.
 
@@ -902,11 +900,11 @@ Vakava työtapaturma ilmoitetaan erikseen poliisille ja työsuojeluviranomaisell
 
 ## Sähköpiirustuksen lukeminen: yhden valaisimen ohjaus
 
-Esimerkki havainnollistaa perustasoa: tunnista syöttö, komponentit, johtimien tehtävät ja lukumäärät sekä selitä kytkennän toiminta. Pelkkä piirrosmerkkien nimeäminen ei vielä kerro, miten piiri toimii.
+Seuraava yhden valaisimen kytkentä on sanallistettu lukuharjoitus. Lähtötiedot ovat tällä sivulla: ryhmäkeskuksesta tulee syöttö jakorasiaan, kytkin ohjaa yhtä valaisinta ja johtimien tehtävät annetaan alla. Tunnista syöttö, komponentit, johtimien tehtävät ja lukumäärät sekä selitä kytkennän toiminta. Pelkkä piirrosmerkkien nimeäminen ei vielä kerro, miten piiri toimii.
 
 ### Millainen piirustus tämä on?
 
-Yhden valaisimen ohjaus yhdellä kytkimellä voidaan esittää yksiviivaisena johdotuspiirustuksena. Pitkä viiva kuvaa johdotusreittiä ja poikkimerkit johtimien lukumäärää ja tehtäviä.
+Yhden valaisimen ohjaus yhdellä kytkimellä voidaan esittää yksiviivaisena johdotuspiirustuksena. Pitkä viiva kuvaa johdotusreittiä ja poikkimerkit johtimien lukumäärää ja tehtäviä. Lue ensimmäisestä taulukosta laitetunnukset ja seuraa sitten johtimien reittejä jakorasian kautta.
 
 Tämä ei ole sama asia kuin moniviivainen kytkentäkuva, jossa jokaisen johtimen reitti ja liitokset näytetään erikseen. Jakorasian sisäiset liitokset on tässä pääteltävä kytkennän toiminnan perusteella.
 
@@ -915,7 +913,7 @@ Tämä ei ole sama asia kuin moniviivainen kytkentäkuva, jossa jokaisen johtime
 | Merkintä                                                     | Tulkinta tässä esimerkissä                                                                                                   |
 | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------- |
 | `RK`                                                         | Ryhmäkeskus, josta ryhmän syöttö tulee.                                                                                      |
-| Nuoli ja numero ympyrässä                                    | Ryhmän syöttö ja ryhmänumero. Numero näyttää olevan **5**; se ei tarkoita 5 ampeerin sulaketta.                              |
+| Nuoli ja numero ympyrässä                                    | Ryhmän syöttö ja ryhmänumero. Alkuperäisessä esimerkissä numero näyttää olevan **5**; se ei tarkoita 5 ampeerin sulaketta.   |
 | `JR` ja tumma ympyrä haarautumiskohdassa                     | Jakorasia. Siellä tehdään eri johtimien väliset tarvittavat liitokset. Rasian mustaus tarkoittaa tavallisesti uppoasennusta. |
 | Ympyrä, jonka sisällä on risti                               | Valaisin.                                                                                                                    |
 | Alhaalla pieni ympyrä ja yksi vino kytkinvarsi               | Yksinapainen **1-kytkin**: yhden valaisimen tai valaisinryhmän päälle/pois-ohjaus yhdestä paikasta.                          |
@@ -925,7 +923,7 @@ Tämä ei ole sama asia kuin moniviivainen kytkentäkuva, jossa jokaisen johtime
 
 **N:n ja PE:n tunnistaminen:** tässä merkintätavassa **piste = N, hattu = PE**. Kyse on johdotuksen piirrosmerkeistä, ei johtimien väreistä. Merkinnät tarkistetaan aina käytettävän piirustuksen selitteestä.
 
-Esimerkin **1,5 mm²** tarkoittaa johtimen poikkipinta-alaa, ei halkaisijaa. Merkintä koskee vain niitä johtoja, joihin se on piirustuksessa liitetty. Kaapelityyppiä tai sulakkeen kokoa ei päätellä tästä merkinnästä yksin.
+Alkuperäisen esimerkin **1,5 mm²** tarkoittaa johtimen poikkipinta-alaa, ei halkaisijaa. Merkintä koskee vain niitä johtoja, joihin se on piirustuksessa liitetty. Kaapelityyppiä tai sulakkeen kokoa ei päätellä tästä merkinnästä yksin.
 
 ### Mitä johtimia eri väleillä kulkee?
 
@@ -960,7 +958,7 @@ Kytketyn vaiheen tunnus tässä esimerkissä on `L′`.
 
 **Rasian sisällä kaikki johtimet eivät yhdisty keskenään.** N ja PE jatkuvat omina erillisinä yhteyksinään valaisimelle. Syöttävän vaiheen ja kytketyn vaiheen liitokset ovat myös erillään toisistaan: niiden välinen ohjattu yhteys muodostuu kytkimessä Q1, ei jakorasiassa.
 
-X1:n katkoviivarajaus osoittaa rasian alueen, ei sähköjohdinta. Sen sisällä olevat **mustat pisteet osoittavat liitoskohtia**. Tässä moniviivaisessa kuvassa piste ei siis tarkoita automaattisesti nollajohdinta, toisin kuin edellisen yksiviivaisen kuvan pistepäinen johdinmerkki. Merkkiä luetaan aina oman esitystapansa yhteydessä.
+Alkuperäisessä moniviivaisessa esimerkissä X1:n katkoviivarajaus osoittaa rasian alueen, ei sähköjohdinta. Sen sisällä olevat **mustat pisteet osoittavat liitoskohtia**. Tässä esitystavassa piste ei siis tarkoita automaattisesti nollajohdinta, toisin kuin yksiviivaisen piirustuksen pistepäinen johdinmerkki. Merkkiä luetaan aina oman esitystapansa yhteydessä.
 
 Esimerkin lähtötilanteessa kytkin on auki. Kun Q1 sulkeutuu, käyttövirtapiirin reitti on **L → X1 → Q1 → X1 → E1 → N**. Tämä reitti täydentää edellä esitettyä toimintaperiaatetta näyttämällä jakorasian molemmat vaiheliitokset.
 
@@ -1051,7 +1049,7 @@ Oppitunti 21.9.2026.
 
 Oppitunti 28.9.2026.
 
-Lähde: oppimateriaalin kohta **6.5 Valaistusasennukset / Valaistuskytkimet ja valaistuskytkennät**, taulukon rivi **Yksinapainen kytkin, 1-kytkin**. Selitys perustuu vain kuvassa näkyvään riviin; kuvan alareunan seuraavaa kytkentää ei ole tulkittu.
+Lähde: oppimateriaalin kohta **6.5 Valaistusasennukset / Valaistuskytkimet ja valaistuskytkennät**, taulukon rivi **Yksinapainen kytkin, 1-kytkin**.
 
 Piirrosmerkkien vertailu ja turvallisuustäsmennykset tarkistettu 28.9.2026:
 

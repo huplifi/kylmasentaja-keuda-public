@@ -3,34 +3,34 @@ title: "Kylmäaineet"
 publish: true
 ---
 
-Oppitunnin muistiinpanot 15.9.2026. Tätä dokumenttia täydennetään myöhemmillä kylmäaineita koskevilla muistiinpanoilla.
+Tämä kooste selittää kylmäaineiden tunnuksia, ominaisuuksia, esimerkkilaskuja ja määräaikaisten vuototarkastusten rajauksia. Esimerkkien GWP-arvot ja laskentaperusta kerrotaan kunkin tehtävän yhteydessä.
 
 ## ASHRAE ja R-tunnukset
 
 ASHRAE:n R-tunnuksia käytetään kylmäaineiden nimeämiseen kansainvälisesti.
 
-| Ryhmä                          | Oppitunnin merkintä            | Olennainen ero                                 |
+| Ryhmä                          | Tyypillinen tunnussarja        | Olennainen ero                                 |
 | ------------------------------ | ------------------------------ | ---------------------------------------------- |
 | Yksikomponenttiset kylmäaineet | R1xx, R2xx, R3xx, R6xx ja R7xx | Yksi kemiallinen aine                          |
 | Atseotrooppiset seokset        | R5xx                           | Ei lämpötilaliukumaa atseotrooppisessa tilassa |
 | Tseotrooppiset seokset         | R4xx                           | Lämpötilaliukuma                               |
 
-**Täsmennys numerointiin:** kuvan yksikomponenttisten aineiden luettelo on muistivihje, ei täydellinen numerointisääntö. Myös esimerkiksi R32 ja R1234yf ovat yksikomponenttisia. ASHRAE:n taulukossa R400-sarja sisältää tseotrooppiset ja R500-sarja atseotrooppiset seokset. [ASHRAE:n kylmäainetunnukset](https://www.ashrae.org/technical-resources/standards-and-guidelines/ashrae-refrigerant-designations).
+Yksikomponenttisten aineiden sarjaluettelo on muistivihje, ei täydellinen numerointisääntö. Myös esimerkiksi R32 ja R1234yf ovat yksikomponenttisia. ASHRAE:n taulukossa R400-sarja sisältää tseotrooppiset ja R500-sarja atseotrooppiset seokset. [ASHRAE:n kylmäainetunnukset](https://www.ashrae.org/technical-resources/standards-and-guidelines/ashrae-refrigerant-designations).
 
 ## Lämpötilaliukuma
 
-**Selitys oppitunnin käsitteelle:** lämpötilaliukuma tarkoittaa, että seoksen höyrystyminen tai lauhtuminen tapahtuu samalla paineella lämpötila-alueella yhden lämpötilan sijaan.
+Lämpötilaliukuma tarkoittaa, että seoksen höyrystyminen tai lauhtuminen tapahtuu samalla paineella lämpötila-alueella yhden lämpötilan sijaan.
 
-Kuvan muistisääntö: **R400-sarja on lämpötilaliukuman ryhmä.** Liukuman suuruutta ei kuitenkaan voi päätellä pelkästä sarjanumerosta.
+**Muistisääntö:** R400-sarjaan kuuluvat tseotrooppiset seokset, joilla on lämpötilaliukuma. Liukuman suuruutta ei kuitenkaan voi päätellä pelkästä sarjanumerosta.
 
-Yhteys aiempiin muistiinpanoihin: liukuvalla kylmäaineella tulistukseen käytetään kastepistelämpötilaa ja alijäähdytykseen kuplapistelämpötilaa. Katso [Tulistus ja alijäähdytys](kylmatekniikan-perusteet.md#tulistus-ja-alijäähdytys).
+Liukuvalla kylmäaineella tulistukseen käytetään kastepistelämpötilaa ja alijäähdytykseen kuplapistelämpötilaa. Katso [Tulistus ja alijäähdytys](kylmatekniikan-perusteet.md#tulistus-ja-alijäähdytys).
 
 ## Haitallisuuden arviointi
 
-Oppitunnilla erotettiin kaksi näkökulmaa:
+Kylmäaineen haitallisuutta arvioidaan eri näkökulmista:
 
 - **Ympäristövaikutukset:** ODP ja GWP.
-- **Ihmiseen liittyvä turvallisuus:** turvaluokitus, kuvassa esimerkkinä A1.
+- **Ihmiseen liittyvä turvallisuus:** myrkyllisyyttä ja syttyvyyttä kuvaava turvaluokitus, esimerkiksi A1.
 
 Täsmennys: ASHRAE:n turvaluokitus perustuu myrkyllisyyteen ja syttyvyyteen. Se kuvaa eri ominaisuuksia kuin ympäristövaikutusten ODP ja GWP. [ASHRAE](https://www.ashrae.org/technical-resources/standards-and-guidelines/ashrae-refrigerant-designations).
 
@@ -38,9 +38,8 @@ Täsmennys: ASHRAE:n turvaluokitus perustuu myrkyllisyyteen ja syttyvyyteen. Se 
 
 ODP = **Ozone Depletion Potential**.
 
-- Oppitunnin pääkohta: klooria sisältävät kylmäaineet ja otsonikerroksen heikkeneminen.
+- Klooria sisältävillä kylmäaineilla voi olla otsonikerrosta heikentävää vaikutusta.
 - Vertailuaine on **R11 eli CFC-11**, jonka **ODP = 1**.
-- Kuvassa käytön historialliseksi muistiinpanoksi on kirjattu **1950–1990**. Tämä on oppitunnin aikakausimerkintä, ei tässä vahvistettu tarkka käyttöönotto- tai lopetusraja.
 
 **Täsmennys:** ODP kuvaa suhteellista otsonikerrosta heikentävää vaikutusta. Otsonia tuhoaviin aineisiin kuuluu myös bromia sisältäviä aineita; kyse ei ole pelkästään kloorista. [EPA: Ozone-Depleting Substances](https://www.epa.gov/ozone-layer-protection/ozone-depleting-substances).
 
@@ -49,19 +48,19 @@ ODP = **Ozone Depletion Potential**.
 GWP = **Global Warming Potential**.
 
 - Vertailuaine on **hiilidioksidi, CO₂**, jonka **GWP = 1**.
-- Oppitunnin esimerkki: **R410A:n GWP = 2088**.
+- Seuraavissa esimerkeissä R410A:n GWP-arvona käytetään **2088**.
 
-**Täsmennys:** GWP vertaa samanmassaisia päästöjä valitulla ajanjaksolla, tavallisesti 100 vuodessa. GWP on suhdeluku, ei massayksikkö. Arvo riippuu käytetystä arviointiperustasta; tässä säilytetään oppitunnin esimerkkiarvo 2088. [EPA: Understanding Global Warming Potentials](https://www.epa.gov/ghgemissions/understanding-global-warming-potentials).
+GWP vertaa samanmassaisia päästöjä valitulla ajanjaksolla, tavallisesti 100 vuodessa. GWP on suhdeluku, ei massayksikkö. Arvo riippuu käytetystä arviointiperustasta; R410A:n arvo 2088 on tämän laskuesimerkin lähtötieto. [EPA: Understanding Global Warming Potentials](https://www.epa.gov/ghgemissions/understanding-global-warming-potentials).
 
 ### CO₂-ekvivalenttitonni
 
-Oppitunnin lyhenne on **ekvt** (ekvivalenttitonni). Selkeä yksikkömerkintä tässä muistiossa on **t CO₂-ekv.**
+**t CO₂-ekv.** tarkoittaa CO₂-ekvivalenttitonnia. Vanhoissa muistiinpanoissa käytetään myös lyhennettä **ekvt**.
 
-**Täydentävä laskuesimerkki:** CO₂-ekvivalentti saadaan kertomalla kylmäaineen massa GWP-arvolla. Kilogrammoista tonneihin siirryttäessä jaetaan tuhannella:
+CO₂-ekvivalentti saadaan kertomalla kylmäaineen massa GWP-arvolla. Kilogrammoista tonneihin siirryttäessä jaetaan tuhannella:
 
 `CO₂-ekvivalentti [t CO₂-ekv.] = massa [kg] × GWP / 1000`
 
-Kun R410A:n massaksi valitaan 1 kg ja käytetään oppitunnin GWP-arvoa:
+Kun R410A:n massaksi valitaan 1 kg ja käytetään yllä annettua GWP-arvoa:
 
 `1 × 2088 / 1000 = 2,088 t CO₂-ekv.`
 
@@ -71,7 +70,7 @@ Kaavakooste: [Kylmäaineet ja CO₂-ekvivalentti](kaavat-ja-yksikot.md#kylmäain
 
 ## Turvaluokitus: myrkyllisyys ja syttyvyys
 
-Kuvan muistivihje on **myrkyllisyys A tai B, syttyvyys 1–3**. Täydennys: syttyvyysluokituksessa on myös alaluokka **2L**.
+Turvaluokan kirjain **A tai B** kuvaa myrkyllisyyttä ja numero **1, 2L, 2 tai 3** syttyvyyttä.
 
 | Merkintä | Merkitys                                        |
 | -------- | ----------------------------------------------- |
@@ -86,59 +85,55 @@ Esimerkiksi **A1** yhdistää pienemmän myrkyllisyyden ja luokan 1; **A2L** pie
 
 ## Kylmäaineiden kemialliset ryhmät
 
-Alla oppitunnin sisältö jäsenneltynä. Ryhmän nimi kuvaa kemiaa; R-tunnus yksilöi aineen tai seoksen.
+Ryhmän nimi kuvaa kemiaa; R-tunnus yksilöi aineen tai seoksen.
 
-| Ryhmä | Nimi ja koostumuksen muistivihje                                | Oppitunnin pääkohdat ja esimerkit                                                                                             |
-| ----- | --------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| CFC   | Kloorifluorihiilivedyt: hiiltä, klooria ja fluoria              | ODP > 0. Kuvan käyttörajoitus täsmennetään alla.                                                                              |
-| HCFC  | Osittain halogenoidut kloorifluorihiilivedyt: mukana myös vetyä | ODP > 0; esimerkki R22, ODP 0,055.                                                                                            |
-| HFC   | Fluorihiilivedyt: vetyä, fluoria ja hiiltä, ei klooria          | ODP = 0, GWP vaihtelee. Kuvassa ”yleisin”; ajankohtaan ja käyttökohteeseen sidottu oppituntihavainto. Esimerkit R134a ja R32. |
-| HFO   | Fluorihiiliolefiinit: tyydyttymättömät fluoratut hiilivedyt     | Pieni GWP, ODP = 0. Kuvan esimerkit R1234yf ja R1234ze. Käyttöä autojen ilmastoinnissa ja vedenjäähdyttimissä.                |
-| HC    | Hiilivedyt: hiiltä ja vetyä                                     | Palavia; ODP = 0, pieni GWP. Esimerkit R290 ja R600a.                                                                         |
+| Ryhmä | Nimi ja koostumuksen muistivihje                                | Ominaisuudet ja esimerkit                                                                                |
+| ----- | --------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| CFC   | Kloorifluorihiilivedyt: hiiltä, klooria ja fluoria              | ODP > 0. Käyttörajaus alla.                                                                              |
+| HCFC  | Osittain halogenoidut kloorifluorihiilivedyt: mukana myös vetyä | ODP > 0; esimerkki R22, ODP 0,055.                                                                       |
+| HFC   | Fluorihiilivedyt: vetyä, fluoria ja hiiltä, ei klooria          | ODP = 0, GWP vaihtelee. Esimerkit R134a ja R32.                                                          |
+| HFO   | Fluorihiiliolefiinit: tyydyttymättömät fluoratut hiilivedyt     | Pieni GWP, ODP = 0. Esimerkit R1234yf ja R1234ze. Käyttöä autojen ilmastoinnissa ja vedenjäähdyttimissä. |
+| HC    | Hiilivedyt: hiiltä ja vetyä                                     | Palavia; ODP = 0, pieni GWP. Esimerkit R290 ja R600a.                                                    |
 
-Nimien täsmennys: kuvan CFC/HCFC-otsikoiden ”kloorivedyt” on kirjoitettu yllä tarkemmin kloorifluorihiilivedyiksi. R22:n ODP 0,055 vastaa Montrealin pöytäkirjan vertailuarvoa; eri arviointitaulukoissa voi olla eri arvoja. [EPA: Ozone-Depleting Substances](https://www.epa.gov/ozone-layer-protection/ozone-depleting-substances).
+R22:n ODP 0,055 vastaa Montrealin pöytäkirjan vertailuarvoa; eri arviointitaulukoissa voi olla eri arvoja. [EPA: Ozone-Depleting Substances](https://www.epa.gov/ozone-layer-protection/ozone-depleting-substances).
 
-**Käyttörajoituksen korjaus:** kuvan CFC/HCFC-merkintä ”ei saa käyttää” on liian laaja. Olemassa olevaa laitetta saa käyttää, mutta kylmäainetta ei saa lisätä vuodon tai rikkoutumisen jälkeen. [Syke](https://www.ymparisto.fi/fi/luvat-ja-velvoitteet/f-kaasut-ja-otsonikerrosta-heikentavat-aineet).
+**CFC/HCFC-aineiden käyttörajaus:** olemassa olevaa laitetta saa käyttää, mutta kylmäainetta ei saa lisätä vuodon tai rikkoutumisen jälkeen. [Syke](https://www.ymparisto.fi/fi/luvat-ja-velvoitteet/f-kaasut-ja-otsonikerrosta-heikentavat-aineet).
 
 ### HFO-aineiden syttyvyys ja hajoamistuotteet
 
-Kuvan ”luokitellaan palaviksi” ei koske kaikkia HFO-aineita. Esimerkiksi R1234ze(E) on A2L, mutta R1336mzz(Z) on A1. Kuvan ”palaessa myrkyllisiä” täsmennetään: liekissä tai kuumalla pinnalla voi syntyä myrkyllisiä hajoamistuotteita. Tämä on eri asia kuin alkuperäisen kylmäaineen myrkyllisyysluokka. [ASHRAE/UNEP](https://www.ashrae.org/file%20library/professional%20development/ashrae-unep/unep---ashrae-factsheet--english.pdf).
+Kaikki HFO-aineet eivät kuulu samaan syttyvyysluokkaan. Esimerkiksi R1234ze(E) on A2L, mutta R1336mzz(Z) on A1. Liekissä tai kuumalla pinnalla voi syntyä myrkyllisiä hajoamistuotteita. Tämä on eri asia kuin alkuperäisen kylmäaineen myrkyllisyysluokka. [ASHRAE/UNEP](https://www.ashrae.org/file%20library/professional%20development/ashrae-unep/unep---ashrae-factsheet--english.pdf).
 
 ### Autojen ilmastointi — päivämäärän täsmennys
 
-Kuvan merkintä 1.1.2016 on korjattu päivämääräksi **1.1.2017**. Varmistettu säädöstieto: EU:n MAC-direktiivin soveltamisalaan kuuluvien uusien ajoneuvotyyppien ilmastoinnissa yli 150:n GWP:n fluoratut kaasut kiellettiin **1.1.2011**, ja kaikkien uusien ajoneuvojen osalta **1.1.2017**. Soveltamisala on M1-henkilöautot ja N1-luokan 1 kevyet hyötyajoneuvot. Direktiivi ei määrää tiettyä HFO-ainetta käytettäväksi. [Euroopan komissio: MAC](https://single-market-economy.ec.europa.eu/sectors/automotive-industry/environmental-protection/mobile-air-conditioning-systems-macs_en).
+EU:n MAC-direktiivin soveltamisalaan kuuluvien uusien ajoneuvotyyppien ilmastoinnissa yli 150:n GWP:n fluoratut kaasut kiellettiin **1.1.2011**, ja kaikkien uusien ajoneuvojen osalta **1.1.2017**. Soveltamisala on M1-henkilöautot ja N1-luokan 1 kevyet hyötyajoneuvot. Direktiivi ei määrää tiettyä HFO-ainetta käytettäväksi. [Euroopan komissio: MAC](https://single-market-economy.ec.europa.eu/sectors/automotive-industry/environmental-protection/mobile-air-conditioning-systems-macs_en).
 
 ## Luonnolliset kylmäaineet
 
-Kuvan esimerkit ovat **R717 (ammoniakki)** ja **R744 (hiilidioksidi)**. Myös hiilivedyt, kuten R290 ja R600a, kuuluvat luonnollisiin kylmäaineisiin; HC ja luonnolliset kylmäaineet eivät siis ole toisensa poissulkevat ryhmät. [EU:n F-kaasuasetus, johdanto-osa 3](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R0573).
+Luonnollisia kylmäaineita ovat esimerkiksi **R717 (ammoniakki)** ja **R744 (hiilidioksidi)**. Myös hiilivedyt, kuten R290 ja R600a, kuuluvat luonnollisiin kylmäaineisiin; HC ja luonnolliset kylmäaineet eivät siis ole toisensa poissulkevat ryhmät. [EU:n F-kaasuasetus, johdanto-osa 3](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R0573).
 
-Kuvan **GWP ≈ 0, ODP = 0** toimii matalan ympäristövaikutuksen muistivihjeenä, mutta laskuissa käytetään ainekohtaista arvoa: **R744:n GWP = 1**, ei 0. R744:n ODP on 0. [Danfoss: CO₂](https://www.danfoss.com/en/about-danfoss/our-businesses/cooling/refrigerants-and-energy-efficiency/refrigerants-for-lowering-the-gwp/carbon-dioxide-co2/).
+Luonnollisten kylmäaineiden yhteydessä mainittu **GWP ≈ 0, ODP = 0** on vain karkea muistivihje. Laskuissa käytetään ainekohtaista arvoa: **R744:n GWP = 1**, ei 0. R744:n ODP on 0. [Danfoss: CO₂](https://www.danfoss.com/en/about-danfoss/our-businesses/cooling/refrigerants-and-energy-efficiency/refrigerants-for-lowering-the-gwp/carbon-dioxide-co2/).
 
 ### CO₂:n paine ja sähkönkulutus
 
-Kuvan havainto: ”CO₂ kuluttaa paljon sähköä korkean paine-eron takia.”
+Korkeasta käyttöpaineesta ei yksin voi päätellä suurta sähkönkulutusta. CO₂:n painesuhde voi olla verrattain pieni, ja energiatehokkuus riippuu prosessista, lämpötiloista ja järjestelmäratkaisusta. Korkea lauhtumislämpötila voi heikentää tehokkuutta, mutta CO₂-järjestelmä voi myös olla hyvin energiatehokas. [Danfoss](https://www.danfoss.com/en/about-danfoss/our-businesses/cooling/refrigerants-and-energy-efficiency/refrigerants-for-lowering-the-gwp/carbon-dioxide-co2/).
 
-**Korjaus:** korkeasta käyttöpaineesta ei yksin voi päätellä suurta sähkönkulutusta. CO₂:n painesuhde voi olla verrattain pieni, ja energiatehokkuus riippuu prosessista, lämpötiloista ja järjestelmäratkaisusta. Korkea lauhtumislämpötila voi heikentää tehokkuutta, mutta CO₂-järjestelmä voi myös olla hyvin energiatehokas. [Danfoss](https://www.danfoss.com/en/about-danfoss/our-businesses/cooling/refrigerants-and-energy-efficiency/refrigerants-for-lowering-the-gwp/carbon-dioxide-co2/).
+### CO₂-ekvivalenttiesimerkki
 
-### Oppitunnin CO₂-ekvivalenttiesimerkki
-
-Kuvan arvot: **R744, 100 kg, GWP 1**.
+Lähtötiedot: **R744, 100 kg, GWP 1**.
 
 `100 kg × 1 = 100 kg CO₂-ekv. = 0,1 t CO₂-ekv.`
 
-Lasku on oikein. Aineen pieni GWP ei tarkoita, että suuri täytös olisi automaattisesti vaaraton.
+Aineen pieni GWP ei tarkoita, että suuri täytös olisi automaattisesti vaaraton. CO₂-ekvivalentti kuvaa ilmastovaikutusta, ei laitteen painetta tai muita vaaroja.
 
 Katso myös [Kylmäaineet ja CO₂-ekvivalentti](kaavat-ja-yksikot.md#kylmäaineet-ja-co-ekvivalentti).
 
 ## Lakisääteiset vuototarkastukset
 
-Dian otsikko on ”Lakisääteinen huolto”. Alla käsitellään nimenomaan **vuototarkastuksia kiinteissä jäähdytys-, ilmastointi- ja lämpöpumppulaitteissa**.
+Alla käsitellään **F-kaasuasetuksen määräaikaisia vuototarkastuksia kiinteissä jäähdytys-, ilmastointi- ja lämpöpumppulaitteissa**. Tarkastusväli ei tarkoita laitteen kaikkia huolto- tai tarkastustarpeita.
 
-### Dian sisältö ja korjaukset
+### Tarkastusvälit
 
-Kuvassa F-kaasurajat ovat > 5, > 50 ja > 500 ekvt, HFO-rajat yli 1, yli 10 ja käsin korjattuna yli 100 kg. Tarkastuskertoina lukee 1, 2 ja 3 vuodessa; vuotohälytin kaksinkertaistaa välin.
-
-**Korjattu taulukko:**
+Taulukossa rajat ovat mukana jo täsmällisestä arvosta alkaen. Vuodonilmaisujärjestelmällä sallittu enimmäisväli on kaksinkertainen.
 
 | Liitteen I kaasut, esim. HFC (t CO₂-ekv.) | Liitteen II ryhmän 1 kaasut, esim. HFO (kg) | Enintään | Vuodonilmaisujärjestelmällä |
 | ----------------------------------------- | ------------------------------------------- | -------- | --------------------------- |
@@ -146,7 +141,7 @@ Kuvassa F-kaasurajat ovat > 5, > 50 ja > 500 ekvt, HFO-rajat yli 1, yli 10 ja k�
 | 50 ≤ määrä < 500                          | 10 ≤ määrä < 100                            | 6 kk     | 12 kk                       |
 | määrä ≥ 500                               | määrä ≥ 100                                 | 3 kk     | 6 kk                        |
 
-Rajamäärä kuuluu ylempään tarkastusluokkaan. Suurimman täytösluokan perusväli on **3 kk eli neljästi vuodessa**, ei dian kolme kertaa.
+Rajamäärä kuuluu ylempään tarkastusluokkaan. Suurimman täytösluokan perusväli on **3 kk eli neljästi vuodessa**.
 
 Seoksissa huomioidaan molemmat aineosuudet. Suurimmassa luokassa vuodonilmaisujärjestelmä on näissä kiinteissä laitteissa pakollinen; sen toiminta tarkastetaan vuosittain.
 
@@ -154,7 +149,7 @@ Seoksissa huomioidaan molemmat aineosuudet. Suurimmassa luokassa vuodonilmaisuj�
 
 ### Mihin luonnolliset kylmäaineet ja seokset kuuluvat?
 
-**Täsmennys 20.9.2026:** selvitä ensin, kuuluuko kylmäaine kyseisen tarkastusvelvoitteen piiriin. Laske vasta sitten soveltuvat rajamäärät. CO₂-ekvivalentti kuvaa ilmastovaikutusta, ei yksin ratkaise lain soveltamisalaa.
+Selvitä ensin, kuuluuko kylmäaine kyseisen tarkastusvelvoitteen piiriin. Laske vasta sitten soveltuvat rajamäärät. CO₂-ekvivalentti kuvaa ilmastovaikutusta, ei yksin ratkaise lain soveltamisalaa.
 
 - **R717 ja R744 eivät ole HFC- eivätkä HFO-aineita.** Ne eivät kuulu F-kaasuasetuksen 5 artiklan määräaikaisiin vuototarkastuksiin millään täytösmäärällä. Niitä ei sijoiteta yllä olevan taulukon HFC-sarakkeeseen. Tästä ei seuraa, että laite olisi huoltovapaa tai vapautettu muista mahdollisista tarkastusvelvoitteista.
 - **HFC-aineissa** verrataan liitteen I kaasumäärää CO₂-ekvivalenttitonneina: esimerkiksi alle 5 t CO₂-ekv. sisältävälle R134a- tai R32-laitteelle ei synny tämän artiklan määräaikaista vuototarkastusvelvoitetta.
@@ -168,7 +163,7 @@ Seoksissa huomioidaan molemmat aineosuudet. Suurimmassa luokassa vuodonilmaisuj�
 4. Mitä ODP ja GWP vertaavat, ja mitkä ovat niiden vertailuaineet?
 5. Miten GWP-suhdeluku eroaa CO₂-ekvivalenttitonneista?
 6. Miten luet turvaluokan A2L?
-7. Miksi ”CFC/HCFC-laitetta ei saa käyttää” on liian laaja muistisääntö?
+7. Miten CFC/HCFC-laitteen käytön ja kylmäaineen lisäämisen rajoitukset eroavat toisistaan?
 8. Mikä on vähintään 500 t CO₂-ekv. sisältävän kiinteän kylmälaitteen tarkastusväli vuodonilmaisujärjestelmällä?
 9. Miksi korkea käyttöpaine ei yksin tarkoita suurta sähkönkulutusta?
 10. Miksi 5 000 kg R744:ää ei käynnistä F-kaasuasetuksen määräaikaista vuototarkastusvelvoitetta?
@@ -180,9 +175,9 @@ Laske kylmäainetäytöksen CO₂-ekvivalentti taulukon lähtöarvoilla. Harjoit
 
 ### Laske CO₂-ekvivalentti ja selvitä tarkastusväli
 
-Paperissa käytetään sanaa ”huoltoväli”. Alla vastataan oppitunnin taulukon tarkoittamaan **F-kaasuasetuksen määräaikaiseen vuototarkastusväliin**, ei laitteen kaikkiin huolto- tai tarkastustarpeisiin. Oletuksena ovat edellä käsitellyt kiinteät kylmälaitteet. Katso [Lakisääteiset vuototarkastukset](kylmaaineet.md#lakisääteiset-vuototarkastukset).
+Alla vastataan **F-kaasuasetuksen määräaikaiseen vuototarkastusväliin**, ei laitteen kaikkiin huolto- tai tarkastustarpeisiin. Esimerkeissä oletetaan kiinteät jäähdytys-, ilmastointi- tai lämpöpumppulaitteet. Katso [Lakisääteiset vuototarkastukset](kylmaaineet.md#lakisääteiset-vuototarkastukset).
 
-CO₂-laskut on säilytetty tehtäväkuvassa käytetyillä GWP-arvoilla: R134a 1430, R32 675, R717 0, R744 1, R513A 631 ja R404A 3922. Laskutoimitukset ovat näillä arvoilla oikein. R513A:n GWP-perustan täsmennys on taulukon jäljessä.
+Laskujen lähtöarvot ovat R134a 1430, R32 675, R717 0, R744 1, R513A 631 ja R404A 3922. Arvot kuuluvat tähän harjoitukseen; R513A:n GWP-perustan täsmennys on taulukon jäljessä. Taulukon ”vuotohälytin” tarkoittaa vuodonilmaisujärjestelmää. Sen olemassaolo vaikuttaa väliin vain, kun asetuksen vuototarkastusvelvoite soveltuu laitteeseen.
 
 | Kylmäaine |  Täytös | Vuotohälytin | CO₂-ekvivalentti                    | Väli ja perustelu                                                                |
 | --------- | ------: | ------------ | ----------------------------------- | -------------------------------------------------------------------------------- |
@@ -203,13 +198,13 @@ R513A sisältää massasta **44 % R134a:ta (HFC)** ja **56 % R1234yf:ää (HFO)*
 2. **HFO-osuus:** `50 kg × 0,56 = 28 kg R1234yf:ää`. Se kuuluu luokkaan `10 ≤ määrä < 100 kg` → **6 kk** ilman vuodonilmaisujärjestelmää.
 3. **Lyhyempi väli ratkaisee: 6 kk.** HFO-määrää ei verrata tässä CO₂-ekvivalenttirajoihin, vaan kilogrammarajoihin.
 
-**GWP-perustan täsmennys:** kuvan GWP-arvolla 631 saatu 31,55 t CO₂-ekv. on laskettu oikein. Nykyisen asetuksen komponenttiarvoista laskettuna seoksen GWP on kuitenkin `0,44 × 1430 + 0,56 × 0,501 = 629,48056`, eli noin 629,48, jolloin 50 kg vastaa noin **31,47 t CO₂-ekv.** Tätä koko seoksen arvoa ei pidä sekoittaa yllä laskettuun HFC-osuuden arvoon 31,46. Ero ei muuta 6 kk:n tarkastusväliä. GWP-arvot: asetuksen liitteet I ja II; seoksen laskentamenetelmä: liite VI. Kotitehtävässä käytettävä taulukko kannattaa merkitä näkyviin.
+**GWP-perustan täsmennys:** harjoituksen GWP-arvolla 631 saadaan 31,55 t CO₂-ekv. Nykyisen asetuksen komponenttiarvoista laskettuna seoksen GWP on kuitenkin `0,44 × 1430 + 0,56 × 0,501 = 629,48056`, eli noin 629,48, jolloin 50 kg vastaa noin **31,47 t CO₂-ekv.** Tätä koko seoksen arvoa ei pidä sekoittaa yllä laskettuun HFC-osuuden arvoon 31,46. Ero ei muuta 6 kk:n tarkastusväliä. GWP-arvot: asetuksen liitteet I ja II; seoksen laskentamenetelmä: liite VI.
 
 ### R744:n jatkokysymys
 
-Tehtäväpaperin kysymys: **Kuinka monta kiloa R744-täytöstä koneessa pitää olla, jotta sillä olisi edes yksi lakisääteinen huolto vuodessa?**
+Kysymys: **Kuinka monta kiloa R744-täytöstä koneessa pitäisi olla, jotta F-kaasuasetuksen määräaikainen vuototarkastus tulisi sovellettavaksi?**
 
-**Vastaus tämän tehtävän F-kaasuvuototarkastusten näkökulmasta: ei millään täytösmäärällä.** R744 ei ole F-kaasu, joten F-kaasuasetuksen 5 artiklan määräaikaiset vuototarkastusrajat eivät koske sitä.
+**Vastaus: ei millään täytösmäärällä.** R744 ei ole F-kaasu, joten F-kaasuasetuksen 5 artiklan määräaikaiset vuototarkastusrajat eivät koske sitä.
 
 `5000 kg × 1 / 1000 = 5 t CO₂-ekv.` on aritmeettisesti oikein, mutta **5 000 kg ei ole R744:n lakisääteisen F-kaasuvuototarkastuksen raja**. CO₂-ekvivalenttiraja ei laajenna asetuksen soveltamisalaa. Tämä vastaus ei tarkoita, ettei R744-laitteelle voisi olla muuta huolto- tai tarkastusvelvoitetta.
 
