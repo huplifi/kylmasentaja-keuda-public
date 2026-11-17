@@ -70,6 +70,6 @@ Kirjaston 18 kylmäkierron merkistä **12 on lähdevertailtuja ja 6 sovellettuja
 
 Sovellettujen symbolien tarkoitus on tehdä opiskelukaavioista johdonmukaisia. Niitä ei pidä tulkita väitteeksi siitä, että juuri kyseinen geometria olisi yleispätevä standardimerkki kaikissa kylmäkaavioissa. Laitetunnus, kaavion selite ja valmistajan dokumentaatio ratkaisevat tulkinnan.
 
-Lähteet ja tarkemmat rajaukset on kirjattu yksityisen lähderepon symbolikirjaston manifestiin. Pääasiallisina lähteinä sarjassa on käytetty GUNTin kylmätekniikan kaavioaineistoa sekä imuvaraajan osalta Danfossin ACC-aineistoa.
+Pääasiallisina lähteinä sarjassa on käytetty GUNTin kylmätekniikan kaavioaineistoa sekä imuvaraajan osalta Danfossin ACC-aineistoa.
 
 Katso myös [Kylmätekniikan perusteet](kylmatekniikan-perusteet.md).

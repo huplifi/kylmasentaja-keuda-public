@@ -232,8 +232,6 @@ Haaravirrat, vertailu ja laskuesimerkki ovat selittäviä täydennyksiä.
 
 ## Ohmin lain kaavapyörä
 
-oppitunnin lähdeaineisto
-
 Kaikki kaavapyörän muodot tekstinä:
 
 - **Ratkaise P:** `P = U × I`, `P = I² × R`, `P = U² / R`
@@ -874,13 +872,11 @@ Vakava työtapaturma ilmoitetaan erikseen poliisille ja työsuojeluviranomaisell
 
 ## Asennuspiirustusten piirrosmerkkejä
 
-**Asennuspiirustuksen piirrosmerkit** välittävät tiiviisti tietoa tilasta, johdotuksesta ja sähkölaitteista. Merkin ulkomuoto pitää tunnistaa kuvasta; alla oleva kooste kertoo sen merkityksen.
-
-oppitunnin lähdeaineisto
+**Asennuspiirustuksen piirrosmerkit** kertovat tilasta, johdotuksesta ja sähkölaitteista. Taulukossa merkin muoto on kuvattu sanoin. Piirretyt merkit löydät sivulta [Sähköpiirustukset ja valaistuskytkennät](sahkopiirustukset-ja-valaistuskytkennat.md).
 
 ### Tilan ja johdotuksen merkinnät
 
-| Merkki kuvassa                   | Merkitys                           |
+| Merkin kuvaus                    | Merkitys                           |
 | -------------------------------- | ---------------------------------- |
 | Yksi pisara neliössä             | Kostea tila                        |
 | Kaksi pisaraa neliössä           | Märkä tila                         |
@@ -910,13 +906,13 @@ Esimerkki havainnollistaa perustasoa: tunnista syöttö, komponentit, johtimien 
 
 ### Millainen piirustus tämä on?
 
-Kuvan ympyröity osa on **yksiviivainen johdotus-/asennusesitys** yhden valaisimen ohjauksesta yhdellä kytkimellä. Yksi pitkä viiva kuvaa johdotusreittiä, ei välttämättä yhtä johdinta. Reitin poikki piirretyillä lyhyillä merkeillä esitetään johtimien lukumäärä ja tehtävät.
+Yhden valaisimen ohjaus yhdellä kytkimellä voidaan esittää yksiviivaisena johdotuspiirustuksena. Pitkä viiva kuvaa johdotusreittiä ja poikkimerkit johtimien lukumäärää ja tehtäviä.
 
 Tämä ei ole sama asia kuin moniviivainen kytkentäkuva, jossa jokaisen johtimen reitti ja liitokset näytetään erikseen. Jakorasian sisäiset liitokset on tässä pääteltävä kytkennän toiminnan perusteella.
 
-### Kuvan merkit
+### Johdotuksen merkit
 
-| Kuvassa näkyvä merkintä                                      | Tulkinta tässä esimerkissä                                                                                                   |
+| Merkintä                                                     | Tulkinta tässä esimerkissä                                                                                                   |
 | ------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------- |
 | `RK`                                                         | Ryhmäkeskus, josta ryhmän syöttö tulee.                                                                                      |
 | Nuoli ja numero ympyrässä                                    | Ryhmän syöttö ja ryhmänumero. Numero näyttää olevan **5**; se ei tarkoita 5 ampeerin sulaketta.                              |
@@ -929,13 +925,13 @@ Tämä ei ole sama asia kuin moniviivainen kytkentäkuva, jossa jokaisen johtime
 
 **N:n ja PE:n tunnistaminen:** tässä merkintätavassa **piste = N, hattu = PE**. Kyse on johdotuksen piirrosmerkeistä, ei johtimien väreistä. Merkinnät tarkistetaan aina käytettävän piirustuksen selitteestä.
 
-Taulun yläosassa näkyvä **1,5 mm²** tarkoittaa johtimen poikkipinta-alaa, ei halkaisijaa. Kuvan rajauksesta ei yksin varmistu, mille kaikille johdoille merkintä on tarkoitettu. Kaapelityyppiä tai sulakkeen kokoa ei päätellä tästä merkinnästä yksin.
+Esimerkin **1,5 mm²** tarkoittaa johtimen poikkipinta-alaa, ei halkaisijaa. Merkintä koskee vain niitä johtoja, joihin se on piirustuksessa liitetty. Kaapelityyppiä tai sulakkeen kokoa ei päätellä tästä merkinnästä yksin.
 
 ### Mitä johtimia eri väleillä kulkee?
 
-Seuraava on kuvan mukaisen yksinkertaisen 1-kytkennän toimintatulkinta. Merkintä `L′` tarkoittaa tässä **kytkettyä vaihetta**, ei toista syöttävää vaihetta.
+Taulukossa on yhden kytkimen ja yhden valaisimen välinen johdotus. Merkintä `L′` tarkoittaa tässä **kytkettyä vaihetta**, ei toista syöttävää vaihetta.
 
-| Väli                    | Kuvassa esitetyt johtimet                                    | Määrä |
+| Väli                    | Johtimet                                                     | Määrä |
 | ----------------------- | ------------------------------------------------------------ | ----: |
 | Ryhmäkeskus → jakorasia | Syöttävä vaihe `L`, nolla `N` ja suojajohdin `PE`            |     3 |
 | Jakorasia → kytkin      | Syöttävä vaihe `L` ja kytkimeltä palaava kytketty vaihe `L′` |     2 |
@@ -947,9 +943,9 @@ Johdinmäärät kuvaavat tätä opetusesimerkkiä. Ne eivät yksin määritä to
 
 ### Jakorasian kytkentä moniviivaisessa johdotuskaaviossa
 
-Täydentävä oppituntikuva 28.9.2026 näyttää saman **yksinapaisen kytkimen eli 1-kytkimen** kytkennän kolmella tavalla: vasemmalla on toimintaperiaate, keskellä moniviivainen johdotuskaavio ja oikealla yksiviivainen esitys. Keskimmäisestä kuvasta nähdään myös jakorasian sisäiset liitokset, jotka eivät erottuneet edellisessä taulukuvassa.
+Moniviivaisessa johdotuskaaviossa jokaisen johtimen reitti esitetään erikseen. Alla oleva taulukko kertoo, mitkä johtimet kuuluvat yhteen jakorasian sisällä.
 
-Kuvan laitetunnukset ovat **X1 = jakorasia**, **Q1 = kytkin** ja **E1 = valaisin**. Nämä ovat tämän piirustuksen tunnuksia; edellisen kuvan JR tarkoittaa samaa jakorasiaa.
+Tässä esimerkissä X1 on jakorasia, Q1 kytkin ja E1 valaisin.
 
 **Jakorasiassa X1 on neljä erillistä liitoskohtaa:**
 
@@ -960,13 +956,13 @@ Kuvan laitetunnukset ovat **X1 = jakorasia**, **Q1 = kytkin** ja **E1 = valaisin
 | Syötön nolla `N`                     | Valaisimelle E1 menevään nollajohtimeen.            |
 | Syötön suojajohdin `PE`              | Valaisimelle E1 menevään suojajohtimeen.            |
 
-Kytketystä vaiheesta käytetään tässä muistiossa selittävää merkintää `L′`; sitä ei ole kirjoitettu tähän lähdekuvaan.
+Kytketyn vaiheen tunnus tässä esimerkissä on `L′`.
 
 **Rasian sisällä kaikki johtimet eivät yhdisty keskenään.** N ja PE jatkuvat omina erillisinä yhteyksinään valaisimelle. Syöttävän vaiheen ja kytketyn vaiheen liitokset ovat myös erillään toisistaan: niiden välinen ohjattu yhteys muodostuu kytkimessä Q1, ei jakorasiassa.
 
 X1:n katkoviivarajaus osoittaa rasian alueen, ei sähköjohdinta. Sen sisällä olevat **mustat pisteet osoittavat liitoskohtia**. Tässä moniviivaisessa kuvassa piste ei siis tarkoita automaattisesti nollajohdinta, toisin kuin edellisen yksiviivaisen kuvan pistepäinen johdinmerkki. Merkkiä luetaan aina oman esitystapansa yhteydessä.
 
-Kuvan kytkin on piirretty avoimeksi. Kun Q1 sulkeutuu, käyttövirtapiirin reitti on **L → X1 → Q1 → X1 → E1 → N**. Tämä reitti täydentää edellä esitettyä toimintaperiaatetta näyttämällä jakorasian molemmat vaiheliitokset.
+Esimerkin lähtötilanteessa kytkin on auki. Kun Q1 sulkeutuu, käyttövirtapiirin reitti on **L → X1 → Q1 → X1 → E1 → N**. Tämä reitti täydentää edellä esitettyä toimintaperiaatetta näyttämällä jakorasian molemmat vaiheliitokset.
 
 ### Miten valo syttyy?
 
@@ -990,19 +986,9 @@ Koottu oppikirjakuvista 31.8.2026 ja täydennetty oppituntien aineistoilla.
 
 Oppitunti 21.9.2026.
 
-Lähde: oppituntidia, kuva oppitunnin lähdekuva (21.9.2026). Arvot on kirjattu dian mukaisina.
-
-Lähde: oppituntidia ”Resistiivisyys ja johtavuus”, keskusteluun lähetetty kuva oppitunnin lähdekuva (21.9.2026). Materiaalin ja johtimen erottelu, kaavan käyttöehdot, yksikkömuunnokset, johtavuuden käänteisluku ja lämpöhäviöiden vertailuehto ovat oppimista tukevia täsmennyksiä.
-
 ### Hyötysuhde
 
 Oppitunti 21.9.2026.
-
-Lähde: oppituntidia ”Hyötysuhde”, kuva oppitunnin lähdekuva (21.9.2026).
-
-### Vastusten rinnankytkentä
-
-Lähde: käsinkirjoitetut muistiinpanot 7.9.2026, oppitunnin lähdeaineisto. Haaravirrat, vertailu ja laskuesimerkki ovat selittäviä täydennyksiä.
 
 ### IP-osion lähteet
 
@@ -1014,17 +1000,13 @@ Tarkistettu 5.10.2026. Taulukot ovat tiivistetty opiskelukooste, eivät standard
 - [NorComp: IP Ratings and Harsh Environment Connectors](https://www.norcomp.net/applications/ip-ratings-and-harsh-environment-connectors) — IPX9, käyttöolosuhteet ja IP-luokituksen rajaukset.
 - [WIKA: Pressure switches with IP65 and IP67 ingress protection](https://blog.wika.com/en/products/pressure-switches-with-ip65-and-ip67-ingress-protection/) — upotus- ja vesisuihkukokeiden ero.
 
-Lähde: oppikirjan luku 5.1, s. 80, oppitunnin lähdeaineisto.
-
 ### Tilaluokittelu ja kotelointiluokan valinta
 
 Oppitunti 5.10.2026.
 
-Lähde: oppitunnin lähdeaineisto, s. 82.
+Täsmennysten lähde: [Tukes: Kylpy- ja suihkutilojen sähköasennukset](https://tukes.fi/sahko/sahkotyot-ja-urakointi/sahkoasennusten-tekniset-vaatimukset/kylpy-ja-suihkutilojen-sahkoasennukset), tarkistettu 5.10.2026. Varsinainen sijoitus ratkaistaan sovellettavan SFS 6000-7-701:n ja laiteohjeiden mukaan.
 
-Lähdekuva: oppitunnin lähdeaineisto, s. 84. Täsmennysten lähde: [Tukes: Kylpy- ja suihkutilojen sähköasennukset](https://tukes.fi/sahko/sahkotyot-ja-urakointi/sahkoasennusten-tekniset-vaatimukset/kylpy-ja-suihkutilojen-sahkoasennukset), tarkistettu 5.10.2026. Varsinainen sijoitus ratkaistaan sovellettavan SFS 6000-7-701:n ja laiteohjeiden mukaan.
-
-Lähdekuva: oppitunnin lähdeaineisto, s. 86. Tarkistettu vertailulähde: [Tukes: Saunojen sähköasennukset](https://tukes.fi/sahko/sahkotyot-ja-urakointi/sahkoasennusten-tekniset-vaatimukset/saunojen-sahkoasennukset), 5.10.2026.
+Tarkistettu vertailulähde: [Tukes: Saunojen sähköasennukset](https://tukes.fi/sahko/sahkotyot-ja-urakointi/sahkoasennusten-tekniset-vaatimukset/saunojen-sahkoasennukset), 5.10.2026.
 
 ### Vikasuojaus
 
@@ -1032,13 +1014,11 @@ Oppitunti 5.10.2026.
 
 - Suojausluokan II laitemerkintä IEC 60417-5172, tarkistettu 9.11.2026. [Schneider Electric — laitemerkinnät](https://productinfo.se.com/dm6220h_em1220h_em1250h/dm6200h_em1220h_em1250h/DM6220H_EM1220H_EM1250H/English/BM_DM6220H_EM1220H_EM1250H%20User%20Manual_0000336862.ditamap.xml/%24/C_MeteringEquipmentSymbols_0001113660)
 
-Lähteet: oppituntidiat oppitunnin lähdeaineisto. Poiskytkentäajan soveltamisalan ja vikavirran reitin täsmennys: [Schneider Electric: TN system – Principle](https://www.electrical-installation.org/enwiki/TN_system_-_Principle), tarkistettu 5.10.2026.
+Poiskytkentäajan soveltamisalan ja vikavirran reitin täsmennys: [Schneider Electric: TN system – Principle](https://www.electrical-installation.org/enwiki/TN_system_-_Principle), tarkistettu 5.10.2026.
 
 Oppitunnin tehtävä 1.22 (5.10.2026).
 
-Lähde: oppitunnin tehtävä 1.22, oppitunnin lähdeaineisto. Selittävät täsmennykset: [Schneider Electric: Description of RCDs](https://www.electrical-installation.org/enwiki/Description_of_RCDs), [Sensitivity of RCDs to disturbances](https://www.electrical-installation.org/enwiki/Sensitivity_of_RCDs_to_disturbances) ja [RCD-laitekategoriat](https://www.se.com/nz/en/faqs/FAQ000218859/), tarkistettu 5.10.2026.
-
-Lähde: oppitunnin oppimateriaalin **taulukko 1.1**, oppitunnin lähdeaineisto. Kuvassa viitataan **D1-2022:n taulukoihin 41.4a, 41.4b ja 41.5**; lukuarvot on kirjattu kuvan mukaan. Muistisäännöt ja 150 A:n vertailuesimerkki ovat taulukosta johdettuja oppimista tukevia lisäyksiä.
+Lähde: oppitunnin tehtävä 1.22,  Selittävät täsmennykset: [Schneider Electric: Description of RCDs](https://www.electrical-installation.org/enwiki/Description_of_RCDs), [Sensitivity of RCDs to disturbances](https://www.electrical-installation.org/enwiki/Sensitivity_of_RCDs_to_disturbances) ja [RCD-laitekategoriat](https://www.se.com/nz/en/faqs/FAQ000218859/), tarkistettu 5.10.2026.
 
 ### Asennustesterin opastevideo
 
@@ -1047,22 +1027,6 @@ Lähde: oppitunnin oppimateriaalin **taulukko 1.1**, oppitunnin lähdeaineisto. 
 ### Vaihtosähkö
 
 Oppitunti 21.9.2026.
-
-Lähde: käsinkirjoitetut muistiinpanot, kuva oppitunnin lähdekuva (21.9.2026).
-
-Lähde: oppituntidia ”Vaihtovirran mittaus”, kuva oppitunnin lähdekuva (21.9.2026).
-
-Lähde: oppituntidia ”Pihtiampeerimittari”, kuva oppitunnin lähdekuva (21.9.2026). Viimeinen kappale on mittaustavan ymmärtämistä tukeva täsmennys.
-
-Lähde: oppituntidia, kuva oppitunnin lähdekuva (21.9.2026).
-
-Lähteet: oppituntidiat ”Yksivaiheisuus”, kuvat oppitunnin lähdekuva ja oppitunnin lähdekuva (21.9.2026).
-
-Lähteet: oppituntidiat ”Sinimuotoinen jännite”, kuvat oppitunnin lähdekuva ja oppitunnin lähdekuva (21.9.2026).
-
-Lähde: oppituntidia ”Sinimuotoisen vaihtosähkön hetkellis- ja huippuarvot”, kuva oppitunnin lähdekuva (21.9.2026).
-
-Lähde hetkellisarvon kaavalle ja tehollisarvon määritelmälle: oppimateriaali, kuva oppitunnin lähdekuva (21.9.2026).
 
 ### Sähkötöiden tekemisen oikeus
 
@@ -1083,8 +1047,6 @@ Oppitunti 6.11.2026. SETI Oy:n koulutusaineisto *Sähkötyöturvallisuus / Sähk
 
 Oppitunti 21.9.2026.
 
-Lähde: oppitunnilla esitetty tehtävä ”Nimeä seuraavat asennuspiirustuksissa käytettävät piirrosmerkit”, oppitunnin lähdeaineisto (21.9.2026).
-
 ### Sähköpiirustuksen lukeminen
 
 Oppitunti 28.9.2026.
@@ -1096,51 +1058,3 @@ Piirrosmerkkien vertailu ja turvallisuustäsmennykset tarkistettu 28.9.2026:
 - [Sähköinsinööritoimisto Kuvio: Piirrosmerkit](https://www.sahkokuvio.fi/palvelut/sahkosuunnittelusta/piirrosmerkit/) — kytkimet, valaisimet ja suunnitelmakohtaisen selitteen merkitys.
 - [Rakennusten sähköpiirustusten piirrosmerkit, PDF](https://www.sivustot.net/oppaat/PIIRROSMERKIT.pdf) — PDF-sivut 9–10: johdinmerkit, jakorasiat ja ryhmän syöttö. Vanha vertailuaineisto piirrosmerkeille, ei ajantasainen asennus- tai johdinväriohje.
 - [Tukes: Mitä sähkötöitä saan tehdä itse](https://tukes.fi/kodin-sahkoturvallisuus/mita-sahkotoita-saan-tehda-itse) — jännitteettömyys ja valaisimen suojajohtimen oikea käyttötarkoitus.
-
-### Alkuperäiset kuvat
-
-- oppitunnin lähdeaineisto — sähköiset suureet, yksiköt ja CAT-luokat
-
-- oppitunnin lähdeaineisto — yleismittarin kerrannaisyksiköt ja mitta-alueet
-
-- oppitunnin lähdeaineisto — kiinteistön 400/230 V sähkönsyöttö ja TN-C-S
-
-- oppitunnin lähdeaineisto — sähköntuotanto, kantaverkko ja jakeluverkko
-
-- oppitunnin lähdeaineisto — jänniteluokat ja sähkötöiden tekemisen oikeus
-
-- oppitunnin lähdeaineisto — sähkövirran fysiologiset vaikutukset
-
-- oppitunnin lähdeaineisto — sähkövirran ja elektronien suunnat sekä sähkövaraus
-
-- oppitunnin lähdeaineisto — Ohmin lain sarjakytkentäesimerkki sekä kylmätekniikan mittausmuistiinpanoja
-
-- oppitunnin lähdeaineisto — asennustesteri sekä RISO-, RLO- ja Z-mittaukset
-
-- oppitunnin lähdeaineisto — RCD-testaus, muut mittaukset, silmukkaimpedanssin merkitys ja käyttöönottotarkastus
-
-- oppitunnin lähdeaineisto — vastusten sarja- ja rinnankytkentä (7.9.2026)
-
-- oppitunnin lähdeaineisto — 1-kytkennän vähimmäislukutaidon opetusesimerkki (28.9.2026)
-
-- oppitunnin lähdeaineisto — 1-kytkimen toimintaperiaate ja jakorasian moniviivainen kytkentä
-
-- oppitunnin lähdeaineisto — piirrosmerkkien oppituntivertailu
-
-- oppitunnin lähdeaineisto — oppitunnin aineisto 5.10.2026
-
-- oppitunnin lähdeaineisto — oppitunnin aineisto 5.10.2026
-
-- oppitunnin lähdeaineisto — oppitunnin aineisto 5.10.2026
-
-- oppitunnin lähdeaineisto — oppitunnin aineisto 5.10.2026
-
-- oppitunnin lähdeaineisto — oppitunnin aineisto 5.10.2026
-
-- oppitunnin lähdeaineisto — oppitunnin aineisto 5.10.2026
-
-- oppitunnin lähdeaineisto — oppitunnin aineisto 5.10.2026
-
-- oppitunnin lähdeaineisto — suojalaitteiden toimintarajavirrat ja vaaditut mitatut oikosulkuvirrat (5.10.2026)
-
-- oppitunnin lähdeaineisto — vikavirtasuojan nimellisvirta, nimellinen toimintavirta ja nimellisjännite (5.10.2026)

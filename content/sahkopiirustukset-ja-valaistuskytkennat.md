@@ -190,8 +190,6 @@ Painikkeet antavat ohjausimpulssin askelreleelle. Rele vaihtaa valaistuksen tila
 
 Oppikirjan valonsäätimessä on sekä kytkin että säätöyksikkö. Kun säätimeen sisältyy vaihtokytkintoiminto, valot voidaan sytyttää ja sammuttaa myös toisesta paikasta tavallisella 6-kytkimellä.
 
-Kirjastossa ei vielä ole lähdekuvien mukaista valonsäätimen asennussymbolia, joten sitä ei korvata arvauksella. Symboli lisätään kirjastoon vasta, kun grafiikka piirretään lähdekuvan perusteella.
-
 Oppikirja korostaa myös, että valonsäädin on valittava ohjattavan valonlähteen ja liitäntälaitteen mukaan.
 
 ### Kytkinten liitinmerkintöjä
@@ -278,7 +276,7 @@ Piirustuksessa käytetään samaa symboliikkaa, nimeämislogiikkaa ja esitystapa
 
 ## Visuaalinen symbolisanasto
 
-Alla olevat symbolit ovat tämän vaultin tarkistettua SVG-kirjastoa. Niitä käytetään tästä eteenpäin muistiinpanojen sähkökaavioissa aina, kun vastaava käsite esiintyy.
+Taulukossa näet piirrosmerkin, sen nimen ja käyttötarkoituksen.
 
 ### Johtimet ja liitokset
 
@@ -351,7 +349,7 @@ SESKO vahvistaa, että Suomessa sähkökaavioiden standardoitu viite on IEC 6061
 
 Kirjaston kuudesta aiemmin epävarmaksi merkitystä kohdasta:
 
-- **Risteys ilman liitosta:** käsite on IEC-aineistossa olemassa, mutta kirjaston nykyistä tarkkaa johtimien risteysgeometriaa ei ole vahvistettu käytettävissä olevasta sähköjohtimien lähdeaineistosta. Säilytetään havainnollistavana ja merkitään tarkistettavaksi.
+- **Risteys ilman liitosta:** käsite on IEC-aineistossa olemassa, mutta kirjaston nykyistä tarkkaa johtimien risteysgeometriaa ei ole vahvistettu käytettävissä olevasta sähköjohtimien lähdeaineistosta. Merkki havainnollistaa johtimien risteystä.
 - **5-kytkin / sarja-/kruunukytkin:** toiminta ja suomalainen opetuskäyttö vahvistuvat oppituntiaineistosta. Toimitettu IEC-kooste ei yksiselitteisesti vahvista nykyistä asennuspiirustusgrafiikkaa, joten grafiikka säilyy opetussymbolina eikä sitä nimetä viralliseksi IEC-symboliksi.
 - **Johdonsuojakatkaisija:** IEC-kooste vahvistaa **Circuit Breaker** -yleismerkin. Johdonsuojakatkaisijan tarkka ominaisuus ei ilmene pelkästä yleismerkistä; laitetiedot täydentävät tulkinnan.
 - **Vikavirtasuoja:** toimitetusta IEC-koosteesta ei löydy erillistä RCD-merkkiä. Nykyinen SVG on siksi nimenomaan toimintolohko, ei standardoiduksi väitetty piirrosmerkki.
@@ -366,9 +364,9 @@ Oppitunnilla korostettiin, että keskuksen ryhmäkaavioita ja asennuspiirustuste
 
 ### Ryhmäkaavion lukureitti
 
-*Sähkön asentaminen II*, kuva 3.31b (s. 134–135): aloita syötöstä `3L, N, PE`, seuraa pääkytkintä `Q01 63 A`, mahdollista vikavirtasuojaa ja ryhmän johdonsuojaa. Yhdistä vasemmalla näkyvä lähtö oikealla samaan ryhmänumeroon ja lue nimitys, suojan tyyppi/nimellisvirta, teho ja kaapeli. Tyhjä kW-kenttä ei kerro kuorman tehoa.
+*Sähkön asentaminen II*, kuva 3.31b (s. 134–135): aloita syötöstä `3L, N, PE`, seuraa pääkytkintä `Q01 63 A`, mahdollista vikavirtasuojaa ja ryhmän johdonsuojaa. Ryhmäkohtaiset tiedot luetaan saman ryhmänumeron kohdalta: lähdön nimi, suojan tyyppi ja nimellisvirta, teho sekä kaapeli. Tyhjä kW-kenttä ei kerro kuorman tehoa.
 
-Esimerkiksi ryhmän `1.1` suojaksi on merkitty `C10` ja kaapeliksi `MMJ 3×1,5S`; ryhmissä `3.1` ja `4.1` näkyvät `C16` ja `MMJ 3×2,5S`. `C` on katkaisijan laukaisukäyrä ja luku nimellisvirta ampeereina. Ryhmät 2.1–2.3, 3.1–3.3 ja 4.1–4.3 jakautuvat vaiheille L1–L3. VSK tarkoittaa vikavirtasuojaa. Valokuvasta ei voi varmistaa kaikkia vikavirtasuojan tarkkoja laitearvoja; ne luetaan alkuperäisestä piirustuksesta.
+Esimerkiksi ryhmän `1.1` suojaksi on merkitty `C10` ja kaapeliksi `MMJ 3×1,5S`; ryhmissä `3.1` ja `4.1` näkyvät `C16` ja `MMJ 3×2,5S`. `C` on katkaisijan laukaisukäyrä ja luku nimellisvirta ampeereina. Ryhmät 2.1–2.3, 3.1–3.3 ja 4.1–4.3 jakautuvat vaiheille L1–L3. VSK tarkoittaa vikavirtasuojaa. Vikavirtasuojan arvoja ei voi päätellä johdonsuojan tunnuksesta.
 
 ### Asennuspiirustuksen merkkiryhmät
 
@@ -383,15 +381,13 @@ Esimerkiksi ryhmän `1.1` suojaksi on merkitty `C10` ja kaapeliksi `MMJ 3×1,5S`
 | Pistorasiat      | Suojakoskettimeton/suojakoskettimellinen, kaksi- ja kolmiosainen, kytkimellinen, turva- ja suojajännitepistorasia sekä 5-napainen `3L+N+PE`-voimapistorasia. |
 | Rasiat ja maa    | Jakorasia, liitäntärasia, kojerasia, maadoitus ja suojamaadoitus.                                                                                            |
 
-**Kertaa ensin L/N/PE/PEN, sitten 1/5/6/7-kytkimet sekä jakorasia–liitäntärasia–kojerasia.** Graafiset erot ovat osin pieniä: vertaa merkit alkuperäiseen harjoituskuvaan, älä päättele niitä vain tästä tekstistä. Lähdekuvaa ei kopioida julkiselle sivustolle.
+**Kertaa taulukoista** L-, N-, PE- ja PEN-johtimet, 1-, 5-, 6- ja 7-kytkimet sekä jakorasian, liitäntärasian ja kojerasian erot.
 
-## Symbolistandardit ja oma SVG-kirjasto
+## Symbolistandardit ja opiskelugrafiikka
 
 SESKOn mukaan sähkökaavioiden standardoidut piirrosmerkit löytyvät **IEC 60617** -tietokannasta. Sähköpiirustusten esittämistä käsittelee **SFS-EN 61082-1**. IEC 60617 -tietokanta sisältää symbolien lisäksi nimet, tunnukset, soveltamisohjeita ja tiedon symbolien statuksesta.
 
-Tämän vaultin `symbolit/`-hakemiston SVG:t ovat **itsenäisesti piirrettyjä opiskelugrafiikoita**, eivät IEC:n virallisten symbolitiedostojen kopioita. Niiden tarkoitus on tehdä omista muistiinpanoista ja harjoituspiirustuksista yhtenäisiä.
-
-Avoimeen julkaisuun ei vielä lisätä lisenssiä, joka väittäisi standardoitujen piirrosmerkkien virallisen grafiikan olevan vapaasti uudelleenlisensoitavissa. Ennen erillisen avoimen symbolipaketin julkaisua tarkistetaan symboli kerrallaan nimi, geometria, IEC 60617 -status ja käyttöoikeus.
+Tämän sivun piirrosmerkit ovat itsenäisesti piirrettyjä opiskelugrafiikoita. Viralliset standardimerkit ja niiden soveltamisohjeet löytyvät IEC 60617 -tietokannasta.
 
 ## Koskettimet ja käyttöluokat (9.11.2026)
 
@@ -578,40 +574,23 @@ Oppitunti 28.9.2026:
 
 53-sivuinen **IEC 60617 SYMBOLS** -PDF toimii vertailuaineistona. Siinä ovat muun muassa johtimet ja liitokset (s. 1–2), maadoitus (s. 11), kytkinkoskettimet (s. 12–15), sulakkeet (s. 17), N/PE/PEN-johtimet (s. 20), jakorasiat ja pistorasiat (s. 21–22), valaisimet (s. 23), moottorit (s. 31–33), muuntajat (s. 34–41) sekä puhallin ja pumppu (s. 52). PDF:n julkaisijaa, päiväystä tai symbolien ajantasaista IEC-statusta ei ole vahvistettu.
 
-Oppitunnin alkuperäiskuvat ovat yksityisen vaultin liitteissä. Julkinen vienti ei kopioi niitä.
-
-- oppitunnin lähdeaineisto — 1-kytkentä
-- oppitunnin lähdeaineisto — jakorasian kytkentä
-- oppitunnin lähdeaineisto — symbolien vertailukuva
-- oppitunnin lähdeaineisto — valaistuskytkennät, oppikirjan s. 311
-- oppitunnin lähdeaineisto — ristikytkentä, oppikirjan s. 312
-- oppitunnin lähdeaineisto — painikeohjaus, oppikirjan s. 313
-- oppitunnin lähdeaineisto — keskuskaavio, *Sähkön asentaminen II* s. 134–135
-- oppitunnin lähdeaineisto — asennuspiirustusten merkkiluettelo, harjoitustehtävät s. 69
-
 Ajantasaiset lähdesivut: [SESKO: Piirrosmerkit / IEC 60617](https://sesko.fi/standardointi/dokumentointi/piirrosmerkit/), SESKOn teknisen dokumentoinnin standardit, SFS 6000 -pienjännitesähköasennukset sekä Tukesin sähköpätevyys- ja ILP-asennusohjeet.
 
 ### Koskettimet ja käyttöluokat
 
-- Oppituntidia 9.11.2026, oppitunnin lähdeaineisto — kuusi kosketintoimintoa ja niiden rinnakkaiset graafiset esitystavat. Oppituntikuva ei vahvista IEC-tunnusta tai standardistatusta.
-- Oppitunnin käyttöluokkataulukko 4.3; alkuperäinen oppikirjakuva oppitunnin lähdeaineisto. Kirjan nimi ja sivunumero eivät näy rajauksessa.
 - Schneider Electric: [AC-1 ja AC-3: kuormatyypin ja kytkentätilanteen merkitys](https://www.se.com/nl/en/faqs/FA23926/) ja [TeSys Giga: käyttöluokkien määritelmät](https://productinfo.se.com/tesysgigainstallationguide/tesys-giga-series-giga-contactors-and-giga-thermal-overload-relays-installation-guide/English/TeSys%E2%84%A2%20Giga%20Series%20Giga%20Contactors%20and%20Giga%20Thermal%20Overload%20Relays%20Installation%20Guide_0000447511.xml/\$/PanGu_LoadsCPT_0000507717), tarkistettu 9.11.2026.
-- Oppituntidia ”Helppo muistisääntö”, 9.11.2026, oppitunnin lähdeaineisto. Dian koepainotus on oppitunnin vinkki, ei yleinen lupaus kokeiden sisällöstä.
 
 ### Palautuvat kytkimet ja vipukytkintehtävät
 
-- Oppimateriaalin tehtäväkuvat oppitunnin lähdeaineisto (A, B ja E), oppitunnin lähdeaineisto (tehtävä 4.6, S1 ja S2) ja oppitunnin lähdeaineisto (S3 ja S4).
 - IEC 60617 -tietokannan kooste 5.3.2019. S00150 kuvaa automaattista palautusta, S00151 asennossa pysymistä ja soveltamisohje A00048 palautuskolmion suuntaa. Tässä käytetty merkintätapa tarkistettu 9.11.2026. [IEC 60617 -kooste](https://library.iec.ch/grasymb/grasymb.nsf/5FDC3327D03AD13DC125846A00501C93/%24FILE/IEC60617_Snapshot_2019-03-05.pdf)
 
 ### Muuntaja- ja suojausluokkamerkintöjen lähteet
 
-- Oppimateriaalin tehtävä 3, oppitunnin lähdeaineisto.
 - IEC/ISO:n laitemerkkien esikatselu, tunnukset 5221, 5222 ja 5172. Muotojen vertailu 9.11.2026. [IEC/ISO-esikatselu](https://webstore.iec.ch/en/iec_catalog/product/preview/?id=L3B1Yi9wZGYvcHJldmlldy9pbmZvX2llYzYwNDE3e2VkMS4wfWIucGRm)
 - Muuntajien käyttötarkoitus ja suomalaiset nimet. [Intertrafo — suojaerotusmuuntaja](https://intertrafo.fi/tietoa-muuntajista/kaksikaamirakenne/suojaerotusmuuntaja/) · [Intertrafo — suojajännitemuuntaja](https://intertrafo.fi/tietoa-muuntajista/kaksikaamirakenne/suojajannitemuuntaja/)
 - Suojausluokan II merkitys. [Schneider Electric — laitemerkinnät](https://productinfo.se.com/dm6220h_em1220h_em1250h/dm6200h_em1220h_em1250h/DM6220H_EM1220H_EM1250H/English/BM_DM6220H_EM1220H_EM1250H%20User%20Manual_0000336862.ditamap.xml/%24/C_MeteringEquipmentSymbols_0001113660)
 
 ### Neliasentoisen kytkimen harjoituksen lähteet
 
-- Oppitunnin toimintataulukko ja kytkentäkaavio, oppitunnin lähdeaineisto. Neljä ratkaisukuvaa on piirretty harjoituksen johdotuksesta.
 - Telergonin merkintäesimerkki katkeamatta kiinni pysyvästä koskettimesta, painettu s. 32 (PDF:n s. 3). [Telergon — Cam switches](https://www.telergon.gorlan.com/wp-content/uploads/2022/01/Cam-switches.pdf)
 - Rastien ja pystyviivan lukutapa, s. 13. [Kraus & Naimer — Switch Wiring Diagrams Pocketbook](https://www.krausnaimer.com/fileadmin/user_upload/Kraus_u_Naimer/Pdfcat/Switch_wiring_diagrams_pocketbook/Switch_wiring_diagrams_pocketbook.pdf)

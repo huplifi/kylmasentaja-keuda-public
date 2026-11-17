@@ -13,7 +13,6 @@ Opiskelumuistiinpanoja kylmäasentajan opinnoista. Materiaali ei ole Keudan vira
 - [Sähköopin perusteet](sahkoopin-perusteet.md)
 - [Kaavat ja yksiköt](kaavat-ja-yksikot.md)
 - [Kylmäkoneikon ohjaus](kylmakoneikon-ohjaus.md)
-- [Moottorin mittaus- ja testauspöytäkirja](moottorin-mittaus-ja-testauspoytakirja.md)
 - [Oikosulkumoottorit](oikosulkumoottorit.md)
 - [Releet ja kontaktorit](releet-ja-kontaktorit.md)
 - [Sähköasennusten käytännöt](sahkoasennusten-kaytannot.md)
@@ -23,6 +22,6 @@ Aloita kylmäprosessin perusteista, jatka kylmäaineisiin ja sähköoppiin. Kaav
 
 ## Aineiston käyttäminen
 
-Muistiinpanoissa erotetaan oppituntien esimerkit ja täydentävät selitykset. Alkuperäiset kuvat eivät sisälly verkkoversioon. Tekstissä olevat lähdelinkit auttavat tarkistamaan asiayhteyden.
+Muistiinpanoissa erotetaan oppituntien esimerkit ja täydentävät selitykset. Tekstissä olevat lähdelinkit auttavat tarkistamaan asiayhteyden.
 
 Nämä ovat opiskelumuistiinpanoja: käytännön työssä noudatetaan kouluttajan ohjeita, valmistajan dokumentaatiota ja ajantasaisia vaatimuksia.

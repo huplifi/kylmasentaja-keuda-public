@@ -72,7 +72,7 @@ Kylmäaineiden käsitteet ja esimerkin rajaus: [Kylmäaineet](kylmaaineet.md).
 
 - `1 bar = 1 000 mbar`
 - `1 mbar = 0,001 bar`
-- Kuvan ILP-vakuumointiesimerkki: **2,7 mbar = 0,0027 bar**.
+- ILP-vakuumointiesimerkki: **2,7 mbar = 0,0027 bar**.
 
 ## Sähköoppi
 
@@ -198,18 +198,10 @@ Esimerkkejä:
 
 ## Lähteet ja alkuperäismateriaali
 
-- oppitunnin lähdeaineisto — lämpöopin kaavat ja yksiköt
-- oppitunnin lähdeaineisto — sähköopin suureet ja yksiköt
-- oppitunnin lähdeaineisto — kerrannaisyksiköt ja mittarin lukemat
-- oppitunnin lähdeaineisto — sähkövarauksen kaava
-- oppitunnin lähdeaineisto — tulistuksen ja alijäähdytyksen kaavat
-- oppitunnin lähdeaineisto — tulistuksen ja alijäähdytyksen mittausesimerkki
-- oppitunnin lähdeaineisto — vastusten sarja- ja rinnankytkennän kaavat (7.9.2026)
-
 Muut lähde- ja selitysviitteet:
 
-- **Kylmäaineet ja CO₂-ekvivalentti:** [Kylmäaineet](kylmaaineet.md), alkuperäiskuvat oppitunnin lähdeaineisto.
-- **Paineen yksikkömuunnokset:** oppitunnin lähdeaineisto; ohjearvon rajaus ja asiayhteys: [ILP-asennus – oppitunnin muistiinpanot 8.9.2026](kylmatekniikan-perusteet.md#ilp-asennus--oppitunnin-muistiinpanot-892026).
+- **Kylmäaineet ja CO₂-ekvivalentti:** [Kylmäaineet](kylmaaineet.md) .
+- **Paineen yksikkömuunnokset:**  Ohjearvon rajaus ja asiayhteys: [ILP-asennus – oppitunnin muistiinpanot 8.9.2026](kylmatekniikan-perusteet.md#ilp-asennus--oppitunnin-muistiinpanot-892026).
 - **Resistiivisyys ja johtavuus:** oppitunti 21.9.2026 sekä selittävät täydennykset, [Resistiivisyys ja johtavuus](sahkoopin-perusteet.md#resistiivisyys-ja-johtavuus).
 - **Hyötysuhde:** oppitunti 21.9.2026, [Hyötysuhde](sahkoopin-perusteet.md#hyötysuhde).
 - **Sinimuotoisen vaihtosähkön arvot ja taajuus:** oppitunti 21.9.2026, [Hetkellis-, huippu- ja tehollisarvo](sahkoopin-perusteet.md#hetkellis--huippu--ja-tehollisarvo).

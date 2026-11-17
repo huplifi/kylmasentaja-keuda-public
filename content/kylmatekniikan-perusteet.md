@@ -153,28 +153,28 @@ Kaavio on periaatekuva. Todellisen järjestelmän komponentit ja putkiston järj
 
 ## ILP-asennus – oppitunnin muistiinpanot 8.9.2026
 
-ILP = ilmalämpöpumppu. Alla on kuvan muistiinpanot jäsenneltyinä. Arvot ja ajat ovat oppitunnilla kirjattuja ohjearvoja, eivät yleispäteviä valmistajan raja-arvoja tai täydellinen asennusohje.
+ILP = ilmalämpöpumppu. Arvot ja ajat ovat oppitunnilla kirjattuja ohjearvoja, eivät yleispäteviä valmistajan raja-arvoja tai täydellinen asennusohje.
 
 ### Vakuumointi
 
-- Kuvassa vakuumoinnin maksimipaineeksi on kirjattu **2,7 mbar = 0,0027 bar**.
+- Oppitunnilla vakuumoinnin maksimipaineeksi on kirjattu **2,7 mbar = 0,0027 bar**.
 - Kun kyseinen paine on saavutettu, vakuumointia jatketaan noin **30 minuuttia**.
 - Muistiinpanoon kirjattu tarkoitus: **kosteuden poisto**.
 
 ### Tiiveyskoe ja liitosten tarkastus
 
-Kuvan merkinnät:
+Harjoituksen vaiheet:
 
 - ”Tiiveyskoe \~5 min.”
 - ”Poista vakuumimittari.”
 - ”Testaa liitokset vuotovaahdolla.”
 
-**Täsmennettävä työjärjestys:** kuvasta ei käy ilmi kokeen paine, hyväksymiskriteeri eikä se, missä vaiheessa järjestelmä paineistetaan liitosten vuotovaahtotarkastusta varten. Näitä ei ole päätelty kuvan lyhenteistä. Käytännön harjoittelussa vaiheet varmistetaan opettajalta ja laitteen asennusohjeesta.
+**Täsmennettävä työjärjestys:** harjoituksen tiedoissa ei määritellä kokeen paine, hyväksymiskriteeri eikä se, missä vaiheessa järjestelmä paineistetaan liitosten vuotovaahtotarkastusta varten. Käytännön harjoittelussa vaiheet varmistetaan opettajalta ja laitteen asennusohjeesta.
 
 ### Koekäyttö ja viimeistely
 
 - Koekäyttö **lämmityksellä ja jäähdytyksellä**.
-- Irrota mittarisarja (**”huom. kylmäaine”**, kuten kuvassa).
+- Irrota mittarisarja (**”huom. kylmäaine”**).
 - Tiivistä läpivienti.
 
 ## ILP:n yleisimmät viat – oppitunnin dia 8.9.2026
@@ -221,13 +221,4 @@ Paperissa ei nimetä käytettävää kylmäainetta eikä täsmennetä paineiden 
 
 ## Lähteet ja alkuperäismateriaali
 
-- oppitunnin lähdeaineisto — kylmäkierron perusteet
-- oppitunnin lähdeaineisto — tulistus ja alijäähdytys
-- oppitunnin lähdeaineisto — korkea- ja matalapainepuoli
-- oppitunnin lähdeaineisto — putket ja lämpötilojen mittauspisteet
-- oppitunnin lähdeaineisto — tulistus-, alijäähdytys- ja mittausesimerkki
-- oppitunnin lähdeaineisto — käsinkirjoitetut ILP-asennuksen muistiinpanot, 8.9.2026
-- oppitunnin lähdeaineisto — oppitunnin dia ”Yleisimmät viat”, 8.9.2026
-- oppitunnin lähdeaineisto — työsaliharjoituksen ohjepaperi, toimitettu 15.9.2026
-
-Kylmäkierron symbolien lähteet ja yksittäisten merkkien rajaukset on kirjattu symbolikirjaston `manifest.json`-tiedostoon. Pääasiallisina lähteinä ovat GUNTin kylmätekniikan kaavioaineisto ja imuvaraajan osalta Danfossin ACC-aineisto.
+Pääasiallisina lähteinä ovat GUNTin kylmätekniikan kaavioaineisto ja imuvaraajan osalta Danfossin ACC-aineisto.

@@ -13,22 +13,22 @@ Staattori on moottorin paikallaan pysyvä osa ja roottori pyörivä osa. Kolmiva
 
 **Δ (delta) tarkoittaa kolmiokytkentää ja Y tähtikytkentää.** Symbolit kuvaavat kolmen käämin yhteyttä. Tähdessä käämien päät kohtaavat yhdessä pisteessä. Kolmiossa kunkin käämin loppu yhdistyy seuraavan alkuun, jolloin muodostuu suljettu kolmio.
 
-Kuvan verkossa kahden vaiheen välillä on 400 V. Moottorin arvokilvestä katsotaan, kumpi symboli kuuluu tämän jännitteen kohdalle. Kytkentäliuskat yhdistävät staattorin kolmen käämin päät joko tähdeksi tai kolmioksi.
+Esimerkin verkossa kahden vaiheen välillä on 400 V. Moottorin arvokilvestä katsotaan, kumpi symboli kuuluu tämän jännitteen kohdalle. Kytkentäliuskat yhdistävät staattorin kolmen käämin päät joko tähdeksi tai kolmioksi.
 
 | Arvokilven merkinnät | Käyntikytkentä 400 V:n verkossa | Jännite yhden käämin yli |
 | -------------------- | ------------------------------- | ------------------------ |
 | 230 V Δ / 400 V Y    | Tähti (Y)                       | 400 V / √3 ≈ 230 V       |
 | 400 V Δ / 690 V Y    | Kolmio (Δ)                      | 400 V                    |
 
-**Lue kuvaa käämi kerrallaan.** Esimerkiksi U-käämin päät ovat U1 ja U2. Tähdessä käämien loppupäät U2, V2 ja W2 muodostavat yhteisen tähtipisteen. Yksi käämi on siis vaiheen ja tähtipisteen välissä. Kolmiossa jokainen käämi on kahden vaiheen välissä, joten sen yli vaikuttaa koko pääjännite.
+**Seuraa yhtä käämiä.** Esimerkiksi U-käämin päät ovat U1 ja U2. Tähdessä käämien loppupäät U2, V2 ja W2 muodostavat yhteisen tähtipisteen. Yksi käämi on siis vaiheen ja tähtipisteen välissä. Kolmiossa jokainen käämi on kahden vaiheen välissä, joten sen yli vaikuttaa koko pääjännite.
 
-**Tunnista liuskat kuvasta.** Ylärivillä lukee W2, U2, V2 ja alarivillä U1, V1, W1. Seuraa ensin U1–U2-käämiä. Tähdessä U2 kuuluu yhteiseen tähtipisteeseen. Kolmiossa U1 on samassa liitospisteessä kuin W2 ja U2 samassa kuin V1. Näin U-käämin päät päätyvät eri vaiheisiin. Liittimien tunnukset kertovat yhteyden myös silloin, kun katsot kuvaa eri suunnasta.
+**Esimerkki liitinalustan järjestyksestä.** Ylärivillä lukee W2, U2, V2 ja alarivillä U1, V1, W1. Seuraa ensin U1–U2-käämiä. Tähdessä U2 kuuluu yhteiseen tähtipisteeseen. Kolmiossa U1 on samassa liitospisteessä kuin W2 ja U2 samassa kuin V1. Näin U-käämin päät päätyvät eri vaiheisiin. Liittimien tunnukset kertovat yhteyden myös silloin, kun liitinalustan asento vaihtuu.
 
 **Milloin tähti vaihtuu kolmioksi?** Ensimmäisen taulukkorivin moottori käy 400 V:n verkossa jatkuvasti tähdessä. Kolmiossa sen 230 V:n käämille tulisi 400 V. Toisen rivin moottorin nimellinen käyntikytkentä on tässä verkossa kolmio. Jos sen käynnistystavaksi valitaan tähti–kolmio, kontaktorit yhdistävät käämit ensin tähteen ja kiihdytyksen jälkeen kolmioon. Tähtivaiheessa verkosta otettava käynnistysvirta ja käynnistysmomentti ovat likimain kolmannes suoran kolmiokäynnistyksen arvoista. Kuorman täytyy siksi lähteä liikkeelle pienemmällä momentilla.
 
 ## Arvokilven lukeminen käytännössä
 
-Kilven merkinnöissä **230/400 V Δ/Y** ja **2,87/1,65 A** vinoviivan samalla puolella olevat tiedot kuuluvat yhteen. Virta tarkoittaa syöttöjohtimen virtaa nimelliskuormalla. Kilven arvot koskevat 50 Hz:n taajuutta.
+Esimerkkimoottorin arvokilven merkinnöissä **230/400 V Δ/Y** ja **2,87/1,65 A** vinoviivan samalla puolella olevat tiedot kuuluvat yhteen. Virta tarkoittaa syöttöjohtimen virtaa nimelliskuormalla. Kilven arvot koskevat 50 Hz:n taajuutta.
 
 | Verkon pääjännite | Kytkentä   | Nimellisvirta |
 | ----------------- | ---------- | ------------- |
@@ -49,9 +49,9 @@ Kilven merkinnöissä **230/400 V Δ/Y** ja **2,87/1,65 A** vinoviivan samalla p
 
 Tässä esimerkissä 0,75 kW:n moottori käy 400 V:n verkossa tähdessä. Sen nimellisvirta on 1,75 A. Edellisen arvokilven moottorilla on sama akseliteho mutta eri nimellisvirta (1,65 A).
 
-Seuraa yhtä vaihetta ylhäältä alas: F01 (gG-sulake) → Q01 (kontaktori) → F02 (lämpörele) → Q10 (turvakytkin) → M01 (moottori). Kaikki kolme vaihetta kulkevat saman reitin. Suojajohdin PE jatkuu moottorin runkoon turvakytkimen koskettimien ohi.
+Yhden vaiheen virtareitti on seuraava: F01 (gG-sulake) → Q01 (kontaktori) → F02 (lämpörele) → Q10 (turvakytkin) → M01 (moottori). Kaikki kolme vaihetta kulkevat saman reitin. Suojajohdin PE jatkuu moottorin runkoon turvakytkimen koskettimien ohi.
 
-| Kuvan arvo      | Mitä se tarkoittaa?                                                                                                                        |
+| Esimerkin arvo  | Mitä se tarkoittaa?                                                                                                                        |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | 1,75 A          | Moottorin nimellisvirta ja tämän lämpöreleen asetus. Lämpörele suojaa moottoria pitkittyvältä ylikuormitukselta.                           |
 | 1,7–2,3 A       | Lämpöreleen säätöalue. Rele sopii esimerkkiin, koska 1,75 A kuuluu tälle välille.                                                          |
@@ -63,23 +63,23 @@ Seuraa yhtä vaihetta ylhäältä alas: F01 (gG-sulake) → Q01 (kontaktori) →
 
 ![Moottorin pitopiiri: käynnistys, pito ja pysäytys](kaaviot/moottorin-pitopiiri.svg)
 
-Kuvan kaapeli on MMJ 4 × 1,5 S (kolme vaihetta ja PE). Kaapeliin liittyvä ≤ 25 A on kuvan erillinen yläraja. Moottorilähdön sulakevalintaa rajoittaa tässä lämpöreleen 10 A:n enimmäisarvo.
+Tämän moottorilähdön esimerkkikaapeli on MMJ 4 × 1,5 S (kolme vaihetta ja PE). Kaapeliin liittyvä ≤ 25 A on tässä esimerkissä kaapelille ilmoitettu yläraja. Moottorilähdön sulakevalintaa rajoittaa tässä lämpöreleen 10 A:n enimmäisarvo.
 
 ### Moottorikaapelin mekaaninen suojaus
 
-Kuvassa syöttökaapeli kulkee moottorin lähellä **JAPP-putkessa**. Alumiiniputki suojaa kaapelia esimerkiksi iskuilta. **JAPJ** on kuvan alumiiniputkelle tarkoitetun taivutusjousen tunnus.
+Tässä esimerkissä syöttökaapeli kulkee moottorin lähellä **JAPP-putkessa**. Alumiiniputki suojaa kaapelia esimerkiksi iskuilta. **JAPJ** on tämän esimerkin alumiiniputkelle tarkoitetun taivutusjousen tunnus.
 
 Oppikirjan esimerkissä JAPP 16- ja JAPP 20 -putket voi taivuttaa myös putken kokoon sopivalla muoviputken taivutusjousella. Putken sisällä oleva jousi tukee seinämää, jotta kaarre säilyttää muotonsa. Putkea taivutetaan hieman tavoitekulman yli ja oikaistaan sitten sen verran, että jousen saa vedettyä ulos. Suurempiin putkiin käytetään valmiita kaaria.
 
-## Kertaa kuvien avulla
+## Kertauskysymykset
 
-1. Peitä kytkentäkuvan kuvatekstit. Mistä tunnistat tähtipisteen? **Tarkistus:** kolmen eri käämin päät yhdistyvät samaan pisteeseen.
+1. Miten käämien päät yhdistyvät tähtipisteessä? **Tarkistus:** kolmen eri käämin päät yhdistyvät samaan pisteeseen.
 2. Miksi 0,75 kW:n moottorin ottotehoksi saadaan noin 0,93 kW? **Tarkistus:** akseliteho on 81 % ottotehosta. Erotus, noin 0,18 kW, kuluu häviöihin.
-3. Miksi suojauskuvassa näkyvät sekä 1,75 A että 6 A? **Tarkistus:** ensimmäinen on moottorin nimellisvirta ja lämpöreleen asetus. Toinen on yksi kuvan sallimista sulakkeen nimellisvirroista.
+3. Miksi suojausesimerkissä mainitaan sekä 1,75 A että 6 A? **Tarkistus:** ensimmäinen on moottorin nimellisvirta ja lämpöreleen asetus. Toinen on yksi tämän esimerkin sulakkeen nimellisvirroista.
 
 ## Mittaus- ja testauspöytäkirja
 
-[Moottorilähdön kenttäluettelo](moottorin-mittaus-ja-testauspoytakirja.md) yhdistää kilpiarvot, suojauksen asetukset, mitatut vaihevirrat ja tarkastustuloksen.
+Moottorilähdön mittaus- ja testauspöytäkirja  yhdistää kilpiarvot, suojauksen asetukset, mitatut vaihevirrat ja tarkastustuloksen.
 
 ## Lähteet ja ylläpitotiedot
 

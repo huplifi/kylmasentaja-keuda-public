@@ -176,7 +176,7 @@ Seoksissa huomioidaan molemmat aineosuudet. Suurimmassa luokassa vuodonilmaisuj�
 
 ## Kotitehtävä 15.9.2026 — CO₂-ekvivalentti ja turvaluokitus
 
-Tehtäväpaperin otsikko: **Kotitehtävät 15.09.**  CO₂-laskut ja vuototarkastusvälit on käsitelty tehtäväkuvan ja siihen liittyvien kysymysten perusteella 20.9.2026. Turvaluokitusosio on jätetty alla itse tehtäväksi.
+Laske kylmäainetäytöksen CO₂-ekvivalentti taulukon lähtöarvoilla. Harjoituksen lopussa voit kerrata turvaluokat.
 
 ### Laske CO₂-ekvivalentti ja selvitä tarkastusväli
 
@@ -225,12 +225,10 @@ Kertaus: [Turvaluokitus: myrkyllisyys ja syttyvyys](kylmaaineet.md#turvaluokitus
 
 ## Lähteet ja täsmennykset
 
-- Alkuperäiset oppituntimuistiinpanot: oppitunnin lähdeaineisto, 15.9.2026.
-- Oppitunnin vuototarkastusdia ja käsin korjattu 100 kg:n raja: oppitunnin lähdeaineisto, 15.9.2026. Dian virheellinen tarkastustiheys on korjattu tekstissä.
-- Turvaluokituksen lähdekuva: oppitunnin lähdeaineisto. Luokitusten selitykset: [ASHRAE/UNEP, huhtikuu 2026](https://www.ashrae.org/file%20library/professional%20development/ashrae-unep/unep---ashrae-factsheet--english.pdf).
-- Autojen ilmastoinnin korjattu päivämäärä: oppituntikuva oppitunnin lähdeaineisto ja [Euroopan komission MAC-direktiivin yhteenveto](https://single-market-economy.ec.europa.eu/sectors/automotive-industry/environmental-protection/mobile-air-conditioning-systems-macs_en).
-- CO₂:n paine-esimerkki: oppitunnin lähdeaineisto.
+- Luokitusten selitykset: [ASHRAE/UNEP, huhtikuu 2026](https://www.ashrae.org/file%20library/professional%20development/ashrae-unep/unep---ashrae-factsheet--english.pdf).
+
+- Autojen ilmastoinnin korjattu päivämäärä:  [Euroopan komission MAC-direktiivin yhteenveto](https://single-market-economy.ec.europa.eu/sectors/automotive-industry/environmental-protection/mobile-air-conditioning-systems-macs_en).
+
 - Vuototarkastukset ja HFC/HFO-seokset: [Syken vuototarkastusohje](https://www.ymparisto.fi/fi/luvat-ja-velvoitteet/f-kaasut-ja-otsonikerrosta-heikentavat-aineet), tarkistettu 15.9.2026 ja 20.9.2026; [F-kaasuasetus (EU) 2024/573, 5 artikla ja liitteet I–II](https://eur-lex.europa.eu/legal-content/FI/TXT/HTML/?uri=CELEX:32024R0573).
+
 - R513A:n tehtäväesimerkki: [Syken ohje](https://www.ymparisto.fi/fi/luvat-ja-velvoitteet/f-kaasut-ja-otsonikerrosta-heikentavat-aineet), [F-kaasuasetus, 5 artiklan 6 kohta](https://eur-lex.europa.eu/legal-content/FI/TXT/HTML/?uri=CELEX:32024R0573) sekä [ASHRAE:n kylmäainetaulukko](https://www.ashrae.org/technical-resources/standards-and-guidelines/ashrae-refrigerant-designations).
-- Oppitunnin tehtäväpaperi, oppitunnin lähdeaineisto, toimitettu 15.9.2026. Laskuvastausten ja soveltamisalan täsmennysten lähtökohtana käsin täytetty tehtäväkuva ja sen käsittely 20.9.2026.
-- Lähdemerkintöjen täsmennykset 15.9.2026: lyhenne ekvt; HFC-esimerkki R134a; kuvan päivämäärä 1.1.2016 korjattu lähteen perusteella 1.1.2017:ksi. Vuototarkastusvälin korjaus hyväksytty. Vuototarkastusten soveltamisala ja R513A:n aineosuudet tarkistettu 20.9.2026.
